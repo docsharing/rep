@@ -1,2 +1,10 @@
 Screen1 As screen:
 
+    Label1 As label:
+        Height: =86
+        Text: ="Added by jihun"
+        Width: =665
+        X: =35
+        Y: =505
+        ZIndex: =1
+
