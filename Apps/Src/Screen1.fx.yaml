@@ -51,6 +51,7 @@ Screen1 As screen:
             ZIndex: =4
 
     Button2 As button:
+        OnSelect: =Navigate(Screen1)
         Text: ="진동 단추"
         X: =40
         Y: =163
