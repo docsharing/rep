@@ -1,2 +1,10 @@
 Screen1 As screen:
 
+    Label1 As label:
+        Text: |-
+            ="진동 작업
+            "
+        X: =40
+        Y: =40
+        ZIndex: =1
+

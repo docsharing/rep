@@ -102,7 +102,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "en-US"
+    "UserLocale": "ko-KR"
   },
   "ScreenOrder": [
     "Screen1"
