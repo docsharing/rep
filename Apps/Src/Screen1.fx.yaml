@@ -1,6 +1,8 @@
 Screen1 As screen:
 
     Label1 As label:
+        BorderThickness: =3
+        Fill: =RGBA(153, 153, 153, 1)
         Height: =86
         Text: ="Added by jihun"
         Width: =665
