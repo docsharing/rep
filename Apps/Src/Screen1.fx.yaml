@@ -8,3 +8,9 @@ Screen1 As screen:
         Y: =505
         ZIndex: =1
 
+    Label2 As label:
+        Text: ="진동"
+        X: =40
+        Y: =40
+        ZIndex: =2
+
