@@ -12,7 +12,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/06/2022 01:08:21",
+  "HeaderLastSavedDateTimeUTC": "09/06/2022 01:12:07",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -20,7 +20,9 @@
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 0
+  },
   "OrderGroupControls": {
     "Group1": {
       "Button1": 1,
@@ -35,14 +37,16 @@
   },
   "PublishOrderIndices": {
     "App": 0,
-    "Button1": 3,
-    "Group1": 2,
-    "Label1": 4,
+    "Button1": 10,
+    "Group1": 9,
+    "Label1": 11,
     "Label2": 0,
-    "Label3": 1,
+    "Label3": 8,
     "Screen1": 2
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
