@@ -1,10 +1,10 @@
 Screen1 As screen:
 
     Label1 As label:
-        Text: |-
-            ="진동 작업
-            "
-        X: =40
-        Y: =40
+        Height: =86
+        Text: ="Added by jihun"
+        Width: =665
+        X: =35
+        Y: =505
         ZIndex: =1
 
