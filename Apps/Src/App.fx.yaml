@@ -8,7 +8,21 @@ App As appinfo:
         
         
         
+         
         Set(colLNBMenu,
+        Table(
+            {Value: "Supplier",MenuIMG:confidential_supplier2 , Screen: 'SC_SPLR_MAIN'},
+            {Value: "NDA", MenuIMG:confidential_NDA2, Screen: 'SC_NDA_MAIN'},
+            {Value: "Documents", MenuIMG:confidential_document22, Screen: 'SC_DOC_MAIN'},
+            {Value: "ActivityLog", MenuIMG:confidential_logs2, Screen:'SC_SPLR_MAIN'},
+            {Value: "Config.", MenuIMG:confidential_config2, Screen: 'SC_CONFIG_MAIN'}
+        )
+         );
+        
+         
+        
+        /*
+         Set(colLNBMenu,
         Table(
             {Value: "Supplier",Icon: Icon.Waypoint , Screen: 'SC_SPLR_MAIN'},
             {Value: "NDA", Icon: Icon.Waypoint, Screen: 'SC_NDA_MAIN'},
@@ -18,6 +32,7 @@ App As appinfo:
         )
          );
         
+        */
          // Whether show Colorpicker or not.
          Set(showColorPicker, false);
 

@@ -3,4 +3,5 @@ SC_DOC_MAIN As screen:
 
     CompMenuVar_3 As CompMenuVar:
         Default: ="Documents"
+        items: =colLNBMenu
 

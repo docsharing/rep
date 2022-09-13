@@ -9,12 +9,11 @@ CompMenuVar As CanvasComponent:
     HoverFill: =RGBA(255,255,255,10%)
     items: |-
         =Table(
-            {Value: "Supplier", Img:BlankImage,  Screen: App.ActiveScreen},
-            {Value: "NDA",  Img:BlankImage,  Screen: App.ActiveScreen},
-            {Value: "Collab",  Img:BlankImage,  Screen: App.ActiveScreen},
-            {Value: "Debug",  Img:BlankImage, Screen: App.ActiveScreen},
-            {Value: "Item 5", Img:BlankImage,   Screen: App.ActiveScreen},
-            {Value: "Item 6", Img:BlankImage, Screen: App.ActiveScreen}
+            {Value: "Supplier",   MenuIMG:SampleImage,  Screen: App.ActiveScreen},
+            {Value: "NDA",    MenuIMG:SampleImage,  Screen: App.ActiveScreen},
+            {Value: "Collab",   MenuIMG:SampleImage,   Screen: App.ActiveScreen},
+            {Value: "Debug",   MenuIMG:SampleImage, Screen: App.ActiveScreen}
+         
          )
     SelectedFill: =RGBA(255,255,255,10%)
     Width: =640
@@ -88,7 +87,7 @@ CompMenuVar As CanvasComponent:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
             Height: =35
-            Image: =imgConfig
+            Image: =ThisItem.MenuIMG
             OnSelect: =Select(Parent)
             Width: =35
             X: =37
