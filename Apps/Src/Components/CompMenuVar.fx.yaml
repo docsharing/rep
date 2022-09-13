@@ -46,7 +46,7 @@ CompMenuVar As CanvasComponent:
             Font: =Font.Arial
             Height: =18
             OnSelect: =Select(Parent)
-            Size: =10
+            Size: =12
             Text: |
                 =ThisItem.Value
             Width: =90
@@ -59,7 +59,7 @@ CompMenuVar As CanvasComponent:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =If(ThisItem.Value=CompMenuVar.Default, CompMenuVar.SelectedFill, Transparent) 
-            Height: =87
+            Height: =90
             HoverFill: |
                 =CompMenuVar.HoverFill 
             OnSelect: =Navigate(ThisItem.Screen)
