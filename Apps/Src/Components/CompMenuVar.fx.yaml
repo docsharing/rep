@@ -30,7 +30,7 @@ CompMenuVar As CanvasComponent:
         OnSelect: =Navigate(ThisItem.Screen)
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =64
+        TemplateSize: =88
         Width: =100
         Y: =40
         ZIndex: =1
@@ -48,8 +48,8 @@ CompMenuVar As CanvasComponent:
             Text: |
                 =ThisItem.Value
             Width: =90
-            X: =10
-            Y: =46
+            X: =9
+            Y: =65
             ZIndex: =2
 
         lblHoverEffect As label:
@@ -90,7 +90,7 @@ CompMenuVar As CanvasComponent:
             Image: =ThisItem.MenuIMG
             OnSelect: =Select(Parent)
             Width: =35
-            X: =37
-            Y: =11
+            X: =36
+            Y: =20
             ZIndex: =5
 

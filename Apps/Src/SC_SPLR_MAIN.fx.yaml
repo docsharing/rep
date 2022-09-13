@@ -5,3 +5,15 @@ SC_SPLR_MAIN As screen:
         items: =colLNBMenu
         Width: =100
 
+    Label1 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =48
+        Size: =20
+        Text: ="SC_SPLR_MAIN"
+        Width: =461
+        X: =471
+        Y: =75
+        ZIndex: =2
+
