@@ -1,6 +1,8 @@
 CompMsgWindow As CanvasComponent:
+    ClickEvent: ="Text"
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
+    MsgToShlow: ="Text"
     Width: =640
     X: =0
     Y: =0
@@ -14,7 +16,7 @@ CompMsgWindow As CanvasComponent:
         ZIndex: =5
 
         Label3 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(116, 116, 116, 1)
             BorderThickness: =2
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -29,7 +31,7 @@ CompMsgWindow As CanvasComponent:
 
         Label4 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(116, 116, 116, 1)
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -42,7 +44,7 @@ CompMsgWindow As CanvasComponent:
 
         Label4_1 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(116, 116, 116, 1)
             BorderThickness: =1
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -54,10 +56,10 @@ CompMsgWindow As CanvasComponent:
             ZIndex: =3
 
         Label5 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderColor: =RGBA(116, 116, 116, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =112
+            Height: =131
             Size: =13
             Text: ="Text"
             Width: =322
