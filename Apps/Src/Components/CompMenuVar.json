@@ -692,7 +692,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "//If(ThisItem.Value=CompMenuVar.Default, CompMenuVar.SelectedFill, Transparent) \r\nIf(ThisItem.Value=CompMenuVar.Default, Color.Orange, Transparent)    ",
+                "InvariantScript": "If(ThisItem.Value=CompMenuVar.Default, CompMenuVar.SelectedFill, Transparent) \r\n//If(ThisItem.Value=CompMenuVar.Default, RGBA(255,241,197,100), Transparent)    ",
                 "Property": "Fill",
                 "RuleProviderType": "Unknown"
               },
@@ -1755,7 +1755,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987080712699351",
+    "LastModifiedTimestamp": "637987084316031293",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1920,7 +1920,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987080712699351",
+  "LastModifiedTimestamp": "637987084316031293",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"
