@@ -58,7 +58,9 @@ CompMenuVar As CanvasComponent:
             BorderColor: =RGBA(0, 18, 107, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =If(ThisItem.Value=CompMenuVar.Default, CompMenuVar.SelectedFill, Transparent) 
+            Fill: |-
+                =//If(ThisItem.Value=CompMenuVar.Default, CompMenuVar.SelectedFill, Transparent) 
+                If(ThisItem.Value=CompMenuVar.Default, Color.Orange, Transparent)    
             Height: |
                 =110
             HoverFill: |
