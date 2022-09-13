@@ -23,9 +23,9 @@ SC_CONFIG_MAIN As screen:
         Align: =Align.Center
         BorderColor: =RGBA(149, 149, 149, 1)
         BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(250, 250, 250, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(232, 232, 232, 1)
+        Fill: =RGBA(0, 36, 71, 1)
         OnSelect: =Set(showColorPicker, true)
         Size: =13
         Text: ="Change Color Scheme"
