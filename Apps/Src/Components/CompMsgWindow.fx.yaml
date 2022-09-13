@@ -61,7 +61,7 @@ CompMsgWindow As CanvasComponent:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =131
             Size: =13
-            Text: ="Text"
+            Text: ="아직 개발중...."
             Width: =322
             X: =170
             Y: =188
