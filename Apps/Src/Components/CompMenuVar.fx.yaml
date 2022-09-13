@@ -4,15 +4,15 @@ CompMenuVar As CanvasComponent:
     CurrentIndicatorColor: =ColorFade(RGBA(29,161,242,1),70%)
     Default: |
         ="Supplier" 
-    Fill: =RGBA(56, 56, 56, 1)
+    Fill: =RGBA(43, 43, 43, 1)
     Height: =700
     HoverFill: =RGBA(255,255,255,10%)
     items: |-
         =Table(
-            {Value: "Supplier",   MenuIMG:SampleImage,  Screen: App.ActiveScreen},
-            {Value: "NDA",    MenuIMG:SampleImage,  Screen: App.ActiveScreen},
-            {Value: "Collab",   MenuIMG:SampleImage,   Screen: App.ActiveScreen},
-            {Value: "Debug",   MenuIMG:SampleImage, Screen: App.ActiveScreen}
+            {Value: "menu1",   MenuIMG:SampleImage,  Screen: App.ActiveScreen},
+            {Value: "menu2",   MenuIMG:SampleImage,  Screen: App.ActiveScreen},
+            {Value: "menu3",   MenuIMG:SampleImage,   Screen: App.ActiveScreen},
+            {Value: "menu4",   MenuIMG:SampleImage, Screen: App.ActiveScreen}
          
          )
     SelectedFill: =RGBA(255,255,255,10%)
@@ -86,11 +86,21 @@ CompMenuVar As CanvasComponent:
             BorderColor: =RGBA(0, 18, 107, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =35
+            Height: =38
             Image: =ThisItem.MenuIMG
             OnSelect: =Select(Parent)
-            Width: =35
+            Width: =38
             X: =36
             Y: =20
             ZIndex: =5
+
+    lblTitle As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(232, 232, 232, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Text"
+        Width: =531
+        X: =100
+        ZIndex: =2
 

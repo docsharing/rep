@@ -1,0 +1,7 @@
+SC_LOG_MAIN As screen:
+    Fill: =RGBA(232, 232, 232, 1)
+
+    CompMenuVar_5 As CompMenuVar:
+        items: =colLNBMenu
+        Width: =100
+
