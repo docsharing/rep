@@ -240,7 +240,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "6",
+                "InvariantScript": "8",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -619,7 +619,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "86",
+                "InvariantScript": "99",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -637,7 +637,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "6.5",
+                "InvariantScript": "8",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -1595,7 +1595,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "106",
+            "InvariantScript": "110",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1748,7 +1748,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987074681057304",
+    "LastModifiedTimestamp": "637987075417400708",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1913,7 +1913,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987074681057304",
+  "LastModifiedTimestamp": "637987075417400708",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"

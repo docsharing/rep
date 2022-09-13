@@ -34,7 +34,7 @@ CompMenuVar As CanvasComponent:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =93
-        Width: =106
+        Width: =110
         ZIndex: =1
 
         lblMenuTitle As label:
@@ -66,8 +66,8 @@ CompMenuVar As CanvasComponent:
             PressedFill: =CompMenuVar.SelectedFill
             Size: =13
             Text: = 
-            Width: =86
-            X: =6.5
+            Width: =99
+            X: =8
             ZIndex: =3
 
         lblShowSelected As label:
@@ -81,7 +81,7 @@ CompMenuVar As CanvasComponent:
             Size: =13
             Text: =ThisItem.Value
             Visible: =ThisItem.Value=CompMenuVar.Default
-            Width: =6
+            Width: =8
             ZIndex: =4
 
         imgMenu As image:
