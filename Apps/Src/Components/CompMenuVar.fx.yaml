@@ -4,7 +4,7 @@ CompMenuVar As CanvasComponent:
     CurrentIndicatorColor: =ColorFade(RGBA(29,161,242,1),70%)
     Default: |
         ="Supplier" 
-    Fill: =RGBA(51, 52 ,74, 1)
+    Fill: =RGBA(56, 56, 56, 1)
     Height: =700
     HoverFill: =RGBA(255,255,255,10%)
     items: |-
@@ -23,6 +23,7 @@ CompMenuVar As CanvasComponent:
     ZIndex: =1
 
     "gal_LNB As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(0, 18, 107, 1)
         Default: = 
         Height: =Parent.Height
         Items: =CompMenuVar.items
@@ -36,20 +37,26 @@ CompMenuVar As CanvasComponent:
         ZIndex: =1
 
         Icon5 As icon.Waypoint:
+            BorderColor: =RGBA(0, 18, 107, 1)
             Color: =CompMenuVar.Color
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =35
             Icon: =Icon.LogJournal
             OnSelect: =Select(Parent)
             Width: |
                 =35
-            X: =37
+            X: =65
             Y: =11
             ZIndex: =1
 
         lblMenuTitle As label:
             Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
             Color: |
                 =CompMenuVar.Color
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Arial
             Height: =18
             OnSelect: =Select(Parent)
             Size: =10
@@ -61,24 +68,74 @@ CompMenuVar As CanvasComponent:
             ZIndex: =2
 
         lblHoverEffect As label:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =If(ThisItem.Value=CompMenuVar.Default, CompMenuVar.SelectedFill, Transparent) 
-            Height: =64
+            Height: =11
             HoverFill: |
                 =CompMenuVar.HoverFill 
             OnSelect: =Navigate(ThisItem.Screen)
             PressedFill: =CompMenuVar.SelectedFill
+            Size: =13
             Text: = 
             Width: =Parent.TemplateWidth
             ZIndex: =3
 
         lblShowSelected As label:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =CompMenuVar.CurrentIndicatorColor
             Height: |
                 =Parent.TemplateHeight
             OnSelect: =Select(Parent)
+            Size: =13
             Text: =ThisItem.Value
             Visible: =ThisItem.Value=CompMenuVar.Default
             Width: |
                 =5
             ZIndex: =4
+
+        imgMenu As image:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =35
+            OnSelect: =Select(Parent)
+            Width: =35
+            X: =31
+            Y: =5
+            ZIndex: =5
+
+    Image1_1 As image:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =270
+        Image: =confidential_coffine_1
+        Width: =207
+        X: =240
+        Y: =400
+        ZIndex: =3
+
+    Image1_2 As image:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Width: =35
+        X: =470
+        Y: =635
+        ZIndex: =4
+
+    Image1_3 As image:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =35
+        Width: =35
+        X: =530
+        Y: =635
+        ZIndex: =5
 

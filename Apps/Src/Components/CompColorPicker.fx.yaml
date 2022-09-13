@@ -624,6 +624,7 @@ CompColorPicker As CanvasComponent:
             FocusedBorderColor: =sliAlphaValueCP.BorderColor
             FocusedBorderThickness: =4
             HandleActiveFill: =RGBA(255, 255, 255, 1)
+            HandleFill: =RGBA(255, 255, 255, 1)
             HandleHoverFill: =RGBA(255, 255, 255, 1)
             Height: =sliRedValueCP.Height
             HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -670,11 +671,15 @@ CompColorPicker As CanvasComponent:
         txtAlphaValueCP As text:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.None
+            BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
             Default: =sliAlphaValueCP.Value/100
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             DisplayMode: =If(locAlphaEdit, DisplayMode.Edit, DisplayMode.Disabled)
             FocusedBorderColor: =txtAlphaValueCP.BorderColor
+            FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Format: =TextFormat.Number
             Height: =30
@@ -702,6 +707,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =lblAlphaValueCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -839,6 +845,7 @@ CompColorPicker As CanvasComponent:
             FocusedBorderColor: =sliBlueValueCP.BorderColor
             FocusedBorderThickness: =4
             HandleActiveFill: =RGBA(255, 255, 255, 1)
+            HandleFill: =RGBA(255, 255, 255, 1)
             HandleHoverFill: =RGBA(255, 255, 255, 1)
             Height: =sliRedValueCP.Height
             HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -859,11 +866,15 @@ CompColorPicker As CanvasComponent:
             Align: =Align.Center
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.None
+            BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
             Default: =sliBlueValueCP.Value
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             DisplayMode: =txtRedValueCP.DisplayMode
             FocusedBorderColor: =txtBlueValueCP.BorderColor
+            FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Format: =TextFormat.Number
             Height: =30
@@ -892,6 +903,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =lblBlueValueCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -921,6 +933,7 @@ CompColorPicker As CanvasComponent:
             FocusedBorderColor: =sliGreenValueCP.BorderColor
             FocusedBorderThickness: =4
             HandleActiveFill: =RGBA(255, 255, 255, 1)
+            HandleFill: =RGBA(255, 255, 255, 1)
             HandleHoverFill: =RGBA(255, 255, 255, 1)
             Height: =sliRedValueCP.Height
             HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -941,11 +954,15 @@ CompColorPicker As CanvasComponent:
             Align: =Align.Center
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.None
+            BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
             Default: =sliGreenValueCP.Value
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             DisplayMode: =txtRedValueCP.DisplayMode
             FocusedBorderColor: =txtGreenValueCP.BorderColor
+            FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Format: =TextFormat.Number
             Height: =30
@@ -974,6 +991,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =lblGreenValueCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1003,6 +1021,7 @@ CompColorPicker As CanvasComponent:
             FocusedBorderColor: =sliRedValueCP.BorderColor
             FocusedBorderThickness: =4
             HandleActiveFill: =RGBA(255, 255, 255, 1)
+            HandleFill: =RGBA(255, 255, 255, 1)
             HandleHoverFill: =RGBA(255, 255, 255, 1)
             Height: =50
             HoverBorderColor: =RGBA(0, 0, 0, 0)
@@ -1023,11 +1042,15 @@ CompColorPicker As CanvasComponent:
             Align: =Align.Center
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.None
+            BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
             Default: =sliRedValueCP.Value
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             DisplayMode: =If(locRGBEdit, DisplayMode.Edit, DisplayMode.Disabled)
             FocusedBorderColor: =txtRedValueCP.BorderColor
+            FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Format: =TextFormat.Number
             Height: =30
@@ -1057,6 +1080,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =lblRedValueCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1088,6 +1112,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =lblHexValueCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1107,6 +1132,7 @@ CompColorPicker As CanvasComponent:
         txtHexValueCP As text:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.None
+            BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
             Default: |-
                 =Mid(
@@ -1167,8 +1193,11 @@ CompColorPicker As CanvasComponent:
                     1
                 )
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             DisplayMode: =If(locHexEdit, DisplayMode.Edit, DisplayMode.Disabled)
             FocusedBorderColor: =txtHexValueCP.BorderColor
+            FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =30+0
             HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
@@ -1262,6 +1291,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =lblSelectedColorCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1279,6 +1309,7 @@ CompColorPicker As CanvasComponent:
             ZIndex: =3
 
     galBlackWhitePaletteCP As gallery.galleryHorizontal:
+        BorderColor: =RGBA(0, 18, 107, 1)
         DisabledBorderColor: =galBlackWhitePaletteCP.BorderColor
         DisabledFill: =galBlackWhitePaletteCP.Fill
         Height: =CompColorPicker.ColorSquareSize
@@ -1513,7 +1544,9 @@ CompColorPicker As CanvasComponent:
         lblVersionCP As label:
             Align: =Align.Right
             AutoHeight: =true
+            BorderColor: =RGBA(0, 18, 107, 1)
             Color: =CompColorPicker.TitleColor
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =lblVersionCP.BorderColor
             HoverBorderColor: =lblVersionCP.BorderColor
             HoverColor: =lblVersionCP.Color
@@ -1536,6 +1569,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =CompColorPicker.TitleColor
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =lblTitleCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1547,6 +1581,7 @@ CompColorPicker As CanvasComponent:
             PressedBorderColor: =lblTitleCP.BorderColor
             PressedColor: =lblTitleCP.Color
             PressedFill: =lblTitleCP.Fill
+            Size: =13
             Text: ="메인메뉴 Color 변화확인"
             Width: =Parent.Width
             X: =0+0
@@ -1566,6 +1601,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =_lblFinalRedCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1575,6 +1611,7 @@ CompColorPicker As CanvasComponent:
             PressedBorderColor: =_lblFinalRedCP.BorderColor
             PressedColor: =_lblFinalRedCP.Color
             PressedFill: =_lblFinalRedCP.Fill
+            Size: =13
             Text: =locPickedColorRed
             Width: =50
             ZIndex: =1
@@ -1585,6 +1622,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =_lblFinalGreenCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1594,6 +1632,7 @@ CompColorPicker As CanvasComponent:
             PressedBorderColor: =_lblFinalGreenCP.BorderColor
             PressedColor: =_lblFinalGreenCP.Color
             PressedFill: =_lblFinalGreenCP.Fill
+            Size: =13
             Text: =locPickedColorGreen
             Width: =50
             X: =50
@@ -1605,6 +1644,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =_lblFinalBlueCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1614,6 +1654,7 @@ CompColorPicker As CanvasComponent:
             PressedBorderColor: =_lblFinalBlueCP.BorderColor
             PressedColor: =_lblFinalBlueCP.Color
             PressedFill: =_lblFinalBlueCP.Fill
+            Size: =13
             Text: =locPickedColorBlue
             Width: =50
             X: =100
@@ -1632,6 +1673,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =_lblMainColorRedCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1641,6 +1683,7 @@ CompColorPicker As CanvasComponent:
             PressedBorderColor: =_lblMainColorRedCP.BorderColor
             PressedColor: =_lblMainColorRedCP.Color
             PressedFill: =_lblMainColorRedCP.Fill
+            Size: =13
             Text: =Switch(Right(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Left(locMainColor,2),1))+Switch(Left(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Left(locMainColor,2),1))*16
             Width: =50
             ZIndex: =1
@@ -1651,6 +1694,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =_lblMainColorGreenCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1660,6 +1704,7 @@ CompColorPicker As CanvasComponent:
             PressedBorderColor: =_lblMainColorGreenCP.BorderColor
             PressedColor: =_lblMainColorGreenCP.Color
             PressedFill: =_lblMainColorGreenCP.Fill
+            Size: =13
             Text: =Switch(Right(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,3,2),1))+Switch(Left(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,3,2),1))*16
             Width: =50
             X: =50
@@ -1671,6 +1716,7 @@ CompColorPicker As CanvasComponent:
             BorderThickness: =2
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderColor: =_lblMainColorBlueCP.BorderColor
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
@@ -1680,6 +1726,7 @@ CompColorPicker As CanvasComponent:
             PressedBorderColor: =_lblMainColorBlueCP.BorderColor
             PressedColor: =_lblMainColorBlueCP.Color
             PressedFill: =_lblMainColorBlueCP.Fill
+            Size: =13
             Text: =Switch(Right(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,5,2),1))+Switch(Left(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,5,2),1))*16
             Width: =50
             X: =100

@@ -1,4 +1,5 @@
 SC_SPLR_MAIN As screen:
+    Fill: =RGBA(232, 232, 232, 1)
 
     CompMenuVar_1 As CompMenuVar:
         items: = colLNBMenu

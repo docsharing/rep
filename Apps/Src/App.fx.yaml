@@ -14,7 +14,6 @@ App As appinfo:
             {Value: "NDA", Icon: Icon.Waypoint, Screen: 'SC_NDA_MAIN'},
             {Value: "Documents", Icon: Icon.Waypoint, Screen: 'SC_DOC_MAIN'},
             {Value: "ActivityLog", Icon: Icon.Waypoint, Screen:'SC_SPLR_MAIN'},
-            {Value: "Item 5", Icon: Icon.Waypoint, Screen: 'SC_SPLR_MAIN'},
             {Value: "Config.", Icon: Icon.Waypoint, Screen: 'SC_CONFIG_MAIN'}
         )
          );

@@ -1,4 +1,5 @@
 SC_CONFIG_MAIN As screen:
+    Fill: =RGBA(232, 232, 232, 1)
 
     CompMenuVar_4 As CompMenuVar:
         Default: ="Config."

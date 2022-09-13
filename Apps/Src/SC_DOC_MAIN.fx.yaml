@@ -1,4 +1,5 @@
 SC_DOC_MAIN As screen:
+    Fill: =RGBA(232, 232, 232, 1)
 
     CompMenuVar_3 As CompMenuVar:
         Default: ="Documents"
