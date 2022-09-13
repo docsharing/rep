@@ -3271,12 +3271,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637986419011598359",
+    "LastModifiedTimestamp": "637986420539048726",
     "Name": "CompMenuVar",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table(\r\n    {Value: \"Supplier\", Image.Image3,  Screen: App.ActiveScreen},\r\n    {Value: \"NDA\",  Image.Image3,  Screen: App.ActiveScreen},\r\n    {Value: \"Collab\",  Image.Image3,  Screen: App.ActiveScreen},\r\n    {Value: \"Debug\",  Image.Image3, Screen: App.ActiveScreen},\r\n    {Value: \"Item 5\", Image.Image3,   Screen: App.ActiveScreen},\r\n    {Value: \"Item 6\",  Image.Image3, Screen: App.ActiveScreen}\r\n )",
+        "InvariantScript": "Table(\r\n    {Value: \"Supplier\", Img:BlankImage,  Screen: App.ActiveScreen},\r\n    {Value: \"NDA\",  Img:BlankImage,  Screen: App.ActiveScreen},\r\n    {Value: \"Collab\",  Img:BlankImage,  Screen: App.ActiveScreen},\r\n    {Value: \"Debug\",  Img:BlankImage, Screen: App.ActiveScreen},\r\n    {Value: \"Item 5\", Img:BlankImage,   Screen: App.ActiveScreen},\r\n    {Value: \"Item 6\", Img:BlankImage, Screen: App.ActiveScreen}\r\n )",
         "Property": "items",
         "RuleProviderType": "System"
       },
@@ -3421,7 +3421,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637986419011598359",
+  "LastModifiedTimestamp": "637986420539048726",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"

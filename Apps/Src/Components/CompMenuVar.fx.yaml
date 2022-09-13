@@ -9,12 +9,12 @@ CompMenuVar As CanvasComponent:
     HoverFill: =RGBA(255,255,255,10%)
     items: |-
         =Table(
-            {Value: "Supplier", Image.Image3,  Screen: App.ActiveScreen},
-            {Value: "NDA",  Image.Image3,  Screen: App.ActiveScreen},
-            {Value: "Collab",  Image.Image3,  Screen: App.ActiveScreen},
-            {Value: "Debug",  Image.Image3, Screen: App.ActiveScreen},
-            {Value: "Item 5", Image.Image3,   Screen: App.ActiveScreen},
-            {Value: "Item 6",  Image.Image3, Screen: App.ActiveScreen}
+            {Value: "Supplier", Img:BlankImage,  Screen: App.ActiveScreen},
+            {Value: "NDA",  Img:BlankImage,  Screen: App.ActiveScreen},
+            {Value: "Collab",  Img:BlankImage,  Screen: App.ActiveScreen},
+            {Value: "Debug",  Img:BlankImage, Screen: App.ActiveScreen},
+            {Value: "Item 5", Img:BlankImage,   Screen: App.ActiveScreen},
+            {Value: "Item 6", Img:BlankImage, Screen: App.ActiveScreen}
          )
     SelectedFill: =RGBA(255,255,255,10%)
     Width: =640
