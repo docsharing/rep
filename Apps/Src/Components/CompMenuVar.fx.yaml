@@ -81,8 +81,7 @@ CompMenuVar As CanvasComponent:
             Size: =13
             Text: =ThisItem.Value
             Visible: =ThisItem.Value=CompMenuVar.Default
-            Width: |
-                =5
+            Width: =6
             ZIndex: =4
 
         imgMenu As image:

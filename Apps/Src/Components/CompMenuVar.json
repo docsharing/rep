@@ -103,7 +103,7 @@
               {
                 "AFDDataSourceName": "",
                 "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "10",
+                "AutoRuleBindingString": "",
                 "InvariantPropertyName": "Width",
                 "IsLockable": false,
                 "NameMapSourceSchema": "?"
@@ -240,7 +240,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "5\r\n",
+                "InvariantScript": "6",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -1741,7 +1741,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987072512145865",
+    "LastModifiedTimestamp": "637987072863494975",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1906,7 +1906,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987072512145865",
+  "LastModifiedTimestamp": "637987072863494975",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"
