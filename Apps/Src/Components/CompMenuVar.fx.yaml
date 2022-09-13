@@ -2,15 +2,17 @@ CompMenuVar As CanvasComponent:
     Color: |
         =White 
     CurrentIndicatorColor: =ColorFade(RGBA(29,161,242,1),70%)
-    Fill: =RGBA(0, 0, 0, 0)
+    Default: |
+        ="Supplier" 
+    Fill: =RGBA(51, 52 ,74, 1)
     Height: =700
     HoverFill: =RGBA(255,255,255,10%)
     items: |-
         =Table(
-            {Value: "Item 1", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
-            {Value: "Item 2", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
-            {Value: "Item 3", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
-            {Value: "Item 4", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Supplier", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "NDA", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Collab", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Debug", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
             {Value: "Item 5", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
             {Value: "Item 6", Icon: Icon.Waypoint, Screen: App.ActiveScreen}
          )
@@ -21,48 +23,62 @@ CompMenuVar As CanvasComponent:
     ZIndex: =1
 
     "gal_LNB As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Default: = 
+        Height: =Parent.Height
         Items: =CompMenuVar.items
         Layout: =Layout.Vertical
+        OnSelect: =Navigate(ThisItem.Screen)
+        ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =Min(160, Self.Height - 60)
-        Width: =260
+        TemplateSize: =64
+        Width: =80
         Y: =40
         ZIndex: =1
 
-        NextArrow1 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Height: =60
-            Icon: =Icon.ChevronRight
+        Icon5 As icon.Waypoint:
+            Color: =CompMenuVar.Color
+            Height: =35
+            Icon: =Icon.LogJournal
             OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
+            Width: |
+                =35
+            X: =23
+            Y: =11
+            ZIndex: =1
 
-        Separator1 As rectangle:
-            Height: =1
+        lblMenuTitle As label:
+            Align: =Align.Center
+            Color: |
+                =CompMenuVar.Color
+            Height: =18
             OnSelect: =Select(Parent)
+            Size: =10
+            Text: |
+                =ThisItem.Value
+            Width: =68
+            X: =10
+            Y: =46
+            ZIndex: =2
+
+        lblHoverEffect As label:
+            Fill: =If(ThisItem.Value=CompMenuVar.Default, CompMenuVar.SelectedFill, Transparent) 
+            Height: =
+            HoverFill: |
+                =CompMenuVar.HoverFill 
+            OnSelect: =Navigate(ThisItem.Screen)
+            PressedFill: =CompMenuVar.SelectedFill
+            Text: =ThisItem.Icon
             Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =5
+            ZIndex: =3
 
-        Label1 As label:
+        lblShowSelected As label:
+            Fill: =CompMenuVar.CurrentIndicatorColor
+            Height: |
+                =Parent.TemplateHeight
             OnSelect: =Select(Parent)
             Text: =ThisItem.Value
-            X: =11
-            Y: =32
-            ZIndex: =6
-
-        Image2 As image:
-            Image: =ThisItem.Icon 
-            OnSelect: =Select(Parent)
-            X: =95
-            Y: =32
-            ZIndex: =7
+            Visible: =ThisItem.Value=CompMenuVar.Default
+            Width: |
+                =5
+            ZIndex: =4
 
