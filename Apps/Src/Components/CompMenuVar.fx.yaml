@@ -67,7 +67,7 @@ CompMenuVar As CanvasComponent:
             Size: =13
             Text: = 
             Width: =86
-            X: =7
+            X: =6.5
             ZIndex: =3
 
         lblShowSelected As label:
