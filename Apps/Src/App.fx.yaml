@@ -14,7 +14,7 @@ App As appinfo:
             {Value: "Supplier",MenuIMG:confidential_supplier2 , Screen: 'SC_SPLR_MAIN'},
             {Value: "NDA", MenuIMG:confidential_NDA2, Screen: 'SC_NDA_MAIN'},
             {Value: "Documents", MenuIMG:confidential_document22, Screen: 'SC_DOC_MAIN'},
-            {Value: "ActivityLog", MenuIMG:confidential_logs2, Screen:'SC_SPLR_MAIN'},
+            {Value: "ActivityLog", MenuIMG:confidential_logs2, Screen:'SC_LOG_MAIN'},
             {Value: "Config.", MenuIMG:confidential_config2, Screen: 'SC_CONFIG_MAIN'}
         )
          );
