@@ -4,12 +4,21 @@ App As appinfo:
         =
         
         //Set LNB Values
+        
+        
+        
+        
+        Set(colLNBMenu,
         Table(
             {Value: "Supplier", Icon: Icon.Waypoint, Screen: 'SC_SPLR_MAIN'},
             {Value: "NDA", Icon: Icon.Waypoint, Screen: 'SC_NDA_MAIN'},
-            {Value: "Collab", Icon: Icon.Waypoint, Screen: 'SC_DOC_MAIN'},
-            {Value: "Debug", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
-            {Value: "Item 5", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Documents", Icon: Icon.Waypoint, Screen: 'SC_DOC_MAIN'},
+            {Value: "Debug", Icon: Icon.Waypoint, Screen:'SC_SPLR_MAIN'},
+            {Value: "Item 5", Icon: Icon.Waypoint, Screen: 'SC_SPLR_MAIN'},
             {Value: "Design", Icon: Icon.Waypoint, Screen: 'SC_CONFIG_MAIN'}
-         )
+        )
+         );
+        
+         // Whether show Colorpicker or not.
+         Set(showColorPicker, false);
 

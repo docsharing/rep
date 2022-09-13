@@ -1424,6 +1424,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.showColorPicker"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.showColorPicker",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "showColorPicker",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.confidential_finger"
                 }
               ],

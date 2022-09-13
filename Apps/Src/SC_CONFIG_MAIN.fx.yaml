@@ -1,2 +1,5 @@
 SC_CONFIG_MAIN As screen:
 
+    CompMenuVar_4 As CompMenuVar:
+        items: =colLNBMenu
+

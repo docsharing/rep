@@ -2,7 +2,10 @@
   "ComponentIndexes": {
     "CompColorPicker": 4,
     "CompMenuVar": 5,
-    "CompMenuVar_1": 5
+    "CompMenuVar_1": 5,
+    "CompMenuVar_2": 5,
+    "CompMenuVar_3": 5,
+    "CompMenuVar_4": 5
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -22,6 +25,9 @@
     "CompColorPicker": 3,
     "CompMenuVar": 60,
     "CompMenuVar_1": 68,
+    "CompMenuVar_2": 72,
+    "CompMenuVar_3": 73,
+    "CompMenuVar_4": 74,
     "ctrAlphaValueCP": 53,
     "ctrHexValueCP": 49,
     "ctrRGBValueCP": 35,
@@ -79,7 +85,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/13/2022 02:34:14",
+  "HeaderLastSavedDateTimeUTC": "09/13/2022 04:02:26",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -155,6 +161,9 @@
     "CompColorPicker": 0,
     "CompMenuVar": 0,
     "CompMenuVar_1": 0,
+    "CompMenuVar_2": 0,
+    "CompMenuVar_3": 0,
+    "CompMenuVar_4": 0,
     "ctrAlphaValueCP": 50,
     "ctrHexValueCP": 46,
     "ctrRGBValueCP": 32,
@@ -231,7 +240,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.55891,
     "ControlCount": {
-      "31fbc11deb5d49459d01f33c024b6806": 2,
+      "31fbc11deb5d49459d01f33c024b6806": 5,
       "7cc42590ab534214a47a6b5b74abfbcf": 1,
       "circle": 4,
       "gallery": 5,
