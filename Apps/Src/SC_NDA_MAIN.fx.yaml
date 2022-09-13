@@ -3,5 +3,4 @@ SC_NDA_MAIN As screen:
 
     CompMenuVar_2 As CompMenuVar:
         Default: ="NDA"
-        items: =colLNBMenu
 

@@ -30,14 +30,7 @@
         "X",
         "Y",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table(\r\n    {Value: \"Supplier\", Icon: Icon.Waypoint, Screen: App.ActiveScreen},\r\n    {Value: \"NDA\", Icon: Icon.Waypoint, Screen: App.ActiveScreen},\r\n    {Value: \"Collab\", Icon: Icon.Waypoint, Screen: App.ActiveScreen},\r\n    {Value: \"Debug\", Icon: Icon.Waypoint, Screen: App.ActiveScreen},\r\n    {Value: \"Item 5\", Icon: Icon.Waypoint, Screen: App.ActiveScreen},\r\n    {Value: \"Item 6\", Icon: Icon.Waypoint, Screen: App.ActiveScreen}\r\n )",
-          "InvariantPropertyName": "items",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "items",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -93,7 +86,7 @@
         {
           "Category": "Data",
           "PropertyName": "items",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
