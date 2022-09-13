@@ -1,4 +1,15 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =
+    OnStart: |-
+        =
+        
+        //Set LNB Values
+        Table(
+            {Value: "Supplier", Icon: Icon.Waypoint, Screen: 'SC_SPLR_MAIN'},
+            {Value: "NDA", Icon: Icon.Waypoint, Screen: 'SC_NDA_MAIN'},
+            {Value: "Collab", Icon: Icon.Waypoint, Screen: 'SC_DOC_MAIN'},
+            {Value: "Debug", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 5", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Design", Icon: Icon.Waypoint, Screen: 'SC_CONFIG_MAIN'}
+         )
 
