@@ -205,7 +205,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "4",
+                "InvariantScript": "3",
                 "Property": "ZIndex",
                 "RuleProviderType": "Unknown"
               },
@@ -584,7 +584,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "3",
+                "InvariantScript": "1",
                 "Property": "ZIndex",
                 "RuleProviderType": "Unknown"
               },
@@ -906,7 +906,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "5",
+                "InvariantScript": "4",
                 "Property": "ZIndex",
                 "RuleProviderType": "Unknown"
               },
@@ -1755,7 +1755,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987080259610779",
+    "LastModifiedTimestamp": "637987080712699351",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1920,7 +1920,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987080259610779",
+  "LastModifiedTimestamp": "637987080712699351",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"

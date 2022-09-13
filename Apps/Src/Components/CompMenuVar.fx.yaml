@@ -37,23 +37,6 @@ CompMenuVar As CanvasComponent:
         Width: =115
         ZIndex: =1
 
-        lblMenuTitle As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 18, 107, 1)
-            Color: |
-                =CompMenuVar.Color
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.Arial
-            Height: =30
-            OnSelect: =Select(Parent)
-            Size: =12
-            Text: |
-                =ThisItem.Value
-            Width: =102
-            X: =8
-            Y: =68
-            ZIndex: =2
-
         lblHoverEffect As label:
             BorderColor: =RGBA(0, 18, 107, 1)
             Color: =RGBA(0, 0, 0, 1)
@@ -72,7 +55,24 @@ CompMenuVar As CanvasComponent:
             Width: |
                 =Parent.Width-8
             X: =8
-            ZIndex: =3
+            ZIndex: =1
+
+        lblMenuTitle As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: |
+                =CompMenuVar.Color
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Arial
+            Height: =30
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |
+                =ThisItem.Value
+            Width: =102
+            X: =8
+            Y: =68
+            ZIndex: =2
 
         lblShowSelected As label:
             BorderColor: =RGBA(0, 18, 107, 1)
@@ -86,7 +86,7 @@ CompMenuVar As CanvasComponent:
             Text: =
             Visible: =ThisItem.Value=CompMenuVar.Default
             Width: =8
-            ZIndex: =4
+            ZIndex: =3
 
         imgMenu As image:
             BorderColor: =RGBA(0, 18, 107, 1)
@@ -98,5 +98,5 @@ CompMenuVar As CanvasComponent:
             Width: =47
             X: =36
             Y: =20
-            ZIndex: =5
+            ZIndex: =4
 
