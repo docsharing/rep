@@ -1734,7 +1734,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637986483536758670",
+    "LastModifiedTimestamp": "637986487693081217",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1769,7 +1769,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "\"Supplier\" \r\n",
+        "InvariantScript": "\r\n//Value of the selected menu.\r\n\"Supplier\" ",
         "Property": "Default",
         "RuleProviderType": "System"
       },
@@ -1899,7 +1899,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637986483536758670",
+  "LastModifiedTimestamp": "637986487693081217",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"

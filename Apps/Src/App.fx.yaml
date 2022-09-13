@@ -2,7 +2,6 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |-
         =//Populates LNB Menu
-        
         Set(colLNBMenu,
         Table(
             {Value: "Supplier",MenuIMG:confidential_supplier2 , Screen: SC_SPLR_MAIN},
@@ -15,9 +14,9 @@ App As appinfo:
         
          //ColorFade(RGBA(29,161,242,1),70%) 
          
-         // Whether show Colorpicker or not.
+         // Check Whether Colorpicker is visible or not.
          Set(showColorPicker, false);
         
-         //Intial Color of LNB
+         //Intialize LNB color
          Set(varMenuPrimaryColor ,RGBA(43, 43, 43, 1));
 

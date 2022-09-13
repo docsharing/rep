@@ -2,8 +2,10 @@ CompMenuVar As CanvasComponent:
     Color: |
         =White 
     CurrentIndicatorColor: =White
-    Default: |
-        ="Supplier" 
+    Default: |-
+        =
+        //Value of the selected menu.
+        "Supplier" 
     Fill: =varMenuPrimaryColor
     Height: =765
     HoverFill: =RGBA(255,255,255,10%)
