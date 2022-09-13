@@ -19,3 +19,18 @@ SC_NDA_MAIN As screen:
         Y: =75
         ZIndex: =2
 
+    Label1 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(204, 214, 224, 1)
+        Height: =173
+        Size: =13
+        Text: |-
+            ="협력사별 NDA in progress를 보여주는 화면이 메인임. 1. 내부승인중 - 2.협력사 체결요청 발송 완료 - 3. 체결완료 등의 상태를 보여줌
+            Progress별 action을 취할 수 있음 "
+        Width: =1060
+        X: =295
+        Y: =345
+        ZIndex: =3
+
