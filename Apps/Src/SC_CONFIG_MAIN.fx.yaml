@@ -1,5 +1,6 @@
 SC_CONFIG_MAIN As screen:
 
     CompMenuVar_4 As CompMenuVar:
+        Default: ="Config."
         items: =colLNBMenu
 
