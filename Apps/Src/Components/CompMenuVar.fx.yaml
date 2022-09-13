@@ -95,9 +95,11 @@ CompMenuVar As CanvasComponent:
             ZIndex: =5
 
     lblTitle As label:
+        Align: =Align.Center
         BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(232, 232, 232, 1)
+        Color: =RGBA(250, 250, 250, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 1)
         Size: =13
         Text: ="Text"
         Width: =531
