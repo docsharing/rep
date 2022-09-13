@@ -2,5 +2,5 @@ SC_SPLR_MAIN As screen:
 
     CompMenuVar_1 As CompMenuVar:
         items: = colLNBMenu
-        Width: =80
+        Width: =100
 
