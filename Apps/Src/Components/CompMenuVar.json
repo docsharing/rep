@@ -1734,7 +1734,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637986475205218399",
+    "LastModifiedTimestamp": "637986475663578957",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1805,9 +1805,9 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "700",
+        "InvariantScript": "765",
         "Property": "Height",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -1899,7 +1899,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637986475205218399",
+  "LastModifiedTimestamp": "637986475663578957",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"

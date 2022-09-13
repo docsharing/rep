@@ -4,6 +4,7 @@ SC_SPLR_MAIN As screen:
         Color.White
 
     CompMenuVar_1 As CompMenuVar:
+        Height: =Parent.Height
         items: =colLNBMenu
         Width: =100
 
