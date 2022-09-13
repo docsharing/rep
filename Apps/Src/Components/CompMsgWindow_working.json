@@ -5,7 +5,7 @@
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "CompMsgWindow",
+    "Name": "CompMsgWindow_working",
     "TemplateGuid": "7e6dcdc8551d4424a78f49764f939e17"
   },
   "ComponentType": "CanvasComponent",
@@ -38,7 +38,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987069924288722",
+  "LastModifiedTimestamp": "637987098268808090",
   "Name": "7e6dcdc8551d4424a78f49764f939e17",
   "OverridableProperties": {},
   "Version": "637986497822923438"

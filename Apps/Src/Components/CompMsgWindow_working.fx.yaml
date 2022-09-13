@@ -1,4 +1,4 @@
-CompMsgWindow As CanvasComponent:
+CompMsgWindow_working As CanvasComponent:
     ClickEvent: ="Text"
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
@@ -7,6 +7,19 @@ CompMsgWindow As CanvasComponent:
     X: =0
     Y: =0
     ZIndex: =1
+
+    Label6 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 36, 71, 1)
+        Height: =24
+        Size: =13
+        Text: ="Text"
+        Width: =431
+        X: =116
+        Y: =140
+        ZIndex: =5
 
     Group1 As group:
         Height: =5
