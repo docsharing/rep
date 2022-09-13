@@ -1,5 +1,5 @@
 SC_LOG_MAIN As screen:
-    Fill: =RGBA(232, 232, 232, 1)
+    Fill: =Color.White
 
     CompMenuVar_5 As CompMenuVar:
         Default: |
