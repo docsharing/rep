@@ -582,16 +582,9 @@ CompColorPicker As CanvasComponent:
         HoverFill: =ColorFade(icoCancelCP.Fill, -10%)
         Icon: =Icon.Cancel
         OnSelect: |-
-            =Set(
-                locSelectedButton,
-                Blank()
-            );
-            Set(
-                locSelectedButton,
-                "CANCEL"
-            );
+            = 
             
-            Set(varShowCP, false);
+            Set(showColorPicker, false);
         PaddingBottom: =5
         PaddingLeft: =5
         PaddingRight: =5

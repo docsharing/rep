@@ -18,6 +18,21 @@ SC_CONFIG_MAIN As screen:
         Y: =75
         ZIndex: =2
 
+    Label2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(149, 149, 149, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(232, 232, 232, 1)
+        OnSelect: =Set(showColorPicker, true)
+        Size: =13
+        Text: ="Change Color Scheme"
+        Width: =266
+        X: =454
+        Y: =330
+        ZIndex: =3
+
     CompColorPicker_1 As CompColorPicker:
         Height: =CompColorPicker_1.ReservedHeight
         OnReset: |
@@ -485,20 +500,5 @@ SC_CONFIG_MAIN As screen:
         Visible: =showColorPicker
         Width: =CompColorPicker_1.ReservedWidth
         X: =207
-        ZIndex: =3
-
-    Label2 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(149, 149, 149, 1)
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(232, 232, 232, 1)
-        OnSelect: =Set(showColorPicker, true)
-        Size: =13
-        Text: ="Change Color Scheme"
-        Width: =266
-        X: =454
-        Y: =330
         ZIndex: =4
 

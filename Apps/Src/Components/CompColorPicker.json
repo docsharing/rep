@@ -14594,7 +14594,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(\r\n    locSelectedButton,\r\n    Blank()\r\n);\r\nSet(\r\n    locSelectedButton,\r\n    \"CANCEL\"\r\n);\r\n\r\nSet(varShowCP, false);",
+            "InvariantScript": " \r\n\r\nSet(showColorPicker, false);",
             "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
@@ -15103,7 +15103,7 @@
       "HideAuthor",
       "HideVersion"
     ],
-    "LastModifiedTimestamp": "637986471237401215",
+    "LastModifiedTimestamp": "637986474652751847",
     "Name": "CompColorPicker",
     "Rules": [
       {
@@ -15486,7 +15486,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637986471237401215",
+  "LastModifiedTimestamp": "637986474652751847",
   "Name": "7cc42590ab534214a47a6b5b74abfbcf",
   "OverridableProperties": {},
   "TemplateOriginalName": "51307081c7cc4d8d872606839f96f319",
