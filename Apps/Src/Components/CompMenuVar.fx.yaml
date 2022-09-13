@@ -33,7 +33,6 @@ CompMenuVar As CanvasComponent:
         TemplatePadding: =0
         TemplateSize: =88
         Width: =100
-        Y: =40
         ZIndex: =1
 
         lblMenuTitle As label:
