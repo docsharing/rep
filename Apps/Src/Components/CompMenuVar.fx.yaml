@@ -59,14 +59,16 @@ CompMenuVar As CanvasComponent:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =If(ThisItem.Value=CompMenuVar.Default, CompMenuVar.SelectedFill, Transparent) 
-            Height: =90
+            Height: |
+                =Parent.Height
             HoverFill: |
                 =CompMenuVar.HoverFill 
             OnSelect: =Navigate(ThisItem.Screen)
             PressedFill: =CompMenuVar.SelectedFill
             Size: =13
             Text: = 
-            Width: =99
+            Width: |
+                =Parent.Width-8
             X: =8
             ZIndex: =3
 
