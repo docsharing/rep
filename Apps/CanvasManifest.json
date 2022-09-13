@@ -107,6 +107,7 @@
   },
   "ScreenOrder": [
     "SC_SPLR_MAIN",
-    "SC_NDA_MAIN"
+    "SC_NDA_MAIN",
+    "SC_DOC_MAIN"
   ]
 }

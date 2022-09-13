@@ -27,7 +27,7 @@ App As appinfo:
         //{Title:"Compliance 1",Screen:Screen4_1, Id:4, ParentTab: "Compliance"},
         //{Title:"Compliance 2",Screen:Screen4_2, Id:4, ParentTab: "Compliance"},
         
-        {Title:"Debug...",Screen:Screen5, Id:5, ParentTab: ""}
+        {Title:"Debug...",Screen:SC_DOC_MAIN Id:5, ParentTab: ""}
         
         );
         
