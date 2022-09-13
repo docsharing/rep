@@ -66,8 +66,8 @@ CompMenuVar As CanvasComponent:
             PressedFill: =CompMenuVar.SelectedFill
             Size: =13
             Text: = 
-            Width: =84
-            X: =9
+            Width: =86
+            X: =8
             ZIndex: =3
 
         lblShowSelected As label:
