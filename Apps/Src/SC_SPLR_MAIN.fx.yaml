@@ -1,4 +1,4 @@
-Screen1 As screen:
+SC_SPLR_MAIN As screen:
 
     Label1 As label:
         Align: =Align.Center
@@ -13,11 +13,8 @@ Screen1 As screen:
         Y: =605
         ZIndex: =1
 
-    Label2 As label:
-        Text: ="진동"
-        X: =40
-        Y: =40
-        ZIndex: =2
+    CompMenuVar_1 As CompMenuVar:
+        ZIndex: =5
 
     Group1 As group:
         Height: =5
@@ -49,11 +46,4 @@ Screen1 As screen:
             X: =789
             Y: =410
             ZIndex: =4
-
-    Button2 As button:
-        OnSelect: =Navigate(Screen1)
-        Text: ="진동 단추"
-        X: =40
-        Y: =163
-        ZIndex: =6
 

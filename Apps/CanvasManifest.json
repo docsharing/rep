@@ -57,6 +57,7 @@
       "improvedtabstopbehavior": true,
       "keeprecentscreensloaded": false,
       "longlivingcache": false,
+      "namedformulas": false,
       "nativecdsexperimental": true,
       "optimizedforteamsmeeting": false,
       "parallelcodegen": false,
@@ -105,6 +106,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1"
+    "SC_SPLR_MAIN",
+    "SC_NDA_MAIN"
   ]
 }

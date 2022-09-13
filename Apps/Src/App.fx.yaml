@@ -1,4 +1,58 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =Set(showWin, false)
+    OnStart: |
+        =Set(showWin, false);
+        
+        
+        
+        
+        ///
+        
+        ClearCollect(colHorizontalMenu,
+        
+        {Title:"Supplier",Screen:Blank(), Id:1, ParentTab: ""},
+        {Title:"Supplier 1",Screen:SC_SPLR_MAIN, Id:1, ParentTab: "Supplier"},
+        //{Title:"Supplier 2",Screen:Screen1_2, Id:1, ParentTab: "Supplier"},
+        //{Title:"Supplier 3",Screen:Screen1_3, Id:1, ParentTab: "Supplier"},
+        
+        {Title:"NDA",Screen:Blank(), Id:2, ParentTab: ""},
+        //{Title:"Supplier 정보변경/삭제",Screen:Screen2_1, Id:2, ParentTab: "NDA"},
+        //{Title:"Supplier 등록",Screen:Screen2_2, Id:2, ParentTab: "NDA"},
+        
+        {Title:"Documents",Screen:Blank(), Id:3, ParentTab: ""},
+        //{Title:"Documents 1",Screen:Screen3_1, Id:3, ParentTab: "Documents"},
+        //{Title:"Documents 2",Screen:Screen3_2, Id:3, ParentTab: "Documents"},
+        
+        {Title:"Compliance",Screen:Blank(), Id:4, ParentTab: ""},
+        //{Title:"Compliance 1",Screen:Screen4_1, Id:4, ParentTab: "Compliance"},
+        //{Title:"Compliance 2",Screen:Screen4_2, Id:4, ParentTab: "Compliance"},
+        
+        {Title:"Debug...",Screen:Screen5, Id:5, ParentTab: ""}
+        
+        );
+        
+        Set(varMenuPrimaryColor, RGBA(0, 121, 187, 1));
+        //Set(varMenuSecondaryColor, RGBA(4, 166, 235, 1));
+        Set(varMenuSecondaryColor, RGBA(0, 94, 146, 1));
+        
+        
+        //Set(varTabSelected, 1);
+        Set(varShowCP, false);
+        
+        Set(varR,0);
+        Set(varG,0);
+        Set(varB,0);
+        Set(varA,0);
+        
+        Set(varShowDeb, false);
+        Set(demoColor, Gray); 
+        Set(startTimer, false);
+        Set(showMessageBar, false);
+        //-->  ClearCollect(SupplierList,SuppliersInfo);
+        ////ClearCollect(DocumentFolder, Documents);
+        
+        Set(selectedPath,"");
+        Set(sliderIndxVal, 0);
+        Set(varShowProg,false);
+        Set(totalCnt, 0);
 

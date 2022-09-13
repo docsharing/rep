@@ -1,0 +1,1687 @@
+CompColorPicker As CanvasComponent:
+    Blue: =txtBlueValueCP.Text
+    ColorSquareSize: =30
+    ColorSquaresPadding: =2
+    DefaultColor: |-
+        ="#AAAAAAFF"
+    Fill: =RGBA(119, 128, 130, 1)
+    Green: =txtGreenValueCP.Text
+    Height: =CompColorPicker.ReservedHeight
+    HideAuthor: =false
+    HideVersion: =false
+    MainColors: |-
+        =Table(
+            {Index: 1, Value: "#ff0000"},
+            {Index: 2, Value: "#fd4015"},
+            {Index: 3, Value: "#fd8018"},
+            {Index: 4, Value: "#fcc01c"},
+            {Index: 5, Value: "#ffff00"},
+            {Index: 6, Value: "#bdff1e"},
+            {Index: 7, Value: "#7dff1b"},
+            {Index: 8, Value: "#3dff1a"},
+            {Index: 9, Value: "#00ff00"},
+            {Index: 10, Value: "#00ff44"},
+            {Index: 11, Value: "#09ff81"},
+            {Index: 12, Value: "#12ffbf"},
+            {Index: 13, Value: "#1afffe"},
+            {Index: 14, Value: "#1bbffd"},
+            {Index: 15, Value: "#1c7efc"},
+            {Index: 16, Value: "#1c3dfc"},
+            {Index: 17, Value: "#0000ff"},
+            {Index: 18, Value: "#4600fc"},
+            {Index: 19, Value: "#8300fc"},
+            {Index: 20, Value: "#c100fc"},
+            {Index: 21, Value: "#ff00ff"},
+            {Index: 22, Value: "#fe00be"},
+            {Index: 23, Value: "#fd0180"},
+            {Index: 24, Value: "#fd0642"},
+            {Index: 25, Value: "#617c8a"}
+        )
+    OnReset: |
+        =// ------------------------------------------------------------------------------------
+        // -- UltimateColorPicker component
+        // ------------------------------------------------------------------------------------
+        // -- Author: Emmanuel GALLIS (on Twitter: @R3dKap)
+        // -- Created: 08-sep-2019
+        // -- First published: 29-nov-2019
+        // ------------------------------------------------------------------------------------
+        // -- History
+        // -- 23-oct-2019 (v1.0): initial version
+        // -- 01-dec-2019 (v1.1): added greyscale palette + fixed component auto-size + fixed
+        //                        positionning of some controls + grouped controls inside
+        //                        containers + prefixed hex output with "#"
+        // ------------------------------------------------------------------------------------
+        // No button selected
+        Set(
+            locSelectedButton,
+            Blank()
+        );
+        // Set local default color to component's default color
+        Set(
+            locDefaultColor,
+            Right(
+                CompColorPicker.DefaultColor,
+                Len(CompColorPicker.DefaultColor) - 1
+            )
+        );
+        // Set current color red value based on default color
+        Set(
+            locPickedColorRed,
+            Switch(
+                Right(
+                    Left(
+                        locDefaultColor,
+                        2
+                    ),
+                    1
+                ),
+                "A",
+                10,
+                "B",
+                11,
+                "C",
+                12,
+                "D",
+                13,
+                "E",
+                14,
+                "F",
+                15,
+                Right(
+                    Left(
+                        locDefaultColor,
+                        2
+                    ),
+                    1
+                )
+            ) + Switch(
+                Left(
+                    Left(
+                        locDefaultColor,
+                        2
+                    ),
+                    1
+                ),
+                "A",
+                10,
+                "B",
+                11,
+                "C",
+                12,
+                "D",
+                13,
+                "E",
+                14,
+                "F",
+                15,
+                Left(
+                    Left(
+                        locDefaultColor,
+                        2
+                    ),
+                    1
+                )
+            ) * 16
+        );
+        // Set current color green value based on default color
+        Set(
+            locPickedColorGreen,
+            Switch(
+                Right(
+                    Mid(
+                        locDefaultColor,
+                        3,
+                        2
+                    ),
+                    1
+                ),
+                "A",
+                10,
+                "B",
+                11,
+                "C",
+                12,
+                "D",
+                13,
+                "E",
+                14,
+                "F",
+                15,
+                Right(
+                    Mid(
+                        locDefaultColor,
+                        3,
+                        2
+                    ),
+                    1
+                )
+            ) + Switch(
+                Left(
+                    Mid(
+                        locDefaultColor,
+                        3,
+                        2
+                    ),
+                    1
+                ),
+                "A",
+                10,
+                "B",
+                11,
+                "C",
+                12,
+                "D",
+                13,
+                "E",
+                14,
+                "F",
+                15,
+                Left(
+                    Mid(
+                        locDefaultColor,
+                        3,
+                        2
+                    ),
+                    1
+                )
+            ) * 16
+        );
+        // Set current color blue value based on default color
+        Set(
+            locPickedColorBlue,
+            Switch(
+                Right(
+                    Mid(
+                        locDefaultColor,
+                        5,
+                        2
+                    ),
+                    1
+                ),
+                "A",
+                10,
+                "B",
+                11,
+                "C",
+                12,
+                "D",
+                13,
+                "E",
+                14,
+                "F",
+                15,
+                Right(
+                    Mid(
+                        locDefaultColor,
+                        5,
+                        2
+                    ),
+                    1
+                )
+            ) + Switch(
+                Left(
+                    Mid(
+                        locDefaultColor,
+                        5,
+                        2
+                    ),
+                    1
+                ),
+                "A",
+                10,
+                "B",
+                11,
+                "C",
+                12,
+                "D",
+                13,
+                "E",
+                14,
+                "F",
+                15,
+                Left(
+                    Mid(
+                        locDefaultColor,
+                        5,
+                        2
+                    ),
+                    1
+                )
+            ) * 16
+        );
+        // Set current color alpha value based on default color
+        Set(
+            locAlpha,
+            If(
+                Mid(
+                    locDefaultColor,
+                    7,
+                    2
+                ) <> "",
+                ((Switch(
+                    Right(
+                        Mid(
+                            locDefaultColor,
+                            7,
+                            2
+                        ),
+                        1
+                    ),
+                    "A",
+                    10,
+                    "B",
+                    11,
+                    "C",
+                    12,
+                    "D",
+                    13,
+                    "E",
+                    14,
+                    "F",
+                    15,
+                    Right(
+                        Mid(
+                            locDefaultColor,
+                            7,
+                            2
+                        ),
+                        1
+                    )
+                ) + Switch(
+                    Left(
+                        Mid(
+                            locDefaultColor,
+                            7,
+                            2
+                        ),
+                        1
+                    ),
+                    "A",
+                    10,
+                    "B",
+                    11,
+                    "C",
+                    12,
+                    "D",
+                    13,
+                    "E",
+                    14,
+                    "F",
+                    15,
+                    Left(
+                        Mid(
+                            locDefaultColor,
+                            7,
+                            2
+                        ),
+                        1
+                    )
+                ) * 16) / 255) * 100,
+                100
+            )
+        );
+        // Initialize black to white palette (first color is Black)
+        ClearCollect(
+            locBlackWhiteColors,
+            {Value: "#000000"}
+        );
+        // Build black to white palette (same number of shades than number of main colors)
+        ForAll(
+            CompColorPicker.MainColors,
+            If(
+                Index > 1 && Index < CountRows(CompColorPicker.MainColors),// Skip first and last colors as they are respectively black and white
+                Collect(
+                    locBlackWhiteColors,
+                    {
+                        Value: "#" & Switch(// Greyscale first digit for red value
+                            RoundDown(
+                                Index * (255 / CountRows(CompColorPicker.MainColors)) / 16,
+                                0
+                            ),
+                            10,
+                            "A",
+                            11,
+                            "B",
+                            12,
+                            "C",
+                            13,
+                            "D",
+                            14,
+                            "E",
+                            15,
+                            "F",
+                            Text(
+                                RoundDown(
+                                    Index * (255 / CountRows(CompColorPicker.MainColors)) / 16,
+                                    0
+                                )
+                            )
+                        ) & Switch(// Greyscale second digit for red value
+                            RoundDown(
+                                Mod(
+                                    Index * (255 / CountRows(CompColorPicker.MainColors)),
+                                    16
+                                ),
+                                0
+                            ),
+                            10,
+                            "A",
+                            11,
+                            "B",
+                            12,
+                            "C",
+                            13,
+                            "D",
+                            14,
+                            "E",
+                            15,
+                            "F",
+                            Text(
+                                RoundDown(
+                                    Mod(
+                                        Index * (255 / CountRows(CompColorPicker.MainColors)),
+                                        16
+                                    ),
+                                    0
+                                )
+                            )
+                        ) & Switch(// Greyscale first digit for green value (same as red)
+                            RoundDown(
+                                Index * (255 / CountRows(CompColorPicker.MainColors)) / 16,
+                                0
+                            ),
+                            10,
+                            "A",
+                            11,
+                            "B",
+                            12,
+                            "C",
+                            13,
+                            "D",
+                            14,
+                            "E",
+                            15,
+                            "F",
+                            Text(
+                                RoundDown(
+                                    Index * (255 / CountRows(CompColorPicker.MainColors)) / 16,
+                                    0
+                                )
+                            )
+                        ) & Switch(// Greyscale second digit for green value (same as red)
+                            RoundDown(
+                                Mod(
+                                    Index * (255 / CountRows(CompColorPicker.MainColors)),
+                                    16
+                                ),
+                                0
+                            ),
+                            10,
+                            "A",
+                            11,
+                            "B",
+                            12,
+                            "C",
+                            13,
+                            "D",
+                            14,
+                            "E",
+                            15,
+                            "F",
+                            Text(
+                                RoundDown(
+                                    Mod(
+                                        Index * (255 / CountRows(CompColorPicker.MainColors)),
+                                        16
+                                    ),
+                                    0
+                                )
+                            )
+                        ) & Switch(// Greyscale first digit for blue value (same as red and green)
+                            RoundDown(
+                                Index * (255 / CountRows(CompColorPicker.MainColors)) / 16,
+                                0
+                            ),
+                            10,
+                            "A",
+                            11,
+                            "B",
+                            12,
+                            "C",
+                            13,
+                            "D",
+                            14,
+                            "E",
+                            15,
+                            "F",
+                            Text(
+                                RoundDown(
+                                    Index * (255 / CountRows(CompColorPicker.MainColors)) / 16,
+                                    0
+                                )
+                            )
+                        ) & Switch(// Greyscale second digit for blue value (same as red and green)
+                            RoundDown(
+                                Mod(
+                                    Index * (255 / CountRows(CompColorPicker.MainColors)),
+                                    16
+                                ),
+                                0
+                            ),
+                            10,
+                            "A",
+                            11,
+                            "B",
+                            12,
+                            "C",
+                            13,
+                            "D",
+                            14,
+                            "E",
+                            15,
+                            "F",
+                            Text(
+                                RoundDown(
+                                    Mod(
+                                        Index * (255 / CountRows(CompColorPicker.MainColors)),
+                                        16
+                                    ),
+                                    0
+                                )
+                            )
+                        )
+                    }
+                )
+            )
+        );
+        // Add last color to black and white palette: white
+        Collect(
+            locBlackWhiteColors,
+            {Value: "#FFFFFF"}
+        );
+    Red: =txtRedValueCP.Text
+    ReservedHeight: =ctrSelectedColorCP.Y + ctrSelectedColorCP.Height + 20
+    ReservedWidth: =galPaletteCP.X * 2 + galPaletteCP.Width
+    SelectedAlpha: =Value(txtAlphaValueCP.Text)
+    SelectedButton: =locSelectedButton
+    SelectedColor: =recSelectedColorCP.Fill
+    SelectedColorBg: =RGBA(255, 255, 255, 1)
+    SelectedHex: |-
+        ="#" & txtHexValueCP.Text
+    SelectedRGB: ="RGBA(" & txtRedValueCP.Text & ", " & txtGreenValueCP.Text & ", " & txtBlueValueCP.Text & ", " & txtAlphaValueCP.Text & ")"
+    ShadesCount: =6
+    ShowTitle: =true
+    Title: ="Ultimate Color picker"
+    TitleColor: =RGBA(214, 216, 217, 1)
+    Width: =CompColorPicker.ReservedWidth
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    icoOKCP As icon.Check:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(52, 60, 63, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(255, 191, 0, 1)
+        FocusedBorderColor: =icoOKCP.BorderColor
+        FocusedBorderThickness: =4
+        Height: =32
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+        HoverFill: =ColorFade(icoOKCP.Fill, -10%)
+        Icon: =Icon.Check
+        OnSelect: |-
+            =Set(
+                locSelectedButton,
+                Blank()
+            );
+            Set(
+                locSelectedButton,
+                "OK"
+            );
+            
+            
+            Set(varR,sliRedValueCP.Value);
+            Set(varG, sliGreenValueCP.Value);
+            Set(varB, sliBlueValueCP.Value);
+            Set(varA, sliAlphaValueCP.Value/100);
+            
+            Set(varMenuPrimaryColor, RGBA(varR, varG, varB, varA));
+            Set(varMenuSecondaryColor, RGBA(varR-40, varG-40, varB-40, varA));
+            
+            
+            
+            
+            
+            
+            Set(varShowCP, false);
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =icoOKCP.Fill
+        PressedFill: =ColorFade(icoOKCP.Fill, -30%)
+        Width: =32
+        X: =galPaletteCP.X + galPaletteCP.Width - icoOKCP.Width
+        Y: =Parent.Height - icoOKCP.Height - 20
+        ZIndex: =1
+
+    icoCancelCP As icon.Cancel:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        Color: =RGBA(238, 204, 204, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(116, 116, 116, 1)
+        FocusedBorderColor: =icoCancelCP.BorderColor
+        FocusedBorderThickness: =4
+        Height: =32
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+        HoverFill: =ColorFade(icoCancelCP.Fill, -10%)
+        Icon: =Icon.Cancel
+        OnSelect: |-
+            =Set(
+                locSelectedButton,
+                Blank()
+            );
+            Set(
+                locSelectedButton,
+                "CANCEL"
+            );
+            
+            Set(varShowCP, false);
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =icoCancelCP.Fill
+        PressedFill: =ColorFade(icoCancelCP.Fill, -30%)
+        Width: =32
+        X: =icoOKCP.X - icoCancelCP.Width - 20
+        Y: =icoOKCP.Y
+        ZIndex: =2
+
+    ctrAlphaValueCP As groupContainer:
+        Height: =sliAlphaValueCP.Height
+        Width: =icoCancelCP.X - ctrAlphaValueCP.X - 10
+        X: =ctrRGBValueCP.X
+        Y: =ctrRGBValueCP.Y + ctrRGBValueCP.Height - 3
+        ZIndex: =7
+
+        sliAlphaValueCP As slider:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Default: =If(IsBlank(locAlpha) || locAlpha = 0, 100, locAlpha)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(locAlphaEdit, DisplayMode.Disabled, DisplayMode.Edit)
+            FocusedBorderColor: =sliAlphaValueCP.BorderColor
+            FocusedBorderThickness: =4
+            HandleActiveFill: =RGBA(255, 255, 255, 1)
+            HandleHoverFill: =RGBA(255, 255, 255, 1)
+            Height: =sliRedValueCP.Height
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            RailFill: =RGBA(200, 200, 200, 1)
+            RailHoverFill: =sliAlphaValueCP.RailFill
+            ShowValue: =false
+            ValueFill: =RGBA(102, 102, 102, 1)
+            ValueHoverFill: =sliAlphaValueCP.ValueFill
+            Width: =Parent.Width - sliAlphaValueCP.X
+            X: =icoEditAlphaValueCP.X + icoEditAlphaValueCP.Width + 10
+            ZIndex: =1
+
+        icoEditAlphaValueCP As icon.Edit:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(204, 204, 204, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =icoEditAlphaValueCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =30
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =CompColorPicker.Fill
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =If(locAlphaEdit, Set(locAlpha, Value(txtAlphaValueCP.Text) * 100));
+                Set(locAlphaEdit, Not(locAlphaEdit));
+                Set(locHexEdit, false);
+                Set(locRGBEdit, false)
+            PaddingBottom: =3
+            PaddingLeft: =3
+            PaddingRight: =3
+            PaddingTop: =3
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =CompColorPicker.Fill
+            Width: =30
+            X: =txtAlphaValueCP.X + txtAlphaValueCP.Width + 5
+            Y: =txtAlphaValueCP.Y
+            ZIndex: =2
+
+        txtAlphaValueCP As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =sliAlphaValueCP.Value/100
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(locAlphaEdit, DisplayMode.Edit, DisplayMode.Disabled)
+            FocusedBorderColor: =txtAlphaValueCP.BorderColor
+            Font: =Font.'Segoe UI'
+            Format: =TextFormat.Number
+            Height: =30
+            HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            MaxLength: =4
+            PressedBorderColor: =RGBA(105, 121, 126, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =11
+            Width: =60
+            X: =lblAlphaValueCP.X + lblAlphaValueCP.Width
+            Y: =lblAlphaValueCP.Y
+            ZIndex: =3
+
+        lblAlphaValueCP As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =lblAlphaValueCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =30
+            HoverBorderColor: =lblAlphaValueCP.BorderColor
+            HoverColor: =lblAlphaValueCP.Color
+            HoverFill: =lblAlphaValueCP.Fill
+            PaddingLeft: =2
+            PaddingRight: =10
+            PressedBorderColor: =lblAlphaValueCP.BorderColor
+            PressedColor: =lblAlphaValueCP.Color
+            PressedFill: =lblAlphaValueCP.Fill
+            Size: =11
+            Text: ="Alpha"
+            Width: =lblRedValueCP.Width
+            Y: =(Parent.Height - lblAlphaValueCP.Height) / 2
+            ZIndex: =4
+
+    ctrRGBValueCP As groupContainer:
+        Height: =sliBlueValueCP.Y + sliBlueValueCP.Height
+        Width: =galPaletteCP.X + galPaletteCP.Width - ctrRGBValueCP.X
+        X: =ctrHexValueCP.X + ctrHexValueCP.Width + 25
+        Y: =ctrSelectedColorCP.Y
+        ZIndex: =8
+
+        recEditRGBValuesTopCP As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(204, 204, 204, 1)
+            FocusedBorderColor: =recEditRGBValuesTopCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =1
+            HoverFill: =RGBA(204, 204, 204, 1)
+            PressedFill: =RGBA(204, 204, 204, 1)
+            Width: =icoEditRGBValuesCP.Width / 2
+            X: =txtRedValueCP.X + txtRedValueCP.Width + 5
+            Y: =txtRedValueCP.Y + txtRedValueCP.Height / 2
+            ZIndex: =1
+
+        recEditRGBValuesBottomCP As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(204, 204, 204, 1)
+            FocusedBorderColor: =recEditRGBValuesBottomCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =1
+            HoverFill: =RGBA(204, 204, 204, 1)
+            PressedFill: =RGBA(204, 204, 204, 1)
+            Width: =icoEditRGBValuesCP.Width / 2
+            X: =txtRedValueCP.X + txtRedValueCP.Width + 5
+            Y: =txtBlueValueCP.Y + txtBlueValueCP.Height / 2
+            ZIndex: =2
+
+        recEditRGBValuesRightCP As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(204, 204, 204, 1)
+            FocusedBorderColor: =recEditRGBValuesRightCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =recEditRGBValuesBottomCP.Y - recEditRGBValuesTopCP.Y
+            HoverFill: =RGBA(204, 204, 204, 1)
+            PressedFill: =RGBA(204, 204, 204, 1)
+            Width: =1
+            X: =recEditRGBValuesTopCP.X + recEditRGBValuesTopCP.Width
+            Y: =recEditRGBValuesTopCP.Y
+            ZIndex: =3
+
+        icoEditRGBValuesCP As icon.Edit:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(204, 204, 204, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =CompColorPicker.Fill
+            FocusedBorderColor: =icoEditRGBValuesCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =30
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =CompColorPicker.Fill
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =If(
+                    locRGBEdit,
+                    Set(
+                        locPickedColorRed,
+                        Value(txtRedValueCP.Text)
+                    );
+                    Set(
+                        locPickedColorGreen,
+                        Value(txtGreenValueCP.Text)
+                    );
+                    Set(
+                        locPickedColorBlue,
+                        Value(txtBlueValueCP.Text)
+                    )
+                );
+                Set(
+                    locRGBEdit,
+                    Not(locRGBEdit)
+                );
+                Set(
+                    locHexEdit,
+                    false
+                );
+                Set(
+                    locAlphaEdit,
+                    false
+                )
+            PaddingBottom: =3
+            PaddingLeft: =3
+            PaddingRight: =3
+            PaddingTop: =3
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =CompColorPicker.Fill
+            Width: =30
+            X: =txtGreenValueCP.X + txtGreenValueCP.Width + 5
+            Y: =txtGreenValueCP.Y
+            ZIndex: =4
+
+        sliBlueValueCP As slider:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Default: =locPickedColorBlue
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =sliRedValueCP.DisplayMode
+            FocusedBorderColor: =sliBlueValueCP.BorderColor
+            FocusedBorderThickness: =4
+            HandleActiveFill: =RGBA(255, 255, 255, 1)
+            HandleHoverFill: =RGBA(255, 255, 255, 1)
+            Height: =sliRedValueCP.Height
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            Max: =255
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            RailFill: =RGBA(200, 200, 200, 1)
+            RailHoverFill: =sliBlueValueCP.RailFill
+            ShowValue: =false
+            ValueFill: =RGBA(102, 102, 102, 1)
+            ValueHoverFill: =sliBlueValueCP.ValueFill
+            Visible: =sliRedValueCP.Visible
+            Width: =sliRedValueCP.Width
+            X: =sliRedValueCP.X
+            Y: =txtBlueValueCP.Y - (sliBlueValueCP.Height - txtBlueValueCP.Height) / 2
+            ZIndex: =5
+
+        txtBlueValueCP As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =sliBlueValueCP.Value
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =txtRedValueCP.DisplayMode
+            FocusedBorderColor: =txtBlueValueCP.BorderColor
+            Font: =Font.'Segoe UI'
+            Format: =TextFormat.Number
+            Height: =30
+            HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            MaxLength: =3
+            PaddingLeft: =5
+            PressedBorderColor: =RGBA(105, 121, 126, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =11
+            Width: =48
+            X: =lblBlueValueCP.X + lblBlueValueCP.Width
+            Y: =lblBlueValueCP.Y
+            ZIndex: =6
+
+        lblBlueValueCP As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =lblBlueValueCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =30
+            HoverBorderColor: =lblBlueValueCP.BorderColor
+            HoverColor: =lblBlueValueCP.Color
+            HoverFill: =lblBlueValueCP.Fill
+            PaddingLeft: =2
+            PaddingRight: =10
+            PressedBorderColor: =lblBlueValueCP.BorderColor
+            PressedColor: =lblBlueValueCP.Color
+            PressedFill: =lblBlueValueCP.Fill
+            Size: =11
+            Text: ="Blue"
+            Width: =lblRedValueCP.Width
+            X: =lblRedValueCP.X
+            Y: =lblGreenValueCP.Y + lblGreenValueCP.Height + 5
+            ZIndex: =7
+
+        sliGreenValueCP As slider:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Default: =locPickedColorGreen
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =sliRedValueCP.DisplayMode
+            FocusedBorderColor: =sliGreenValueCP.BorderColor
+            FocusedBorderThickness: =4
+            HandleActiveFill: =RGBA(255, 255, 255, 1)
+            HandleHoverFill: =RGBA(255, 255, 255, 1)
+            Height: =sliRedValueCP.Height
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            Max: =255
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            RailFill: =RGBA(200, 200, 200, 1)
+            RailHoverFill: =sliGreenValueCP.RailFill
+            ShowValue: =false
+            ValueFill: =RGBA(102, 102, 102, 1)
+            ValueHoverFill: =sliGreenValueCP.ValueFill
+            Visible: =sliRedValueCP.Visible
+            Width: =sliRedValueCP.Width
+            X: =sliRedValueCP.X
+            Y: =txtGreenValueCP.Y - (sliGreenValueCP.Height - txtGreenValueCP.Height) / 2
+            ZIndex: =8
+
+        txtGreenValueCP As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =sliGreenValueCP.Value
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =txtRedValueCP.DisplayMode
+            FocusedBorderColor: =txtGreenValueCP.BorderColor
+            Font: =Font.'Segoe UI'
+            Format: =TextFormat.Number
+            Height: =30
+            HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            MaxLength: =3
+            PaddingLeft: =5
+            PressedBorderColor: =RGBA(105, 121, 126, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =11
+            Width: =48
+            X: =lblGreenValueCP.X + lblGreenValueCP.Width
+            Y: =lblGreenValueCP.Y
+            ZIndex: =9
+
+        lblGreenValueCP As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =lblGreenValueCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =30
+            HoverBorderColor: =lblGreenValueCP.BorderColor
+            HoverColor: =lblGreenValueCP.Color
+            HoverFill: =lblGreenValueCP.Fill
+            PaddingLeft: =2
+            PaddingRight: =10
+            PressedBorderColor: =lblGreenValueCP.BorderColor
+            PressedColor: =lblGreenValueCP.Color
+            PressedFill: =lblGreenValueCP.Fill
+            Size: =11
+            Text: ="Green"
+            Width: =lblRedValueCP.Width
+            X: =lblRedValueCP.X
+            Y: =lblRedValueCP.Y + lblRedValueCP.Height + 5
+            ZIndex: =10
+
+        sliRedValueCP As slider:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Default: =locPickedColorRed
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(locRGBEdit, DisplayMode.Disabled, DisplayMode.Edit)
+            FocusedBorderColor: =sliRedValueCP.BorderColor
+            FocusedBorderThickness: =4
+            HandleActiveFill: =RGBA(255, 255, 255, 1)
+            HandleHoverFill: =RGBA(255, 255, 255, 1)
+            Height: =50
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            Max: =255
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            RailFill: =RGBA(200, 200, 200, 1)
+            RailHoverFill: =sliRedValueCP.RailFill
+            ShowValue: =false
+            ValueFill: =RGBA(102, 102, 102, 1)
+            ValueHoverFill: =sliRedValueCP.ValueFill
+            Visible: =sliRedValueCP.Width > 100
+            Width: =Parent.Width - sliRedValueCP.X
+            X: =txtRedValueCP.X + txtRedValueCP.Width + 5 + 30 + 20
+            Y: =txtRedValueCP.Y - (sliRedValueCP.Height - txtRedValueCP.Height) / 2
+            ZIndex: =11
+
+        txtRedValueCP As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =sliRedValueCP.Value
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(locRGBEdit, DisplayMode.Edit, DisplayMode.Disabled)
+            FocusedBorderColor: =txtRedValueCP.BorderColor
+            Font: =Font.'Segoe UI'
+            Format: =TextFormat.Number
+            Height: =30
+            HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            MaxLength: =3
+            OnChange: =Set(locColorRed, Value(txtRedValueCP.Text))
+            PaddingLeft: =5
+            PressedBorderColor: =RGBA(105, 121, 126, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =11
+            Width: =48
+            X: =lblRedValueCP.X + lblRedValueCP.Width
+            Y: =lblRedValueCP.Y
+            ZIndex: =12
+
+        lblRedValueCP As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =lblRedValueCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =30
+            HoverBorderColor: =lblRedValueCP.BorderColor
+            HoverColor: =lblRedValueCP.Color
+            HoverFill: =lblRedValueCP.Fill
+            PaddingLeft: =2
+            PaddingRight: =10
+            PressedBorderColor: =lblRedValueCP.BorderColor
+            PressedColor: =lblRedValueCP.Color
+            PressedFill: =lblRedValueCP.Fill
+            Size: =11
+            Text: ="Red"
+            Width: =60
+            Y: = 10 + CompColorPicker.ColorSquaresPadding
+            ZIndex: =13
+
+    ctrHexValueCP As groupContainer:
+        Height: =lblHexValueCP.Height
+        Width: =lblHexValueCP.Width + txtHexValueCP.Width + icoEditHexValueCP.Width
+        X: =ctrSelectedColorCP.X + ctrSelectedColorCP.Width + 20
+        Y: =ctrSelectedColorCP.Y + (ctrSelectedColorCP.Height - lblHexValueCP.Height) / 2 + 10 + CompColorPicker.ColorSquaresPadding
+        ZIndex: =9
+
+        lblHexValueCP As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =lblHexValueCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =30+0
+            HoverBorderColor: =lblHexValueCP.BorderColor
+            HoverColor: =lblHexValueCP.Color
+            HoverFill: =lblHexValueCP.Fill
+            PaddingLeft: =2
+            PressedBorderColor: =lblHexValueCP.BorderColor
+            PressedColor: =lblHexValueCP.Color
+            PressedFill: =lblHexValueCP.Fill
+            Size: =11
+            Text: ="Hex"
+            Width: =44+0
+            ZIndex: =1
+
+        txtHexValueCP As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            Default: |-
+                =Mid(
+                    "0123456789ABCDEF",
+                    1 + (txtRedValueCP.Text - Mod(
+                        txtRedValueCP.Text,
+                        16
+                    )) / 16,
+                    1
+                ) & Mid(
+                    "0123456789ABCDEF",
+                    1 + Mod(
+                        txtRedValueCP.Text,
+                        16
+                    ),
+                    1
+                ) & Mid(
+                    "0123456789ABCDEF",
+                    1 + (txtGreenValueCP.Text - Mod(
+                        txtGreenValueCP.Text,
+                        16
+                    )) / 16,
+                    1
+                ) & Mid(
+                    "0123456789ABCDEF",
+                    1 + Mod(
+                        txtGreenValueCP.Text,
+                        16
+                    ),
+                    1
+                ) & Mid(
+                    "0123456789ABCDEF",
+                    1 + (txtBlueValueCP.Text - Mod(
+                        txtBlueValueCP.Text,
+                        16
+                    )) / 16,
+                    1
+                ) & Mid(
+                    "0123456789ABCDEF",
+                    1 + Mod(
+                        txtBlueValueCP.Text,
+                        16
+                    ),
+                    1
+                ) & Mid(
+                    "0123456789ABCDEF",
+                    1 + (Round(txtAlphaValueCP.Text * 255, 0) - Mod(
+                        Round(txtAlphaValueCP.Text * 255, 0),
+                        16
+                    )) / 16,
+                    1
+                ) & Mid(
+                    "0123456789ABCDEF",
+                    1 + Mod(
+                        Round(txtAlphaValueCP.Text * 255, 0),
+                        16
+                    ),
+                    1
+                )
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(locHexEdit, DisplayMode.Edit, DisplayMode.Disabled)
+            FocusedBorderColor: =txtHexValueCP.BorderColor
+            Font: =Font.'Segoe UI'
+            Height: =30+0
+            HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            MaxLength: =8
+            PressedBorderColor: =RGBA(105, 121, 126, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =11
+            Width: =91+0
+            X: =lblHexValueCP.X + lblHexValueCP.Width
+            Y: =lblHexValueCP.Y
+            ZIndex: =2
+
+        icoEditHexValueCP As icon.Edit:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(204, 204, 204, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =icoEditHexValueCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =30+0
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =CompColorPicker.Fill
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =Set(locHexEdit, Not(locHexEdit));
+                Set(locRGBEdit, false);
+                Set(locAlphaEdit, false)
+            PaddingBottom: =3
+            PaddingLeft: =3
+            PaddingRight: =3
+            PaddingTop: =3
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =CompColorPicker.Fill
+            Width: =30+0
+            X: =txtHexValueCP.X + txtHexValueCP.Width
+            Y: =txtHexValueCP.Y
+            ZIndex: =3
+
+    ctrSelectedColorCP As groupContainer:
+        Height: =recSelectedColorBgCP.Y + recSelectedColorBgCP.Height
+        Width: =recSelectedColorBgCP.X + recSelectedColorBgCP.Width
+        X: =20
+        Y: =galBlackWhitePaletteCP.Y + galBlackWhitePaletteCP.Height
+        ZIndex: =10
+
+        recSelectedColorBgCP As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =CompColorPicker.SelectedColorBg
+            FocusedBorderColor: =recSelectedColorBgCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =recSelectedColorBgCP.Width
+            HoverFill: =recSelectedColorBgCP.Fill
+            PressedFill: =recSelectedColorBgCP.Fill
+            Width: =110
+            X: =recSelectedColorCP.X + 10
+            Y: =lblSelectedColorCP.Y + lblSelectedColorCP.Height + 10
+            ZIndex: =1
+
+        recSelectedColorCP As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(txtRedValueCP.Text,txtGreenValueCP.Text, txtBlueValueCP.Text, txtAlphaValueCP.Text)
+            FocusedBorderColor: =recSelectedColorCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =recSelectedColorCP.Width
+            HoverFill: =recSelectedColorCP.Fill
+            PressedFill: =recSelectedColorCP.Fill
+            Width: =recSelectedColorBgCP.Width
+            Y: =lblSelectedColorCP.Y + lblSelectedColorCP.Height
+            ZIndex: =2
+
+        lblSelectedColorCP As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =lblSelectedColorCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =lblSelectedColorCP.BorderColor
+            HoverColor: =lblSelectedColorCP.Color
+            HoverFill: =lblSelectedColorCP.Fill
+            PaddingLeft: =2
+            PressedBorderColor: =lblSelectedColorCP.BorderColor
+            PressedColor: =lblSelectedColorCP.Color
+            PressedFill: =lblSelectedColorCP.Fill
+            Size: =11
+            Text: ="Selected color"
+            Width: =120
+            Y: = 10 + CompColorPicker.ColorSquaresPadding
+            ZIndex: =3
+
+    galBlackWhitePaletteCP As gallery.galleryHorizontal:
+        DisabledBorderColor: =galBlackWhitePaletteCP.BorderColor
+        DisabledFill: =galBlackWhitePaletteCP.Fill
+        Height: =CompColorPicker.ColorSquareSize
+        HoverBorderColor: =galBlackWhitePaletteCP.BorderColor
+        HoverFill: =galBlackWhitePaletteCP.Fill
+        Items: =locBlackWhiteColors
+        PressedBorderColor: =galBlackWhitePaletteCP.BorderColor
+        PressedFill: =galBlackWhitePaletteCP.Fill
+        TemplatePadding: =0
+        TemplateSize: =galPaletteCP.TemplateWidth
+        Width: =galPaletteCP.Width
+        X: =galPaletteCP.X
+        Y: =galPaletteCP.Y + galPaletteCP.Height + 10
+        ZIndex: =11
+
+        recBlackWhiteColorCP As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =ColorValue(ThisItem.Value)
+            FocusedBorderColor: =recBlackWhiteColorCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =30
+            HoverFill: =recBlackWhiteColorCP.Fill
+            OnSelect: |-
+                =Set(locAlpha, 100);
+                Set(locMainColor, Upper(Right(ThisItem.Value, 6)));
+                Set(locOpacityBg, 0);
+                Set(locPickedColorAlpha, 0);
+                Set(locPickedColorRed, Switch(Right(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Left(locMainColor,2),1))+Switch(Left(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Left(locMainColor,2),1))*16);
+                Set(locPickedColorGreen, Switch(Right(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,3,2),1))+Switch(Left(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,3,2),1))*16);
+                Set(locPickedColorBlue, Switch(Right(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,5,2),1))+Switch(Left(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,5,2),1))*16);
+            PressedFill: =recBlackWhiteColorCP.Fill
+            Width: =CompColorPicker.ColorSquareSize + 2
+            ZIndex: =1
+
+        cirBlackWhiteSelectedColorCP As circle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(105, 121, 126, 1)
+            Fill: =If(Value(sliRedValueCP.Value + sliGreenValueCP.Value + sliBlueValueCP.Value) / 3 <= 127, White, Black)
+            FocusedBorderColor: =cirBlackWhiteSelectedColorCP.BorderColor
+            Height: =cirBlackWhiteSelectedColorCP.Width
+            HoverFill: =cirBlackWhiteSelectedColorCP.Fill
+            OnSelect: =Select(Parent)
+            PressedFill: =cirBlackWhiteSelectedColorCP.Fill
+            Visible: =recBlackWhiteColorCP.Fill = recSelectedColorCP.Fill
+            Width: =CompColorPicker.ColorSquareSize / 2
+            X: =recBlackWhiteColorCP.X + (recBlackWhiteColorCP.Width - cirBlackWhiteSelectedColorCP.Width) / 2
+            Y: =recBlackWhiteColorCP.Y + (recBlackWhiteColorCP.Height - cirBlackWhiteSelectedColorCP.Height) / 2
+            ZIndex: =2
+
+    galPaletteCP As gallery.galleryHorizontal:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DisabledBorderColor: =galPaletteCP.BorderColor
+        DisabledFill: =galPaletteCP.Fill
+        Height: =galDarkColorsCP.Y + galDarkColorsCP.Height + CompColorPicker.ColorSquaresPadding * 2 + recMainColorCP.Height + CompColorPicker.ColorSquaresPadding * 2 + galLightColorsCP.Height
+        HoverBorderColor: =galPaletteCP.BorderColor
+        HoverFill: =galPaletteCP.Fill
+        Items: =CompColorPicker.MainColors
+        PressedBorderColor: =galPaletteCP.BorderColor
+        PressedFill: =galPaletteCP.Fill
+        TemplatePadding: =0
+        TemplateSize: =CompColorPicker.ColorSquareSize + CompColorPicker.ColorSquaresPadding
+        Width: =galPaletteCP.TemplateWidth * CountRows(CompColorPicker.MainColors) + CompColorPicker.ColorSquaresPadding
+        X: =20
+        Y: =ctrTitleCP.Y + ctrTitleCP.Height * ctrTitleCP.Visible + 20
+        ZIndex: =12
+
+        galLightColorsCP As gallery.galleryVertical:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =galLightColorsCP.BorderColor
+            DisabledFill: =galLightColorsCP.Fill
+            Height: =(CompColorPicker.ColorSquareSize + CompColorPicker.ColorSquaresPadding) * CompColorPicker.ShadesCount + CompColorPicker.ColorSquaresPadding
+            HoverBorderColor: =galLightColorsCP.BorderColor
+            HoverFill: =galLightColorsCP.Fill
+            Items: |-
+                =Table({Value: 1, MainColor: ThisItem.Value},{Value: 2, MainColor: ThisItem.Value},{Value: 3, MainColor: ThisItem.Value},{Value: 4, MainColor: ThisItem.Value},{Value: 5, MainColor: ThisItem.Value},{Value: 6, MainColor: ThisItem.Value})
+            Layout: =Layout.Vertical
+            PressedBorderColor: =galLightColorsCP.BorderColor
+            PressedFill: =galLightColorsCP.Fill
+            TemplatePadding: =CompColorPicker.ColorSquaresPadding
+            TemplateSize: =CompColorPicker.ColorSquareSize
+            Width: =32
+            Y: =recMainColorCP.Y + recMainColorCP.Height + CompColorPicker.ColorSquaresPadding * 2
+            ZIndex: =2
+
+            recLightColorCP As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =ColorFade(recMainColorCP.Fill,(0.15*ThisItem.Value))
+                FocusedBorderColor: =recLightColorCP.BorderColor
+                FocusedBorderThickness: =4
+                Height: =recLightColorCP.Width
+                HoverFill: =recLightColorCP.Fill
+                OnSelect: |-
+                    =Set(locAlpha, 100);
+                    Set(locMainColor, Upper(Right(ThisItem.MainColor,6)));
+                    Set(locPickedColorAlpha, 0.15*ThisItem.Value);
+                    Set(locOpacityBg, 255);
+                    Set(locPickedColorRed, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorRedCP.Text * (1 - locPickedColorAlpha), 0));
+                    Set(locPickedColorGreen, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorGreenCP.Text * (1 - locPickedColorAlpha), 0));
+                    Set(locPickedColorBlue, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorBlueCP.Text * (1 - locPickedColorAlpha), 0));
+                PressedFill: =recLightColorCP.Fill
+                Width: =28
+                ZIndex: =1
+
+            cirLightSelectedColorCP As circle:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(105, 121, 126, 1)
+                Fill: =cirMainSelectedColorCP.Fill
+                FocusedBorderColor: =cirLightSelectedColorCP.BorderColor
+                Height: =cirLightSelectedColorCP.Width
+                HoverFill: =cirLightSelectedColorCP.Fill
+                OnSelect: =Select(Parent)
+                PressedFill: =cirLightSelectedColorCP.Fill
+                Visible: =recLightColorCP.Fill = recSelectedColorCP.Fill
+                Width: =CompColorPicker.ColorSquareSize / 2
+                X: =(Parent.Width - cirLightSelectedColorCP.Width) / 2
+                Y: =(Parent.TemplateHeight - cirLightSelectedColorCP.Height) / 2
+                ZIndex: =2
+
+        galDarkColorsCP As gallery.galleryVertical:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =galDarkColorsCP.BorderColor
+            DisabledFill: =galDarkColorsCP.Fill
+            Height: =(CompColorPicker.ColorSquareSize + CompColorPicker.ColorSquaresPadding) * CompColorPicker.ShadesCount + CompColorPicker.ColorSquaresPadding
+            HoverBorderColor: =galDarkColorsCP.BorderColor
+            HoverFill: =galDarkColorsCP.Fill
+            Items: |-
+                =Table({Value: 1, MainColor: ThisItem.Value},{Value: 2, MainColor: ThisItem.Value},{Value: 3, MainColor: ThisItem.Value},{Value: 4, MainColor: ThisItem.Value},{Value: 5, MainColor: ThisItem.Value},{Value: 6, MainColor: ThisItem.Value})
+            Layout: =Layout.Vertical
+            PressedBorderColor: =galDarkColorsCP.BorderColor
+            PressedFill: =galDarkColorsCP.Fill
+            TemplatePadding: =CompColorPicker.ColorSquaresPadding
+            TemplateSize: =CompColorPicker.ColorSquareSize
+            Width: =32
+            ZIndex: =4
+
+            recDarkColorCP As rectangle:
+                BorderColor: =recDarkColorCP.Fill
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =ColorFade(recMainColorCP.Fill,-(1-0.15*ThisItem.Value))
+                FocusedBorderColor: =recDarkColorCP.BorderColor
+                FocusedBorderThickness: =4
+                Height: =recDarkColorCP.Width
+                HoverFill: =recDarkColorCP.Fill
+                OnSelect: |-
+                    =Set(locAlpha, 100);
+                    Set(locMainColor, Upper(Right(ThisItem.MainColor,6)));
+                    Set(locPickedColorAlpha, 1-0.15*ThisItem.Value);
+                    Set(locOpacityBg, 0);
+                    Set(locPickedColorRed, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorRedCP.Text * (1 - locPickedColorAlpha), 0));
+                    Set(locPickedColorGreen, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorGreenCP.Text * (1 - locPickedColorAlpha), 0));
+                    Set(locPickedColorBlue, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorBlueCP.Text * (1 - locPickedColorAlpha), 0));
+                PressedFill: =recDarkColorCP.Fill
+                Width: =28
+                ZIndex: =1
+
+            cirDarkSelectedColorCP As circle:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(105, 121, 126, 1)
+                Fill: =cirMainSelectedColorCP.Fill
+                FocusedBorderColor: =cirDarkSelectedColorCP.BorderColor
+                Height: =cirDarkSelectedColorCP.Width
+                HoverFill: =cirDarkSelectedColorCP.Fill
+                OnSelect: =Select(Parent)
+                PressedFill: =cirDarkSelectedColorCP.Fill
+                Visible: =recDarkColorCP.Fill = recSelectedColorCP.Fill
+                Width: =CompColorPicker.ColorSquareSize / 2
+                X: =(Parent.Width - cirDarkSelectedColorCP.Width) / 2
+                Y: =(Parent.TemplateHeight - cirDarkSelectedColorCP.Height) / 2
+                ZIndex: =2
+
+        recMainColorCP As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =ColorValue(ThisItem.Value)
+            FocusedBorderColor: =recMainColorCP.BorderColor
+            FocusedBorderThickness: =4
+            Height: =recMainColorCP.Width
+            HoverFill: =recMainColorCP.Fill
+            OnSelect: |-
+                =Set(locAlpha, 100);
+                Set(locMainColor, Upper(Right(ThisItem.Value, 6)));
+                Set(locOpacityBg, 0);
+                Set(locPickedColorAlpha, 0);
+                Set(locPickedColorRed, Switch(Right(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Left(locMainColor,2),1))+Switch(Left(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Left(locMainColor,2),1))*16);
+                Set(locPickedColorGreen, Switch(Right(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,3,2),1))+Switch(Left(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,3,2),1))*16);
+                Set(locPickedColorBlue, Switch(Right(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,5,2),1))+Switch(Left(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,5,2),1))*16);
+            PressedFill: =recMainColorCP.Fill
+            Width: =CompColorPicker.ColorSquareSize + 2
+            Y: =galDarkColorsCP.Y + galDarkColorsCP.Height + CompColorPicker.ColorSquaresPadding * 2
+            ZIndex: =5
+
+        cirMainSelectedColorCP As circle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(105, 121, 126, 1)
+            Fill: =If(Value(sliRedValueCP.Value + sliGreenValueCP.Value + sliBlueValueCP.Value) / 3 <= 127, White, Black)
+            FocusedBorderColor: =cirMainSelectedColorCP.BorderColor
+            Height: =cirMainSelectedColorCP.Width
+            HoverFill: =cirMainSelectedColorCP.Fill
+            OnSelect: =Select(Parent)
+            PressedFill: =cirMainSelectedColorCP.Fill
+            Visible: =recMainColorCP.Fill = recSelectedColorCP.Fill
+            Width: =CompColorPicker.ColorSquareSize / 2
+            X: =recMainColorCP.X + (recMainColorCP.Width - cirMainSelectedColorCP.Width) / 2
+            Y: =recMainColorCP.Y + (recMainColorCP.Height - cirMainSelectedColorCP.Height) / 2
+            ZIndex: =6
+
+    ctrTitleCP As groupContainer:
+        Fill: =ColorFade(CompColorPicker.Fill, -40%)
+        Height: =40
+        Visible: =CompColorPicker.ShowTitle
+        Width: =Parent.Width
+        ZIndex: =13
+
+        lblVersionCP As label:
+            Align: =Align.Right
+            AutoHeight: =true
+            Color: =CompColorPicker.TitleColor
+            FocusedBorderColor: =lblVersionCP.BorderColor
+            HoverBorderColor: =lblVersionCP.BorderColor
+            HoverColor: =lblVersionCP.Color
+            HoverFill: =lblVersionCP.Fill
+            PressedBorderColor: =lblVersionCP.BorderColor
+            PressedColor: =lblVersionCP.Color
+            PressedFill: =lblVersionCP.Fill
+            Size: =8
+            Text: ="v1.1"
+            Visible: =Not(CompColorPicker.HideVersion)
+            Width: =40
+            X: =Parent.Width - lblVersionCP.Width - 20
+            Y: =Parent.Height - lblVersionCP.Height
+            ZIndex: =1
+
+        lblTitleCP As label:
+            Align: =Left
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =CompColorPicker.TitleColor
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =lblTitleCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =40+0
+            HoverBorderColor: =lblTitleCP.BorderColor
+            HoverColor: =lblTitleCP.Color
+            HoverFill: =lblTitleCP.Fill
+            PaddingLeft: =20
+            PressedBorderColor: =lblTitleCP.BorderColor
+            PressedColor: =lblTitleCP.Color
+            PressedFill: =lblTitleCP.Fill
+            Text: ="메인메뉴 Color 변화확인"
+            Width: =Parent.Width
+            X: =0+0
+            Y: =0+0
+            ZIndex: =4
+
+    _ctrFinalColorCP As groupContainer:
+        Height: =40
+        Visible: =false
+        Width: =150
+        X: =422
+        ZIndex: =14
+
+        _lblFinalRedCP As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =_lblFinalRedCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =_lblFinalRedCP.BorderColor
+            HoverColor: =_lblFinalRedCP.Color
+            HoverFill: =_lblFinalRedCP.Fill
+            PressedBorderColor: =_lblFinalRedCP.BorderColor
+            PressedColor: =_lblFinalRedCP.Color
+            PressedFill: =_lblFinalRedCP.Fill
+            Text: =locPickedColorRed
+            Width: =50
+            ZIndex: =1
+
+        _lblFinalGreenCP As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =_lblFinalGreenCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =_lblFinalGreenCP.BorderColor
+            HoverColor: =_lblFinalGreenCP.Color
+            HoverFill: =_lblFinalGreenCP.Fill
+            PressedBorderColor: =_lblFinalGreenCP.BorderColor
+            PressedColor: =_lblFinalGreenCP.Color
+            PressedFill: =_lblFinalGreenCP.Fill
+            Text: =locPickedColorGreen
+            Width: =50
+            X: =50
+            ZIndex: =2
+
+        _lblFinalBlueCP As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =_lblFinalBlueCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =_lblFinalBlueCP.BorderColor
+            HoverColor: =_lblFinalBlueCP.Color
+            HoverFill: =_lblFinalBlueCP.Fill
+            PressedBorderColor: =_lblFinalBlueCP.BorderColor
+            PressedColor: =_lblFinalBlueCP.Color
+            PressedFill: =_lblFinalBlueCP.Fill
+            Text: =locPickedColorBlue
+            Width: =50
+            X: =100
+            ZIndex: =3
+
+    _ctrMainColorCP As groupContainer:
+        Height: =40
+        Visible: =false
+        Width: =150
+        X: =226
+        ZIndex: =15
+
+        _lblMainColorRedCP As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =_lblMainColorRedCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =_lblMainColorRedCP.BorderColor
+            HoverColor: =_lblMainColorRedCP.Color
+            HoverFill: =_lblMainColorRedCP.Fill
+            PressedBorderColor: =_lblMainColorRedCP.BorderColor
+            PressedColor: =_lblMainColorRedCP.Color
+            PressedFill: =_lblMainColorRedCP.Fill
+            Text: =Switch(Right(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Left(locMainColor,2),1))+Switch(Left(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Left(locMainColor,2),1))*16
+            Width: =50
+            ZIndex: =1
+
+        _lblMainColorGreenCP As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =_lblMainColorGreenCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =_lblMainColorGreenCP.BorderColor
+            HoverColor: =_lblMainColorGreenCP.Color
+            HoverFill: =_lblMainColorGreenCP.Fill
+            PressedBorderColor: =_lblMainColorGreenCP.BorderColor
+            PressedColor: =_lblMainColorGreenCP.Color
+            PressedFill: =_lblMainColorGreenCP.Fill
+            Text: =Switch(Right(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,3,2),1))+Switch(Left(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,3,2),1))*16
+            Width: =50
+            X: =50
+            ZIndex: =2
+
+        _lblMainColorBlueCP As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =_lblMainColorBlueCP.BorderColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =_lblMainColorBlueCP.BorderColor
+            HoverColor: =_lblMainColorBlueCP.Color
+            HoverFill: =_lblMainColorBlueCP.Fill
+            PressedBorderColor: =_lblMainColorBlueCP.BorderColor
+            PressedColor: =_lblMainColorBlueCP.Color
+            PressedFill: =_lblMainColorBlueCP.Fill
+            Text: =Switch(Right(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,5,2),1))+Switch(Left(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,5,2),1))*16
+            Width: =50
+            X: =100
+            ZIndex: =3
+

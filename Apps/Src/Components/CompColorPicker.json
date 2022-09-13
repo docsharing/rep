@@ -1,0 +1,219 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": true,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "CompColorPicker",
+    "TemplateGuid": "7cc42590ab534214a47a6b5b74abfbcf"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "Selected color",
+      "Hidden": true,
+      "Name": "SelectedColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "The selected color",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Red",
+      "Hidden": true,
+      "Name": "Red",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Red component value",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Green",
+      "Hidden": true,
+      "Name": "Green",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Green component value",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Blue",
+      "Hidden": true,
+      "Name": "Blue",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Blue component value",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Selected button",
+      "Hidden": true,
+      "Name": "SelectedButton",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Selected button",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Selected RGB",
+      "Hidden": true,
+      "Name": "SelectedRGB",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Selected color formatted as 'rgb(rr,gg,bb,aa)'",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Selected Hex",
+      "Hidden": true,
+      "Name": "SelectedHex",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Selected color formatted as #rrggbbaa",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Selected Alpha",
+      "Hidden": true,
+      "Name": "SelectedAlpha",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Selected color alpha value",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Default color",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "DefaultColor",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Default selected color as #rrggbb",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Title",
+      "Hidden": false,
+      "Name": "Title",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Text to display as the component title",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Show title",
+      "Hidden": false,
+      "Name": "ShowTitle",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "Shows or hide the title bar of the color picker",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Main colors",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "MainColors",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "Table with the list of main colors used to generate the various shades of each color",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Index\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Value\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Shades count",
+      "Hidden": false,
+      "Name": "ShadesCount",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Number of shades to generate for each main color",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Color square size",
+      "Hidden": false,
+      "Name": "ColorSquareSize",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Size of one color square that will be applied to all color squares in the palette (in pixels)",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Color squares padding",
+      "Hidden": false,
+      "Name": "ColorSquaresPadding",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Padding between each color squares (in pixels)",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Selected color background",
+      "Hidden": false,
+      "Name": "SelectedColorBg",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Color for the background behind the selected color square",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Title color",
+      "Hidden": false,
+      "Name": "TitleColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "Text color for the component's title",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Reserved width",
+      "Hidden": true,
+      "Name": "ReservedWidth",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Calculated width of the component",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Reserved height",
+      "Hidden": true,
+      "Name": "ReservedHeight",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "Calculated height of the component",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Hide author",
+      "Hidden": false,
+      "Name": "HideAuthor",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "Hides the author from the title bar",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Hide version",
+      "Hidden": false,
+      "Name": "HideVersion",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "Hides the component's version number from the title bar",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "637986240387206252",
+  "Name": "7cc42590ab534214a47a6b5b74abfbcf",
+  "OverridableProperties": {},
+  "TemplateOriginalName": "51307081c7cc4d8d872606839f96f319",
+  "Version": "637108367538898739"
+}
