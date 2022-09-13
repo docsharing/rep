@@ -978,13 +978,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "38",
+                "InvariantScript": "47",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "38",
+                "InvariantScript": "47",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -1265,13 +1265,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "58",
+                "InvariantScript": "68",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "4",
+                "InvariantScript": "8",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -1596,13 +1596,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "93",
+            "InvariantScript": "110",
             "Property": "TemplateSize",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "110",
+            "InvariantScript": "115",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1755,7 +1755,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987075783115621",
+    "LastModifiedTimestamp": "637987077567655653",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1920,7 +1920,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987075783115621",
+  "LastModifiedTimestamp": "637987077567655653",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"
