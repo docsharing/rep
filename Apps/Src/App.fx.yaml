@@ -1,14 +1,8 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =
+        =//Populates LNB Menu
         
-        //Set LNB Values
-        
-        
-        
-        
-         
         Set(colLNBMenu,
         Table(
             {Value: "Supplier",MenuIMG:confidential_supplier2 , Screen: 'SC_SPLR_MAIN'},
@@ -19,20 +13,11 @@ App As appinfo:
         )
          );
         
+         //ColorFade(RGBA(29,161,242,1),70%) 
          
-        
-        /*
-         Set(colLNBMenu,
-        Table(
-            {Value: "Supplier",Icon: Icon.Waypoint , Screen: 'SC_SPLR_MAIN'},
-            {Value: "NDA", Icon: Icon.Waypoint, Screen: 'SC_NDA_MAIN'},
-            {Value: "Documents", Icon: Icon.Waypoint, Screen: 'SC_DOC_MAIN'},
-            {Value: "ActivityLog", Icon: Icon.Waypoint, Screen:'SC_SPLR_MAIN'},
-            {Value: "Config.", Icon: Icon.Waypoint, Screen: 'SC_CONFIG_MAIN'}
-        )
-         );
-        
-        */
          // Whether show Colorpicker or not.
          Set(showColorPicker, false);
+        
+         //Intial Color of LNB
+         Set(varMenuPrimaryColor ,RGBA(43, 43, 43, 1));
 

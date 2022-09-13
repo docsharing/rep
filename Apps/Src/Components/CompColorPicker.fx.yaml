@@ -533,7 +533,7 @@ CompColorPicker As CanvasComponent:
         HoverFill: =ColorFade(icoOKCP.Fill, -10%)
         Icon: =Icon.Check
         OnSelect: |-
-            =Set(
+            =/*Set(
                 locSelectedButton,
                 Blank()
             );
@@ -542,21 +542,18 @@ CompColorPicker As CanvasComponent:
                 "OK"
             );
             
+            */
             
-            Set(varR,sliRedValueCP.Value);
-            Set(varG, sliGreenValueCP.Value);
-            Set(varB, sliBlueValueCP.Value);
-            Set(varA, sliAlphaValueCP.Value/100);
+            Set(varMenuPrimaryColor, RGBA(sliRedValueCP.Value, sliGreenValueCP.Value, sliBlueValueCP.Value, sliAlphaValueCP.Value/100));
             
-            Set(varMenuPrimaryColor, RGBA(varR, varG, varB, varA));
-            Set(varMenuSecondaryColor, RGBA(varR-40, varG-40, varB-40, varA));
+            //Set(varMenuPrimaryColor, RGBA(varR, varG, varB, varA));
             
+            //Set(varMenuSecondaryColor, RGBA(varR-40, varG-40, varB-40, varA));
             
             
             
             
-            
-            Set(varShowCP, false);
+            Set(showColorPicker, false);
         PaddingBottom: =5
         PaddingLeft: =5
         PaddingRight: =5

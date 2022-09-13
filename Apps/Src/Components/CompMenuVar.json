@@ -34,7 +34,7 @@
             "Name": "galleryTemplate1",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 66,
+            "PublishOrderIndex": 69,
             "Rules": [
               {
                 "Category": "Design",
@@ -124,7 +124,7 @@
               {
                 "AFDDataSourceName": "",
                 "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "80",
+                "AutoRuleBindingString": "",
                 "InvariantPropertyName": "Width",
                 "IsLockable": false,
                 "NameMapSourceSchema": "?"
@@ -172,7 +172,7 @@
             "Name": "lblHoverEffect",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 67,
+            "PublishOrderIndex": 70,
             "Rules": [
               {
                 "Category": "Data",
@@ -260,7 +260,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Parent.TemplateWidth",
+                "InvariantScript": "93",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -518,7 +518,7 @@
             "Name": "lblShowSelected",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 68,
+            "PublishOrderIndex": 71,
             "Rules": [
               {
                 "Category": "Data",
@@ -852,7 +852,7 @@
             "Name": "imgMenu",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 69,
+            "PublishOrderIndex": 72,
             "Rules": [
               {
                 "Category": "Data",
@@ -1151,7 +1151,7 @@
             "Name": "lblMenuTitle",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 70,
+            "PublishOrderIndex": 73,
             "Rules": [
               {
                 "Category": "Data",
@@ -1487,7 +1487,7 @@
         "Name": "gal_LNB",
         "Parent": "CompMenuVar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 65,
+        "PublishOrderIndex": 68,
         "Rules": [
           {
             "Category": "Data",
@@ -1734,7 +1734,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637986451675354639",
+    "LastModifiedTimestamp": "637986471815902257",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1763,7 +1763,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "ColorFade(RGBA(29,161,242,1),70%)",
+        "InvariantScript": "White",
         "Property": "CurrentIndicatorColor",
         "RuleProviderType": "System"
       },
@@ -1811,7 +1811,7 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "RGBA(43, 43, 43, 1)",
+        "InvariantScript": "varMenuPrimaryColor",
         "Property": "Fill",
         "RuleProviderType": "System"
       }
@@ -1899,7 +1899,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637986451675354639",
+  "LastModifiedTimestamp": "637986471815902257",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"
