@@ -1228,7 +1228,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "18",
+                "InvariantScript": "30",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -1246,7 +1246,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "90",
+                "InvariantScript": "102",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -1258,13 +1258,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "65",
+                "InvariantScript": "58",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "9",
+                "InvariantScript": "4",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -1428,7 +1428,14 @@
             "NameMapSourceSchema": "?"
           },
           "WrapCount",
-          "TemplateSize",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "TemplateSize",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "TemplatePadding",
           "Layout",
           "Transition",
@@ -1582,13 +1589,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "88",
+            "InvariantScript": "93",
             "Property": "TemplateSize",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "100",
+            "InvariantScript": "106",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1741,7 +1748,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987073677188214",
+    "LastModifiedTimestamp": "637987074681057304",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1906,7 +1913,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987073677188214",
+  "LastModifiedTimestamp": "637987074681057304",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"

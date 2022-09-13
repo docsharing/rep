@@ -33,8 +33,8 @@ CompMenuVar As CanvasComponent:
         OnSelect: =Navigate(ThisItem.Screen)
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =88
-        Width: =100
+        TemplateSize: =93
+        Width: =106
         ZIndex: =1
 
         lblMenuTitle As label:
@@ -44,14 +44,14 @@ CompMenuVar As CanvasComponent:
                 =CompMenuVar.Color
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Arial
-            Height: =18
+            Height: =30
             OnSelect: =Select(Parent)
             Size: =12
             Text: |
                 =ThisItem.Value
-            Width: =90
-            X: =9
-            Y: =65
+            Width: =102
+            X: =4
+            Y: =58
             ZIndex: =2
 
         lblHoverEffect As label:
