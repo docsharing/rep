@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "SC_NDA_MAIN": {
+    "SC_CONFIG_MAIN": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -20,7 +20,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "SC_NDA_MAIN",
+      "Name": "SC_CONFIG_MAIN",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -69,5 +69,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "SC_NDA_MAIN"
+  "TopParentName": "SC_CONFIG_MAIN"
 }

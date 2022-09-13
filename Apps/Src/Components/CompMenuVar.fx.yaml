@@ -1,166 +1,68 @@
 CompMenuVar As CanvasComponent:
+    Color: |
+        =White 
+    CurrentIndicatorColor: =ColorFade(RGBA(29,161,242,1),70%)
     Fill: =RGBA(0, 0, 0, 0)
-    FlexibleHeight: = Label1_1.Text
-    Height: =Self.FlexibleHeight
-    Width: =App.Width
+    Height: =700
+    HoverFill: =RGBA(255,255,255,10%)
+    items: |-
+        =Table(
+            {Value: "Item 1", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 2", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 3", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 4", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 5", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 6", Icon: Icon.Waypoint, Screen: App.ActiveScreen}
+         )
+    SelectedFill: =RGBA(255,255,255,10%)
+    Width: =640
     X: =0
     Y: =0
     ZIndex: =1
 
-    Rectangle1 As rectangle:
-        DisabledFill: =varMenuPrimaryColor
-        DisplayMode: =DisplayMode.Disabled
-        Height: =70
-        Width: =App.Width
+    "gal_LNB As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Items: =CompMenuVar.items
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =260
+        Y: =40
         ZIndex: =1
 
-    Gallery1 As gallery.galleryHorizontal:
-        Height: =App.Height
-        Items: =GroupBy(Filter(colHorizontalMenu, Id = varTabSelected || ParentTab = "") ,"Id","GroupMenu")
-        ShowScrollbar: =false
-        TemplatePadding: =0
-        TemplateSize: =200
-        Width: =CountRows(Self.AllItems)*Self.TemplateWidth
-        ZIndex: =2
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
 
-        Gallery2 As gallery.variableTemplateHeightGallery:
-            Height: =600
-            Items: =AddColumns(ThisItem.GroupMenu, "Id", ThisItem.Id)
-            Layout: =Layout.Vertical
-            ShowScrollbar: =false
-            TemplatePadding: =0
-            TemplateSize: =40
-            Width: =200
-            ZIndex: =1
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
 
-            Button1_1 As button:
-                Align: =Align.Left
-                BorderThickness: =0
-                Fill: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuSecondaryColor, varMenuPrimaryColor)
-                FocusedBorderThickness: =0
-                Height: =If(IsBlank(ThisItem.ParentTab), 70, 45)
-                HoverFill: =ColorFade(varMenuSecondaryColor, -20%)
-                OnSelect: |
-                    =
-                    Set(Hinttt,"If(varTabSelected=ThisItem.Id,Set(varTabSelected,0),Set(varTabSelected,ThisItem.Id));Navigate(ThisItem.Screen)-->ThisItem.Id::" & ThisItem.Id);
-                    //Notify("Navigate to " & ThisItem.Screen.Name);
-                    If(varTabSelected=ThisItem.Id,Set(varTabSelected,0),Set(varTabSelected,ThisItem.Id));Navigate(ThisItem.Screen);
-                PaddingLeft: =15
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Text: =ThisItem.Title
-                Width: =200
-                ZIndex: =1
+        Label1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Value
+            X: =11
+            Y: =32
+            ZIndex: =6
 
-            Icon1 As icon.ChevronDown:
-                Color: =RGBA(255, 255, 255, 1)
-                Height: =40
-                Icon: =Icon.ChevronDown
-                OnSelect: =Select(Parent)
-                Visible: =IsBlank(ThisItem.ParentTab) && CountRows(Filter(colHorizontalMenu, Id = ThisItem.Id)) > 1
-                Width: =20
-                X: =170
-                ZIndex: =2
-
-            deb1 As label:
-                Fill: =RGBA(255, 191, 0, 1)
-                Height: =13
-                OnSelect: =Select(Parent)
-                Size: =8
-                Text: |-
-                    =ThisItem.Id &":tabSel-" & varTabSelected
-                Visible: =varShowDeb
-                Width: =65
-                ZIndex: =3
-
-            deb2 As label:
-                Align: =Align.Center
-                Fill: =RGBA(219, 219, 219, 1)
-                Height: =13
-                OnSelect: =Select(Parent)
-                Size: =8
-                Text: ="Button Height --> " & Button1_1.Height
-                Visible: =varShowDeb
-                Width: =118
-                X: =75
-                ZIndex: =4
-
-    Label1_1 As label:
-        BorderColor: =RGBA(255, 191, 0, 1)
-        BorderThickness: =1
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(99, 139, 44, 1)
-        Text: =If(CountRows(Filter(Gallery2.AllItems,Id=varTabSelected))=0,70,App.Height)
-        Visible: =varShowDeb
-        Width: =67
-        X: =1259
-        ZIndex: =3
-
-    Label2_1 As label:
-        Fill: =RGBA(214, 223, 238, 1)
-        Height: =140
-        Text: |-
-            ="CountRows(Filter(Gallery2.AllItems,Id=varTabSelected))=0,70,App.Height) --> varTab : ==> " & varTabSelected  
-        Visible: |
-            =varShowDeb
-        Width: =213
-        X: =1013
-        ZIndex: =4
-
-    Label11 As label:
-        Fill: =RGBA(102, 182, 227, 1)
-        Height: =125
-        Text: =Hinttt
-        Visible: =varShowDeb
-        Width: =326
-        X: =1013
-        Y: =152
-        ZIndex: =5
-
-    Icon2 As icon.LightningBolt:
-        Color: =RGBA(255, 191, 0, 1)
-        Height: =41
-        Icon: =Icon.LightningBolt
-        Width: =51
-        X: =896
-        Y: =18
-        ZIndex: =6
-
-    Icon3 As icon.Draw:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =38
-        Icon: =Icon.Draw
-        Width: =28
-        X: =263
-        Y: =15
-        ZIndex: =7
-
-    Icon5 As icon.Folder:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =46
-        Icon: =Icon.Folder
-        Width: =28
-        X: =532
-        Y: =13
-        ZIndex: =8
-
-    Icon6 As icon.OfficeBuilding:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =45
-        Icon: =Icon.OfficeBuilding
-        Width: =28
-        X: =102
-        Y: =13
-        ZIndex: =9
-
-    Icon7 As icon.Unlock:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =28
-        Icon: =Icon.Unlock
-        Width: =28
-        X: =738
-        Y: =20
-        ZIndex: =10
+        Image2 As image:
+            Image: =ThisItem.Icon 
+            OnSelect: =Select(Parent)
+            X: =95
+            Y: =32
+            ZIndex: =7
 

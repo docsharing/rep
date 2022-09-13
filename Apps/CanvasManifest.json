@@ -28,7 +28,7 @@
       "disablecdsfileandlargeimage": false,
       "dynamicschema": false,
       "enableappembeddingux": false,
-      "enablecommandbar": false,
+      "enablecommandbar": true,
       "enablecomponentnamemaps": false,
       "enablecomponentscopeoldbehavior": false,
       "enableeditcacherefreshfrequency": false,
@@ -108,6 +108,7 @@
   "ScreenOrder": [
     "SC_SPLR_MAIN",
     "SC_NDA_MAIN",
-    "SC_DOC_MAIN"
+    "SC_DOC_MAIN",
+    "SC_CONFIG_MAIN"
   ]
 }
