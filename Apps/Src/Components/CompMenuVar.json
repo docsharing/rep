@@ -71,7 +71,14 @@
             "ControlPropertyState": [
               "Live",
               "Overflow",
-              "Text",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "ThisItem.Value",
+                "InvariantPropertyName": "Text",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "Role",
               "Color",
               "DisabledColor",
@@ -162,7 +169,7 @@
               },
               {
                 "Category": "Data",
-                "InvariantScript": "ThisItem.Value",
+                "InvariantScript": "",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -1748,7 +1755,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987075417400708",
+    "LastModifiedTimestamp": "637987075783115621",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -1913,7 +1920,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987075417400708",
+  "LastModifiedTimestamp": "637987075783115621",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"

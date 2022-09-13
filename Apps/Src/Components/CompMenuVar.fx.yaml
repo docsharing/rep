@@ -79,7 +79,7 @@ CompMenuVar As CanvasComponent:
                 =Parent.TemplateHeight
             OnSelect: =Select(Parent)
             Size: =13
-            Text: =ThisItem.Value
+            Text: =
             Visible: =ThisItem.Value=CompMenuVar.Default
             Width: =8
             ZIndex: =4
