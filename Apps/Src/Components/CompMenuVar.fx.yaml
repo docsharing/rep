@@ -33,7 +33,7 @@ CompMenuVar As CanvasComponent:
         OnSelect: |-
             =
             Set(varSelectedMenuIDX, ThisItem.IDX);
-            Notify(varSelectedMenuIDX);
+            //Notify(varSelectedMenuIDX);
             Navigate(ThisItem.Screen);
         ShowScrollbar: =false
         TemplatePadding: =0

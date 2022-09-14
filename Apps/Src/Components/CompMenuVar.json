@@ -291,7 +291,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "\r\nSet(varSelectedMenuIDX, ThisItem.IDX);\r\nNotify(varSelectedMenuIDX);\r\nNavigate(ThisItem.Screen);",
+                "InvariantScript": "\r\nSet(varSelectedMenuIDX, ThisItem.IDX);\r\n//Notify(varSelectedMenuIDX);\r\nNavigate(ThisItem.Screen);",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -2002,7 +2002,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987373255349938",
+    "LastModifiedTimestamp": "637987390907561274",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -2167,7 +2167,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987373255349938",
+  "LastModifiedTimestamp": "637987390907561274",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"
