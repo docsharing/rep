@@ -11,10 +11,10 @@ CompMenuVar As CanvasComponent:
     HoverFill: =RGBA(255,255,255,10%)
     items: |-
         =Table(
-            {Value: "menu1",   MenuIMG:SampleImage,  Screen: App.ActiveScreen},
-            {Value: "menu2",   MenuIMG:SampleImage,  Screen: App.ActiveScreen},
-            {Value: "menu3",   MenuIMG:SampleImage,   Screen: App.ActiveScreen},
-            {Value: "menu4",   MenuIMG:SampleImage, Screen: App.ActiveScreen}
+            {Value: "menu1",   MenuIMG:SampleImage,  Screen: App.ActiveScreen, IDX:0},
+            {Value: "menu2",   MenuIMG:SampleImage,  Screen: App.ActiveScreen, IDX:0},
+            {Value: "menu3",   MenuIMG:SampleImage,   Screen: App.ActiveScreen, IDX:0},
+            {Value: "menu4",   MenuIMG:SampleImage, Screen: App.ActiveScreen, IDX:0}
          
          )
     SelectedFill: =RGBA(255,255,255,10%)
@@ -49,7 +49,9 @@ CompMenuVar As CanvasComponent:
                 =110
             HoverFill: |
                 =CompMenuVar.HoverFill 
-            OnSelect: =Navigate(ThisItem.Screen)
+            OnSelect: |
+                =//Set(varSelectedMenu, this);
+                Navigate(ThisItem.Screen)
             PressedFill: =CompMenuVar.SelectedFill
             Size: =13
             Text: = 

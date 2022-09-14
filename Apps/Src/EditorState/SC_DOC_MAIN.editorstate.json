@@ -101,7 +101,7 @@
         {
           "Category": "Data",
           "PropertyName": "items",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",

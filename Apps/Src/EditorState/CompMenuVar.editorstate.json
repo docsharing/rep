@@ -26,7 +26,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table(\r\n    {Value: \"Supplier\",   MenuIMG:SampleImage,  Screen: App.ActiveScreen},\r\n    {Value: \"NDA\",    MenuIMG:SampleImage,  Screen: App.ActiveScreen},\r\n    {Value: \"Collab\",   MenuIMG:SampleImage,   Screen: App.ActiveScreen},\r\n    {Value: \"Debug\",   MenuIMG:SampleImage, Screen: App.ActiveScreen}\r\n \r\n )",
+          "AutoRuleBindingString": "Table(\r\n    {Value: \"menu1\",   MenuIMG:SampleImage,  Screen: App.ActiveScreen, IDX:2},\r\n    {Value: \"menu2\",   MenuIMG:SampleImage,  Screen: App.ActiveScreen},\r\n    {Value: \"menu3\",   MenuIMG:SampleImage,   Screen: App.ActiveScreen},\r\n    {Value: \"menu4\",   MenuIMG:SampleImage, Screen: App.ActiveScreen}\r\n \r\n )",
           "InvariantPropertyName": "items",
           "IsLockable": false,
           "NameMapSourceSchema": "?"

@@ -5,7 +5,6 @@ SC_LOG_MAIN As screen:
         Default: |
             ="ActivityLog" 
         Height: =Parent.Height
-        items: =colLNBMenu
         Width: =125
 
     Label1_5 As label:

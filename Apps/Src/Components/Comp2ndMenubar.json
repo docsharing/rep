@@ -1047,12 +1047,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637987355339319083",
+    "LastModifiedTimestamp": "637987356642803427",
     "Name": "Comp2ndMenubar",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table({Item:\"업체AASASA\", Screen:SC_NDA_MAIN}, {Item:\"업체등록\",  Screen:SC_DOC_MAIN}, {Item:\"수정/삭제\", Screen:SC_NDA_MAIN}, {Item:\"HELP\",Screen:SC_CONFIG_MAIN})\r\n \r\n",
+        "InvariantScript": "Table({Item:\"TEST1\", Screen:SC_NDA_MAIN}, {Item:\"TEST2\",  Screen:SC_DOC_MAIN}, {Item:\"TEST3\", Screen:SC_NDA_MAIN}, {Item:\"TEST4\",Screen:SC_CONFIG_MAIN})\r\n \r\n",
         "Property": "Items",
         "RuleProviderType": "System"
       },
@@ -1122,7 +1122,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987355339319083",
+  "LastModifiedTimestamp": "637987356642803427",
   "Name": "5531d5d618db403dac7652145e7ddf8b",
   "OverridableProperties": {},
   "Version": "637987344695513501"

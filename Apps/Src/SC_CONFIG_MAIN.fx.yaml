@@ -4,7 +4,6 @@ SC_CONFIG_MAIN As screen:
     CompMenuVar_4 As CompMenuVar:
         Default: ="Config."
         Height: =Parent.Height
-        items: =colLNBMenu
         Width: =125
 
     Label1_1 As label:

@@ -5,7 +5,6 @@ SC_SPLR_MAIN As screen:
 
     CompMenuVar_1 As CompMenuVar:
         Height: =Parent.Height
-        items: =colLNBMenu
         Width: =125
 
     Label1_4 As label:
