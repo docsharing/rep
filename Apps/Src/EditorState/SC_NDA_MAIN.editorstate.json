@@ -67,7 +67,7 @@
         {
           "Category": "Data",
           "PropertyName": "Items",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

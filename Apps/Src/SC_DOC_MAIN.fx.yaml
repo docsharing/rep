@@ -33,6 +33,8 @@ SC_DOC_MAIN As screen:
         ZIndex: =3
 
     Comp2ndMenubar_3 As Comp2ndMenubar:
+        Items: |
+            =Filter(colTopMenu, IDX = varSelectedMenuIDX) 
         X: =125
         Y: =35
         ZIndex: =4
