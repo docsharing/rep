@@ -12,7 +12,7 @@ App As appinfo:
         )
          );
         
-          
+        Set(varSelectedMenuIDX,"0"); 
         
         //Populate Top Menu depending on the selected LNB
         Set(colTopMenu,
