@@ -15,8 +15,8 @@ SC_DOC_MAIN As screen:
         Size: =20
         Text: ="SC_DOC_MAIN"
         Width: =461
-        X: =471
-        Y: =75
+        X: =176
+        Y: =696
         ZIndex: =2
 
     Label1_7 As label:

@@ -15,8 +15,8 @@ SC_NDA_MAIN As screen:
         Size: =20
         Text: ="SC_NDA_MAIN"
         Width: =461
-        X: =471
-        Y: =75
+        X: =150
+        Y: =695
         ZIndex: =2
 
     Label1 As label:
