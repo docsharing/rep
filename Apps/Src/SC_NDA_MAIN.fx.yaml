@@ -34,3 +34,17 @@ SC_NDA_MAIN As screen:
         Y: =345
         ZIndex: =3
 
+    Label7_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(255, 191, 0, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 191, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: =varSelectedMenuIDX 
+        Width: =95
+        X: =15
+        Y: =702
+        ZIndex: =4
+
