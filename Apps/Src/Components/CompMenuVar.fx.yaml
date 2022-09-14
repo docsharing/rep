@@ -30,7 +30,11 @@ CompMenuVar As CanvasComponent:
         Height: =Parent.Height
         Items: =CompMenuVar.items
         Layout: =Layout.Vertical
-        OnSelect: =Navigate(ThisItem.Screen)
+        OnSelect: |-
+            =
+            Set(varSelectedMenuIDX, ThisItem.IDX);
+            Notify(varSelectedMenuIDX);
+            Navigate(ThisItem.Screen);
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =110

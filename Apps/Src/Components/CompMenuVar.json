@@ -58,7 +58,7 @@
         "Name": "Image2",
         "Parent": "CompMenuVar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 73,
+        "PublishOrderIndex": 72,
         "Rules": [
           {
             "Category": "Data",
@@ -281,7 +281,7 @@
             "Name": "galleryTemplate1",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 75,
+            "PublishOrderIndex": 74,
             "Rules": [
               {
                 "Category": "Design",
@@ -291,7 +291,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "Navigate(ThisItem.Screen)",
+                "InvariantScript": "\r\nSet(varSelectedMenuIDX, ThisItem.IDX);\r\nNotify(varSelectedMenuIDX);\r\nNavigate(ThisItem.Screen);",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -406,7 +406,7 @@
             "Name": "lblShowSelected",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 76,
+            "PublishOrderIndex": 75,
             "Rules": [
               {
                 "Category": "Data",
@@ -785,7 +785,7 @@
             "Name": "lblHoverEffect",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 77,
+            "PublishOrderIndex": 76,
             "Rules": [
               {
                 "Category": "Data",
@@ -1113,7 +1113,7 @@
             "Name": "imgMenu",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 78,
+            "PublishOrderIndex": 77,
             "Rules": [
               {
                 "Category": "Data",
@@ -1412,7 +1412,7 @@
             "Name": "lblMenuTitle",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 79,
+            "PublishOrderIndex": 78,
             "Rules": [
               {
                 "Category": "Data",
@@ -1762,7 +1762,7 @@
         "Name": "gal_LNB",
         "Parent": "CompMenuVar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 74,
+        "PublishOrderIndex": 73,
         "Rules": [
           {
             "Category": "Data",
@@ -2002,7 +2002,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987372397414409",
+    "LastModifiedTimestamp": "637987373255349938",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -2167,7 +2167,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987372397414409",
+  "LastModifiedTimestamp": "637987373255349938",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"
