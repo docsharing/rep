@@ -1,0 +1,45 @@
+Comp2ndMenubar As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Items: |+
+        =Table({Item:"메인화면", Screen:SC_NDA_MAIN}, {Item:"업체등록",  Screen:SC_DOC_MAIN}, {Item:"수정/삭제", Screen:SC_NDA_MAIN}, {Item:"HELP",Screen:SC_CONFIG_MAIN})
+        
+    Width: =App.Width-125
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Gallery1 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Height: =61
+        Items: |-
+            = Comp2ndMenubar.Items 
+             
+        ShowScrollbar: =false
+        TemplateSize: =200
+        Width: =857
+        X: =235
+        Y: =45
+        ZIndex: =1
+
+        Label8 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Navigate(ThisItem.Screen)
+            Size: =13
+            Text: =ThisItem.Item
+            Width: =195
+            Y: =10
+            ZIndex: =1
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =1
+        Width: =1005
+        X: =87
+        Y: =105
+        ZIndex: =2
+
