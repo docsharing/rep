@@ -15,7 +15,7 @@ App As appinfo:
           
         
         //Populate Top Menu depending on the selected LNB
-        Set(colTopMenu1,
+        Set(colTopMenu,
         Table(
         {Item:"TEST1", Screen:SC_NDA_MAIN, IDX:"1"}, 
         {Item:"TEST1-1", Screen:SC_DOC_MAIN , IDX:"1"}, 

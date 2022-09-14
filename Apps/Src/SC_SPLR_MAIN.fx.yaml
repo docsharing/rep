@@ -40,7 +40,7 @@ SC_SPLR_MAIN As screen:
 
     Comp2ndMenubar_1 As Comp2ndMenubar:
         Items: |
-            =Filter(colLNBMenu, IDX = varSelectedMenuIDX) 
+            =Filter(colTopMenu, IDX = varSelectedMenuIDX) 
              
         X: =125
         Y: =35

@@ -1514,36 +1514,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.colTopMenu1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.colTopMenu1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "colTopMenu1",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.confidential_finger"
                 }
               ],
