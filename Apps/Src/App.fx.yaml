@@ -14,7 +14,7 @@ App As appinfo:
         
         Set(varSelectedMenuIDX,"0"); 
         
-        //Populate Top Menu depending on the selected LNB
+        //Populate Top Menu using the same IDX as LNB
         Set(colTopMenu,
         Table(
         {Item:"TEST1", Screen:SC_NDA_MAIN, IDX:"1"}, 
@@ -41,7 +41,6 @@ App As appinfo:
         {Item:"TEST5-1", Screen:SC_DOC_MAIN , IDX:"5"}
          
         )
-        
         );
         
         
