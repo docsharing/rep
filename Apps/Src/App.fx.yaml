@@ -11,23 +11,24 @@ App As appinfo:
             {Value: "Config.", MenuIMG:confidential_config2, Screen: SC_CONFIG_MAIN, IDX:"5"}
         )
          );
-        
+        //Populate the Supplier related menus
         Set(varSelectedMenuIDX,"0"); 
         
         //Populate Top Menu using the same IDX as LNB
         Set(colTopMenu,
         Table(
-        {Item:"TEST1", Screen:SC_NDA_MAIN, IDX:"1"}, 
-        {Item:"TEST1-1", Screen:SC_DOC_MAIN , IDX:"1"}, 
-        {Item:"TEST1-2", Screen:SC_NDA_MAIN, IDX:"1"}, 
+        //Supplier menu
+        {Item:"Supplier List", Screen:SC_NDA_MAIN, IDX:"1"}, 
+        {Item:"New", Screen:SC_DOC_MAIN , IDX:"1"}, 
+        {Item:"Modify/Delete", Screen:SC_NDA_MAIN, IDX:"1"}, 
         {Item:"TEST1-3",Screen:SC_CONFIG_MAIN, IDX:"1"},
-         //
-        {Item:"TEST2", Screen:SC_NDA_MAIN, IDX:"2"}, 
-        {Item:"TEST2-1", Screen:SC_DOC_MAIN , IDX:"2"}, 
+         //NDA menu
+        {Item:"In Signing Process", Screen:SC_NDA_MAIN, IDX:"2"}, 
+        {Item:"Menu name here", Screen:SC_DOC_MAIN , IDX:"2"}, 
         {Item:"TEST2-2", Screen:SC_NDA_MAIN, IDX:"2"}, 
         {Item:"TEST2-3",Screen:SC_CONFIG_MAIN, IDX:"2"},
-         //
-        {Item:"TEST3", Screen:SC_NDA_MAIN, IDX:"3"}, 
+         //documents menu
+        {Item:"Document Folder List", Screen:SC_NDA_MAIN, IDX:"3"}, 
         {Item:"TEST3-1", Screen:SC_DOC_MAIN , IDX:"3"}, 
         {Item:"TEST3-2", Screen:SC_NDA_MAIN, IDX:"3"}, 
         {Item:"TEST3-3",Screen:SC_CONFIG_MAIN, IDX:"3"},
