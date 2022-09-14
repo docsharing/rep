@@ -50,11 +50,10 @@ CompMenuVar As CanvasComponent:
             HoverFill: |
                 =CompMenuVar.HoverFill 
             OnSelect: |
-                =//Set(varSelectedMenu, this);
-                
-                Set(varSelectedMenuIDX, ThisItem.IDX);
-                Notify("varSelectedMenuIDX -->" & varSelectedMenuIDX);
-                
+                =
+                //Set(varSelectedMenuIDX, ThisItem.IDX);
+                //Notify("varSelectedMenuIDX -->" & varSelectedMenuIDX);
+                //Notify("SS");
                 Navigate(ThisItem.Screen);
             PressedFill: =CompMenuVar.SelectedFill
             Size: =13

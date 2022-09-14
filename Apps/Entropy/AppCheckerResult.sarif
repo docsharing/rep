@@ -1514,6 +1514,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.varSelectedMenuIDX"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varSelectedMenuIDX",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varSelectedMenuIDX",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.confidential_finger"
                 }
               ],

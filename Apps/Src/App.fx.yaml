@@ -12,6 +12,8 @@ App As appinfo:
         )
          );
         
+         Set(varSelectedMenuIDX, "0");
+        
         //Populate Top Menu depending on the selected LNB
         //Table({Item:"TEST1", Screen:SC_NDA_MAIN}, {Item:"TEST2",  Screen:SC_DOC_MAIN}, {Item:"TEST3", Screen:SC_NDA_MAIN}, {Item:"TEST4",Screen:SC_CONFIG_MAIN})
          
