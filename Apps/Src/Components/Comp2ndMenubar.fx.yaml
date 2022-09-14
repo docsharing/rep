@@ -1,9 +1,9 @@
 Comp2ndMenubar As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =70
-    Items: |+
-        =Table({Item:"메인화면", Screen:SC_NDA_MAIN}, {Item:"업체등록",  Screen:SC_DOC_MAIN}, {Item:"수정/삭제", Screen:SC_NDA_MAIN}, {Item:"HELP",Screen:SC_CONFIG_MAIN})
-        
+    Items: |
+        =Table({Item:"업쳉ㄹㅇㄹㅇ", Screen:SC_NDA_MAIN}, {Item:"업체등록",  Screen:SC_DOC_MAIN}, {Item:"수정/삭제", Screen:SC_NDA_MAIN}, {Item:"HELP",Screen:SC_CONFIG_MAIN})
+         
     Width: =App.Width-125
     X: =0
     Y: =0
