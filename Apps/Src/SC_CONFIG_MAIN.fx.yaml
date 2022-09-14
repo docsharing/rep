@@ -15,8 +15,8 @@ SC_CONFIG_MAIN As screen:
         Size: =20
         Text: ="SC_CONFIG_MAIN" 
         Width: =461
-        X: =471
-        Y: =75
+        X: =180
+        Y: =672
         ZIndex: =2
 
     Label2 As label:
@@ -40,4 +40,9 @@ SC_CONFIG_MAIN As screen:
         Width: =CompColorPicker_1.ReservedWidth
         X: =207
         ZIndex: =4
+
+    Comp2ndMenubar_5 As Comp2ndMenubar:
+        X: =125
+        Y: =35
+        ZIndex: =5
 
