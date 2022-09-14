@@ -16,20 +16,36 @@ App As appinfo:
         
         //Populate Top Menu depending on the selected LNB
         Set(colTopMenu1,
-        Table({Item:"TEST1", Screen:SC_NDA_MAIN}, {Item:"TEST2",  Screen:SC_DOC_MAIN}, {Item:"TEST3", Screen:SC_NDA_MAIN}, {Item:"TEST4",Screen:SC_CONFIG_MAIN});
+        Table(
+        {Item:"TEST1", Screen:SC_NDA_MAIN, IDX:"1"}, 
+        {Item:"TEST1-1", Screen:SC_DOC_MAIN , IDX:"1"}, 
+        {Item:"TEST1-2", Screen:SC_NDA_MAIN, IDX:"1"}, 
+        {Item:"TEST1-3",Screen:SC_CONFIG_MAIN, IDX:"1"},
+         //
+        {Item:"TEST2", Screen:SC_NDA_MAIN, IDX:"2"}, 
+        {Item:"TEST2-1", Screen:SC_DOC_MAIN , IDX:"2"}, 
+        {Item:"TEST2-2", Screen:SC_NDA_MAIN, IDX:"2"}, 
+        {Item:"TEST2-3",Screen:SC_CONFIG_MAIN, IDX:"2"},
+         //
+        {Item:"TEST3", Screen:SC_NDA_MAIN, IDX:"3"}, 
+        {Item:"TEST3-1", Screen:SC_DOC_MAIN , IDX:"3"}, 
+        {Item:"TEST3-2", Screen:SC_NDA_MAIN, IDX:"3"}, 
+        {Item:"TEST3-3",Screen:SC_CONFIG_MAIN, IDX:"3"},
+        //
+        {Item:"TEST4", Screen:SC_NDA_MAIN, IDX:"4"}, 
+        {Item:"TEST4-1", Screen:SC_DOC_MAIN , IDX:"4"}, 
+        {Item:"TEST4-2", Screen:SC_NDA_MAIN, IDX:"4"}, 
+        {Item:"TEST4-3",Screen:SC_CONFIG_MAIN, IDX:"4"},
+        //
+        {Item:"TEST5", Screen:SC_NDA_MAIN, IDX:"5"}, 
+        {Item:"TEST5-1", Screen:SC_DOC_MAIN , IDX:"5"}
+         
+        )
         
-        Set(colTopMenu2,
-        Table({Item:"TEST1", Screen:SC_NDA_MAIN}, {Item:"TEST2",  Screen:SC_DOC_MAIN}, {Item:"TEST3", Screen:SC_NDA_MAIN}, {Item:"TEST4",Screen:SC_CONFIG_MAIN});
-        
-        Set(colTopMenu3,
-        Table({Item:"TEST1", Screen:SC_NDA_MAIN}, {Item:"TEST2",  Screen:SC_DOC_MAIN}, {Item:"TEST3", Screen:SC_NDA_MAIN}, {Item:"TEST4",Screen:SC_CONFIG_MAIN});
-        
-        Set(colTopMenu4,
-        Table({Item:"TEST1", Screen:SC_NDA_MAIN}, {Item:"TEST2",  Screen:SC_DOC_MAIN}, {Item:"TEST3", Screen:SC_NDA_MAIN}, {Item:"TEST4",Screen:SC_CONFIG_MAIN});
+        );
         
         
         
-         //ColorFade(RGBA(29,161,242,1),70%) 
          
          // Check Whether Colorpicker is visible or not.
          Set(showColorPicker, false);
