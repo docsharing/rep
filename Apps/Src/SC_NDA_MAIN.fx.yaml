@@ -5,7 +5,7 @@ SC_NDA_MAIN As screen:
         Default: ="NDA"
         Height: =Parent.Height
         items: =colLNBMenu
-        Width: =115
+        Width: =125
 
     Label1_3 As label:
         BorderColor: =RGBA(0, 89, 178, 1)

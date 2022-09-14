@@ -91,11 +91,11 @@
     "Id": "bef0a0bd-36c4-43d9-865b-105cc2a4e19d",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "GitConnApp",
+    "Name": "DocSharing App",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
-    "AppName": "GitConnApp",
+    "AppName": "DocSharing App",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
