@@ -41,7 +41,13 @@ SC_SPLR_MAIN As screen:
     Comp2ndMenubar_1 As Comp2ndMenubar:
         Items: |
             =Filter(colTopMenu, IDX = varSelectedMenuIDX) 
-             
+            
+            /*Table(
+            {Item:"TEST1", Screen:SC_NDA_MAIN, IDX:"1"}, 
+            {Item:"TEST1-1", Screen:SC_DOC_MAIN , IDX:"1"}, 
+            {Item:"TEST1-2", Screen:SC_NDA_MAIN, IDX:"1"}, 
+            {Item:"TEST1-3",Screen:SC_CONFIG_MAIN, IDX:"1"})
+             */
         X: =125
         Y: =35
         ZIndex: =4

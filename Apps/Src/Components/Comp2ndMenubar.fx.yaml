@@ -9,7 +9,7 @@ Comp2ndMenubar As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    Gallery1 As gallery.galleryHorizontal:
+    galTopMenu As gallery.galleryHorizontal:
         BorderColor: =RGBA(0, 89, 178, 1)
         Height: =50
         Items: |-
@@ -22,7 +22,7 @@ Comp2ndMenubar As CanvasComponent:
         Y: =9
         ZIndex: =1
 
-        Label8 As label:
+        lblMenuName As label:
             Align: =Align.Center
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
@@ -35,7 +35,7 @@ Comp2ndMenubar As CanvasComponent:
             Y: =10
             ZIndex: =1
 
-    Rectangle1 As rectangle:
+    shpLine As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 1)
         Height: =1
@@ -46,13 +46,4 @@ Comp2ndMenubar As CanvasComponent:
         X: =87
         Y: =65
         ZIndex: =2
-
-    Rectangle1_1 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(0, 0, 0, 1)
-        Height: =40
-        Width: =0
-        X: =107
-        Y: =69
-        ZIndex: =3
 

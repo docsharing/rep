@@ -1364,19 +1364,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comp2ndMenubar.Gallery1.TabIndex"
+                  "fullyQualifiedName": "Comp2ndMenubar.galTopMenu.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comp2ndMenubar.Gallery1.TabIndex",
+                  "fullyQualifiedName": "Comp2ndMenubar.galTopMenu.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Comp2ndMenubar",
-                "type": "Comp2ndMenubar.Gallery1"
+                "type": "Comp2ndMenubar.galTopMenu"
               }
             }
           ],
@@ -1394,19 +1394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comp2ndMenubar.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "Comp2ndMenubar.galTopMenu.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comp2ndMenubar.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "Comp2ndMenubar.galTopMenu.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Comp2ndMenubar",
-                "type": "Comp2ndMenubar.Gallery1"
+                "type": "Comp2ndMenubar.galTopMenu"
               }
             }
           ],
@@ -1424,19 +1424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comp2ndMenubar.Gallery1.Label8.FocusedBorderThickness"
+                  "fullyQualifiedName": "Comp2ndMenubar.galTopMenu.lblMenuName.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comp2ndMenubar.Gallery1.Label8.FocusedBorderThickness",
+                  "fullyQualifiedName": "Comp2ndMenubar.galTopMenu.lblMenuName.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Comp2ndMenubar",
-                "type": "Comp2ndMenubar.Gallery1.Label8"
+                "type": "Comp2ndMenubar.galTopMenu.lblMenuName"
               }
             }
           ],
@@ -1454,19 +1454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Comp2ndMenubar.Gallery1.Label8.TabIndex"
+                  "fullyQualifiedName": "Comp2ndMenubar.galTopMenu.lblMenuName.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Comp2ndMenubar.Gallery1.Label8.TabIndex",
+                  "fullyQualifiedName": "Comp2ndMenubar.galTopMenu.lblMenuName.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Comp2ndMenubar",
-                "type": "Comp2ndMenubar.Gallery1.Label8"
+                "type": "Comp2ndMenubar.galTopMenu.lblMenuName"
               }
             }
           ],
