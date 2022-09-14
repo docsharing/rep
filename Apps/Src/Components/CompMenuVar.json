@@ -1023,7 +1023,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "//Set(varSelectedMenu, this);\r\nSet(varSelectedMenuIDX, ThisItem.IDX);\r\nNavigate(ThisItem.Screen);\r\n",
+                "InvariantScript": "//Set(varSelectedMenu, this);\r\n\r\nSet(varSelectedMenuIDX, ThisItem.IDX);\r\nNotify(\"varSelectedMenuIDX -->\" & varSelectedMenuIDX);\r\n\r\nNavigate(ThisItem.Screen);\r\n",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -2009,7 +2009,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987363666948839",
+    "LastModifiedTimestamp": "637987366600323440",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -2174,7 +2174,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987363666948839",
+  "LastModifiedTimestamp": "637987366600323440",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"
