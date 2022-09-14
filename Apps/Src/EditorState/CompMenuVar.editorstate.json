@@ -23,14 +23,7 @@
         "X",
         "Y",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table(\r\n    {Value: \"menu1\",   MenuIMG:SampleImage,  Screen: App.ActiveScreen, IDX:2},\r\n    {Value: \"menu2\",   MenuIMG:SampleImage,  Screen: App.ActiveScreen},\r\n    {Value: \"menu3\",   MenuIMG:SampleImage,   Screen: App.ActiveScreen},\r\n    {Value: \"menu4\",   MenuIMG:SampleImage, Screen: App.ActiveScreen}\r\n \r\n )",
-          "InvariantPropertyName": "items",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "items",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
