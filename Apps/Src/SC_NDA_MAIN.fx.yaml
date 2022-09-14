@@ -4,6 +4,7 @@ SC_NDA_MAIN As screen:
     CompMenuVar_2 As CompMenuVar:
         Default: ="NDA"
         Height: =Parent.Height
+        items: =colLNBMenu
         Width: =125
 
     Label1_3 As label:

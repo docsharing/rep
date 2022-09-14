@@ -408,7 +408,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "Metadata": {
-        "AllowAccessToGlobals": false,
+        "AllowAccessToGlobals": true,
         "AllowCustomization": true,
         "Description": ""
       },
@@ -420,7 +420,7 @@
         {
           "Category": "Data",
           "PropertyName": "items",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

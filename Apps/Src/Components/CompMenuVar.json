@@ -2,7 +2,7 @@
   "ComponentAllowCustomization": true,
   "ComponentChangedSinceFileImport": true,
   "ComponentDefinitionInfo": {
-    "AllowAccessToGlobals": false,
+    "AllowAccessToGlobals": true,
     "Children": [
       {
         "AllowAccessToGlobals": true,
@@ -58,7 +58,7 @@
         "Name": "Image2",
         "Parent": "CompMenuVar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 72,
+        "PublishOrderIndex": 73,
         "Rules": [
           {
             "Category": "Data",
@@ -281,7 +281,7 @@
             "Name": "galleryTemplate1",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 74,
+            "PublishOrderIndex": 75,
             "Rules": [
               {
                 "Category": "Design",
@@ -406,7 +406,7 @@
             "Name": "lblShowSelected",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 75,
+            "PublishOrderIndex": 76,
             "Rules": [
               {
                 "Category": "Data",
@@ -785,7 +785,7 @@
             "Name": "lblHoverEffect",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 76,
+            "PublishOrderIndex": 77,
             "Rules": [
               {
                 "Category": "Data",
@@ -1023,7 +1023,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "//Set(varSelectedMenu, this);\r\nNavigate(ThisItem.Screen)\r\n",
+                "InvariantScript": "//Set(varSelectedMenu, this);\r\nSet(varSelectedMenuIDX, ThisItem.IDX);\r\nNavigate(ThisItem.Screen);\r\n",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -1113,7 +1113,7 @@
             "Name": "imgMenu",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 77,
+            "PublishOrderIndex": 78,
             "Rules": [
               {
                 "Category": "Data",
@@ -1412,7 +1412,7 @@
             "Name": "lblMenuTitle",
             "Parent": "gal_LNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 78,
+            "PublishOrderIndex": 79,
             "Rules": [
               {
                 "Category": "Data",
@@ -1762,7 +1762,7 @@
         "Name": "gal_LNB",
         "Parent": "CompMenuVar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 73,
+        "PublishOrderIndex": 74,
         "Rules": [
           {
             "Category": "Data",
@@ -2009,7 +2009,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637987359035547993",
+    "LastModifiedTimestamp": "637987363666948839",
     "Name": "CompMenuVar",
     "Rules": [
       {
@@ -2093,7 +2093,7 @@
     ]
   },
   "ComponentManifest": {
-    "AllowAccessToGlobals": false,
+    "AllowAccessToGlobals": true,
     "AllowCustomization": true,
     "Description": "",
     "Name": "CompMenuVar",
@@ -2174,7 +2174,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637987359035547993",
+  "LastModifiedTimestamp": "637987363666948839",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"

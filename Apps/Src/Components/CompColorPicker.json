@@ -115,7 +115,7 @@
             "Name": "lblTitleCP",
             "Parent": "ctrTitleCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 17,
+            "PublishOrderIndex": 18,
             "Rules": [
               {
                 "Category": "Data",
@@ -475,7 +475,7 @@
             "Name": "lblVersionCP",
             "Parent": "ctrTitleCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 18,
+            "PublishOrderIndex": 19,
             "Rules": [
               {
                 "Category": "Data",
@@ -795,7 +795,7 @@
         "Name": "ctrTitleCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 16,
+        "PublishOrderIndex": 17,
         "Rules": [
           {
             "Category": "Design",
@@ -976,7 +976,7 @@
             "Name": "_lblMainColorRedCP",
             "Parent": "_ctrMainColorCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 20,
+            "PublishOrderIndex": 21,
             "Rules": [
               {
                 "Category": "Data",
@@ -1328,7 +1328,7 @@
             "Name": "_lblMainColorGreenCP",
             "Parent": "_ctrMainColorCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 21,
+            "PublishOrderIndex": 22,
             "Rules": [
               {
                 "Category": "Data",
@@ -1680,7 +1680,7 @@
             "Name": "_lblMainColorBlueCP",
             "Parent": "_ctrMainColorCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 22,
+            "PublishOrderIndex": 23,
             "Rules": [
               {
                 "Category": "Data",
@@ -1987,7 +1987,7 @@
         "Name": "_ctrMainColorCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 19,
+        "PublishOrderIndex": 20,
         "Rules": [
           {
             "Category": "Design",
@@ -2168,7 +2168,7 @@
             "Name": "_lblFinalRedCP",
             "Parent": "_ctrFinalColorCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 24,
+            "PublishOrderIndex": 25,
             "Rules": [
               {
                 "Category": "Data",
@@ -2520,7 +2520,7 @@
             "Name": "_lblFinalGreenCP",
             "Parent": "_ctrFinalColorCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 25,
+            "PublishOrderIndex": 26,
             "Rules": [
               {
                 "Category": "Data",
@@ -2872,7 +2872,7 @@
             "Name": "_lblFinalBlueCP",
             "Parent": "_ctrFinalColorCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 26,
+            "PublishOrderIndex": 27,
             "Rules": [
               {
                 "Category": "Data",
@@ -3186,7 +3186,7 @@
         "Name": "_ctrFinalColorCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 23,
+        "PublishOrderIndex": 24,
         "Rules": [
           {
             "Category": "Design",
@@ -3299,7 +3299,7 @@
             "Name": "galleryTemplate10",
             "Parent": "galPaletteCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 28,
+            "PublishOrderIndex": 29,
             "Rules": [
               {
                 "Category": "Design",
@@ -3346,7 +3346,7 @@
                 "Name": "galleryTemplate8_4",
                 "Parent": "galDarkColorsCP",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 30,
+                "PublishOrderIndex": 31,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -3462,7 +3462,7 @@
                 "Name": "recDarkColorCP",
                 "Parent": "galDarkColorsCP",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 31,
+                "PublishOrderIndex": 32,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -3674,7 +3674,7 @@
                 "Name": "cirDarkSelectedColorCP",
                 "Parent": "galDarkColorsCP",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 32,
+                "PublishOrderIndex": 33,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -3889,7 +3889,7 @@
             "Name": "galDarkColorsCP",
             "Parent": "galPaletteCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 29,
+            "PublishOrderIndex": 30,
             "Rules": [
               {
                 "Category": "Data",
@@ -4166,7 +4166,7 @@
             "Name": "recMainColorCP",
             "Parent": "galPaletteCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 33,
+            "PublishOrderIndex": 34,
             "Rules": [
               {
                 "Category": "Data",
@@ -4378,7 +4378,7 @@
             "Name": "cirMainSelectedColorCP",
             "Parent": "galPaletteCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 34,
+            "PublishOrderIndex": 35,
             "Rules": [
               {
                 "Category": "Data",
@@ -4521,7 +4521,7 @@
                 "Name": "galleryTemplate8_3",
                 "Parent": "galLightColorsCP",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 36,
+                "PublishOrderIndex": 37,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -4651,7 +4651,7 @@
                 "Name": "recLightColorCP",
                 "Parent": "galLightColorsCP",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 37,
+                "PublishOrderIndex": 38,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -4863,7 +4863,7 @@
                 "Name": "cirLightSelectedColorCP",
                 "Parent": "galLightColorsCP",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 38,
+                "PublishOrderIndex": 39,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -5084,7 +5084,7 @@
             "Name": "galLightColorsCP",
             "Parent": "galPaletteCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 35,
+            "PublishOrderIndex": 36,
             "Rules": [
               {
                 "Category": "Data",
@@ -5363,7 +5363,7 @@
         "Name": "galPaletteCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 27,
+        "PublishOrderIndex": 28,
         "Rules": [
           {
             "Category": "Data",
@@ -5566,7 +5566,7 @@
             "Name": "galleryTemplate1_1",
             "Parent": "galBlackWhitePaletteCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 40,
+            "PublishOrderIndex": 41,
             "Rules": [
               {
                 "Category": "Design",
@@ -5682,7 +5682,7 @@
             "Name": "recBlackWhiteColorCP",
             "Parent": "galBlackWhitePaletteCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 41,
+            "PublishOrderIndex": 42,
             "Rules": [
               {
                 "Category": "Data",
@@ -5894,7 +5894,7 @@
             "Name": "cirBlackWhiteSelectedColorCP",
             "Parent": "galBlackWhitePaletteCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 42,
+            "PublishOrderIndex": 43,
             "Rules": [
               {
                 "Category": "Data",
@@ -6065,7 +6065,7 @@
         "Name": "galBlackWhitePaletteCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 39,
+        "PublishOrderIndex": 40,
         "Rules": [
           {
             "Category": "Data",
@@ -6350,7 +6350,7 @@
             "Name": "lblSelectedColorCP",
             "Parent": "ctrSelectedColorCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 44,
+            "PublishOrderIndex": 45,
             "Rules": [
               {
                 "Category": "Data",
@@ -6698,7 +6698,7 @@
             "Name": "recSelectedColorCP",
             "Parent": "ctrSelectedColorCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 45,
+            "PublishOrderIndex": 46,
             "Rules": [
               {
                 "Category": "Data",
@@ -6896,7 +6896,7 @@
             "Name": "recSelectedColorBgCP",
             "Parent": "ctrSelectedColorCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 46,
+            "PublishOrderIndex": 47,
             "Rules": [
               {
                 "Category": "Data",
@@ -7066,7 +7066,7 @@
         "Name": "ctrSelectedColorCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 43,
+        "PublishOrderIndex": 44,
         "Rules": [
           {
             "Category": "Design",
@@ -7269,7 +7269,7 @@
             "Name": "sliRedValueCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 48,
+            "PublishOrderIndex": 49,
             "Rules": [
               {
                 "Category": "Data",
@@ -7579,7 +7579,7 @@
             "Name": "lblRedValueCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 49,
+            "PublishOrderIndex": 50,
             "Rules": [
               {
                 "Category": "Data",
@@ -7982,7 +7982,7 @@
             "Name": "txtRedValueCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 50,
+            "PublishOrderIndex": 51,
             "Rules": [
               {
                 "Category": "Data",
@@ -8342,7 +8342,7 @@
             "Name": "recEditRGBValuesTopCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 51,
+            "PublishOrderIndex": 52,
             "Rules": [
               {
                 "Category": "Data",
@@ -8540,7 +8540,7 @@
             "Name": "recEditRGBValuesRightCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 52,
+            "PublishOrderIndex": 53,
             "Rules": [
               {
                 "Category": "Data",
@@ -8770,7 +8770,7 @@
             "Name": "sliGreenValueCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 53,
+            "PublishOrderIndex": 54,
             "Rules": [
               {
                 "Category": "Data",
@@ -9080,7 +9080,7 @@
             "Name": "lblGreenValueCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 54,
+            "PublishOrderIndex": 55,
             "Rules": [
               {
                 "Category": "Data",
@@ -9482,7 +9482,7 @@
             "Name": "txtGreenValueCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 55,
+            "PublishOrderIndex": 56,
             "Rules": [
               {
                 "Category": "Data",
@@ -9898,7 +9898,7 @@
             "Name": "icoEditRGBValuesCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 56,
+            "PublishOrderIndex": 57,
             "Rules": [
               {
                 "Category": "Data",
@@ -10206,7 +10206,7 @@
             "Name": "sliBlueValueCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 57,
+            "PublishOrderIndex": 58,
             "Rules": [
               {
                 "Category": "Data",
@@ -10516,7 +10516,7 @@
             "Name": "lblBlueValueCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 58,
+            "PublishOrderIndex": 59,
             "Rules": [
               {
                 "Category": "Data",
@@ -10918,7 +10918,7 @@
             "Name": "txtBlueValueCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 59,
+            "PublishOrderIndex": 60,
             "Rules": [
               {
                 "Category": "Data",
@@ -11272,7 +11272,7 @@
             "Name": "recEditRGBValuesBottomCP",
             "Parent": "ctrRGBValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 60,
+            "PublishOrderIndex": 61,
             "Rules": [
               {
                 "Category": "Data",
@@ -11414,7 +11414,7 @@
         "Name": "ctrRGBValueCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 47,
+        "PublishOrderIndex": 48,
         "Rules": [
           {
             "Category": "Design",
@@ -11617,7 +11617,7 @@
             "Name": "lblHexValueCP",
             "Parent": "ctrHexValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 62,
+            "PublishOrderIndex": 63,
             "Rules": [
               {
                 "Category": "Data",
@@ -12005,7 +12005,7 @@
             "Name": "txtHexValueCP",
             "Parent": "ctrHexValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 63,
+            "PublishOrderIndex": 64,
             "Rules": [
               {
                 "Category": "Data",
@@ -12414,7 +12414,7 @@
             "Name": "icoEditHexValueCP",
             "Parent": "ctrHexValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 64,
+            "PublishOrderIndex": 65,
             "Rules": [
               {
                 "Category": "Data",
@@ -12634,7 +12634,7 @@
         "Name": "ctrHexValueCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 61,
+        "PublishOrderIndex": 62,
         "Rules": [
           {
             "Category": "Design",
@@ -12836,7 +12836,7 @@
             "Name": "sliAlphaValueCP",
             "Parent": "ctrAlphaValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 66,
+            "PublishOrderIndex": 67,
             "Rules": [
               {
                 "Category": "Data",
@@ -13140,7 +13140,7 @@
             "Name": "lblAlphaValueCP",
             "Parent": "ctrAlphaValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 67,
+            "PublishOrderIndex": 68,
             "Rules": [
               {
                 "Category": "Data",
@@ -13549,7 +13549,7 @@
             "Name": "txtAlphaValueCP",
             "Parent": "ctrAlphaValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 68,
+            "PublishOrderIndex": 69,
             "Rules": [
               {
                 "Category": "Data",
@@ -13958,7 +13958,7 @@
             "Name": "icoEditAlphaValueCP",
             "Parent": "ctrAlphaValueCP",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 69,
+            "PublishOrderIndex": 70,
             "Rules": [
               {
                 "Category": "Data",
@@ -14178,7 +14178,7 @@
         "Name": "ctrAlphaValueCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 65,
+        "PublishOrderIndex": 66,
         "Rules": [
           {
             "Category": "Design",
@@ -14416,7 +14416,7 @@
         "Name": "icoCancelCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 70,
+        "PublishOrderIndex": 71,
         "Rules": [
           {
             "Category": "Data",
@@ -14761,7 +14761,7 @@
         "Name": "icoOKCP",
         "Parent": "CompColorPicker",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 71,
+        "PublishOrderIndex": 72,
         "Rules": [
           {
             "Category": "Data",

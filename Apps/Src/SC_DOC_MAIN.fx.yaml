@@ -4,6 +4,7 @@ SC_DOC_MAIN As screen:
     CompMenuVar_3 As CompMenuVar:
         Default: ="Documents"
         Height: =Parent.Height
+        items: =colLNBMenu
         Width: =125
 
     Label1_2 As label:
