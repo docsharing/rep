@@ -11,8 +11,7 @@ App As appinfo:
             {Value: "Config.", MenuIMG:confidential_config2, Screen: SC_CONFIG_MAIN, IDX:"5"}
         )
          );
-        //Populate the Supplier related menus
-        Set(varSelectedMenuIDX,"0"); 
+        
         
         //Populate Top Menu using the same IDX as LNB
         Set(colTopMenu,
@@ -44,7 +43,8 @@ App As appinfo:
         )
         );
         
-        
+        //Populate the Supplier related menus
+        Set(varSelectedMenuIDX,"1"); 
         
          
          // Check Whether Colorpicker is visible or not.
