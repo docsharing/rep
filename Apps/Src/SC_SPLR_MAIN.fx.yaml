@@ -35,7 +35,7 @@ SC_SPLR_MAIN As screen:
             특정시간대 Commit 실행"
         Width: =1148
         X: =171
-        Y: =664
+        Y: =644
         ZIndex: =3
 
     Comp2ndMenubar_1 As Comp2ndMenubar:
