@@ -1,7 +1,7 @@
 SC_CONFIG_MAIN As screen:
     Fill: =RGBA(219, 219, 219, 1)
 
-    CompMenuVar_4 As CompMenuVar:
+    CompMenuVar_4 As CompGNBMenubar:
         Default: ="Config."
         Height: =Parent.Height
         items: =colLNBMenu

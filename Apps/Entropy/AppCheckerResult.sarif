@@ -1304,19 +1304,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompMenuVar.gal_LNB.AccessibleLabel"
+                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompMenuVar.gal_LNB.AccessibleLabel",
+                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CompMenuVar",
-                "type": "CompMenuVar.gal_LNB"
+                "module": "CompGNBMenubar",
+                "type": "CompGNBMenubar.gal_LNB"
               }
             }
           ],
@@ -1334,19 +1334,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompMenuVar.gal_LNB.TabIndex"
+                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompMenuVar.gal_LNB.TabIndex",
+                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CompMenuVar",
-                "type": "CompMenuVar.gal_LNB"
+                "module": "CompGNBMenubar",
+                "type": "CompGNBMenubar.gal_LNB"
               }
             }
           ],
@@ -1364,19 +1364,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompMenuVar.gal_LNB.lblHoverEffect.FocusedBorderThickness"
+                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.lblHoverEffect.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompMenuVar.gal_LNB.lblHoverEffect.FocusedBorderThickness",
+                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.lblHoverEffect.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "CompMenuVar",
-                "type": "CompMenuVar.gal_LNB.lblHoverEffect"
+                "module": "CompGNBMenubar",
+                "type": "CompGNBMenubar.gal_LNB.lblHoverEffect"
               }
             }
           ],
@@ -1394,19 +1394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompMenuVar.gal_LNB.lblHoverEffect.TabIndex"
+                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.lblHoverEffect.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompMenuVar.gal_LNB.lblHoverEffect.TabIndex",
+                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.lblHoverEffect.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CompMenuVar",
-                "type": "CompMenuVar.gal_LNB.lblHoverEffect"
+                "module": "CompGNBMenubar",
+                "type": "CompGNBMenubar.gal_LNB.lblHoverEffect"
               }
             }
           ],

@@ -1,7 +1,7 @@
 SC_LOG_MAIN As screen:
     Fill: =Color.White
 
-    CompMenuVar_5 As CompMenuVar:
+    CompMenuVar_5 As CompGNBMenubar:
         Default: |
             ="ActivityLog" 
         Height: =Parent.Height

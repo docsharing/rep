@@ -1,4 +1,4 @@
-CompMenuVar As CanvasComponent:
+CompGNBMenubar As CanvasComponent:
     Color: |
         =White 
     CurrentIndicatorColor: =White
@@ -28,7 +28,7 @@ CompMenuVar As CanvasComponent:
         BorderColor: =RGBA(0, 18, 107, 1)
         Default: = 
         Height: =Parent.Height
-        Items: =CompMenuVar.items
+        Items: =CompGNBMenubar.items
         Layout: =Layout.Vertical
         OnSelect: |-
             =
@@ -47,19 +47,19 @@ CompMenuVar As CanvasComponent:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: |-
-                =If(ThisItem.Value=CompMenuVar.Default, CompMenuVar.SelectedFill, Transparent) 
+                =If(ThisItem.Value=CompGNBMenubar.Default, CompGNBMenubar.SelectedFill, Transparent) 
                 //If(ThisItem.Value=CompMenuVar.Default, RGBA(255,241,197,100), Transparent)    
             Height: |
                 =110
             HoverFill: |
-                =CompMenuVar.HoverFill 
+                =CompGNBMenubar.HoverFill 
             OnSelect: |
                 =
                 //Set(varSelectedMenuIDX, ThisItem.IDX);
                 //Notify("varSelectedMenuIDX -->" & varSelectedMenuIDX);
                 //Notify("SS");
                 Navigate(ThisItem.Screen);
-            PressedFill: =CompMenuVar.SelectedFill
+            PressedFill: =CompGNBMenubar.SelectedFill
             Size: =13
             Text: = 
             Width: |
@@ -71,7 +71,7 @@ CompMenuVar As CanvasComponent:
             Align: =Align.Center
             BorderColor: =RGBA(0, 18, 107, 1)
             Color: |
-                =CompMenuVar.Color
+                =CompGNBMenubar.Color
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.Arial
             Height: =30
@@ -88,13 +88,13 @@ CompMenuVar As CanvasComponent:
             BorderColor: =RGBA(0, 18, 107, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =CompMenuVar.CurrentIndicatorColor
+            Fill: =CompGNBMenubar.CurrentIndicatorColor
             Height: |
                 =Parent.TemplateHeight
             OnSelect: =Select(Parent)
             Size: =13
             Text: =
-            Visible: =ThisItem.Value=CompMenuVar.Default
+            Visible: =ThisItem.Value=CompGNBMenubar.Default
             Width: =8
             ZIndex: =3
 
