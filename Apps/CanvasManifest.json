@@ -96,7 +96,7 @@
   },
   "PublishInfo": {
     "AppName": "DocSharing App",
-    "BackgroundColor": "rgba(209, 209, 209, 1)",
+    "BackgroundColor": "rgba(204, 214, 224, 1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "",
     "LogoFileName": "logo.jpg",
