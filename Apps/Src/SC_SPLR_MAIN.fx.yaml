@@ -30,7 +30,7 @@ SC_SPLR_MAIN As screen:
         Height: =78
         Size: =17
         Text: |-
-            ="협력사 목록 및 상세정보를 보여주는 메인화면. 정보수정/삭제등 CRUD가능
+            ="협력사 목록 및 상세정보를 보여주는 메인화면. ....정보수정/삭제등 CRUD가능
             언제 Commit Change to Git updates를 하는가? 당일 본인개발 모듈에 오류가 없을 경우.... 
             특정시간대 Commit 실행"
         Width: =1148
