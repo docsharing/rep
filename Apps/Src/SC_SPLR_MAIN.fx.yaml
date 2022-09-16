@@ -148,7 +148,7 @@ SC_SPLR_MAIN As screen:
         crdFuelcellPerson As combobox:
             BorderColor: =
             BorderThickness: =1
-            ChevronBackground: =RGBA(0, 51, 102, 1)
+            ChevronBackground: =varButtonColor
             ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
             ChevronDisabledFill: =RGBA(244, 244, 244, 1)
             ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
