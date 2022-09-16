@@ -12,6 +12,7 @@ App As appinfo:
         )
          );
         
+        // Supplier LNB Menu
         Set(
             colSplrLNBMenu,
             Table(
