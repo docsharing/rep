@@ -1,7 +1,7 @@
 SC_DOC_MAIN As screen:
     Fill: =Color.White
 
-    CompMenuVar_3 As CompGNBMenubar:
+    CompGNB_2 As CompGNBMenubar:
         Default: ="Documents"
         Height: =Parent.Height
         items: =colLNBMenu
@@ -19,20 +19,7 @@ SC_DOC_MAIN As screen:
         Y: =696
         ZIndex: =2
 
-    Label1_7 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 222, 240, 1)
-        Height: =173
-        Size: =13
-        Text: ="협력사별 공유폴더현황을 보여줌" 
-        Width: =1060
-        X: =295
-        Y: =345
-        ZIndex: =3
-
-    Comp2ndMenubar_3 As Comp2ndMenubar:
+    Comp2ndMenu_2 As Comp2ndMenubar:
         Items: |
             =Filter(colTopMenu, IDX = varSelectedMenuIDX) 
         X: =125

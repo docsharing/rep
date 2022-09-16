@@ -1,7 +1,7 @@
 SC_CONFIG_MAIN As screen:
     Fill: =RGBA(219, 219, 219, 1)
 
-    CompMenuVar_4 As CompGNBMenubar:
+    CompGNB_4 As CompGNBMenubar:
         Default: ="Config."
         Height: =Parent.Height
         items: =colLNBMenu
@@ -19,7 +19,7 @@ SC_CONFIG_MAIN As screen:
         Y: =672
         ZIndex: =2
 
-    Label2 As label:
+    btnChangeColor As label:
         Align: =Align.Center
         BorderColor: =RGBA(149, 149, 149, 1)
         BorderThickness: =2
@@ -41,7 +41,7 @@ SC_CONFIG_MAIN As screen:
         X: =207
         ZIndex: =4
 
-    Comp2ndMenubar_5 As Comp2ndMenubar:
+    Comp2ndMenu_4 As Comp2ndMenubar:
         X: =125
         Y: =35
         ZIndex: =5

@@ -1424,19 +1424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.Label2.FocusedBorderThickness"
+                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.Label2.FocusedBorderThickness",
+                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "SC_CONFIG_MAIN",
-                "type": "SC_CONFIG_MAIN.Label2"
+                "type": "SC_CONFIG_MAIN.btnChangeColor"
               }
             }
           ],
@@ -1454,19 +1454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.Label2.TabIndex"
+                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.Label2.TabIndex",
+                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "SC_CONFIG_MAIN",
-                "type": "SC_CONFIG_MAIN.Label2"
+                "type": "SC_CONFIG_MAIN.btnChangeColor"
               }
             }
           ],

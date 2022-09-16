@@ -1,14 +1,14 @@
 SC_LOG_MAIN As screen:
     Fill: =Color.White
 
-    CompMenuVar_5 As CompGNBMenubar:
+    CompGNB_3 As CompGNBMenubar:
         Default: |
             ="ActivityLog" 
         Height: =Parent.Height
         items: =colLNBMenu
         Width: =125
 
-    Comp2ndMenubar_4 As Comp2ndMenubar:
+    Comp2ndMenu_3 As Comp2ndMenubar:
         Items: |
             =Filter(colTopMenu, IDX = varSelectedMenuIDX) 
         X: =125

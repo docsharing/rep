@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Comp2ndMenubar_4": {
+    "Comp2ndMenu_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -60,7 +60,7 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "Comp2ndMenubar_4",
+      "Name": "Comp2ndMenu_3",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -87,7 +87,7 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -97,13 +97,13 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "CompMenuVar_5": {
+    "CompGNB_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -197,7 +197,7 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "CompMenuVar_5",
+      "Name": "CompGNB_3",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -209,22 +209,22 @@
         {
           "Category": "Data",
           "PropertyName": "Color",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "HoverFill",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "SelectedFill",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "CurrentIndicatorColor",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -234,7 +234,7 @@
         {
           "Category": "Data",
           "PropertyName": "TitleHeader",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -264,7 +264,7 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
