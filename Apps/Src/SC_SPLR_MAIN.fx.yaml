@@ -8,16 +8,16 @@ SC_SPLR_MAIN As screen:
         items: =colLNBMenu
         Width: =125
 
-    screen_name As label:
+    lblCurrentScrName As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =48
-        Size: =20
-        Text: =
-        Width: =461
+        Size: =15
+        Text: =App.ActiveScreen.Name
+        Width: =202
         X: =171
-        Y: =616
+        Y: =573
         ZIndex: =2
 
     Label1_6 As label:
