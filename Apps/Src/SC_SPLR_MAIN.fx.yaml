@@ -343,3 +343,31 @@ SC_SPLR_MAIN As screen:
                 Y: =4
                 ZIndex: =2
 
+            DataCardValue4_1 As datepicker:
+                BorderColor: =
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =0.5
+                CalendarHeaderFill: =RGBA(0, 51, 102, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DefaultDate: =
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                HoverDateFill: =RGBA(153, 205, 255, 1)
+                IconBackground: =RGBA(0, 51, 102, 1)
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =0.00
+                SelectedDateFill: =RGBA(0, 51, 102, 1)
+                Size: =13
+                StartYear: =1899
+                Tooltip: =
+                Width: =lblRegDate.Width
+                X: =lblRegDate.X
+                Y: =4
+                ZIndex: =3
+
