@@ -59,18 +59,13 @@ App As appinfo:
                     IDX: "1"
                 },
                 {
-                    Item: "Menu1",
+                    Item: "NDA List",
                     Screen: SC_DOC_MAIN,
                     IDX: "1"
                 },
                 {
-                    Item: "Menu2",
+                    Item: "Document List",
                     Screen: SC_NDA_MAIN,
-                    IDX: "1"
-                },
-                {
-                    Item: "Menu3",
-                    Screen: SC_CONFIG_MAIN,
                     IDX: "1"
                 },
          //NDA menu
