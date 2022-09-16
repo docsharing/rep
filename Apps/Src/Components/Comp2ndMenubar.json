@@ -1044,57 +1044,15 @@
         "IsLocked": false,
         "LayoutName": "",
         "MetaDataIDKey": "",
-        "Name": "shpLine",
+        "Name": "shpHrztlLine",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
         "PublishOrderIndex": 83,
         "Rules": [
           {
             "Category": "Design",
-            "InvariantScript": "App.Width-250\r\n\r\n\r\n",
-            "Property": "Width",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "2",
-            "Property": "FocusedBorderThickness",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "BorderThickness",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "2",
-            "Property": "ZIndex",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "65",
-            "Property": "Y",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "87",
-            "Property": "X",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "1",
-            "Property": "Height",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "DisplayMode.Edit",
-            "Property": "DisplayMode",
+            "InvariantScript": "Self.Fill",
+            "Property": "HoverFill",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1105,14 +1063,14 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(0, 0, 0, 1)",
-            "Property": "BorderColor",
+            "InvariantScript": "0",
+            "Property": "BorderThickness",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(0, 0, 0, 1)",
-            "Property": "Fill",
+            "InvariantScript": "Self.Fill",
+            "Property": "DisabledFill",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1123,8 +1081,8 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Self.Fill",
-            "Property": "HoverFill",
+            "InvariantScript": "RGBA(0, 0, 0, 1)",
+            "Property": "Fill",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1135,8 +1093,50 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Self.Fill",
-            "Property": "DisabledFill",
+            "InvariantScript": "RGBA(0, 0, 0, 1)",
+            "Property": "BorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "2",
+            "Property": "FocusedBorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "DisplayMode.Edit",
+            "Property": "DisplayMode",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "87",
+            "Property": "X",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "65",
+            "Property": "Y",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "App.Width-250\r\n\r\n\r\n",
+            "Property": "Width",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "1",
+            "Property": "Height",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "2",
+            "Property": "ZIndex",
             "RuleProviderType": "Unknown"
           }
         ],
@@ -1187,7 +1187,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637988839997495885",
+    "LastModifiedTimestamp": "637988841070076289",
     "Name": "Comp2ndMenubar",
     "Rules": [
       {
@@ -1262,7 +1262,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637988839997495885",
+  "LastModifiedTimestamp": "637988841070076289",
   "Name": "5531d5d618db403dac7652145e7ddf8b",
   "OverridableProperties": {},
   "Version": "637987344695513501"
