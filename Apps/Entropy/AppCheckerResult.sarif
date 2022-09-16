@@ -2084,6 +2084,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.varBorderColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varBorderColor",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varBorderColor",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.confidential_finger"
                 }
               ],
