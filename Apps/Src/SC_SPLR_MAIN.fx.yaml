@@ -2,7 +2,10 @@ SC_SPLR_MAIN As screen:
     Fill: |-
         =//RGBA(232, 232, 232, 1)
         Color.White
-    OnVisible: =Set(varSelectedMenuIDX, "1");
+    OnVisible: |-
+        =Set(varSelectedMenuIDX, "1");
+        Set(varBtnColor, RGBA(0, 119, 237, 1));
+        Set(varInputBorderColor, RGBA(49, 49, 50, 1));
 
     CompGNB As CompGNBMenubar:
         Height: =Parent.Height
@@ -78,4 +81,29 @@ SC_SPLR_MAIN As screen:
             X: =btnNew.X + btnNew.Width + 40
             Y: =4
             ZIndex: =2
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =60
+        Width: =1172
+        X: =160
+        Y: =167
+        ZIndex: =6
+
+        TextInput2 As text:
+            BorderColor: =varInputBorderColor
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            HintText: ="협력사명"
+            HoverBorderColor: =varBtnColor
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =varInputBorderColor
+            Size: =13
+            Width: =200
+            X: =8
+            Y: =8
+            ZIndex: =1
 
