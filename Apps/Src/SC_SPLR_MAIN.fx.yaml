@@ -371,3 +371,32 @@ SC_SPLR_MAIN As screen:
                 Y: =4
                 ZIndex: =3
 
+            DataCardValue2_1 As text:
+                BorderColor: =
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =ThisItem.담당자
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =
+                Width: =lblPartnerName.Width
+                X: =lblPerson.X
+                Y: =4
+                ZIndex: =4
+
