@@ -27,7 +27,7 @@ App As appinfo:
         {Item:"TEST2-2", Screen:SC_NDA_MAIN, IDX:"2"}, 
         {Item:"TEST2-3",Screen:SC_CONFIG_MAIN, IDX:"2"},
          //documents menu
-        {Item:"Document Folder List", Screen:SC_NDA_MAIN, IDX:"3"}, 
+        {Item:"Shared Folder", Screen:SC_NDA_MAIN, IDX:"3"}, 
         {Item:"TEST3-1", Screen:SC_DOC_MAIN , IDX:"3"}, 
         {Item:"TEST3-2", Screen:SC_NDA_MAIN, IDX:"3"}, 
         {Item:"TEST3-3",Screen:SC_CONFIG_MAIN, IDX:"3"},
