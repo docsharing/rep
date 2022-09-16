@@ -1904,19 +1904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.TextInput2.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.inpPartnerName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.TextInput2.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.inpPartnerName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.Container2.TextInput2"
+                "type": "SC_SPLR_MAIN.Container2.inpPartnerName"
               }
             }
           ],
@@ -1934,19 +1934,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.TextInput2_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.inpPerson.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.TextInput2_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.inpPerson.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.Container2.TextInput2_1"
+                "type": "SC_SPLR_MAIN.Container2.inpPerson"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.crdFuelcellPerson.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.Container2.crdFuelcellPerson.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_MAIN",
+                "type": "SC_SPLR_MAIN.Container2.crdFuelcellPerson"
               }
             }
           ],
