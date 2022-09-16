@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
+    OnStart: |
         =//Populates LNB Menu
         Set(colLNBMenu,
         Table(
@@ -12,44 +12,160 @@ App As appinfo:
         )
          );
         
-        
-        //Populate Top Menu using the same IDX as LNB
-        Set(colTopMenu,
-        Table(
-        //Supplier menu
-        {Item:"Supplier List", Screen:SC_NDA_MAIN, IDX:"1"}, 
-        {Item:"Menu1", Screen:SC_DOC_MAIN , IDX:"1"}, 
-        {Item:"Menu2", Screen:SC_NDA_MAIN, IDX:"1"}, 
-        {Item:"Menu3",Screen:SC_CONFIG_MAIN, IDX:"1"},
-         //NDA menu
-        {Item:"In Signing Process", Screen:SC_NDA_MAIN, IDX:"2"}, 
-        {Item:"Menu name here", Screen:SC_DOC_MAIN , IDX:"2"}, 
-        {Item:"TEST2-2", Screen:SC_NDA_MAIN, IDX:"2"}, 
-        {Item:"TEST2-3",Screen:SC_CONFIG_MAIN, IDX:"2"},
-         //documents menu
-        {Item:"Shared Folder", Screen:SC_NDA_MAIN, IDX:"3"}, 
-        {Item:"TEST3-1", Screen:SC_DOC_MAIN , IDX:"3"}, 
-        {Item:"TEST3-2", Screen:SC_NDA_MAIN, IDX:"3"}, 
-        {Item:"TEST3-3",Screen:SC_CONFIG_MAIN, IDX:"3"},
-        //
-        {Item:"TEST4", Screen:SC_NDA_MAIN, IDX:"4"}, 
-        {Item:"TEST4-1", Screen:SC_DOC_MAIN , IDX:"4"}, 
-        {Item:"TEST4-2", Screen:SC_NDA_MAIN, IDX:"4"}, 
-        {Item:"TEST4-3",Screen:SC_CONFIG_MAIN, IDX:"4"},
-        //
-        {Item:"TEST5", Screen:SC_NDA_MAIN, IDX:"5"}, 
-        {Item:"TEST5-1", Screen:SC_DOC_MAIN , IDX:"5"}
-         
-        )
+        Set(
+            colSplrLNBMenu,
+            Table(
+                {
+                    Value: "List",
+                    MenuIMG: confidential_supplier2,
+                    Screen: SC_SPLR_MAIN,
+                    IDX: "1"
+                },
+                {
+                    Value: "New",
+                    MenuIMG: confidential_NDA2,
+                    Screen: SC_SPLR_NEW,
+                    IDX: "2"
+                },
+                {
+                    Value: "Account",
+                    MenuIMG: confidential_document22,
+                    Screen: SC_SPLR_ACCOUNT,
+                    IDX: "3"
+                },
+                {
+                    Value: "History",
+                    MenuIMG: confidential_logs2,
+                    Screen: SC_SPLR_HISTORY,
+                    IDX: "4"
+                },
+                {
+                    Value: "Config.",
+                    MenuIMG: confidential_config2,
+                    Screen: SC_SPLR_CONFIG,
+                    IDX: "5"
+                }
+            )
         );
-        
+        //Populate Top Menu using the same IDX as LNB
+        Set(
+            colTopMenu,
+            Table(
+        //Supplier menu
+                {
+                    Item: "Supplier List",
+                    Screen: SC_NDA_MAIN,
+                    IDX: "1"
+                },
+                {
+                    Item: "Menu1",
+                    Screen: SC_DOC_MAIN,
+                    IDX: "1"
+                },
+                {
+                    Item: "Menu2",
+                    Screen: SC_NDA_MAIN,
+                    IDX: "1"
+                },
+                {
+                    Item: "Menu3",
+                    Screen: SC_CONFIG_MAIN,
+                    IDX: "1"
+                },
+         //NDA menu
+                {
+                    Item: "In Signing Process",
+                    Screen: SC_NDA_MAIN,
+                    IDX: "2"
+                },
+                {
+                    Item: "Menu name here",
+                    Screen: SC_DOC_MAIN,
+                    IDX: "2"
+                },
+                {
+                    Item: "TEST2-2",
+                    Screen: SC_NDA_MAIN,
+                    IDX: "2"
+                },
+                {
+                    Item: "TEST2-3",
+                    Screen: SC_CONFIG_MAIN,
+                    IDX: "2"
+                },
+         //documents menu
+                {
+                    Item: "Shared Folder",
+                    Screen: SC_NDA_MAIN,
+                    IDX: "3"
+                },
+                {
+                    Item: "TEST3-1",
+                    Screen: SC_DOC_MAIN,
+                    IDX: "3"
+                },
+                {
+                    Item: "TEST3-2",
+                    Screen: SC_NDA_MAIN,
+                    IDX: "3"
+                },
+                {
+                    Item: "TEST3-3",
+                    Screen: SC_CONFIG_MAIN,
+                    IDX: "3"
+                },
+        //
+                {
+                    Item: "TEST4",
+                    Screen: SC_NDA_MAIN,
+                    IDX: "4"
+                },
+                {
+                    Item: "TEST4-1",
+                    Screen: SC_DOC_MAIN,
+                    IDX: "4"
+                },
+                {
+                    Item: "TEST4-2",
+                    Screen: SC_NDA_MAIN,
+                    IDX: "4"
+                },
+                {
+                    Item: "TEST4-3",
+                    Screen: SC_CONFIG_MAIN,
+                    IDX: "4"
+                },
+        //
+                {
+                    Item: "TEST5",
+                    Screen: SC_NDA_MAIN,
+                    IDX: "5"
+                },
+                {
+                    Item: "TEST5-1",
+                    Screen: SC_DOC_MAIN,
+                    IDX: "5"
+                }
+            )
+        );
         //Populate the Supplier related menus
-        Set(varSelectedMenuIDX,"1"); 
-        
-         
+        Set(
+            varSelectedMenuIDX,
+            "1"
+        );
          // Check Whether Colorpicker is visible or not.
-         Set(showColorPicker, false);
-        
+        Set(
+            showColorPicker,
+            false
+        );
          //Intialize LNB color
-         Set(varMenuPrimaryColor ,RGBA(43, 43, 43, 1));
+        Set(
+            varMenuPrimaryColor,
+            RGBA(
+                43,
+                43,
+                43,
+                1
+            )
+        );
 

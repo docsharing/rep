@@ -105,10 +105,14 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "en-US"
+    "UserLocale": "ko-KR"
   },
   "ScreenOrder": [
     "SC_SPLR_MAIN",
+    "SC_SPLR_NEW",
+    "SC_SPLR_ACCOUNT",
+    "SC_SPLR_HISTORY",
+    "SC_SPLR_CONFIG",
     "SC_NDA_MAIN",
     "SC_DOC_MAIN",
     "SC_LOG_MAIN",
