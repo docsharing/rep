@@ -5,8 +5,8 @@ SC_TEMP As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =협력사현황
         Height: =714
-        Width: =1285
-        X: =40
+        Width: =1863.41
+        X: =56.58999999999992
         Y: =40
         ZIndex: =1
 
@@ -22,7 +22,7 @@ SC_TEMP As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "Title")
             Required: =true
             Update: =DataCardValue1.Text
-            Width: =428
+            Width: =621
             X: =0
             Y: =0
             ZIndex: =2
@@ -32,11 +32,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -56,14 +58,16 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey1.Y + DataCardKey1.Height + 5
                 ZIndex: =2
 
@@ -76,12 +80,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue1.Y + DataCardValue1.Height
                 ZIndex: =3
 
@@ -90,11 +95,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey1.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey1.Y
                 ZIndex: =4
 
@@ -110,7 +118,7 @@ SC_TEMP As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "Email")
             Required: =false
             Update: =DataCardValue2.Text
-            Width: =428
+            Width: =621
             X: =1
             Y: =0
             ZIndex: =2
@@ -120,11 +128,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -144,14 +154,16 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                 ZIndex: =2
 
@@ -164,12 +176,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue2.Y + DataCardValue2.Height
                 ZIndex: =3
 
@@ -178,11 +191,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey2.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey2.Y
                 ZIndex: =4
 
@@ -197,7 +213,7 @@ SC_TEMP As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue3.Selected
-            Width: =428
+            Width: =621
             X: =2
             Y: =0
             ZIndex: =2
@@ -207,11 +223,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -232,16 +250,18 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@협력사현황].Status)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices(협력사현황.Status,DataCardValue3.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey3.Y + DataCardKey3.Height + 5
                 ZIndex: =2
 
@@ -254,12 +274,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue3.Y + DataCardValue3.Height
                 ZIndex: =3
 
@@ -268,11 +289,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey3.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey3.Y
                 ZIndex: =4
 
@@ -287,7 +311,7 @@ SC_TEMP As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue4.SelectedDate
-            Width: =428
+            Width: =621
             X: =0
             Y: =1
             ZIndex: =2
@@ -297,11 +321,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -320,11 +346,14 @@ SC_TEMP As screen:
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =0.00
                 SelectedDateFill: =RGBA(0, 51, 102, 1)
+                Size: =20.30
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey4.Y + DataCardKey4.Height + 5
                 ZIndex: =2
 
@@ -337,12 +366,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue4.Y + DataCardValue4.Height
                 ZIndex: =3
 
@@ -351,11 +381,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey4.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey4.Y
                 ZIndex: =4
 
@@ -370,7 +403,7 @@ SC_TEMP As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue5.Selected
-            Width: =428
+            Width: =621
             X: =1
             Y: =1
             ZIndex: =2
@@ -380,11 +413,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -405,17 +440,19 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@협력사현황].OData__xd4e8__xc5bc__xc140__xb2f4__xb2)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["DisplayName"]
                 SearchItems: =Choices(협력사현황.OData__xd4e8__xc5bc__xc140__xb2f4__xb2,DataCardValue5.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =13
+                Size: =18.85
                 Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey5.Y + DataCardKey5.Height + 5
                 ZIndex: =2
 
@@ -428,12 +465,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue5.Y + DataCardValue5.Height
                 ZIndex: =3
 
@@ -442,11 +480,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey5.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey5.Y
                 ZIndex: =4
 
@@ -461,7 +502,7 @@ SC_TEMP As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue6.Selected
-            Width: =428
+            Width: =621
             X: =2
             Y: =1
             ZIndex: =2
@@ -471,11 +512,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -496,16 +539,18 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@협력사현황].OData__xc9c0__xc5ed__xad6c__xbd84_)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices(협력사현황.OData__xc9c0__xc5ed__xad6c__xbd84_,DataCardValue6.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey6.Y + DataCardKey6.Height + 5
                 ZIndex: =2
 
@@ -518,12 +563,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue6.Y + DataCardValue6.Height
                 ZIndex: =3
 
@@ -532,11 +578,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey6.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey6.Y
                 ZIndex: =4
 
@@ -551,7 +600,7 @@ SC_TEMP As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue7.Selected
-            Width: =428
+            Width: =621
             X: =0
             Y: =2
             ZIndex: =2
@@ -561,11 +610,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -586,16 +637,18 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 Items: =Choices([@협력사현황].OData__xc7a5__xbe44__xad6c__xbd84_)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices(협력사현황.OData__xc7a5__xbe44__xad6c__xbd84_,DataCardValue7.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey7.Y + DataCardKey7.Height + 5
                 ZIndex: =2
 
@@ -608,12 +661,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue7.Y + DataCardValue7.Height
                 ZIndex: =3
 
@@ -622,11 +676,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey7.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey7.Y
                 ZIndex: =4
 
@@ -641,7 +698,7 @@ SC_TEMP As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue8.Text
-            Width: =428
+            Width: =621
             X: =1
             Y: =2
             ZIndex: =2
@@ -651,11 +708,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -674,14 +733,16 @@ SC_TEMP As screen:
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey8.Y + DataCardKey8.Height + 5
                 ZIndex: =2
 
@@ -694,12 +755,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue8.Y + DataCardValue8.Height
                 ZIndex: =3
 
@@ -708,11 +770,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey8.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey8.Y
                 ZIndex: =4
 
@@ -728,7 +793,7 @@ SC_TEMP As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xb300__xd45c__xc790__xba85_")
             Required: =false
             Update: =DataCardValue9.Text
-            Width: =428
+            Width: =621
             X: =2
             Y: =2
             ZIndex: =2
@@ -738,11 +803,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -762,14 +829,16 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey9.Y + DataCardKey9.Height + 5
                 ZIndex: =2
 
@@ -782,12 +851,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue9.Y + DataCardValue9.Height
                 ZIndex: =3
 
@@ -796,11 +866,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey9.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey9.Y
                 ZIndex: =4
 
@@ -816,7 +889,7 @@ SC_TEMP As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc0ac__xc5c5__xc790__xbc88__xd6")
             Required: =false
             Update: =DataCardValue10.Text
-            Width: =428
+            Width: =621
             X: =0
             Y: =3
             ZIndex: =2
@@ -826,11 +899,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -850,14 +925,16 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey10.Y + DataCardKey10.Height + 5
                 ZIndex: =2
 
@@ -870,12 +947,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue10.Y + DataCardValue10.Height
                 ZIndex: =3
 
@@ -884,11 +962,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey10.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey10.Y
                 ZIndex: =4
 
@@ -904,7 +985,7 @@ SC_TEMP As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc804__xd654__xbc88__xd638_")
             Required: =false
             Update: =DataCardValue11.Text
-            Width: =428
+            Width: =621
             X: =1
             Y: =3
             ZIndex: =2
@@ -914,11 +995,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -938,14 +1021,16 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey11.Y + DataCardKey11.Height + 5
                 ZIndex: =2
 
@@ -958,12 +1043,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue11.Y + DataCardValue11.Height
                 ZIndex: =3
 
@@ -972,11 +1058,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey11.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey11.Y
                 ZIndex: =4
 
@@ -992,7 +1081,7 @@ SC_TEMP As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "PID")
             Required: =false
             Update: =DataCardValue12.Text
-            Width: =428
+            Width: =621
             X: =2
             Y: =3
             ZIndex: =2
@@ -1002,11 +1091,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -1026,14 +1117,16 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey12.Y + DataCardKey12.Height + 5
                 ZIndex: =2
 
@@ -1046,12 +1139,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue12.Y + DataCardValue12.Height
                 ZIndex: =3
 
@@ -1060,11 +1154,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey12.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey12.Y
                 ZIndex: =4
 
@@ -1079,7 +1176,7 @@ SC_TEMP As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =428
+            Width: =621
             X: =0
             Y: =4
             ZIndex: =2
@@ -1089,11 +1186,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -1105,12 +1204,12 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.85
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey13.Y + DataCardKey13.Height + 5
                 ZIndex: =2
 
@@ -1125,7 +1224,7 @@ SC_TEMP As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =428
+            Width: =621
             X: =1
             Y: =4
             ZIndex: =2
@@ -1135,11 +1234,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -1151,12 +1252,12 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.85
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                 ZIndex: =2
 
@@ -1171,7 +1272,7 @@ SC_TEMP As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =428
+            Width: =621
             X: =2
             Y: =4
             ZIndex: =2
@@ -1181,11 +1282,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -1197,12 +1300,12 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.85
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey15.Y + DataCardKey15.Height + 5
                 ZIndex: =2
 
@@ -1217,7 +1320,7 @@ SC_TEMP As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =428
+            Width: =621
             X: =0
             Y: =5
             ZIndex: =2
@@ -1227,11 +1330,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -1243,12 +1348,12 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.85
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey16.Y + DataCardKey16.Height + 5
                 ZIndex: =2
 
@@ -1263,7 +1368,7 @@ SC_TEMP As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =428
+            Width: =621
             X: =1
             Y: =5
             ZIndex: =2
@@ -1273,11 +1378,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -1289,12 +1396,12 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.85
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey17.Y + DataCardKey17.Height + 5
                 ZIndex: =2
 
@@ -1309,7 +1416,7 @@ SC_TEMP As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =428
+            Width: =621
             X: =2
             Y: =5
             ZIndex: =2
@@ -1319,11 +1426,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -1335,12 +1444,12 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =13
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =18.85
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey18.Y + DataCardKey18.Height + 5
                 ZIndex: =2
 
@@ -1356,7 +1465,7 @@ SC_TEMP As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc6b0__xd3b8__xbc88__xd638_")
             Required: =false
             Update: =DataCardValue19.Text
-            Width: =428
+            Width: =621
             X: =0
             Y: =6
             ZIndex: =2
@@ -1366,11 +1475,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -1390,14 +1501,16 @@ SC_TEMP As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =13
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey19.Y + DataCardKey19.Height + 5
                 ZIndex: =2
 
@@ -1410,12 +1523,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue19.Y + DataCardValue19.Height
                 ZIndex: =3
 
@@ -1424,11 +1538,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey19.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey19.Y
                 ZIndex: =4
 
@@ -1443,7 +1560,7 @@ SC_TEMP As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue20.Attachments
-            Width: =428
+            Width: =621
             X: =1
             Y: =6
             ZIndex: =2
@@ -1453,11 +1570,13 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =34
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =533.65
                 Wrap: =false
-                X: =30
+                X: =43.50
                 Y: =10
                 ZIndex: =1
 
@@ -1479,13 +1598,14 @@ SC_TEMP As screen:
                 Items: =Parent.Default
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
+                Size: =18.85
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardKey20.Y + DataCardKey20.Height + 5
                 ZIndex: =2
 
@@ -1498,12 +1618,13 @@ SC_TEMP As screen:
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =20.30
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
+                Width: =533.65
+                X: =43.50
                 Y: =DataCardValue20.Y + DataCardValue20.Height
                 ZIndex: =3
 
@@ -1512,11 +1633,14 @@ SC_TEMP As screen:
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey20.Height
-                Size: =13
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                Size: =18.85
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
+                Width: =43.50
                 Wrap: =false
+                X: =0.00
                 Y: =DataCardKey20.Y
                 ZIndex: =4
 

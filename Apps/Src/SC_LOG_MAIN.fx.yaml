@@ -6,12 +6,14 @@ SC_LOG_MAIN As screen:
             ="ActivityLog" 
         Height: =Parent.Height
         items: =colLNBMenu
-        Width: =125
+        Width: =181.26
+        X: =0.00
 
     Comp2ndMenu_3 As Comp2ndMenubar:
         Items: |
             =Filter(colTopMenu, IDX = varSelectedMenuIDX) 
-        X: =125
+        Width: =1799.60
+        X: =120.40000000000009
         Y: =35
         ZIndex: =3
 
@@ -20,10 +22,12 @@ SC_LOG_MAIN As screen:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =48
-        Size: =15
+        PaddingRight: =7.25
+        PaddingTop: =7.25
+        Size: =21.76
         Text: =App.ActiveScreen.Name
-        Width: =202
-        X: =171
+        Width: =292.92
+        X: =247.97
         Y: =573
         ZIndex: =4
 

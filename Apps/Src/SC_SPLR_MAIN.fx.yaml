@@ -10,7 +10,8 @@ SC_SPLR_MAIN As screen:
     CompGNB As CompGNBMenubar:
         Height: =Parent.Height
         items: =colSplrLNBMenu
-        Width: =125
+        Width: =199
+        X: =0.00
 
     Comp2ndMenu As Comp2ndMenubar:
         Items: |
@@ -22,7 +23,8 @@ SC_SPLR_MAIN As screen:
             {Item:"TEST1-2", Screen:SC_NDA_MAIN, IDX:"1"}, 
             {Item:"TEST1-3",Screen:SC_CONFIG_MAIN, IDX:"1"})
              */
-        X: =125
+        Width: =1799.60
+        X: =181.26
         Y: =35
         ZIndex: =4
 
@@ -30,10 +32,10 @@ SC_SPLR_MAIN As screen:
         Height: =50
         PaddingBottom: =5
         PaddingLeft: =5
-        PaddingRight: =5
-        PaddingTop: =5
-        Width: =1172
-        X: =160
+        PaddingRight: =7.25
+        PaddingTop: =7.25
+        Width: =1643
+        X: =232.02
         Y: =117
         ZIndex: =5
 
@@ -49,13 +51,17 @@ SC_SPLR_MAIN As screen:
             HoverBorderColor: =ColorFade(Self.Fill, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Size: =15
+            Size: =21.76
             Text: ="New"
+            Width: =184
+            X: =0.00
             Y: =4
             ZIndex: =1
 
@@ -71,21 +77,26 @@ SC_SPLR_MAIN As screen:
             HoverBorderColor: =ColorFade(Self.Fill, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Size: =15
+            Size: =21.76
             Text: ="Modify"
-            X: =btnNew.X + btnNew.Width + 40
+            Width: =232.02
+            X: =290.02
             Y: =4
             ZIndex: =2
 
     Container2 As groupContainer.manualLayoutContainer:
         Height: =60
-        Width: =1172
-        X: =160
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =1643
+        X: =232.02
         Y: =167
         ZIndex: =6
 
@@ -101,13 +112,15 @@ SC_SPLR_MAIN As screen:
             HoverBorderColor: =RGBA(0, 119, 237, 1)
             HoverColor: =ColorFade(varInputBorderColor, 10%)
             HoverFill: =ColorFade(varInputBorderColor, -40%)
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =13
-            Width: =200
-            X: =1
+            Size: =18.85
+            Width: =192
+            X: =1.45
             Y: =8
             ZIndex: =1
 
@@ -123,13 +136,15 @@ SC_SPLR_MAIN As screen:
             HoverBorderColor: =RGBA(0, 119, 237, 1)
             HoverColor: =ColorFade(varInputBorderColor, 10%)
             HoverFill: =ColorFade(varInputBorderColor, -40%)
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =13
-            Width: =200
-            X: =inpPartnerName.X + inpPartnerName.Width + 40
+            Size: =18.85
+            Width: =290.02
+            X: =349.48
             Y: =8
             ZIndex: =2
 
@@ -151,17 +166,40 @@ SC_SPLR_MAIN As screen:
             HoverFill: =RGBA(153, 205, 255, 1)
             Items: =Choices([@협력사현황].OData__xd4e8__xc5bc__xc140__xb2f4__xb2)
             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 89, 178, 1)
             SearchFields: =["DisplayName"]
             SearchItems: =Choices(협력사현황.OData__xd4e8__xc5bc__xc140__xb2f4__xb2,crdFuelcellPerson.SearchText)
             SelectionFill: =RGBA(0, 51, 102, 1)
             SelectMultiple: =false
-            Size: =13
+            Size: =18.85
             Template: =ListItemTemplate.Person
             Tooltip: =
-            Width: =283
-            X: =inpPerson.X + inpPerson.Width + 40
+            Width: =410.38
+            X: =697.51
             Y: =8
             ZIndex: =3
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Height: =40
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =1643
+        X: =232.02
+        Y: =227
+        ZIndex: =7
+
+        Label1 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18.85
+            Text: ="협력사명"
+            Width: =217.53
+            X: =0.00
+            ZIndex: =1
 

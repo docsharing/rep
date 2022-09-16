@@ -14,10 +14,12 @@ CompMsgWindow_working As CanvasComponent:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(0, 36, 71, 1)
         Height: =24
-        Size: =13
+        PaddingRight: =7.25
+        PaddingTop: =7.25
+        Size: =18.85
         Text: ="Text"
-        Width: =431
-        X: =116
+        Width: =625.00
+        X: =168.22
         Y: =140
         ZIndex: =5
 
@@ -35,10 +37,12 @@ CompMsgWindow_working As CanvasComponent:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(232, 232, 232, 1)
             Height: =306
-            Size: =13
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18.85
             Text: =""
-            Width: =432
-            X: =115
+            Width: =626.46
+            X: =166.77
             Y: =140
             ZIndex: =1
 
@@ -49,9 +53,12 @@ CompMsgWindow_working As CanvasComponent:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(250, 250, 250, 1)
-            Size: =13
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18.85
             Text: ="Text"
-            X: =160
+            Width: =217.53
+            X: =232.02
             Y: =360
             ZIndex: =2
 
@@ -62,9 +69,12 @@ CompMsgWindow_working As CanvasComponent:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(250, 250, 250, 1)
-            Size: =13
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18.85
             Text: ="Text"
-            X: =357
+            Width: =217.53
+            X: =517.70
             Y: =360
             ZIndex: =3
 
@@ -73,10 +83,12 @@ CompMsgWindow_working As CanvasComponent:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =131
-            Size: =13
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18.85
             Text: ="아직 개발중...."
-            Width: =322
-            X: =170
+            Width: =466.94
+            X: =246.52
             Y: =188
             ZIndex: =4
 

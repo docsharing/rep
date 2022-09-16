@@ -31,10 +31,13 @@ CompInfoBox As CanvasComponent:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
         OnTimerEnd: =Set(varresetalert,false);Set(varresetalert,true)
+        PaddingRight: =7.25
+        PaddingTop: =7.25
+        Size: =18.85
         Start: =varhidealert
         Visible: =false
-        Width: =280
-        X: =331
+        Width: =406.04
+        X: =479.99
         Y: =158
         ZIndex: =1
 
@@ -45,13 +48,16 @@ CompInfoBox As CanvasComponent:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
         OnTimerEnd: =Set(varhidealert,false);Set(varhidealert,true)
+        PaddingRight: =7.25
+        PaddingTop: =7.25
         Reset: =varresetalert
+        Size: =18.85
         Start: =CompInfoBox.ShowAlert
         Text: |-
             =Text(Time(0, 0, Self.Value/1000), "[$-en-US]hh:mm:ss")
         Visible: =false
-        Width: =280
-        X: =11
+        Width: =406.04
+        X: =15.95
         Y: =158
         ZIndex: =2
 
@@ -62,12 +68,13 @@ CompInfoBox As CanvasComponent:
         Fill: =ColorFade(ColorValue(CompInfoBox.FillColor),80%)
         Height: =70
         PaddingLeft: =AlertIcon.Width+10
-        PaddingRight: =25
-        Size: =20
+        PaddingRight: =36.25
+        PaddingTop: =7.25
+        Size: =29.00
         Text: =CompInfoBox.Message
         Visible: =CompInfoBox.ShowAlert
-        Width: =CompInfoBox.Width
-        X: =App.ActiveScreen.Width-TimerShowAlert.Value
+        Width: =2698.68
+        X: =2698.68
         Y: =If(CompInfoBox.AlertLocation="Top", 0,App.ActiveScreen.Height-Self.Height)
         ZIndex: =3
 
@@ -101,10 +108,10 @@ CompInfoBox As CanvasComponent:
             ))
         PaddingBottom: =8
         PaddingLeft: =8
-        PaddingRight: =8
-        PaddingTop: =8
-        Width: =58
-        X: =LabelAlert.X
+        PaddingRight: =11.60
+        PaddingTop: =11.60
+        Width: =84.11
+        X: =2698.68
         Y: =LabelAlert.Y
         ZIndex: =4
 

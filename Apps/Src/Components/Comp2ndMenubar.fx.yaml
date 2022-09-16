@@ -16,9 +16,10 @@ Comp2ndMenubar As CanvasComponent:
             = Comp2ndMenubar.Items 
              
         ShowScrollbar: =false
-        TemplateSize: =200
-        Width: =857
-        X: =250
+        TemplatePadding: =7.25
+        TemplateSize: =290.02
+        Width: =1242.76
+        X: =362.54
         Y: =9
         ZIndex: =1
 
@@ -29,9 +30,12 @@ Comp2ndMenubar As CanvasComponent:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Semibold
             OnSelect: =Navigate(ThisItem.Screen)
-            Size: =15
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =21.76
             Text: =ThisItem.Item
-            Width: =195
+            Width: =282.77
+            X: =0.00
             Y: =10
             ZIndex: =1
 
@@ -39,11 +43,8 @@ Comp2ndMenubar As CanvasComponent:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 1)
         Height: =1
-        Width: |+
-            =App.Width-250
-            
-            
-        X: =87
+        Width: =1618.34
+        X: =126.16
         Y: =65
         ZIndex: =2
 
@@ -52,10 +53,12 @@ Comp2ndMenubar As CanvasComponent:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =19
-        Size: =10
+        PaddingRight: =7.25
+        PaddingTop: =7.25
+        Size: =14.51
         Text: |-
             ="참고: App.OnStart에서 메뉴구성변경"
-        Width: =267
-        X: =970
+        Width: =387.18
+        X: =1406.62
         ZIndex: =3
 

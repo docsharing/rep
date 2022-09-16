@@ -556,13 +556,13 @@ CompColorPicker As CanvasComponent:
             Set(showColorPicker, false);
         PaddingBottom: =5
         PaddingLeft: =5
-        PaddingRight: =5
-        PaddingTop: =5
+        PaddingRight: =7.25
+        PaddingTop: =7.25
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =icoOKCP.Fill
         PressedFill: =ColorFade(icoOKCP.Fill, -30%)
-        Width: =32
-        X: =galPaletteCP.X + galPaletteCP.Width - icoOKCP.Width
+        Width: =46.40
+        X: =1145.60
         Y: =Parent.Height - icoOKCP.Height - 20
         ZIndex: =1
 
@@ -587,20 +587,22 @@ CompColorPicker As CanvasComponent:
             Set(showColorPicker, false);
         PaddingBottom: =5
         PaddingLeft: =5
-        PaddingRight: =5
-        PaddingTop: =5
+        PaddingRight: =7.25
+        PaddingTop: =7.25
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =icoCancelCP.Fill
         PressedFill: =ColorFade(icoCancelCP.Fill, -30%)
-        Width: =32
-        X: =icoOKCP.X - icoCancelCP.Width - 20
+        Width: =46.40
+        X: =1070.20
         Y: =icoOKCP.Y
         ZIndex: =2
 
     ctrAlphaValueCP As groupContainer:
         Height: =sliAlphaValueCP.Height
-        Width: =icoCancelCP.X - ctrAlphaValueCP.X - 10
-        X: =ctrRGBValueCP.X
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =548.14
+        X: =507.55
         Y: =ctrRGBValueCP.Y + ctrRGBValueCP.Height - 3
         ZIndex: =7
 
@@ -624,8 +626,8 @@ CompColorPicker As CanvasComponent:
             ShowValue: =false
             ValueFill: =RGBA(102, 102, 102, 1)
             ValueHoverFill: =sliAlphaValueCP.ValueFill
-            Width: =Parent.Width - sliAlphaValueCP.X
-            X: =icoEditAlphaValueCP.X + icoEditAlphaValueCP.Width + 10
+            Width: =308.87
+            X: =239.27
             ZIndex: =1
 
         icoEditAlphaValueCP As icon.Edit:
@@ -648,13 +650,13 @@ CompColorPicker As CanvasComponent:
                 Set(locRGBEdit, false)
             PaddingBottom: =3
             PaddingLeft: =3
-            PaddingRight: =3
-            PaddingTop: =3
+            PaddingRight: =4.36
+            PaddingTop: =4.36
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =CompColorPicker.Fill
-            Width: =30
-            X: =txtAlphaValueCP.X + txtAlphaValueCP.Width + 5
+            Width: =43.50
+            X: =181.26
             Y: =txtAlphaValueCP.Y
             ZIndex: =2
 
@@ -677,6 +679,8 @@ CompColorPicker As CanvasComponent:
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
             MaxLength: =4
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =RGBA(105, 121, 126, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -684,9 +688,9 @@ CompColorPicker As CanvasComponent:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =11
-            Width: =60
-            X: =lblAlphaValueCP.X + lblAlphaValueCP.Width
+            Size: =15.95
+            Width: =87.00
+            X: =87.00
             Y: =lblAlphaValueCP.Y
             ZIndex: =3
 
@@ -706,20 +710,24 @@ CompColorPicker As CanvasComponent:
             HoverColor: =lblAlphaValueCP.Color
             HoverFill: =lblAlphaValueCP.Fill
             PaddingLeft: =2
-            PaddingRight: =10
+            PaddingRight: =14.51
+            PaddingTop: =7.25
             PressedBorderColor: =lblAlphaValueCP.BorderColor
             PressedColor: =lblAlphaValueCP.Color
             PressedFill: =lblAlphaValueCP.Fill
-            Size: =11
+            Size: =15.95
             Text: ="Alpha"
-            Width: =lblRedValueCP.Width
+            Width: =87.00
+            X: =0.00
             Y: =(Parent.Height - lblAlphaValueCP.Height) / 2
             ZIndex: =4
 
     ctrRGBValueCP As groupContainer:
         Height: =sliBlueValueCP.Y + sliBlueValueCP.Height
-        Width: =galPaletteCP.X + galPaletteCP.Width - ctrRGBValueCP.X
-        X: =ctrHexValueCP.X + ctrHexValueCP.Width + 25
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =684.45
+        X: =507.55
         Y: =ctrSelectedColorCP.Y
         ZIndex: =8
 
@@ -734,8 +742,8 @@ CompColorPicker As CanvasComponent:
             Height: =1
             HoverFill: =RGBA(204, 204, 204, 1)
             PressedFill: =RGBA(204, 204, 204, 1)
-            Width: =icoEditRGBValuesCP.Width / 2
-            X: =txtRedValueCP.X + txtRedValueCP.Width + 5
+            Width: =21.76
+            X: =163.86
             Y: =txtRedValueCP.Y + txtRedValueCP.Height / 2
             ZIndex: =1
 
@@ -750,8 +758,8 @@ CompColorPicker As CanvasComponent:
             Height: =1
             HoverFill: =RGBA(204, 204, 204, 1)
             PressedFill: =RGBA(204, 204, 204, 1)
-            Width: =icoEditRGBValuesCP.Width / 2
-            X: =txtRedValueCP.X + txtRedValueCP.Width + 5
+            Width: =21.76
+            X: =163.86
             Y: =txtBlueValueCP.Y + txtBlueValueCP.Height / 2
             ZIndex: =2
 
@@ -766,8 +774,8 @@ CompColorPicker As CanvasComponent:
             Height: =recEditRGBValuesBottomCP.Y - recEditRGBValuesTopCP.Y
             HoverFill: =RGBA(204, 204, 204, 1)
             PressedFill: =RGBA(204, 204, 204, 1)
-            Width: =1
-            X: =recEditRGBValuesTopCP.X + recEditRGBValuesTopCP.Width
+            Width: =1.45
+            X: =185.62
             Y: =recEditRGBValuesTopCP.Y
             ZIndex: =3
 
@@ -815,13 +823,13 @@ CompColorPicker As CanvasComponent:
                 )
             PaddingBottom: =3
             PaddingLeft: =3
-            PaddingRight: =3
-            PaddingTop: =3
+            PaddingRight: =4.36
+            PaddingTop: =4.36
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =CompColorPicker.Fill
-            Width: =30
-            X: =txtGreenValueCP.X + txtGreenValueCP.Width + 5
+            Width: =43.50
+            X: =163.86
             Y: =txtGreenValueCP.Y
             ZIndex: =4
 
@@ -847,8 +855,8 @@ CompColorPicker As CanvasComponent:
             ValueFill: =RGBA(102, 102, 102, 1)
             ValueHoverFill: =sliBlueValueCP.ValueFill
             Visible: =sliRedValueCP.Visible
-            Width: =sliRedValueCP.Width
-            X: =sliRedValueCP.X
+            Width: =448.09
+            X: =236.37
             Y: =txtBlueValueCP.Y - (sliBlueValueCP.Height - txtBlueValueCP.Height) / 2
             ZIndex: =5
 
@@ -873,6 +881,8 @@ CompColorPicker As CanvasComponent:
             HoverFill: =RGBA(255, 255, 255, 1)
             MaxLength: =3
             PaddingLeft: =5
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =RGBA(105, 121, 126, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -880,9 +890,9 @@ CompColorPicker As CanvasComponent:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =11
-            Width: =48
-            X: =lblBlueValueCP.X + lblBlueValueCP.Width
+            Size: =15.95
+            Width: =69.60
+            X: =87.00
             Y: =lblBlueValueCP.Y
             ZIndex: =6
 
@@ -902,14 +912,15 @@ CompColorPicker As CanvasComponent:
             HoverColor: =lblBlueValueCP.Color
             HoverFill: =lblBlueValueCP.Fill
             PaddingLeft: =2
-            PaddingRight: =10
+            PaddingRight: =14.51
+            PaddingTop: =7.25
             PressedBorderColor: =lblBlueValueCP.BorderColor
             PressedColor: =lblBlueValueCP.Color
             PressedFill: =lblBlueValueCP.Fill
-            Size: =11
+            Size: =15.95
             Text: ="Blue"
-            Width: =lblRedValueCP.Width
-            X: =lblRedValueCP.X
+            Width: =87.00
+            X: =0.00
             Y: =lblGreenValueCP.Y + lblGreenValueCP.Height + 5
             ZIndex: =7
 
@@ -935,8 +946,8 @@ CompColorPicker As CanvasComponent:
             ValueFill: =RGBA(102, 102, 102, 1)
             ValueHoverFill: =sliGreenValueCP.ValueFill
             Visible: =sliRedValueCP.Visible
-            Width: =sliRedValueCP.Width
-            X: =sliRedValueCP.X
+            Width: =448.09
+            X: =236.37
             Y: =txtGreenValueCP.Y - (sliGreenValueCP.Height - txtGreenValueCP.Height) / 2
             ZIndex: =8
 
@@ -961,6 +972,8 @@ CompColorPicker As CanvasComponent:
             HoverFill: =RGBA(255, 255, 255, 1)
             MaxLength: =3
             PaddingLeft: =5
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =RGBA(105, 121, 126, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -968,9 +981,9 @@ CompColorPicker As CanvasComponent:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =11
-            Width: =48
-            X: =lblGreenValueCP.X + lblGreenValueCP.Width
+            Size: =15.95
+            Width: =69.60
+            X: =87.00
             Y: =lblGreenValueCP.Y
             ZIndex: =9
 
@@ -990,14 +1003,15 @@ CompColorPicker As CanvasComponent:
             HoverColor: =lblGreenValueCP.Color
             HoverFill: =lblGreenValueCP.Fill
             PaddingLeft: =2
-            PaddingRight: =10
+            PaddingRight: =14.51
+            PaddingTop: =7.25
             PressedBorderColor: =lblGreenValueCP.BorderColor
             PressedColor: =lblGreenValueCP.Color
             PressedFill: =lblGreenValueCP.Fill
-            Size: =11
+            Size: =15.95
             Text: ="Green"
-            Width: =lblRedValueCP.Width
-            X: =lblRedValueCP.X
+            Width: =87.00
+            X: =0.00
             Y: =lblRedValueCP.Y + lblRedValueCP.Height + 5
             ZIndex: =10
 
@@ -1023,8 +1037,8 @@ CompColorPicker As CanvasComponent:
             ValueFill: =RGBA(102, 102, 102, 1)
             ValueHoverFill: =sliRedValueCP.ValueFill
             Visible: =sliRedValueCP.Width > 100
-            Width: =Parent.Width - sliRedValueCP.X
-            X: =txtRedValueCP.X + txtRedValueCP.Width + 5 + 30 + 20
+            Width: =448.09
+            X: =236.37
             Y: =txtRedValueCP.Y - (sliRedValueCP.Height - txtRedValueCP.Height) / 2
             ZIndex: =11
 
@@ -1050,6 +1064,8 @@ CompColorPicker As CanvasComponent:
             MaxLength: =3
             OnChange: =Set(locColorRed, Value(txtRedValueCP.Text))
             PaddingLeft: =5
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =RGBA(105, 121, 126, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -1057,9 +1073,9 @@ CompColorPicker As CanvasComponent:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =11
-            Width: =48
-            X: =lblRedValueCP.X + lblRedValueCP.Width
+            Size: =15.95
+            Width: =69.60
+            X: =87.00
             Y: =lblRedValueCP.Y
             ZIndex: =12
 
@@ -1079,20 +1095,24 @@ CompColorPicker As CanvasComponent:
             HoverColor: =lblRedValueCP.Color
             HoverFill: =lblRedValueCP.Fill
             PaddingLeft: =2
-            PaddingRight: =10
+            PaddingRight: =14.51
+            PaddingTop: =7.25
             PressedBorderColor: =lblRedValueCP.BorderColor
             PressedColor: =lblRedValueCP.Color
             PressedFill: =lblRedValueCP.Fill
-            Size: =11
+            Size: =15.95
             Text: ="Red"
-            Width: =60
+            Width: =87.00
+            X: =0.00
             Y: = 10 + CompColorPicker.ColorSquaresPadding
             ZIndex: =13
 
     ctrHexValueCP As groupContainer:
         Height: =lblHexValueCP.Height
-        Width: =lblHexValueCP.Width + txtHexValueCP.Width + icoEditHexValueCP.Width
-        X: =ctrSelectedColorCP.X + ctrSelectedColorCP.Width + 20
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =239.27
+        X: =232.02
         Y: =ctrSelectedColorCP.Y + (ctrSelectedColorCP.Height - lblHexValueCP.Height) / 2 + 10 + CompColorPicker.ColorSquaresPadding
         ZIndex: =9
 
@@ -1111,12 +1131,15 @@ CompColorPicker As CanvasComponent:
             HoverColor: =lblHexValueCP.Color
             HoverFill: =lblHexValueCP.Fill
             PaddingLeft: =2
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =lblHexValueCP.BorderColor
             PressedColor: =lblHexValueCP.Color
             PressedFill: =lblHexValueCP.Fill
-            Size: =11
+            Size: =15.95
             Text: ="Hex"
-            Width: =44+0
+            Width: =63.80
+            X: =0.00
             ZIndex: =1
 
         txtHexValueCP As text:
@@ -1194,6 +1217,8 @@ CompColorPicker As CanvasComponent:
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
             MaxLength: =8
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =RGBA(105, 121, 126, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -1201,9 +1226,9 @@ CompColorPicker As CanvasComponent:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =11
-            Width: =91+0
-            X: =lblHexValueCP.X + lblHexValueCP.Width
+            Size: =15.95
+            Width: =131.97
+            X: =63.80
             Y: =lblHexValueCP.Y
             ZIndex: =2
 
@@ -1226,20 +1251,22 @@ CompColorPicker As CanvasComponent:
                 Set(locAlphaEdit, false)
             PaddingBottom: =3
             PaddingLeft: =3
-            PaddingRight: =3
-            PaddingTop: =3
+            PaddingRight: =4.36
+            PaddingTop: =4.36
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =CompColorPicker.Fill
-            Width: =30+0
-            X: =txtHexValueCP.X + txtHexValueCP.Width
+            Width: =43.50
+            X: =195.77
             Y: =txtHexValueCP.Y
             ZIndex: =3
 
     ctrSelectedColorCP As groupContainer:
         Height: =recSelectedColorBgCP.Y + recSelectedColorBgCP.Height
-        Width: =recSelectedColorBgCP.X + recSelectedColorBgCP.Width
-        X: =20
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =174.01
+        X: =29.00
         Y: =galBlackWhitePaletteCP.Y + galBlackWhitePaletteCP.Height
         ZIndex: =10
 
@@ -1254,8 +1281,8 @@ CompColorPicker As CanvasComponent:
             Height: =recSelectedColorBgCP.Width
             HoverFill: =recSelectedColorBgCP.Fill
             PressedFill: =recSelectedColorBgCP.Fill
-            Width: =110
-            X: =recSelectedColorCP.X + 10
+            Width: =159.52
+            X: =14.51
             Y: =lblSelectedColorCP.Y + lblSelectedColorCP.Height + 10
             ZIndex: =1
 
@@ -1270,7 +1297,8 @@ CompColorPicker As CanvasComponent:
             Height: =recSelectedColorCP.Width
             HoverFill: =recSelectedColorCP.Fill
             PressedFill: =recSelectedColorCP.Fill
-            Width: =recSelectedColorBgCP.Width
+            Width: =159.52
+            X: =0.00
             Y: =lblSelectedColorCP.Y + lblSelectedColorCP.Height
             ZIndex: =2
 
@@ -1289,12 +1317,15 @@ CompColorPicker As CanvasComponent:
             HoverColor: =lblSelectedColorCP.Color
             HoverFill: =lblSelectedColorCP.Fill
             PaddingLeft: =2
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =lblSelectedColorCP.BorderColor
             PressedColor: =lblSelectedColorCP.Color
             PressedFill: =lblSelectedColorCP.Fill
-            Size: =11
+            Size: =15.95
             Text: ="Selected color"
-            Width: =120
+            Width: =174.01
+            X: =0.00
             Y: = 10 + CompColorPicker.ColorSquaresPadding
             ZIndex: =3
 
@@ -1308,10 +1339,10 @@ CompColorPicker As CanvasComponent:
         Items: =locBlackWhiteColors
         PressedBorderColor: =galBlackWhitePaletteCP.BorderColor
         PressedFill: =galBlackWhitePaletteCP.Fill
-        TemplatePadding: =0
-        TemplateSize: =galPaletteCP.TemplateWidth
-        Width: =galPaletteCP.Width
-        X: =galPaletteCP.X
+        TemplatePadding: =0.00
+        TemplateSize: =46.40
+        Width: =1163.01
+        X: =29.00
         Y: =galPaletteCP.Y + galPaletteCP.Height + 10
         ZIndex: =11
 
@@ -1334,7 +1365,8 @@ CompColorPicker As CanvasComponent:
                 Set(locPickedColorGreen, Switch(Right(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,3,2),1))+Switch(Left(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,3,2),1))*16);
                 Set(locPickedColorBlue, Switch(Right(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,5,2),1))+Switch(Left(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,5,2),1))*16);
             PressedFill: =recBlackWhiteColorCP.Fill
-            Width: =CompColorPicker.ColorSquareSize + 2
+            Width: =46.40
+            X: =0.00
             ZIndex: =1
 
         cirBlackWhiteSelectedColorCP As circle:
@@ -1344,13 +1376,13 @@ CompColorPicker As CanvasComponent:
             DisabledFill: =RGBA(105, 121, 126, 1)
             Fill: =If(Value(sliRedValueCP.Value + sliGreenValueCP.Value + sliBlueValueCP.Value) / 3 <= 127, White, Black)
             FocusedBorderColor: =cirBlackWhiteSelectedColorCP.BorderColor
-            Height: =cirBlackWhiteSelectedColorCP.Width
+            Height: =21.76
             HoverFill: =cirBlackWhiteSelectedColorCP.Fill
             OnSelect: =Select(Parent)
             PressedFill: =cirBlackWhiteSelectedColorCP.Fill
             Visible: =recBlackWhiteColorCP.Fill = recSelectedColorCP.Fill
-            Width: =CompColorPicker.ColorSquareSize / 2
-            X: =recBlackWhiteColorCP.X + (recBlackWhiteColorCP.Width - cirBlackWhiteSelectedColorCP.Width) / 2
+            Width: =21.76
+            X: =12.33
             Y: =recBlackWhiteColorCP.Y + (recBlackWhiteColorCP.Height - cirBlackWhiteSelectedColorCP.Height) / 2
             ZIndex: =2
 
@@ -1364,10 +1396,10 @@ CompColorPicker As CanvasComponent:
         Items: =CompColorPicker.MainColors
         PressedBorderColor: =galPaletteCP.BorderColor
         PressedFill: =galPaletteCP.Fill
-        TemplatePadding: =0
-        TemplateSize: =CompColorPicker.ColorSquareSize + CompColorPicker.ColorSquaresPadding
-        Width: =galPaletteCP.TemplateWidth * CountRows(CompColorPicker.MainColors) + CompColorPicker.ColorSquaresPadding
-        X: =20
+        TemplatePadding: =0.00
+        TemplateSize: =46.40
+        Width: =1163.01
+        X: =29.00
         Y: =ctrTitleCP.Y + ctrTitleCP.Height * ctrTitleCP.Visible + 20
         ZIndex: =12
 
@@ -1385,7 +1417,8 @@ CompColorPicker As CanvasComponent:
             PressedFill: =galLightColorsCP.Fill
             TemplatePadding: =CompColorPicker.ColorSquaresPadding
             TemplateSize: =CompColorPicker.ColorSquareSize
-            Width: =32
+            Width: =46.40
+            X: =0.00
             Y: =recMainColorCP.Y + recMainColorCP.Height + CompColorPicker.ColorSquaresPadding * 2
             ZIndex: =2
 
@@ -1408,7 +1441,8 @@ CompColorPicker As CanvasComponent:
                     Set(locPickedColorGreen, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorGreenCP.Text * (1 - locPickedColorAlpha), 0));
                     Set(locPickedColorBlue, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorBlueCP.Text * (1 - locPickedColorAlpha), 0));
                 PressedFill: =recLightColorCP.Fill
-                Width: =28
+                Width: =40.61
+                X: =0.00
                 ZIndex: =1
 
             cirLightSelectedColorCP As circle:
@@ -1418,13 +1452,13 @@ CompColorPicker As CanvasComponent:
                 DisabledFill: =RGBA(105, 121, 126, 1)
                 Fill: =cirMainSelectedColorCP.Fill
                 FocusedBorderColor: =cirLightSelectedColorCP.BorderColor
-                Height: =cirLightSelectedColorCP.Width
+                Height: =21.76
                 HoverFill: =cirLightSelectedColorCP.Fill
                 OnSelect: =Select(Parent)
                 PressedFill: =cirLightSelectedColorCP.Fill
                 Visible: =recLightColorCP.Fill = recSelectedColorCP.Fill
-                Width: =CompColorPicker.ColorSquareSize / 2
-                X: =(Parent.Width - cirLightSelectedColorCP.Width) / 2
+                Width: =21.76
+                X: =12.33
                 Y: =(Parent.TemplateHeight - cirLightSelectedColorCP.Height) / 2
                 ZIndex: =2
 
@@ -1442,7 +1476,8 @@ CompColorPicker As CanvasComponent:
             PressedFill: =galDarkColorsCP.Fill
             TemplatePadding: =CompColorPicker.ColorSquaresPadding
             TemplateSize: =CompColorPicker.ColorSquareSize
-            Width: =32
+            Width: =46.40
+            X: =0.00
             ZIndex: =4
 
             recDarkColorCP As rectangle:
@@ -1464,7 +1499,8 @@ CompColorPicker As CanvasComponent:
                     Set(locPickedColorGreen, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorGreenCP.Text * (1 - locPickedColorAlpha), 0));
                     Set(locPickedColorBlue, RoundDown(locOpacityBg * locPickedColorAlpha + _lblMainColorBlueCP.Text * (1 - locPickedColorAlpha), 0));
                 PressedFill: =recDarkColorCP.Fill
-                Width: =28
+                Width: =40.61
+                X: =0.00
                 ZIndex: =1
 
             cirDarkSelectedColorCP As circle:
@@ -1474,13 +1510,13 @@ CompColorPicker As CanvasComponent:
                 DisabledFill: =RGBA(105, 121, 126, 1)
                 Fill: =cirMainSelectedColorCP.Fill
                 FocusedBorderColor: =cirDarkSelectedColorCP.BorderColor
-                Height: =cirDarkSelectedColorCP.Width
+                Height: =21.76
                 HoverFill: =cirDarkSelectedColorCP.Fill
                 OnSelect: =Select(Parent)
                 PressedFill: =cirDarkSelectedColorCP.Fill
                 Visible: =recDarkColorCP.Fill = recSelectedColorCP.Fill
-                Width: =CompColorPicker.ColorSquareSize / 2
-                X: =(Parent.Width - cirDarkSelectedColorCP.Width) / 2
+                Width: =21.76
+                X: =12.33
                 Y: =(Parent.TemplateHeight - cirDarkSelectedColorCP.Height) / 2
                 ZIndex: =2
 
@@ -1503,7 +1539,8 @@ CompColorPicker As CanvasComponent:
                 Set(locPickedColorGreen, Switch(Right(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,3,2),1))+Switch(Left(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,3,2),1))*16);
                 Set(locPickedColorBlue, Switch(Right(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,5,2),1))+Switch(Left(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,5,2),1))*16);
             PressedFill: =recMainColorCP.Fill
-            Width: =CompColorPicker.ColorSquareSize + 2
+            Width: =46.40
+            X: =0.00
             Y: =galDarkColorsCP.Y + galDarkColorsCP.Height + CompColorPicker.ColorSquaresPadding * 2
             ZIndex: =5
 
@@ -1514,21 +1551,24 @@ CompColorPicker As CanvasComponent:
             DisabledFill: =RGBA(105, 121, 126, 1)
             Fill: =If(Value(sliRedValueCP.Value + sliGreenValueCP.Value + sliBlueValueCP.Value) / 3 <= 127, White, Black)
             FocusedBorderColor: =cirMainSelectedColorCP.BorderColor
-            Height: =cirMainSelectedColorCP.Width
+            Height: =21.76
             HoverFill: =cirMainSelectedColorCP.Fill
             OnSelect: =Select(Parent)
             PressedFill: =cirMainSelectedColorCP.Fill
             Visible: =recMainColorCP.Fill = recSelectedColorCP.Fill
-            Width: =CompColorPicker.ColorSquareSize / 2
-            X: =recMainColorCP.X + (recMainColorCP.Width - cirMainSelectedColorCP.Width) / 2
+            Width: =21.76
+            X: =12.33
             Y: =recMainColorCP.Y + (recMainColorCP.Height - cirMainSelectedColorCP.Height) / 2
             ZIndex: =6
 
     ctrTitleCP As groupContainer:
         Fill: =ColorFade(CompColorPicker.Fill, -40%)
         Height: =40
+        PaddingRight: =0.00
+        PaddingTop: =0.00
         Visible: =CompColorPicker.ShowTitle
-        Width: =Parent.Width
+        Width: =1221.00
+        X: =0.00
         ZIndex: =13
 
         lblVersionCP As label:
@@ -1541,14 +1581,16 @@ CompColorPicker As CanvasComponent:
             HoverBorderColor: =lblVersionCP.BorderColor
             HoverColor: =lblVersionCP.Color
             HoverFill: =lblVersionCP.Fill
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =lblVersionCP.BorderColor
             PressedColor: =lblVersionCP.Color
             PressedFill: =lblVersionCP.Fill
-            Size: =8
+            Size: =11.60
             Text: ="v1.1"
             Visible: =Not(CompColorPicker.HideVersion)
-            Width: =40
-            X: =Parent.Width - lblVersionCP.Width - 20
+            Width: =58.01
+            X: =1133.99
             Y: =Parent.Height - lblVersionCP.Height
             ZIndex: =1
 
@@ -1568,21 +1610,25 @@ CompColorPicker As CanvasComponent:
             HoverColor: =lblTitleCP.Color
             HoverFill: =lblTitleCP.Fill
             PaddingLeft: =20
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =lblTitleCP.BorderColor
             PressedColor: =lblTitleCP.Color
             PressedFill: =lblTitleCP.Fill
-            Size: =13
+            Size: =18.85
             Text: ="메인메뉴 Color 변화확인"
-            Width: =Parent.Width
-            X: =0+0
+            Width: =1221.00
+            X: =0.00
             Y: =0+0
             ZIndex: =4
 
     _ctrFinalColorCP As groupContainer:
         Height: =40
+        PaddingRight: =0.00
+        PaddingTop: =0.00
         Visible: =false
-        Width: =150
-        X: =422
+        Width: =217.53
+        X: =611.95
         ZIndex: =14
 
         _lblFinalRedCP As label:
@@ -1598,12 +1644,15 @@ CompColorPicker As CanvasComponent:
             HoverBorderColor: =_lblFinalRedCP.BorderColor
             HoverColor: =_lblFinalRedCP.Color
             HoverFill: =_lblFinalRedCP.Fill
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =_lblFinalRedCP.BorderColor
             PressedColor: =_lblFinalRedCP.Color
             PressedFill: =_lblFinalRedCP.Fill
-            Size: =13
+            Size: =18.85
             Text: =locPickedColorRed
-            Width: =50
+            Width: =72.51
+            X: =0.00
             ZIndex: =1
 
         _lblFinalGreenCP As label:
@@ -1619,13 +1668,15 @@ CompColorPicker As CanvasComponent:
             HoverBorderColor: =_lblFinalGreenCP.BorderColor
             HoverColor: =_lblFinalGreenCP.Color
             HoverFill: =_lblFinalGreenCP.Fill
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =_lblFinalGreenCP.BorderColor
             PressedColor: =_lblFinalGreenCP.Color
             PressedFill: =_lblFinalGreenCP.Fill
-            Size: =13
+            Size: =18.85
             Text: =locPickedColorGreen
-            Width: =50
-            X: =50
+            Width: =72.51
+            X: =72.51
             ZIndex: =2
 
         _lblFinalBlueCP As label:
@@ -1641,20 +1692,24 @@ CompColorPicker As CanvasComponent:
             HoverBorderColor: =_lblFinalBlueCP.BorderColor
             HoverColor: =_lblFinalBlueCP.Color
             HoverFill: =_lblFinalBlueCP.Fill
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =_lblFinalBlueCP.BorderColor
             PressedColor: =_lblFinalBlueCP.Color
             PressedFill: =_lblFinalBlueCP.Fill
-            Size: =13
+            Size: =18.85
             Text: =locPickedColorBlue
-            Width: =50
-            X: =100
+            Width: =72.51
+            X: =145.01
             ZIndex: =3
 
     _ctrMainColorCP As groupContainer:
         Height: =40
+        PaddingRight: =0.00
+        PaddingTop: =0.00
         Visible: =false
-        Width: =150
-        X: =226
+        Width: =217.53
+        X: =327.72
         ZIndex: =15
 
         _lblMainColorRedCP As label:
@@ -1670,12 +1725,15 @@ CompColorPicker As CanvasComponent:
             HoverBorderColor: =_lblMainColorRedCP.BorderColor
             HoverColor: =_lblMainColorRedCP.Color
             HoverFill: =_lblMainColorRedCP.Fill
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =_lblMainColorRedCP.BorderColor
             PressedColor: =_lblMainColorRedCP.Color
             PressedFill: =_lblMainColorRedCP.Fill
-            Size: =13
+            Size: =18.85
             Text: =Switch(Right(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Left(locMainColor,2),1))+Switch(Left(Left(locMainColor,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Left(locMainColor,2),1))*16
-            Width: =50
+            Width: =72.51
+            X: =0.00
             ZIndex: =1
 
         _lblMainColorGreenCP As label:
@@ -1691,13 +1749,15 @@ CompColorPicker As CanvasComponent:
             HoverBorderColor: =_lblMainColorGreenCP.BorderColor
             HoverColor: =_lblMainColorGreenCP.Color
             HoverFill: =_lblMainColorGreenCP.Fill
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =_lblMainColorGreenCP.BorderColor
             PressedColor: =_lblMainColorGreenCP.Color
             PressedFill: =_lblMainColorGreenCP.Fill
-            Size: =13
+            Size: =18.85
             Text: =Switch(Right(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,3,2),1))+Switch(Left(Mid(locMainColor,3,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,3,2),1))*16
-            Width: =50
-            X: =50
+            Width: =72.51
+            X: =72.51
             ZIndex: =2
 
         _lblMainColorBlueCP As label:
@@ -1713,12 +1773,14 @@ CompColorPicker As CanvasComponent:
             HoverBorderColor: =_lblMainColorBlueCP.BorderColor
             HoverColor: =_lblMainColorBlueCP.Color
             HoverFill: =_lblMainColorBlueCP.Fill
+            PaddingRight: =7.25
+            PaddingTop: =7.25
             PressedBorderColor: =_lblMainColorBlueCP.BorderColor
             PressedColor: =_lblMainColorBlueCP.Color
             PressedFill: =_lblMainColorBlueCP.Fill
-            Size: =13
+            Size: =18.85
             Text: =Switch(Right(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Right(Mid(locMainColor,5,2),1))+Switch(Left(Mid(locMainColor,5,2),1),"A",10,"B",11,"C",12,"D",13,"E",14,"F",15,Left(Mid(locMainColor,5,2),1))*16
-            Width: =50
-            X: =100
+            Width: =72.51
+            X: =145.01
             ZIndex: =3
 
