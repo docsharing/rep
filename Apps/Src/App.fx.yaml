@@ -18,9 +18,9 @@ App As appinfo:
         Table(
         //Supplier menu
         {Item:"Supplier List", Screen:SC_NDA_MAIN, IDX:"1"}, 
-        {Item:"New", Screen:SC_DOC_MAIN , IDX:"1"}, 
-        {Item:"Modify/Delete", Screen:SC_NDA_MAIN, IDX:"1"}, 
-        {Item:"TEST1-3",Screen:SC_CONFIG_MAIN, IDX:"1"},
+        {Item:"Menu1", Screen:SC_DOC_MAIN , IDX:"1"}, 
+        {Item:"Menu2", Screen:SC_NDA_MAIN, IDX:"1"}, 
+        {Item:"Menu3",Screen:SC_CONFIG_MAIN, IDX:"1"},
          //NDA menu
         {Item:"In Signing Process", Screen:SC_NDA_MAIN, IDX:"2"}, 
         {Item:"Menu name here", Screen:SC_DOC_MAIN , IDX:"2"}, 
