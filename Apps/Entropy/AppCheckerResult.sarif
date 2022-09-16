@@ -1304,19 +1304,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.AccessibleLabel"
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.AccessibleLabel",
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CompGNBMenubar",
-                "type": "CompGNBMenubar.gal_LNB"
+                "type": "CompGNBMenubar.galGNB"
               }
             }
           ],
@@ -1334,19 +1334,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.TabIndex"
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.TabIndex",
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "CompGNBMenubar",
-                "type": "CompGNBMenubar.gal_LNB"
+                "type": "CompGNBMenubar.galGNB"
               }
             }
           ],
@@ -1364,19 +1364,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.lblHoverEffect.FocusedBorderThickness"
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.lblHoverEffect.FocusedBorderThickness",
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "CompGNBMenubar",
-                "type": "CompGNBMenubar.gal_LNB.lblHoverEffect"
+                "type": "CompGNBMenubar.galGNB.lblHoverEffect"
               }
             }
           ],
@@ -1394,19 +1394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.lblHoverEffect.TabIndex"
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompGNBMenubar.gal_LNB.lblHoverEffect.TabIndex",
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "CompGNBMenubar",
-                "type": "CompGNBMenubar.gal_LNB.lblHoverEffect"
+                "type": "CompGNBMenubar.galGNB.lblHoverEffect"
               }
             }
           ],

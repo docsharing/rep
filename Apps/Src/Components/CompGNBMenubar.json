@@ -55,7 +55,7 @@
         "IsLocked": false,
         "LayoutName": "",
         "MetaDataIDKey": "",
-        "Name": "Image2",
+        "Name": "imgCompanyLogo",
         "Parent": "CompGNBMenubar",
         "PersistMetaDataIDKey": false,
         "PublishOrderIndex": 73,
@@ -68,140 +68,14 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "ImagePosition.Fit",
-            "Property": "ImagePosition",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "ImageRotation.None",
-            "Property": "ImageRotation",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "15",
-            "Property": "X",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "20",
-            "Property": "Y",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "100",
-            "Property": "Width",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "35",
-            "Property": "Height",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(0, 0, 0, 0)",
-            "Property": "Fill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(244, 244, 244, 1)",
-            "Property": "DisabledFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "ColorFade(Self.Fill, -20%)",
-            "Property": "PressedFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "ColorFade(Self.Fill, 20%)",
-            "Property": "HoverFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(0, 89, 178, 1)",
-            "Property": "BorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(166, 166, 166, 1)",
-            "Property": "DisabledBorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "ColorFade(Self.BorderColor, -20%)",
-            "Property": "PressedBorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "ColorFade(Self.BorderColor, 20%)",
-            "Property": "HoverBorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.BorderColor",
-            "Property": "FocusedBorderColor",
+            "InvariantScript": "0",
+            "Property": "PaddingTop",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
             "InvariantScript": "BorderStyle.Solid",
             "Property": "BorderStyle",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "DisplayMode.Edit",
-            "Property": "DisplayMode",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "2",
-            "Property": "ZIndex",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "RadiusTopLeft",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "RadiusTopRight",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "RadiusBottomLeft",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "RadiusBottomRight",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "BorderThickness",
             "RuleProviderType": "Unknown"
           },
           {
@@ -213,13 +87,67 @@
           {
             "Category": "Design",
             "InvariantScript": "0",
-            "Property": "PaddingTop",
+            "Property": "BorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(166, 166, 166, 1)",
+            "Property": "DisabledBorderColor",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
             "InvariantScript": "0",
-            "Property": "PaddingRight",
+            "Property": "RadiusBottomRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "RadiusBottomLeft",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "RadiusTopRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "RadiusTopLeft",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "2",
+            "Property": "ZIndex",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "DisplayMode.Edit",
+            "Property": "DisplayMode",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 89, 178, 1)",
+            "Property": "BorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "20",
+            "Property": "Y",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "PaddingLeft",
             "RuleProviderType": "Unknown"
           },
           {
@@ -231,7 +159,79 @@
           {
             "Category": "Design",
             "InvariantScript": "0",
-            "Property": "PaddingLeft",
+            "Property": "PaddingRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ImagePosition.Fit",
+            "Property": "ImagePosition",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ColorFade(Self.Fill, 20%)",
+            "Property": "HoverFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ColorFade(Self.Fill, -20%)",
+            "Property": "PressedFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(244, 244, 244, 1)",
+            "Property": "DisabledFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 0, 0, 0)",
+            "Property": "Fill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "35",
+            "Property": "Height",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "100",
+            "Property": "Width",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "15",
+            "Property": "X",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ImageRotation.None",
+            "Property": "ImageRotation",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "FocusedBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ColorFade(Self.BorderColor, 20%)",
+            "Property": "HoverBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ColorFade(Self.BorderColor, -20%)",
+            "Property": "PressedBorderColor",
             "RuleProviderType": "Unknown"
           }
         ],
@@ -279,7 +279,7 @@
             "LayoutName": "",
             "MetaDataIDKey": "",
             "Name": "galleryTemplate1",
-            "Parent": "gal_LNB",
+            "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
             "PublishOrderIndex": 75,
             "Rules": [
@@ -404,7 +404,7 @@
             "LayoutName": "",
             "MetaDataIDKey": "",
             "Name": "lblShowSelected",
-            "Parent": "gal_LNB",
+            "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
             "PublishOrderIndex": 76,
             "Rules": [
@@ -476,8 +476,8 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Parent.TemplateHeight\r\n",
-                "Property": "Height",
+                "InvariantScript": "Self.BorderColor",
+                "Property": "PressedBorderColor",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -602,14 +602,8 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.Fill",
-                "Property": "HoverFill",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Self.Fill",
-                "Property": "PressedFill",
+                "InvariantScript": "Self.BorderColor",
+                "Property": "HoverBorderColor",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -620,14 +614,26 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.BorderColor",
-                "Property": "HoverBorderColor",
+                "InvariantScript": "Self.Fill",
+                "Property": "PressedFill",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.BorderColor",
-                "Property": "PressedBorderColor",
+                "InvariantScript": "Self.Fill",
+                "Property": "HoverFill",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Parent.TemplateHeight\r\n",
+                "Property": "Height",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "ThisItem.Value=CompGNBMenubar.Default",
+                "Property": "Visible",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -640,12 +646,6 @@
                 "Category": "Design",
                 "InvariantScript": "Self.Color",
                 "Property": "PressedColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "ThisItem.Value=CompGNBMenubar.Default",
-                "Property": "Visible",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -783,7 +783,7 @@
             "LayoutName": "",
             "MetaDataIDKey": "",
             "Name": "lblHoverEffect",
-            "Parent": "gal_LNB",
+            "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
             "PublishOrderIndex": 77,
             "Rules": [
@@ -873,8 +873,8 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Parent.Width-8\r\n",
-                "Property": "Width",
+                "InvariantScript": "Self.Color",
+                "Property": "HoverColor",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -939,8 +939,8 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "If(ThisItem.Value=CompGNBMenubar.Default, CompGNBMenubar.SelectedFill, Transparent) \r\n//If(ThisItem.Value=CompMenuVar.Default, RGBA(255,241,197,100), Transparent)    ",
-                "Property": "Fill",
+                "InvariantScript": "Self.BorderColor",
+                "Property": "PressedBorderColor",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -994,25 +994,25 @@
               {
                 "Category": "Design",
                 "InvariantScript": "Self.BorderColor",
-                "Property": "FocusedBorderColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Self.BorderColor",
                 "Property": "HoverBorderColor",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
                 "InvariantScript": "Self.BorderColor",
-                "Property": "PressedBorderColor",
+                "Property": "FocusedBorderColor",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.Color",
-                "Property": "HoverColor",
+                "InvariantScript": "If(ThisItem.Value=CompGNBMenubar.Default, CompGNBMenubar.SelectedFill, Transparent) \r\n//If(ThisItem.Value=CompMenuVar.Default, RGBA(255,241,197,100), Transparent)    ",
+                "Property": "Fill",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Parent.Width-8\r\n",
+                "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -1111,7 +1111,7 @@
             "LayoutName": "",
             "MetaDataIDKey": "",
             "Name": "imgMenu",
-            "Parent": "gal_LNB",
+            "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
             "PublishOrderIndex": 78,
             "Rules": [
@@ -1261,20 +1261,8 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.BorderColor",
-                "Property": "FocusedBorderColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "ColorFade(Self.BorderColor, 20%)",
-                "Property": "HoverBorderColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "ColorFade(Self.BorderColor, -20%)",
-                "Property": "PressedBorderColor",
+                "InvariantScript": "ColorFade(Self.Fill, -20%)",
+                "Property": "PressedFill",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -1285,8 +1273,20 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "ColorFade(Self.Fill, -20%)",
-                "Property": "PressedFill",
+                "InvariantScript": "ColorFade(Self.BorderColor, -20%)",
+                "Property": "PressedBorderColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "ColorFade(Self.BorderColor, 20%)",
+                "Property": "HoverBorderColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Self.BorderColor",
+                "Property": "FocusedBorderColor",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -1410,7 +1410,7 @@
             "LayoutName": "",
             "MetaDataIDKey": "",
             "Name": "lblMenuTitle",
-            "Parent": "gal_LNB",
+            "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
             "PublishOrderIndex": 79,
             "Rules": [
@@ -1422,14 +1422,14 @@
               },
               {
                 "Category": "Data",
-                "InvariantScript": "ThisItem.Value\r\n",
-                "Property": "Text",
+                "InvariantScript": "Live.Off",
+                "Property": "Live",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Data",
-                "InvariantScript": "Live.Off",
-                "Property": "Live",
+                "InvariantScript": "ThisItem.Value\r\n",
+                "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -1608,20 +1608,20 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.Fill",
-                "Property": "HoverFill",
+                "InvariantScript": "Self.Color",
+                "Property": "PressedColor",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.Fill",
-                "Property": "PressedFill",
+                "InvariantScript": "Self.Color",
+                "Property": "HoverColor",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
                 "InvariantScript": "Self.BorderColor",
-                "Property": "FocusedBorderColor",
+                "Property": "PressedBorderColor",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -1633,19 +1633,19 @@
               {
                 "Category": "Design",
                 "InvariantScript": "Self.BorderColor",
-                "Property": "PressedBorderColor",
+                "Property": "FocusedBorderColor",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.Color",
-                "Property": "HoverColor",
+                "InvariantScript": "Self.Fill",
+                "Property": "PressedFill",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Self.Color",
-                "Property": "PressedColor",
+                "InvariantScript": "Self.Fill",
+                "Property": "HoverFill",
                 "RuleProviderType": "Unknown"
               },
               {
@@ -1759,7 +1759,7 @@
         "IsLocked": false,
         "LayoutName": "",
         "MetaDataIDKey": "",
-        "Name": "gal_LNB",
+        "Name": "galGNB",
         "Parent": "CompGNBMenubar",
         "PersistMetaDataIDKey": false,
         "PublishOrderIndex": 74,
@@ -1772,14 +1772,98 @@
           },
           {
             "Category": "Data",
+            "InvariantScript": " ",
+            "Property": "Default",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Data",
             "InvariantScript": "1",
             "Property": "WrapCount",
             "RuleProviderType": "Unknown"
           },
           {
-            "Category": "Data",
-            "InvariantScript": " ",
-            "Property": "Default",
+            "Category": "Design",
+            "InvariantScript": "DisplayMode.Edit",
+            "Property": "DisplayMode",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "false",
+            "Property": "ShowScrollbar",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "LoadingSpinner.None",
+            "Property": "LoadingSpinner",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.Fill",
+            "Property": "HoverFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Parent.Height",
+            "Property": "Height",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.Fill",
+            "Property": "PressedFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "1",
+            "Property": "ZIndex",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "110",
+            "Property": "TemplateSize",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Layout.Vertical",
+            "Property": "Layout",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "TemplatePadding",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "LoadingSpinnerColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "DisabledBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Transition.None",
+            "Property": "Transition",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "PressedBorderColor",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1791,109 +1875,7 @@
           {
             "Category": "Design",
             "InvariantScript": "Self.BorderColor",
-            "Property": "DisabledBorderColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "BorderStyle.Solid",
-            "Property": "BorderStyle",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.BorderColor",
-            "Property": "LoadingSpinnerColor",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "DisplayMode.Edit",
-            "Property": "DisplayMode",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "LoadingSpinner.None",
-            "Property": "LoadingSpinner",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Transition.None",
-            "Property": "Transition",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "TemplatePadding",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Layout.Vertical",
-            "Property": "Layout",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "1",
-            "Property": "ZIndex",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Parent.Height",
-            "Property": "Height",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "110",
-            "Property": "TemplateSize",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "125",
-            "Property": "Width",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.Fill",
-            "Property": "HoverFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "60",
-            "Property": "Y",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "0",
-            "Property": "X",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "RGBA(0, 0, 0, 0)",
-            "Property": "Fill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.Fill",
-            "Property": "PressedFill",
-            "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "Self.Fill",
-            "Property": "DisabledFill",
+            "Property": "HoverBorderColor",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1904,20 +1886,38 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Self.BorderColor",
-            "Property": "HoverBorderColor",
+            "InvariantScript": "Self.Fill",
+            "Property": "DisabledFill",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "Self.BorderColor",
-            "Property": "PressedBorderColor",
+            "InvariantScript": "BorderStyle.Solid",
+            "Property": "BorderStyle",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "false",
-            "Property": "ShowScrollbar",
+            "InvariantScript": "RGBA(0, 0, 0, 0)",
+            "Property": "Fill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "X",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "60",
+            "Property": "Y",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "125",
+            "Property": "Width",
             "RuleProviderType": "Unknown"
           }
         ],
@@ -2002,7 +2002,7 @@
       },
       "TitleHeader"
     ],
-    "LastModifiedTimestamp": "637988839080013864",
+    "LastModifiedTimestamp": "637988839828448264",
     "Name": "CompGNBMenubar",
     "Rules": [
       {
@@ -2167,7 +2167,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637988839080013864",
+  "LastModifiedTimestamp": "637988839828448264",
   "Name": "31fbc11deb5d49459d01f33c024b6806",
   "OverridableProperties": {},
   "Version": "637986251750252818"
