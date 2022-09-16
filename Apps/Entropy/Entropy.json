@@ -199,6 +199,7 @@
     "StarVisible8": 153,
     "StarVisible9": 158,
     "TextInput2": 208,
+    "TextInput2_1": 209,
     "TimerHideAlert": 70,
     "TimerShowAlert": 69,
     "Title_DataCard1": 114,
@@ -226,7 +227,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/16/2022 06:24:56",
+  "HeaderLastSavedDateTimeUTC": "09/16/2022 06:26:24",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "4a53ac59-6f2e-42f6-bd05-f0deeefc5b34": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/b49848fa1adb45679bcd5c0be9b67f3a\"",
@@ -521,6 +522,7 @@
     "StarVisible8": 58,
     "StarVisible9": 63,
     "TextInput2": 6,
+    "TextInput2_1": 6,
     "TimerHideAlert": 187,
     "TimerShowAlert": 186,
     "Title_DataCard1": 22,
@@ -597,7 +599,7 @@
       "rectangle": 10,
       "screen": 9,
       "slider": 4,
-      "text": 5,
+      "text": 6,
       "timer": 2
     },
     "DeserializationLoadTime": 5.0717304,
