@@ -10,7 +10,7 @@ SC_SPLR_MAIN As screen:
     CompGNB As CompGNBMenubar:
         Height: =Parent.Height
         items: =colSplrLNBMenu
-        Width: =199
+        Width: =200
         X: =0.00
 
     Comp2ndMenu As Comp2ndMenubar:
@@ -29,14 +29,10 @@ SC_SPLR_MAIN As screen:
         ZIndex: =4
 
     ConButton As groupContainer.manualLayoutContainer:
-        Height: =50
-        PaddingBottom: =5
-        PaddingLeft: =5
-        PaddingRight: =7.25
-        PaddingTop: =7.25
+        Height: =60
         Width: =1643
-        X: =232.02
-        Y: =117
+        X: =231
+        Y: =139
         ZIndex: =5
 
         btnNew As button:
@@ -48,6 +44,7 @@ SC_SPLR_MAIN As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(0, 119, 237, 1)
             FontWeight: =FontWeight.Semibold
+            Height: =60
             HoverBorderColor: =ColorFade(Self.Fill, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
@@ -58,14 +55,13 @@ SC_SPLR_MAIN As screen:
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Size: =21.76
+            Size: =20
             Text: ="New"
-            Width: =184
-            X: =0.00
-            Y: =4
+            Width: =180
+            X: =btnModify.X + btnModify.Width + 50
             ZIndex: =1
 
-        btnModiy As button:
+        btnModify As button:
             BorderColor: =ColorFade(Self.Fill, -10%)
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
@@ -74,6 +70,7 @@ SC_SPLR_MAIN As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(0, 119, 237, 1)
             FontWeight: =FontWeight.Semibold
+            Height: =60
             HoverBorderColor: =ColorFade(Self.Fill, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
@@ -84,20 +81,18 @@ SC_SPLR_MAIN As screen:
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Size: =21.76
+            Size: =20
             Text: ="Modify"
-            Width: =232.02
-            X: =290.02
-            Y: =4
+            Width: =180
             ZIndex: =2
 
     Container2 As groupContainer.manualLayoutContainer:
-        Height: =60
+        Height: =50
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =1643
-        X: =232.02
-        Y: =167
+        X: =232
+        Y: =225
         ZIndex: =6
 
         inpPartnerName As text:
@@ -108,6 +103,7 @@ SC_SPLR_MAIN As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
             FocusedBorderThickness: =4
+            Height: =50
             HintText: ="협력사명"
             HoverBorderColor: =RGBA(0, 119, 237, 1)
             HoverColor: =ColorFade(varInputBorderColor, 10%)
@@ -120,8 +116,7 @@ SC_SPLR_MAIN As screen:
             RadiusTopRight: =0
             Size: =18.85
             Width: =192
-            X: =1.45
-            Y: =8
+            X: =3
             ZIndex: =1
 
         inpPerson As text:
@@ -132,6 +127,7 @@ SC_SPLR_MAIN As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
             FocusedBorderThickness: =4
+            Height: =50
             HintText: ="협력사 담당자명"
             HoverBorderColor: =RGBA(0, 119, 237, 1)
             HoverColor: =ColorFade(varInputBorderColor, 10%)
@@ -144,8 +140,7 @@ SC_SPLR_MAIN As screen:
             RadiusTopRight: =0
             Size: =18.85
             Width: =290.02
-            X: =349.48
-            Y: =8
+            X: =inpPartnerName.X + inpPartnerName.Width + 50
             ZIndex: =2
 
         crdFuelcellPerson As combobox:
@@ -162,6 +157,7 @@ SC_SPLR_MAIN As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             DisplayFields: =["DisplayName","Email","Picture"]
             DisplayMode: =Parent.DisplayMode
+            Height: =50
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(153, 205, 255, 1)
             Items: =Choices([@협력사현황].OData__xd4e8__xc5bc__xc140__xb2f4__xb2)
@@ -178,28 +174,113 @@ SC_SPLR_MAIN As screen:
             Template: =ListItemTemplate.Person
             Tooltip: =
             Width: =410.38
-            X: =697.51
-            Y: =8
+            X: =inpPerson.X + inpPerson.Width + 50
             ZIndex: =3
 
-    Container3 As groupContainer.manualLayoutContainer:
-        Height: =40
+    ConPartnerListHeader As groupContainer.manualLayoutContainer:
+        Height: =50
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =1643
-        X: =232.02
-        Y: =227
+        X: =232
+        Y: =311
         ZIndex: =7
 
-        Label1 As label:
+        lblPartnerName As label:
+            Align: =Align.Center
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =18.85
+            Size: =18
             Text: ="협력사명"
-            Width: =217.53
+            Width: =199
             X: =0.00
             ZIndex: =1
+
+        lblRegDate As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18
+            Text: ="등록일자"
+            Width: =251
+            X: =lblPartnerName.X + lblPartnerName.Width
+            ZIndex: =2
+
+        lblPerson As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18
+            Text: ="협력사 담당자"
+            Width: =225
+            X: =lblRegDate.X + lblRegDate.Width
+            ZIndex: =3
+
+        lblFuelcellPerson As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18
+            Text: ="퓨얼셀 담당자"
+            Width: =287
+            X: =lblPerson.X + lblPerson.Width
+            ZIndex: =4
+
+        lblNDAStatus As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18
+            Text: ="NDA 진행 상태"
+            Width: =225
+            X: =lblFuelcellPerson.X + lblFuelcellPerson.Width
+            ZIndex: =5
+
+        lblNDADocs As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18
+            Text: ="NDA 문서"
+            Width: =225
+            X: =lblNDAStatus.X + lblNDAStatus.Width
+            ZIndex: =6
+
+        lblHistory As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18
+            Text: ="NDA 문서"
+            Width: =225
+            X: =lblNDADocs.X + lblNDADocs.Width
+            ZIndex: =7
 
