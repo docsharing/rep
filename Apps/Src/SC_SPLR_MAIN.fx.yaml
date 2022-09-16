@@ -30,7 +30,7 @@ SC_SPLR_MAIN As screen:
 
     ConButton As groupContainer.manualLayoutContainer:
         Height: =60
-        Width: =1643
+        Width: =1655
         X: =231
         Y: =139
         ZIndex: =5
@@ -187,7 +187,7 @@ SC_SPLR_MAIN As screen:
         Height: =50
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =1643
+        Width: =1654
         X: =232
         Y: =311
         ZIndex: =7
@@ -294,7 +294,7 @@ SC_SPLR_MAIN As screen:
         BorderColor: =ColorFade(varBorderColor, 80%)
         BorderThickness: =0.5
         Height: =593
-        Width: =1643
+        Width: =1654
         X: =232
         Y: =371
         ZIndex: =8
