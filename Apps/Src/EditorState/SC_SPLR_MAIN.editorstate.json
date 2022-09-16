@@ -1541,7 +1541,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ChevronHoverBackground",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ColorFade(RGBA(0, 51, 102, 1), -20%)",
+          "InvariantPropertyName": "ChevronHoverBackground",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ChevronDisabledBackground",
         "SelectionFill",
         "SelectionTagFill",
