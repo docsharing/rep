@@ -1994,19 +1994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.Container4.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.Container4.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.Gallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.Container4.Gallery1"
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.Gallery1"
               }
             }
           ],
@@ -2024,19 +2024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.Container4.Gallery1.TabIndex"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.Gallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.Container4.Gallery1.TabIndex",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.Gallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.Container4.Gallery1"
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.Gallery1"
               }
             }
           ],
@@ -2054,6 +2054,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.Gallery1.TextInput3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.Gallery1.TextInput3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_MAIN",
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.Gallery1.TextInput3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.locColorRed"
                 }
               ],
@@ -2065,36 +2095,6 @@
               },
               "properties": {
                 "member": "locColorRed",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.varBorderColor"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varBorderColor",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varBorderColor",
                 "module": "App",
                 "type": "App"
               }
