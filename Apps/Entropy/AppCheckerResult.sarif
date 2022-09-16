@@ -2024,6 +2024,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.varButtonColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varButtonColor",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varButtonColor",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.confidential_finger"
                 }
               ],

@@ -164,4 +164,7 @@ App As appinfo:
                 1
             )
         );
+        
+        // 이종현
+        Set(varButtonColor, RGBA(0, 119, 237, 1));
 
