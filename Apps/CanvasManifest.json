@@ -116,6 +116,7 @@
     "SC_NDA_MAIN",
     "SC_DOC_MAIN",
     "SC_LOG_MAIN",
-    "SC_CONFIG_MAIN"
+    "SC_CONFIG_MAIN",
+    "SC_TEMP"
   ]
 }

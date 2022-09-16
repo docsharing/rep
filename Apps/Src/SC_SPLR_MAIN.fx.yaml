@@ -23,3 +23,59 @@ SC_SPLR_MAIN As screen:
         Y: =35
         ZIndex: =4
 
+    ConButton As groupContainer.manualLayoutContainer:
+        Height: =50
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        Width: =1172
+        X: =160
+        Y: =117
+        ZIndex: =5
+
+        btnNew As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 119, 237, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =ColorFade(Self.Fill, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, 10%)
+            PressedFill: =ColorFade(Self.Fill, 10%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =15
+            Text: ="New"
+            Y: =4
+            ZIndex: =1
+
+        btnModiy As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 119, 237, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =ColorFade(Self.Fill, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, 10%)
+            PressedFill: =ColorFade(Self.Fill, 10%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =15
+            Text: ="Modify"
+            X: =btnNew.X + btnNew.Width + 40
+            Y: =4
+            ZIndex: =2
+
