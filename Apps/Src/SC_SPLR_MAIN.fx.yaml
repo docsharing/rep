@@ -51,11 +51,11 @@ SC_SPLR_MAIN As screen:
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =20
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =18
             Text: ="New"
             Width: =180
             X: =btnModify.X + btnModify.Width + 50
@@ -93,11 +93,11 @@ SC_SPLR_MAIN As screen:
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =20
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =18
             Text: =If(varPartnerListEditFlag, "Save and Leave", "Modify")
             Width: =If(varPartnerListEditFlag, 280, 180)
             X: =ConFilter.Width / 2 - (btnModify.Width + btnNew.Width + 50) / 2
@@ -132,7 +132,6 @@ SC_SPLR_MAIN As screen:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =18
             Width: =260
             X: =3
             Y: =9
@@ -158,7 +157,6 @@ SC_SPLR_MAIN As screen:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =18
             Width: =260
             X: =inpFilterPartnerName.X + inpFilterPartnerName.Width + 50
             Y: =9
@@ -193,7 +191,7 @@ SC_SPLR_MAIN As screen:
             SearchItems: =Choices(협력사현황.'퓨얼셀 담당자',crdFilterFuelcellPerson.SearchText)
             SelectionFill: =RGBA(0, 51, 102, 1)
             SelectMultiple: =false
-            Size: =18
+            Size: =14
             Template: =ListItemTemplate.Person
             Tooltip: =
             Width: =410.38
@@ -221,7 +219,7 @@ SC_SPLR_MAIN As screen:
             Height: =50
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =18
+            Size: =16
             Text: ="협력사명"
             Width: =228
             X: =0.00
@@ -235,7 +233,7 @@ SC_SPLR_MAIN As screen:
             Height: =50
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =18
+            Size: =16
             Text: ="국내/해외"
             Width: =174
             X: =lblPartnerName.X + lblPartnerName.Width
@@ -249,7 +247,7 @@ SC_SPLR_MAIN As screen:
             Height: =50
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =18
+            Size: =16
             Text: ="분류"
             Width: =136
             X: =lblRegion.X + lblRegion.Width
@@ -263,7 +261,7 @@ SC_SPLR_MAIN As screen:
             Height: =50
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =18
+            Size: =16
             Text: ="협력사 담당자"
             Width: =169
             X: =lblDeviceType.X + lblDeviceType.Width
@@ -277,7 +275,7 @@ SC_SPLR_MAIN As screen:
             Height: =50
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =18
+            Size: =16
             Text: ="퓨얼셀 담당자"
             Width: =233
             X: =lblPerson.X + lblPerson.Width
@@ -291,7 +289,7 @@ SC_SPLR_MAIN As screen:
             Height: =50
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =18
+            Size: =16
             Text: ="NDA 진행 상태"
             Width: =270
             X: =lblFuelcellPerson.X + lblFuelcellPerson.Width
@@ -305,7 +303,7 @@ SC_SPLR_MAIN As screen:
             Height: =50
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =18
+            Size: =16
             Text: ="문서 공유 이력"
             Width: =225
             X: =lblNDAStatus.X + lblNDAStatus.Width
@@ -319,7 +317,7 @@ SC_SPLR_MAIN As screen:
             Height: =50
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =18
+            Size: =16
             Text: ="문서 공유 폴더"
             Width: =225
             X: =lblNDADocs.X + lblNDADocs.Width
