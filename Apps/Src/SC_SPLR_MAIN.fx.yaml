@@ -1,6 +1,6 @@
 SC_SPLR_MAIN As screen:
     Fill: =Color.White
-    OnVisible: |-
+    OnVisible: |
         =Set(varSelectedMenuIDX, "1");
         //Set(varBtnColor, RGBA(0, 119, 237, 1));
         Set(varInputBorderColor, RGBA(49, 49, 50, 1));
@@ -93,7 +93,7 @@ SC_SPLR_MAIN As screen:
         Y: =225
         ZIndex: =6
 
-        inpPartnerName As text:
+        inpFilterPartnerName As text:
             BorderColor: =varInputBorderColor
             Color: =RGBA(0, 0, 0, 1)
             Default: =""
@@ -118,7 +118,7 @@ SC_SPLR_MAIN As screen:
             Y: =9
             ZIndex: =1
 
-        inpPerson As text:
+        inpFilterPerson As text:
             BorderColor: =varInputBorderColor
             Color: =RGBA(0, 0, 0, 1)
             Default: =""
@@ -139,11 +139,11 @@ SC_SPLR_MAIN As screen:
             RadiusTopRight: =0
             Size: =18
             Width: =260
-            X: =inpPartnerName.X + inpPartnerName.Width + 50
+            X: =inpFilterPartnerName.X + inpFilterPartnerName.Width + 50
             Y: =9
             ZIndex: =2
 
-        crdFuelcellPerson As combobox:
+        crdFilterFuelcellPerson As combobox:
             BorderColor: =
             BorderThickness: =1
             ChevronBackground: =varButtonColor
@@ -168,14 +168,14 @@ SC_SPLR_MAIN As screen:
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 89, 178, 1)
             SearchFields: =["DisplayName"]
-            SearchItems: =Choices(협력사현황.OData__xd4e8__xc5bc__xc140__xb2f4__xb2,crdFuelcellPerson.SearchText)
+            SearchItems: =Choices(협력사현황.OData__xd4e8__xc5bc__xc140__xb2f4__xb2,crdFilterFuelcellPerson.SearchText)
             SelectionFill: =RGBA(0, 51, 102, 1)
             SelectMultiple: =false
             Size: =18
             Template: =ListItemTemplate.Person
             Tooltip: =
             Width: =410.38
-            X: =inpPerson.X + inpPerson.Width + 50
+            X: =inpFilterPerson.X + inpFilterPerson.Width + 50
             Y: =9
             ZIndex: =3
 
@@ -330,7 +330,7 @@ SC_SPLR_MAIN As screen:
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =30
                 Icon: =Icon.Erase
-                OnSelect: =Select(Parent)
+                OnSelect: =Remove(colPartnerList, ThisItem);
                 Width: =30
                 Y: =9
                 ZIndex: =1
@@ -558,4 +558,21 @@ SC_SPLR_MAIN As screen:
                 X: =lblDeviceType.X
                 Y: =4
                 ZIndex: =11
+
+    btnLoadData As button:
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 51, 102, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: =ClearCollect(colPartnerList, Filter(협력사현황, StartsWith(Title, inpFilterPartnerName.Text)));
+        Size: =15
+        Text: ="단추"
+        Visible: =false
+        X: =213
+        Y: =18
+        ZIndex: =9
 

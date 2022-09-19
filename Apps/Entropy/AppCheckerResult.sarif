@@ -1424,19 +1424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.inpPartnerName.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.inpFilterPartnerName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.inpPartnerName.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.inpFilterPartnerName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.ConFilter.inpPartnerName"
+                "type": "SC_SPLR_MAIN.ConFilter.inpFilterPartnerName"
               }
             }
           ],
@@ -1454,19 +1454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.inpPerson.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.inpFilterPerson.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.inpPerson.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.inpFilterPerson.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.ConFilter.inpPerson"
+                "type": "SC_SPLR_MAIN.ConFilter.inpFilterPerson"
               }
             }
           ],
@@ -1484,19 +1484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.crdFuelcellPerson.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.crdFilterFuelcellPerson.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.crdFuelcellPerson.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConFilter.crdFilterFuelcellPerson.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.ConFilter.crdFuelcellPerson"
+                "type": "SC_SPLR_MAIN.ConFilter.crdFilterFuelcellPerson"
               }
             }
           ],
