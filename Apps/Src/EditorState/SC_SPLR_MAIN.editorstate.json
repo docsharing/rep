@@ -80,7 +80,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnLoadData",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1080,7 +1080,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Comp2ndMenu",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

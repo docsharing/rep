@@ -4,7 +4,7 @@ Comp2ndMenubar As CanvasComponent:
     Items: |
         =Table({Item:"TEST1", Screen:SC_NDA_MAIN}, {Item:"TEST2",  Screen:SC_DOC_MAIN}, {Item:"TEST3", Screen:SC_NDA_MAIN}, {Item:"TEST4",Screen:SC_CONFIG_MAIN})
          
-    Width: =App.Width-125
+    Width: =App.Width-200
     X: =0
     Y: =0
     ZIndex: =1
@@ -44,7 +44,7 @@ Comp2ndMenubar As CanvasComponent:
         Fill: =RGBA(0, 0, 0, 1)
         Height: =1
         Width: =1600
-        X: =100
+        X: =60
         Y: =74
         ZIndex: =2
 
@@ -59,6 +59,6 @@ Comp2ndMenubar As CanvasComponent:
         Text: |-
             ="참고: App.OnStart에서 메뉴구성변경"
         Width: =387.18
-        X: =1406.62
+        X: =1306
         ZIndex: =3
 
