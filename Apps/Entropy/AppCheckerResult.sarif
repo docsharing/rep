@@ -3314,36 +3314,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.messageToShow"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.messageToShow",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "messageToShow",
-                "module": "SC_CONFIG_MAIN",
-                "type": "SC_CONFIG_MAIN"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "SC_CONFIG_MAIN.typeToShow"
                 }
               ],

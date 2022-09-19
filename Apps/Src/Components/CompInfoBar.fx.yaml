@@ -17,7 +17,7 @@ CompInfoBar As CanvasComponent:
         */
         "#F2F2F2"
     Height: =App.ActiveScreen.Height
-    Message: ="I am an alert message!"
+    Message: ="please refer to how to use"
     ShowAlert: |-
         =blnShow
          
