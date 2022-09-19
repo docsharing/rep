@@ -196,6 +196,12 @@ App As appinfo:
             false
         );
         // Color
+        Set(varMenuSecondaryColor, RGBA(
+                43,
+                43,
+                43,
+                10%
+            ));
         Set(
             varButtonColor,
             RGBA(
