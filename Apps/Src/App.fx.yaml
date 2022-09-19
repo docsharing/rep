@@ -231,6 +231,7 @@ App As appinfo:
         );
         
         
-        //boolean for showing CompMessagebar
-        Set(blnShow, false)
+        
+        Set(blnShow, false); //boolean for showing CompMessagebar
+        Set(blnShowMsgBarArea, false); //Show or hide the  message bar pre-occupied zone on the top
 

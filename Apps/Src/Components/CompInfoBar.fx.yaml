@@ -138,7 +138,6 @@ CompInfoBar As CanvasComponent:
         OnSelect: |+
             =
             Set(closeRequest,true);
-            
             //KIM JIHUN, 29220919
             //DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//
             Set(varTimerDuration, 0);
