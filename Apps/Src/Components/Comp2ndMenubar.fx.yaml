@@ -39,15 +39,6 @@ Comp2ndMenubar As CanvasComponent:
             Y: =10
             ZIndex: =1
 
-    shpHrztlLine As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(0, 0, 0, 1)
-        Height: =1
-        Width: =1600
-        X: =60
-        Y: =74
-        ZIndex: =2
-
     lblInfo As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -60,5 +51,14 @@ Comp2ndMenubar As CanvasComponent:
             ="참고: App.OnStart에서 메뉴구성변경"
         Width: =387.18
         X: =1306
+        ZIndex: =2
+
+    shpHrztlLine As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =1
+        Width: =1600
+        X: =60
+        Y: =74
         ZIndex: =3
 
