@@ -1,3 +1,5 @@
 SC_SPLR_NEW As screen:
-    Fill: =RGBA(232, 232, 232, 1)
+    Fill: =Color.White
+
+    Comp2ndMenubar_1 As Comp2ndMenubar:
 

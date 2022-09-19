@@ -75,7 +75,7 @@
         "Name": "lblInfo",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 203,
+        "PublishOrderIndex": 204,
         "Rules": [
           {
             "Category": "Data",
@@ -350,7 +350,7 @@
             "Name": "galleryTemplate2",
             "Parent": "galTopMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 205,
+            "PublishOrderIndex": 206,
             "Rules": [
               {
                 "Category": "Design",
@@ -468,7 +468,7 @@
             "Name": "lblMenuName",
             "Parent": "galTopMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 206,
+            "PublishOrderIndex": 207,
             "Rules": [
               {
                 "Category": "Data",
@@ -490,7 +490,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "21.76",
+                "InvariantScript": "22",
                 "Property": "Size",
                 "RuleProviderType": "Unknown"
               },
@@ -809,7 +809,7 @@
         "Name": "galTopMenu",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 204,
+        "PublishOrderIndex": 205,
         "Rules": [
           {
             "Category": "Data",
@@ -1047,7 +1047,7 @@
         "Name": "shpHrztlLine",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 207,
+        "PublishOrderIndex": 208,
         "Rules": [
           {
             "Category": "Design",
@@ -1187,7 +1187,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637991756061502338",
+    "LastModifiedTimestamp": "637991774161189309",
     "Name": "Comp2ndMenubar",
     "Rules": [
       {
@@ -1262,7 +1262,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637991756061502338",
+  "LastModifiedTimestamp": "637991774161189309",
   "Name": "5531d5d618db403dac7652145e7ddf8b",
   "OverridableProperties": {},
   "Version": "637987344695513501"

@@ -32,7 +32,7 @@ Comp2ndMenubar As CanvasComponent:
             OnSelect: =Navigate(ThisItem.Screen)
             PaddingRight: =7.25
             PaddingTop: =7.25
-            Size: =21.76
+            Size: =22
             Text: =ThisItem.Item
             Width: =282.77
             X: =0.00
