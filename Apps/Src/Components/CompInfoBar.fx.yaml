@@ -42,7 +42,7 @@ CompInfoBar As CanvasComponent:
             = 
             //KIM JIHUN, 29220919
             //DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//
-            Set(varTimerDuration, 1200)
+            Set(varTimerDuration, 1500)
         Reset: =true//varresetalert
         Start: =CompInfoBar.ShowAlert
         Text: |-
