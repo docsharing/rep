@@ -206,7 +206,7 @@ SC_SPLR_MAIN As screen:
             X: =0.00
             ZIndex: =1
 
-        lblRegDate As label:
+        lblRegion As label:
             Align: =Align.Center
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
@@ -215,10 +215,24 @@ SC_SPLR_MAIN As screen:
             PaddingRight: =7.25
             PaddingTop: =7.25
             Size: =18
-            Text: ="등록일자"
+            Text: ="국내/해외"
             Width: =196
             X: =lblPartnerName.X + lblPartnerName.Width
             ZIndex: =2
+
+        lblDeviceType As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =18
+            Text: ="분류"
+            Width: =136
+            X: =lblRegion.X + lblRegion.Width
+            ZIndex: =3
 
         lblPerson As label:
             Align: =Align.Center
@@ -231,8 +245,8 @@ SC_SPLR_MAIN As screen:
             Size: =18
             Text: ="협력사 담당자"
             Width: =171
-            X: =lblRegDate.X + lblRegDate.Width
-            ZIndex: =3
+            X: =lblDeviceType.X + lblDeviceType.Width
+            ZIndex: =4
 
         lblFuelcellPerson As label:
             Align: =Align.Center
@@ -246,7 +260,7 @@ SC_SPLR_MAIN As screen:
             Text: ="퓨얼셀 담당자"
             Width: =218
             X: =lblPerson.X + lblPerson.Width
-            ZIndex: =4
+            ZIndex: =5
 
         lblNDAStatus As label:
             Align: =Align.Center
@@ -260,7 +274,7 @@ SC_SPLR_MAIN As screen:
             Text: ="NDA 진행 상태"
             Width: =186
             X: =lblFuelcellPerson.X + lblFuelcellPerson.Width
-            ZIndex: =5
+            ZIndex: =6
 
         lblNDADocs As label:
             Align: =Align.Center
@@ -274,7 +288,7 @@ SC_SPLR_MAIN As screen:
             Text: ="NDA 문서"
             Width: =225
             X: =lblNDAStatus.X + lblNDAStatus.Width
-            ZIndex: =6
+            ZIndex: =7
 
         lblHistory As label:
             Align: =Align.Center
@@ -288,7 +302,7 @@ SC_SPLR_MAIN As screen:
             Text: ="NDA 문서"
             Width: =225
             X: =lblNDADocs.X + lblNDADocs.Width
-            ZIndex: =7
+            ZIndex: =8
 
     ConPartnerListContent As groupContainer.manualLayoutContainer:
         BorderColor: =ColorFade(varBorderColor, 80%)
@@ -342,34 +356,6 @@ SC_SPLR_MAIN As screen:
                 X: =icoDelete.X + icoDelete.Width
                 Y: =4
                 ZIndex: =2
-
-            DataCardValue4_1 As datepicker:
-                BorderColor: =
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =0.5
-                CalendarHeaderFill: =RGBA(0, 51, 102, 1)
-                Color: =RGBA(0, 0, 0, 1)
-                DefaultDate: =
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                HoverDateFill: =RGBA(153, 205, 255, 1)
-                IconBackground: =varButtonColor
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =7.25
-                PaddingTop: =0.00
-                SelectedDateFill: =RGBA(0, 51, 102, 1)
-                Size: =13
-                StartYear: =1899
-                Tooltip: =
-                Width: =lblRegDate.Width
-                X: =lblRegDate.X
-                Y: =4
-                ZIndex: =3
 
             DataCardValue2_1 As text:
                 Align: =Align.Center
