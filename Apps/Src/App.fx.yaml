@@ -168,4 +168,5 @@ App As appinfo:
         // 이종현
         Set(varButtonColor, RGBA(0, 119, 237, 1));
         Set(varBorderColor, RGBA(49, 49, 50, 1));
+        Set(varIconBackgroudColor, RGBA(29, 29, 31, 1));
 
