@@ -331,9 +331,19 @@ SC_SPLR_MAIN As screen:
 
         GalPartnerList As gallery.galleryVertical:
             BorderColor: =RGBA(0, 89, 178, 1)
+            DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
             Height: =605
             Items: =Sort(colPartnerList, ID, Descending)
             Layout: =Layout.Vertical
+            OnSelect: |-
+                =Patch(
+                    colPartnerList,
+                    ThisItem,
+                    {
+                        Title: inpPartner.Text,
+                        지역구분: lstCardRegion.Selected
+                    }
+                );
             TemplatePadding: =0
             TemplateSize: =50
             Width: =1640
