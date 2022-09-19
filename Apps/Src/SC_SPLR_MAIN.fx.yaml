@@ -202,7 +202,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =18
             Text: ="협력사명"
-            Width: =178
+            Width: =210
             X: =0.00
             ZIndex: =1
 
@@ -258,7 +258,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =18
             Text: ="퓨얼셀 담당자"
-            Width: =218
+            Width: =233
             X: =lblPerson.X + lblPerson.Width
             ZIndex: =5
 
@@ -272,7 +272,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =18
             Text: ="NDA 진행 상태"
-            Width: =186
+            Width: =272
             X: =lblFuelcellPerson.X + lblFuelcellPerson.Width
             ZIndex: =6
 
@@ -285,7 +285,7 @@ SC_SPLR_MAIN As screen:
             PaddingRight: =7.25
             PaddingTop: =7.25
             Size: =18
-            Text: ="NDA 문서"
+            Text: ="문서 공유 이력"
             Width: =225
             X: =lblNDAStatus.X + lblNDAStatus.Width
             ZIndex: =7
@@ -299,7 +299,7 @@ SC_SPLR_MAIN As screen:
             PaddingRight: =7.25
             PaddingTop: =7.25
             Size: =18
-            Text: ="NDA 문서"
+            Text: ="문서 공유 폴더"
             Width: =225
             X: =lblNDADocs.X + lblNDADocs.Width
             ZIndex: =8
@@ -357,7 +357,7 @@ SC_SPLR_MAIN As screen:
                 Y: =4
                 ZIndex: =2
 
-            DataCardValue2_1 As text:
+            inpCardPerson As text:
                 Align: =Align.Center
                 BorderColor: =
                 BorderStyle: =BorderStyle.None
@@ -387,7 +387,7 @@ SC_SPLR_MAIN As screen:
                 Y: =4
                 ZIndex: =4
 
-            DataCardValue5_1 As combobox:
+            lstCardFuelcellPerson As combobox:
                 BorderColor: =
                 BorderStyle: =BorderStyle.None
                 ChevronBackground: =varButtonColor
@@ -410,7 +410,7 @@ SC_SPLR_MAIN As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(협력사현황.OData__xd4e8__xc5bc__xc140__xb2f4__xb2,DataCardValue5_1.SearchText)
+                SearchItems: =Choices(협력사현황.OData__xd4e8__xc5bc__xc140__xb2f4__xb2,lstCardFuelcellPerson.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -421,7 +421,7 @@ SC_SPLR_MAIN As screen:
                 Y: =4
                 ZIndex: =5
 
-            DataCardValue3_1 As combobox:
+            lstCardNDAStatus As combobox:
                 BorderColor: =
                 BorderStyle: =BorderStyle.None
                 ChevronBackground: =varButtonColor
@@ -444,13 +444,27 @@ SC_SPLR_MAIN As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사현황.Status,DataCardValue3_1.SearchText)
+                SearchItems: =Choices(협력사현황.Status,lstCardNDAStatus.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
                 Tooltip: =
-                Width: =lblNDAStatus.Width
+                Width: =lblNDAStatus.Width - icoNDAListView.Width
                 X: =lblNDAStatus.X
                 Y: =4
                 ZIndex: =6
+
+            icoNDAListView As icon.ListScrollWatchlist:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =varButtonColor
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =30
+                Icon: =Icon.ListScrollWatchlist
+                OnSelect: |-
+                    =Launch("https://doosan.sharepoint.com/:f:/r/sites/DocumentSharing/Shared%20Documents/%ED%98%91%EB%A0%A5%EC%82%AC%20A?csf=1&web=1&e=Xof0uk");
+                Width: =30
+                X: =lstCardNDAStatus.X + lstCardNDAStatus.Width
+                Y: =9
+                ZIndex: =7
 

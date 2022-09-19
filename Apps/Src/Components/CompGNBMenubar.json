@@ -58,7 +58,7 @@
         "Name": "imgCompanyLogo",
         "Parent": "CompGNBMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 185,
+        "PublishOrderIndex": 186,
         "Rules": [
           {
             "Category": "Data",
@@ -281,7 +281,7 @@
             "Name": "galleryTemplate1",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 187,
+            "PublishOrderIndex": 188,
             "Rules": [
               {
                 "Category": "Design",
@@ -406,7 +406,7 @@
             "Name": "lblShowSelected",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 188,
+            "PublishOrderIndex": 189,
             "Rules": [
               {
                 "Category": "Data",
@@ -785,7 +785,7 @@
             "Name": "lblHoverEffect",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 189,
+            "PublishOrderIndex": 190,
             "Rules": [
               {
                 "Category": "Data",
@@ -1113,7 +1113,7 @@
             "Name": "imgMenu",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 190,
+            "PublishOrderIndex": 191,
             "Rules": [
               {
                 "Category": "Data",
@@ -1412,7 +1412,7 @@
             "Name": "lblMenuTitle",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 191,
+            "PublishOrderIndex": 192,
             "Rules": [
               {
                 "Category": "Data",
@@ -1762,7 +1762,7 @@
         "Name": "galGNB",
         "Parent": "CompGNBMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 186,
+        "PublishOrderIndex": 187,
         "Rules": [
           {
             "Category": "Data",

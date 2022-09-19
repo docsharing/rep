@@ -1604,19 +1604,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.DataCardValue2_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.DataCardValue2_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.DataCardValue2_1"
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.inpCardPerson.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.inpCardPerson.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_MAIN",
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.inpCardPerson"
               }
             }
           ],
@@ -2114,19 +2144,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.DataCardValue5_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.lstCardFuelcellPerson.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.DataCardValue5_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.lstCardFuelcellPerson.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.DataCardValue5_1"
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.lstCardFuelcellPerson"
               }
             }
           ],
@@ -2144,19 +2174,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.DataCardValue3_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.lstCardNDAStatus.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.DataCardValue3_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.lstCardNDAStatus.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
-                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.DataCardValue3_1"
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.lstCardNDAStatus"
               }
             }
           ],
@@ -2168,6 +2198,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SC_SPLR_MAIN",
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [
