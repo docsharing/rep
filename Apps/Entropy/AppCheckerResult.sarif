@@ -2174,6 +2174,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.varIconBackgroudColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varIconBackgroudColor",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varIconBackgroudColor",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.confidential_finger"
                 }
               ],

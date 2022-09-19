@@ -312,7 +312,7 @@ SC_SPLR_MAIN As screen:
 
             icoDelete As icon.Erase:
                 BorderColor: =RGBA(0, 89, 178, 1)
-                Color: =RGBA(0, 89, 178, 1)
+                Color: =varButtonColor
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =30
@@ -356,7 +356,7 @@ SC_SPLR_MAIN As screen:
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 HoverDateFill: =RGBA(153, 205, 255, 1)
-                IconBackground: =varIconBackgroudColor
+                IconBackground: =varButtonColor
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
