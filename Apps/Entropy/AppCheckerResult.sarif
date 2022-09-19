@@ -2354,6 +2354,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoDelete.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoDelete.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_MAIN",
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoDelete"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoDelete.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoDelete.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SC_SPLR_MAIN",
+                "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoDelete"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.locColorRed"
                 }
               ],
