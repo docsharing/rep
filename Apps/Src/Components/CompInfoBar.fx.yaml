@@ -149,7 +149,7 @@ CompInfoBar As CanvasComponent:
         Width: =50
         X: |-
             =//App.ActiveScreen.Width-30
-            lblAlertMsgBar.X + 1100
+            lblAlertMsgBar.X + 1600
         Y: =lblAlertMsgBar.Y+10
         ZIndex: =14
 
