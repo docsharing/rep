@@ -582,6 +582,8 @@ SC_SPLR_MAIN As screen:
                     ) && StartsWith(
                         담당자,
                         inpFilterPerson.Text
+                    ) && (
+                        IsBlank(crdFilterFuelcellPerson.SelectedItems) || IsEmpty(crdFilterFuelcellPerson.SelectedItems) || '퓨얼셀 담당자'.담당자 = crdFilterFuelcellPerson.Selected.Email
                     )
                 )
             );
