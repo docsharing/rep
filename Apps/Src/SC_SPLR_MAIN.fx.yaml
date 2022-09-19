@@ -1,9 +1,8 @@
 SC_SPLR_MAIN As screen:
     Fill: =Color.White
-    OnVisible: |
+    OnVisible: |-
         =Set(varSelectedMenuIDX, "1");
-        //Set(varBtnColor, RGBA(0, 119, 237, 1));
-        Set(varInputBorderColor, RGBA(49, 49, 50, 1));
+        Select(btnLoadData);
 
     CompGNB As CompGNBMenubar:
         Height: =Parent.Height
