@@ -328,7 +328,7 @@ SC_SPLR_MAIN As screen:
     ConPartnerListContent As groupContainer.manualLayoutContainer:
         BorderColor: =ColorFade(varBorderColor, 80%)
         BorderThickness: =0.5
-        Height: =603
+        Height: =620
         Width: =1654
         X: =232
         Y: =361
@@ -336,7 +336,7 @@ SC_SPLR_MAIN As screen:
 
         GalPartnerList As gallery.galleryVertical:
             BorderColor: =RGBA(0, 89, 178, 1)
-            Height: =605
+            Height: =620
             Items: =Sort(colPartnerList, ID, Descending)
             Layout: =Layout.Vertical
             OnSelect: |-
@@ -354,7 +354,7 @@ SC_SPLR_MAIN As screen:
                 );
             TemplatePadding: =0
             TemplateSize: =50
-            Width: =1640
+            Width: =1650
             X: =3
             ZIndex: =2
 
