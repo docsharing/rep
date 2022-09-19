@@ -23,6 +23,8 @@ SC_SPLR_NEW As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =협력사현황
         Height: =514
+        OnFailure: =Notify("New partner item insert error", NotificationType.Error)
+        OnSuccess: =Notify(DataCardValue21.Text&" 저장 성공!", NotificationType.Success, 2000);
         Width: =1572
         X: =270
         Y: =270
@@ -118,7 +120,7 @@ SC_SPLR_NEW As screen:
         Title_DataCard2 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="협력사명"
+            DataField: ="Title"
             Default: =ThisItem.Title
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@협력사현황],DataSourceInfo.DisplayName,"Title")
@@ -214,7 +216,7 @@ SC_SPLR_NEW As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc0ac__xc5c5__xc790__xbc88__xd6")
-            Required: =false
+            Required: =true
             Update: =DataCardValue30.Text
             Width: =524
             X: =1
