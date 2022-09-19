@@ -202,7 +202,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =18
             Text: ="협력사명"
-            Width: =245
+            Width: =178
             X: =0.00
             ZIndex: =1
 
@@ -230,7 +230,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =18
             Text: ="협력사 담당자"
-            Width: =225
+            Width: =171
             X: =lblRegDate.X + lblRegDate.Width
             ZIndex: =3
 
@@ -244,7 +244,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =18
             Text: ="퓨얼셀 담당자"
-            Width: =287
+            Width: =218
             X: =lblPerson.X + lblPerson.Width
             ZIndex: =4
 
@@ -258,7 +258,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =18
             Text: ="NDA 진행 상태"
-            Width: =225
+            Width: =186
             X: =lblFuelcellPerson.X + lblFuelcellPerson.Width
             ZIndex: =5
 
