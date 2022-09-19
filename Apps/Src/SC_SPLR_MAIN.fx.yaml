@@ -123,8 +123,8 @@ SC_SPLR_MAIN As screen:
             Height: =50
             HintText: ="협력사명"
             HoverBorderColor: =RGBA(0, 119, 237, 1)
-            HoverColor: =ColorFade(varBorderColor, 10%)
-            HoverFill: =ColorFade(varBorderColor, -40%)
+            HoverColor: =ColorFade(varBorderColor, 80%)
+            HoverFill: =ColorFade(varBorderColor, 80%)
             OnChange: =Select(btnLoadData);
             PaddingRight: =7.25
             PaddingTop: =7.25
@@ -150,7 +150,7 @@ SC_SPLR_MAIN As screen:
             HintText: ="협력사 담당자명"
             HoverBorderColor: =RGBA(0, 119, 237, 1)
             HoverColor: =ColorFade(varBorderColor, 10%)
-            HoverFill: =ColorFade(varBorderColor, -40%)
+            HoverFill: =ColorFade(varBorderColor, 80%)
             OnChange: =Select(btnLoadData);
             PaddingRight: =7.25
             PaddingTop: =7.25
@@ -180,7 +180,7 @@ SC_SPLR_MAIN As screen:
             DisplayMode: =Parent.DisplayMode
             Height: =50
             HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =RGBA(153, 205, 255, 1)
+            HoverFill: =ColorFade(varBorderColor, 80%)
             InputTextPlaceholder: ="퓨얼셀 담당자명"
             Items: =Choices([@협력사현황].'퓨얼셀 담당자')
             OnChange: =Select(btnLoadData);
