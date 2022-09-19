@@ -43,8 +43,8 @@ Comp2ndMenubar As CanvasComponent:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, 1)
         Height: =1
-        Width: =1618.34
-        X: =126.16
+        Width: =1600
+        X: =100
         Y: =74
         ZIndex: =2
 
