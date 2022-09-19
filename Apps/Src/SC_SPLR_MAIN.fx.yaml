@@ -107,7 +107,7 @@ SC_SPLR_MAIN As screen:
         ZIndex: =6
 
         inpFilterPartnerName As text:
-            BorderColor: =varInputBorderColor
+            BorderColor: =varBorderColor
             Color: =RGBA(0, 0, 0, 1)
             Default: =""
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -117,8 +117,8 @@ SC_SPLR_MAIN As screen:
             Height: =50
             HintText: ="협력사명"
             HoverBorderColor: =RGBA(0, 119, 237, 1)
-            HoverColor: =ColorFade(varInputBorderColor, 10%)
-            HoverFill: =ColorFade(varInputBorderColor, -40%)
+            HoverColor: =ColorFade(varBorderColor, 10%)
+            HoverFill: =ColorFade(varBorderColor, -40%)
             OnChange: =Select(btnLoadData);
             PaddingRight: =7.25
             PaddingTop: =7.25
@@ -133,7 +133,7 @@ SC_SPLR_MAIN As screen:
             ZIndex: =1
 
         inpFilterPerson As text:
-            BorderColor: =varInputBorderColor
+            BorderColor: =varBorderColor
             Color: =RGBA(0, 0, 0, 1)
             Default: =""
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -143,8 +143,8 @@ SC_SPLR_MAIN As screen:
             Height: =50
             HintText: ="협력사 담당자명"
             HoverBorderColor: =RGBA(0, 119, 237, 1)
-            HoverColor: =ColorFade(varInputBorderColor, 10%)
-            HoverFill: =ColorFade(varInputBorderColor, -40%)
+            HoverColor: =ColorFade(varBorderColor, 10%)
+            HoverFill: =ColorFade(varBorderColor, -40%)
             OnChange: =Select(btnLoadData);
             PaddingRight: =7.25
             PaddingTop: =7.25
