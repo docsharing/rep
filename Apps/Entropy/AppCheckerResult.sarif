@@ -2354,6 +2354,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.varPartnerListEditFlag"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varPartnerListEditFlag",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varPartnerListEditFlag",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.locColorRed"
                 }
               ],
