@@ -2564,36 +2564,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varMenuSecondaryColor"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varMenuSecondaryColor",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varMenuSecondaryColor",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.locColorRed"
                 }
               ],
