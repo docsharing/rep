@@ -132,6 +132,7 @@ SC_SPLR_MAIN As screen:
             HoverBorderColor: =RGBA(0, 119, 237, 1)
             HoverColor: =ColorFade(varInputBorderColor, 10%)
             HoverFill: =ColorFade(varInputBorderColor, -40%)
+            OnChange: =Select(btnLoadData);
             PaddingRight: =7.25
             PaddingTop: =7.25
             RadiusBottomLeft: =0
@@ -163,6 +164,7 @@ SC_SPLR_MAIN As screen:
             HoverFill: =RGBA(153, 205, 255, 1)
             InputTextPlaceholder: ="퓨얼셀 담당자명"
             Items: =Choices([@협력사현황].OData__xd4e8__xc5bc__xc140__xb2f4__xb2)
+            OnChange: =Select(btnLoadData);
             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
             PaddingRight: =7.25
             PaddingTop: =7.25
@@ -577,6 +579,9 @@ SC_SPLR_MAIN As screen:
                     StartsWith(
                         Title,
                         inpFilterPartnerName.Text
+                    ) && StartsWith(
+                        담당자,
+                        inpFilterPerson.Text
                     )
                 )
             );
