@@ -495,3 +495,36 @@ SC_SPLR_MAIN As screen:
                 Y: =9
                 ZIndex: =9
 
+            lstCardRegion As combobox:
+                BorderColor: =
+                BorderStyle: =BorderStyle.None
+                ChevronBackground: =varButtonColor
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Items: =Choices([@협력사현황].OData__xc9c0__xc5ed__xad6c__xbd84_)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(협력사현황.OData__xc9c0__xc5ed__xad6c__xbd84_,lstCardRegion.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectMultiple: =false
+                Size: =13
+                Tooltip: =
+                Width: =lblRegion.Width
+                X: =lblRegion.X
+                Y: =4
+                ZIndex: =10
+
