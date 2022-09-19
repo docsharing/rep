@@ -216,7 +216,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =18
             Text: ="국내/해외"
-            Width: =196
+            Width: =174
             X: =lblPartnerName.X + lblPartnerName.Width
             ZIndex: =2
 
