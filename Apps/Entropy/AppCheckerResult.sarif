@@ -3308,36 +3308,6 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.typeToShow"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.typeToShow",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "typeToShow",
-                "module": "SC_CONFIG_MAIN",
-                "type": "SC_CONFIG_MAIN"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
         }
       ],
       "tool": {

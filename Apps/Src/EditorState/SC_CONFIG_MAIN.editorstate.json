@@ -2204,7 +2204,7 @@
         {
           "Category": "Data",
           "PropertyName": "Type",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

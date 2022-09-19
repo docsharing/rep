@@ -155,6 +155,7 @@ SC_CONFIG_MAIN As screen:
     CompInfoBar_1 As CompInfoBar:
         Height: =80
         Message: =messageToShow
+        Type: =typeToShow
         Width: =1739
         X: =181
         ZIndex: =11
