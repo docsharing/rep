@@ -2864,36 +2864,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varIconBackgroudColor"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.varIconBackgroudColor",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varIconBackgroudColor",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.varMenuSecondaryColor"
                 }
               ],
@@ -2924,17 +2894,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.blnShowMsgBarArea"
+                  "fullyQualifiedName": "App.varIconBackgroudColor"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.blnShowMsgBarArea",
+                  "fullyQualifiedName": "App.varIconBackgroudColor",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "blnShowMsgBarArea",
+                "member": "varIconBackgroudColor",
                 "module": "App",
                 "type": "App"
               }

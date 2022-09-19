@@ -135,13 +135,13 @@ CompInfoBar As CanvasComponent:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =50
         Image: ='confidential_close-window'
-        OnSelect: |+
+        OnSelect: |
             =
             Set(closeRequest,true);
             //KIM JIHUN, 29220919
             //DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//
             Set(varTimerDuration, 0);
-            
+            Set(blnShowMsgBarArea, false);
         PaddingLeft: =4
         PaddingRight: =4
         PaddingTop: =4

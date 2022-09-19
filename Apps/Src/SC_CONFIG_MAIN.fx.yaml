@@ -1,12 +1,23 @@
 SC_CONFIG_MAIN As screen:
     Fill: =RGBA(219, 219, 219, 1)
 
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderThickness: =1
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =177
+        Width: =1101
+        X: =768
+        Y: =852
+        ZIndex: =1
+
     CompGNB_4 As CompGNBMenubar:
         Default: ="Config."
         Height: =Parent.Height
         items: =colLNBMenu
         Width: =181.26
         X: =0.00
+        ZIndex: =2
 
     btnChangeColor As label:
         Align: =Align.Center
@@ -22,8 +33,8 @@ SC_CONFIG_MAIN As screen:
         Size: =18.85
         Text: ="Change Color Scheme"
         Width: =385.73
-        X: =268
-        Y: =188
+        X: =768
+        Y: =670
         ZIndex: =3
 
     CompColorPicker_1 As CompColorPicker:
@@ -54,16 +65,23 @@ SC_CONFIG_MAIN As screen:
         ZIndex: =6
 
     bltnShowNtfctn As button:
+        BorderColor: |+
+            =ColorFade(Self.Fill, -45%)
+            
+        Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 51, 102, 1)
+        Fill: =RGBA(241, 241, 241, 1)
         Height: =61
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: |-
             =Set(closeRequest, false );
-            UpdateContext({messageToShow:"This is a notification message.....These example sentences are selected automatically from various online news sources to reflect current usage of the word 'notification."});
+            Set(blnShowMsgBarArea, true);
+            UpdateContext({messageToShow:"This is a notification message.....
+            Component에 공용사용가능하 Message bar를 추가했습니다.. 
+            from various online news sources to reflect current usage of the word 'notification."});
             UpdateContext({typeToShow:"Notification"});
             UpdateContext({blnShow: false });
             UpdateContext({blnShow: true });
@@ -79,16 +97,23 @@ SC_CONFIG_MAIN As screen:
         ZIndex: =7
 
     bltnShowAncmnt As button:
+        BorderColor: |+
+            =ColorFade(Self.Fill, -45%)
+            
+        Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 51, 102, 1)
+        Fill: =RGBA(241, 241, 241, 1)
         Height: =61
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: |
             =Set(closeRequest, false );
-            UpdateContext({messageToShow:"This is an announement message....plase use the component to convey a message"});
+            Set(blnShowMsgBarArea, true);
+            UpdateContext({messageToShow:"This is an announement message....
+            최근 임직원의 ID와 패스워드와 같은 계정정보를 탈취하려는 피싱메일 공격이 급증하고 있으며,
+            탈취한 임직원 계정을 통해 그룹 임직원을 대상으로 광범위하게 피싱메일이 발송되고 있어, 긴급하게 전임직원을 대상으로 안내를 드립니다."});
             UpdateContext({typeToShow:"Announcement"});
             UpdateContext({blnShow: false });
             UpdateContext({blnShow: true });
@@ -104,15 +129,20 @@ SC_CONFIG_MAIN As screen:
         ZIndex: =8
 
     bltnShowError As button:
+        BorderColor: |+
+            =ColorFade(Self.Fill, -45%)
+            
+        Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 51, 102, 1)
+        Fill: =RGBA(241, 241, 241, 1)
         Height: =61
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: |
             =Set(closeRequest, false );
+            Set(blnShowMsgBarArea, true);
             UpdateContext({messageToShow:"This is an error message polulated by the component"});
             UpdateContext({typeToShow:"Error"});
             UpdateContext({blnShow: false });
@@ -129,15 +159,20 @@ SC_CONFIG_MAIN As screen:
         ZIndex: =9
 
     bltnShowCnfmn As button:
+        BorderColor: |+
+            =ColorFade(Self.Fill, -45%)
+            
+        Color: =RGBA(0, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 51, 102, 1)
+        Fill: =RGBA(241, 241, 241, 1)
         Height: =61
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: |
             =Set(closeRequest, false );
+            Set(blnShowMsgBarArea, true);
             UpdateContext({messageToShow:"This is a confirmation message created by component titled CompInfobar!"});
             UpdateContext({typeToShow:"Confirmation"});
             UpdateContext({blnShow: false });
@@ -154,24 +189,25 @@ SC_CONFIG_MAIN As screen:
         ZIndex: =10
 
     CompInfoBar_1 As CompInfoBar:
+        Fill: =RGBA(0, 0, 0, 0)
         Height: =80
         Message: =messageToShow
         Type: =typeToShow
-        Width: =1739
-        X: =181
+        Visible: =blnShowMsgBarArea //Hide right after close button of the message bar clicked
+        Width: =1727
+        X: =192
         ZIndex: =11
 
-    lblCurrentScrName_5 As label:
+    rtglMessage As label:
         BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(118, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =38
-        PaddingRight: =7.25
-        PaddingTop: =7.25
-        Size: =21.76
-        Text: ="상단 바영역 On/Off 예정"
-        Width: =516
-        X: =828
-        Y: =880
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        Size: =20
+        Text: ="MessageBar Demo(Max. 3 lines?)"
+        Width: =470
+        X: =810
+        Y: =866
         ZIndex: =12
 
