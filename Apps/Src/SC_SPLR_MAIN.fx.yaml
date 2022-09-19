@@ -203,7 +203,7 @@ SC_SPLR_MAIN As screen:
     ConPartnerListHeader As groupContainer.manualLayoutContainer:
         BorderColor: =ColorFade(varBorderColor, 80%)
         BorderThickness: =0.5
-        Fill: =varMenuPrimaryColor
+        Fill: =ColorFade(varMenuPrimaryColor, 3%)
         Height: =50
         PaddingRight: =0.00
         PaddingTop: =0.00
@@ -292,7 +292,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =18
             Text: ="NDA 진행 상태"
-            Width: =290
+            Width: =270
             X: =lblFuelcellPerson.X + lblFuelcellPerson.Width
             ZIndex: =6
 
