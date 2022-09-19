@@ -251,7 +251,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/19/2022 05:59:24",
+  "HeaderLastSavedDateTimeUTC": "09/19/2022 06:13:32",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "4a53ac59-6f2e-42f6-bd05-f0deeefc5b34": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/b49848fa1adb45679bcd5c0be9b67f3a\"",
@@ -332,6 +332,7 @@
   },
   "OrderDataSource": {
     "colPartnerList": 6,
+    "colSelected": 7,
     "ComboBoxSample": 4,
     "CustomGallerySample": 2,
     "locBlackWhiteColors": 5,
