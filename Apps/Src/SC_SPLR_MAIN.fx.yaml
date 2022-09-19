@@ -316,7 +316,7 @@ SC_SPLR_MAIN As screen:
         GalPartnerList As gallery.galleryVertical:
             BorderColor: =RGBA(0, 89, 178, 1)
             Height: =605
-            Items: =협력사현황
+            Items: =Sort(colPartnerList, ID, Descending)
             Layout: =Layout.Vertical
             TemplatePadding: =0
             TemplateSize: =50
@@ -569,7 +569,17 @@ SC_SPLR_MAIN As screen:
         FontWeight: =FontWeight.Semibold
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =ClearCollect(colPartnerList, Filter(협력사현황, StartsWith(Title, inpFilterPartnerName.Text)));
+        OnSelect: |
+            =ClearCollect(
+                colPartnerList,
+                Filter(
+                    협력사현황,
+                    StartsWith(
+                        Title,
+                        inpFilterPartnerName.Text
+                    )
+                )
+            );
         Size: =15
         Text: ="단추"
         Visible: =false
