@@ -11,7 +11,7 @@ Comp2ndMenubar As CanvasComponent:
 
     galTopMenu As gallery.galleryHorizontal:
         BorderColor: =RGBA(0, 89, 178, 1)
-        Height: =50
+        Height: =65
         Items: |-
             = Comp2ndMenubar.Items 
              
