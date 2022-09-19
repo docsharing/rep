@@ -1604,17 +1604,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "TabIndex",
                 "module": "SC_SPLR_MAIN",
                 "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView"
               }
@@ -1626,8 +1626,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2204,17 +2204,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.TabIndex"
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.TabIndex",
+                  "fullyQualifiedName": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "SC_SPLR_MAIN",
                 "type": "SC_SPLR_MAIN.ConPartnerListContent.GalPartnerList.icoNDAListView"
               }
@@ -2226,8 +2226,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [

@@ -461,8 +461,7 @@ SC_SPLR_MAIN As screen:
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =30
                 Icon: =Icon.ListScrollWatchlist
-                OnSelect: |-
-                    =Launch("https://doosan.sharepoint.com/:f:/r/sites/DocumentSharing/Shared%20Documents/%ED%98%91%EB%A0%A5%EC%82%AC%20A?csf=1&web=1&e=Xof0uk");
+                OnSelect: =Navigate(SC_NDA_MAIN);
                 Width: =30
                 X: =lstCardNDAStatus.X + lstCardNDAStatus.Width
                 Y: =9
