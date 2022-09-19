@@ -997,3 +997,65 @@ SC_SPLR_NEW As screen:
                 Y: =DataCardKey25.Y
                 ZIndex: =4
 
+    ConButton_1 As groupContainer.manualLayoutContainer:
+        Height: =60
+        Width: =1655
+        X: =231
+        Y: =139
+        ZIndex: =4
+
+        btnTemp As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =varButtonColor
+            FontWeight: =FontWeight.Semibold
+            Height: =60
+            HoverBorderColor: =ColorFade(Self.Fill, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, 10%)
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            PressedFill: =ColorFade(Self.Fill, 10%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =20
+            Text: ="New"
+            Visible: =false
+            Width: =0
+            X: =btnSave.X + btnSave.Width + 50
+            ZIndex: =1
+
+        btnSave As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =varButtonColor
+            FontWeight: =FontWeight.Semibold
+            Height: =60
+            HoverBorderColor: =ColorFade(Self.Fill, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, 10%)
+            OnSelect: |
+                =
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            PressedFill: =ColorFade(Self.Fill, 10%)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =20
+            Text: =If(varPartnerListEditFlag, "Save and Leave", "Modify")
+            Width: =If(varPartnerListEditFlag, 280, 180)
+            X: =ConFilter.Width / 2 - (btnSave.Width + btnTemp.Width + 50) / 2
+            ZIndex: =2
+
