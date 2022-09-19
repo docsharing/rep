@@ -221,7 +221,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =16
             Text: ="협력사명"
-            Width: =228
+            Width: =213
             X: =0.00
             ZIndex: =1
 
@@ -235,7 +235,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =16
             Text: ="국내/해외"
-            Width: =174
+            Width: =129
             X: =lblPartnerName.X + lblPartnerName.Width
             ZIndex: =2
 
@@ -249,7 +249,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =16
             Text: ="분류"
-            Width: =136
+            Width: =102
             X: =lblRegion.X + lblRegion.Width
             ZIndex: =3
 
@@ -263,7 +263,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =16
             Text: ="협력사 담당자"
-            Width: =169
+            Width: =194
             X: =lblDeviceType.X + lblDeviceType.Width
             ZIndex: =4
 
@@ -277,7 +277,7 @@ SC_SPLR_MAIN As screen:
             PaddingTop: =7.25
             Size: =16
             Text: ="퓨얼셀 담당자"
-            Width: =233
+            Width: =263
             X: =lblPerson.X + lblPerson.Width
             ZIndex: =5
 
