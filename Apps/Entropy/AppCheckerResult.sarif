@@ -2054,19 +2054,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.Title_DataCard2.DataCardValue21.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.Title_DataCard2.DataCardValue21.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.Title_DataCard2.DataCardValue21.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.Title_DataCard2.DataCardValue21.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.Title_DataCard2.DataCardValue21"
+                "type": "SC_SPLR_NEW.FormNewPartner.Title_DataCard2.DataCardValue21"
               }
             }
           ],
@@ -2084,19 +2084,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.담당자_DataCard2.DataCardValue22.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.담당자_DataCard2.DataCardValue22.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.담당자_DataCard2.DataCardValue22.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.담당자_DataCard2.DataCardValue22.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.담당자_DataCard2.DataCardValue22"
+                "type": "SC_SPLR_NEW.FormNewPartner.담당자_DataCard2.DataCardValue22"
               }
             }
           ],
@@ -2114,19 +2114,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.등록일자_DataCard2.DataCardValue24.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.등록일자_DataCard2.DataCardValue24.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.등록일자_DataCard2.DataCardValue24.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.등록일자_DataCard2.DataCardValue24.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.등록일자_DataCard2.DataCardValue24"
+                "type": "SC_SPLR_NEW.FormNewPartner.등록일자_DataCard2.DataCardValue24"
               }
             }
           ],
@@ -2144,19 +2144,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.'퓨얼셀 담당자_DataCard2'.DataCardValue25.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.'퓨얼셀 담당자_DataCard2'.DataCardValue25.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.'퓨얼셀 담당자_DataCard2'.DataCardValue25.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.'퓨얼셀 담당자_DataCard2'.DataCardValue25.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.'퓨얼셀 담당자_DataCard2'.DataCardValue25"
+                "type": "SC_SPLR_NEW.FormNewPartner.'퓨얼셀 담당자_DataCard2'.DataCardValue25"
               }
             }
           ],
@@ -2174,19 +2174,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.지역구분_DataCard2.DataCardValue26.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.지역구분_DataCard2.DataCardValue26.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.지역구분_DataCard2.DataCardValue26.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.지역구분_DataCard2.DataCardValue26.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.지역구분_DataCard2.DataCardValue26"
+                "type": "SC_SPLR_NEW.FormNewPartner.지역구분_DataCard2.DataCardValue26"
               }
             }
           ],
@@ -2204,19 +2204,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.장비구분_DataCard2.DataCardValue27.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.장비구분_DataCard2.DataCardValue27.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.장비구분_DataCard2.DataCardValue27.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.장비구분_DataCard2.DataCardValue27.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.장비구분_DataCard2.DataCardValue27"
+                "type": "SC_SPLR_NEW.FormNewPartner.장비구분_DataCard2.DataCardValue27"
               }
             }
           ],
@@ -2234,19 +2234,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.대표자명_DataCard2.DataCardValue29.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.대표자명_DataCard2.DataCardValue29.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.대표자명_DataCard2.DataCardValue29.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.대표자명_DataCard2.DataCardValue29.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.대표자명_DataCard2.DataCardValue29"
+                "type": "SC_SPLR_NEW.FormNewPartner.대표자명_DataCard2.DataCardValue29"
               }
             }
           ],
@@ -2264,19 +2264,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.사업자번호_DataCard2.DataCardValue30.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.사업자번호_DataCard2.DataCardValue30.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.사업자번호_DataCard2.DataCardValue30.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.사업자번호_DataCard2.DataCardValue30.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.사업자번호_DataCard2.DataCardValue30"
+                "type": "SC_SPLR_NEW.FormNewPartner.사업자번호_DataCard2.DataCardValue30"
               }
             }
           ],
@@ -2294,19 +2294,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.전화번호_DataCard2.DataCardValue31.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.전화번호_DataCard2.DataCardValue31.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.전화번호_DataCard2.DataCardValue31.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.전화번호_DataCard2.DataCardValue31.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.전화번호_DataCard2.DataCardValue31"
+                "type": "SC_SPLR_NEW.FormNewPartner.전화번호_DataCard2.DataCardValue31"
               }
             }
           ],
@@ -2324,19 +2324,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.Address_DataCard1.DataCardValue23.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.Address_DataCard1.DataCardValue23.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.Address_DataCard1.DataCardValue23.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.Address_DataCard1.DataCardValue23.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.Address_DataCard1.DataCardValue23"
+                "type": "SC_SPLR_NEW.FormNewPartner.Address_DataCard1.DataCardValue23"
               }
             }
           ],
@@ -2354,19 +2354,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.우편번호_DataCard2.DataCardValue39.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.우편번호_DataCard2.DataCardValue39.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_NEW.Form2.우편번호_DataCard2.DataCardValue39.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_NEW.FormNewPartner.우편번호_DataCard2.DataCardValue39.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "SC_SPLR_NEW",
-                "type": "SC_SPLR_NEW.Form2.우편번호_DataCard2.DataCardValue39"
+                "type": "SC_SPLR_NEW.FormNewPartner.우편번호_DataCard2.DataCardValue39"
               }
             }
           ],

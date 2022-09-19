@@ -17,7 +17,7 @@ SC_SPLR_NEW As screen:
         Width: =200
         ZIndex: =2
 
-    Form2 As form:
+    FormNewPartner As form:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =협력사현황
         Height: =514
@@ -160,6 +160,7 @@ SC_SPLR_NEW As screen:
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 MaxLength: =Parent.MaxLength
+                OnChange: =
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -1047,7 +1048,7 @@ SC_SPLR_NEW As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =
+                =SubmitForm(FormNewPartner);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
