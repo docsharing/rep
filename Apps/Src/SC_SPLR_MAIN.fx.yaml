@@ -341,7 +341,11 @@ SC_SPLR_MAIN As screen:
                     ThisItem,
                     {
                         Title: inpPartner.Text,
-                        지역구분: lstCardRegion.Selected
+                        지역구분: lstCardRegion.Selected,
+                        장비구분: lstCardDeviceType.Selected,
+                        담당자: inpCardPerson.Text,
+                        '퓨얼셀 담당자': lstCardFuelcellPerson.Selected,
+                        NDA_Status: lstCardNDAStatus.Selected
                     }
                 );
             TemplatePadding: =0
