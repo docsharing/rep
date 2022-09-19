@@ -38,11 +38,12 @@ CompInfoBar As CanvasComponent:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
         OnTimerEnd: =
-        OnTimerStart: |-
+        OnTimerStart: |+
             = 
             //KIM JIHUN, 29220919
             //DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//
-            Set(varTimerDuration, 1500)
+            Set(varTimerDuration, 1900)
+            
         Reset: =true//varresetalert
         Start: =CompInfoBar.ShowAlert
         Text: |-
@@ -138,7 +139,7 @@ CompInfoBar As CanvasComponent:
         OnSelect: |
             =
             Set(closeRequest,true);
-            //KIM JIHUN, 29220919
+            //KIM JIHUN, 20220919
             //DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//
             Set(varTimerDuration, 0);
             Set(blnShowMsgBarArea, false);
@@ -161,11 +162,11 @@ CompInfoBar As CanvasComponent:
         FontWeight: =FontWeight.Semibold
         Height: =56
         Size: =20
-        Text: |
-            ="X value : "&varWidthSizeForDbg.X +174 & "-->"
-        Visible: =false
-        Width: =174
-        X: =1192
-        Y: =40
+        Text: |-
+            =//"X value : "&varWidthSizeForDbg.X +174 & "-->"
+            App.ActiveScreen.Size
+        Width: =86
+        X: =1833
+        Y: =12
         ZIndex: =23
 

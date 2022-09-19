@@ -1,5 +1,14 @@
 SC_CONFIG_MAIN As screen:
     Fill: =RGBA(219, 219, 219, 1)
+    OnVisible: |-
+        = Set(closeRequest, false );
+        Set(blnShowMsgBarArea, true);
+        UpdateContext({messageToShow:"This is a notification message.....
+        Component에 공용사용가능하 Message bar를 추가했습니다.. 사용방법은 버튼위 코드를 참고하세요.
+        필요한 부분은 추가하시거나 수정하세요."});
+        UpdateContext({typeToShow:"Notification"}); //Types : Notification|Error|Announcement|Confirmation
+        UpdateContext({blnShow: false });
+        UpdateContext({blnShow: true });
 
     Rectangle1 As rectangle:
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -77,12 +86,16 @@ SC_CONFIG_MAIN As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: |-
-            =Set(closeRequest, false );
+            =
+            //메시지바 이용위해서는 아래 코드 이용 
+            //메시지 바 슬라이딩 지속시간은 timerShowAlert:OnTimerStart에서 정의 (현재 1900)
+            
+            Set(closeRequest, false );
             Set(blnShowMsgBarArea, true);
             UpdateContext({messageToShow:"This is a notification message.....
-            Component에 공용사용가능하 Message bar를 추가했습니다.. 
-            from various online news sources to reflect current usage of the word 'notification."});
-            UpdateContext({typeToShow:"Notification"});
+            Component에 공용사용가능하 Message bar를 추가했습니다.. 사용방법은 버튼위 코드를 참고하세요.
+            필요한 부분은 추가하시거나 수정하세요."});
+            UpdateContext({typeToShow:"Notification"}); //Types : Notification|Error|Announcement|Confirmation
             UpdateContext({blnShow: false });
             UpdateContext({blnShow: true });
         RadiusBottomLeft: =2

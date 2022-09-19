@@ -68,7 +68,7 @@ App As appinfo:
                 {
                     Value: "Config.",
                     MenuIMG: confidential_config2,
-                    Screen: SC_SPLR_CONFIG,
+                    Screen: SC_CONFIG_MAIN,
                     IDX: "5"
                 }
             )

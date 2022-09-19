@@ -1081,7 +1081,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "\r\nSet(closeRequest,true);\r\n//KIM JIHUN, 29220919\r\n//DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//\r\nSet(varTimerDuration, 0);\r\nSet(blnShowMsgBarArea, false);\r\n",
+            "InvariantScript": "\r\nSet(closeRequest,true);\r\n//KIM JIHUN, 20220919\r\n//DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//\r\nSet(varTimerDuration, 0);\r\nSet(blnShowMsgBarArea, false);\r\n",
             "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
@@ -1187,14 +1187,7 @@
           "PaddingRight",
           "PaddingBottom",
           "PaddingLeft",
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "true",
-            "InvariantPropertyName": "Visible",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          }
+          "Visible"
         ],
         "ControlUniqueId": "85",
         "HasDynamicProperties": false,
@@ -1219,7 +1212,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "\"X value : \"&varWidthSizeForDbg.X +174 & \"-->\"\r\n",
+            "InvariantScript": "//\"X value : \"&varWidthSizeForDbg.X +174 & \"-->\"\r\nApp.ActiveScreen.Size",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -1345,19 +1338,19 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1192",
+            "InvariantScript": "1833",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "12",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "174",
+            "InvariantScript": "86",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1447,7 +1440,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "false",
+            "InvariantScript": "true",
             "Property": "Visible",
             "RuleProviderType": "Unknown"
           }
@@ -1792,7 +1785,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": " \r\n//KIM JIHUN, 29220919\r\n//DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//\r\nSet(varTimerDuration, 1500)",
+            "InvariantScript": " \r\n//KIM JIHUN, 29220919\r\n//DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//\r\nSet(varTimerDuration, 1900)\r\n\r\n",
             "Property": "OnTimerStart",
             "RuleProviderType": "Unknown"
           }
@@ -1899,7 +1892,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637992254573467657",
+    "LastModifiedTimestamp": "637992276006622416",
     "Name": "CompInfoBar",
     "Rules": [
       {
@@ -2064,7 +2057,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637992254573467657",
+  "LastModifiedTimestamp": "637992276006622416",
   "Name": "c92276ddd3dd4dd28b0150ab9bcdbf2c",
   "OverridableProperties": {},
   "TemplateOriginalName": "a2bdbf11048248e0ac466ae822ebf460",
