@@ -82,7 +82,8 @@ SC_SPLR_MAIN As screen:
                         colPartnerList
                     );
                     Remove(협력사현황, colSelected);
-                    Clear(colSelected);    
+                    Clear(colSelected);
+                    Clear(colPartnerList);   
                 );
                 Set(
                     varPartnerListEditFlag,
