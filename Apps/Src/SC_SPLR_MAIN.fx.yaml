@@ -487,7 +487,7 @@ SC_SPLR_MAIN As screen:
                 DisabledColor: =RGBA(244, 244, 244, 1)
                 Height: =30
                 Icon: =Icon.Folder
-                OnSelect: =Select(Parent)
+                OnSelect: =Launch(ThisItem.문서공유폴더);
                 Width: =30
                 X: =lblHistory.X + (lblHistory.Width)/2
                 Y: =9
