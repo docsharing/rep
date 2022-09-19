@@ -1,6 +1,6 @@
 Comp2ndMenubar As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =70
+    Height: =100
     Items: |
         =Table({Item:"TEST1", Screen:SC_NDA_MAIN}, {Item:"TEST2",  Screen:SC_DOC_MAIN}, {Item:"TEST3", Screen:SC_NDA_MAIN}, {Item:"TEST4",Screen:SC_CONFIG_MAIN})
          
@@ -45,7 +45,7 @@ Comp2ndMenubar As CanvasComponent:
         Height: =1
         Width: =1618.34
         X: =126.16
-        Y: =65
+        Y: =74
         ZIndex: =2
 
     lblInfo As label:
