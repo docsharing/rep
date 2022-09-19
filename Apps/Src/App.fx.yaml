@@ -1,17 +1,42 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |
+    OnStart: |-
         =//Populates LNB Menu
-        Set(colLNBMenu,
-        Table(
-            {Value: "Supplier",MenuIMG:confidential_supplier2 , Screen: SC_SPLR_MAIN, IDX:"1"},
-            {Value: "NDA", MenuIMG:confidential_NDA2, Screen: SC_NDA_MAIN,IDX:"2"},
-            {Value: "Documents", MenuIMG:confidential_document22, Screen: SC_DOC_MAIN, IDX:"3"},
-            {Value: "ActivityLog", MenuIMG:confidential_logs2, Screen:SC_LOG_MAIN, IDX:"4"},
-            {Value: "Config.", MenuIMG:confidential_config2, Screen: SC_CONFIG_MAIN, IDX:"5"}
-        )
-         );
-        
+        Set(
+            colLNBMenu,
+            Table(
+                {
+                    Value: "Supplier",
+                    MenuIMG: confidential_supplier2,
+                    Screen: SC_SPLR_MAIN,
+                    IDX: "1"
+                },
+                {
+                    Value: "NDA",
+                    MenuIMG: confidential_NDA2,
+                    Screen: SC_NDA_MAIN,
+                    IDX: "2"
+                },
+                {
+                    Value: "Documents",
+                    MenuIMG: confidential_document22,
+                    Screen: SC_DOC_MAIN,
+                    IDX: "3"
+                },
+                {
+                    Value: "ActivityLog",
+                    MenuIMG: confidential_logs2,
+                    Screen: SC_LOG_MAIN,
+                    IDX: "4"
+                },
+                {
+                    Value: "Config.",
+                    MenuIMG: confidential_config2,
+                    Screen: SC_CONFIG_MAIN,
+                    IDX: "5"
+                }
+            )
+        );
         // Supplier LNB Menu
         Set(
             colSplrLNBMenu,
@@ -164,17 +189,42 @@ App As appinfo:
                 1
             )
         );
-        
         // 이종현
-        
         // Flag
         Set(
-            varPartnerListEditFlag, // 수정 or 보기 mode
+            varPartnerListEditFlag,// 수정 or 보기 mode
             false
         );
-        
         // Color
-        Set(varButtonColor, RGBA(0, 119, 237, 1));
-        Set(varBorderColor, RGBA(49, 49, 50, 1));
-        Set(varIconBackgroudColor, RGBA(29, 29, 31, 1));
+        Set(
+            varButtonColor,
+            RGBA(
+                0,
+                119,
+                237,
+                1
+            )
+        );
+        Set(
+            varBorderColor,
+            RGBA(
+                49,
+                49,
+                50,
+                1
+            )
+        );
+        Set(
+            varIconBackgroudColor,
+            RGBA(
+                29,
+                29,
+                31,
+                1
+            )
+        );
+        
+        
+        //boolean for showing CompMessagebar
+        Set(blnShow, false)
 

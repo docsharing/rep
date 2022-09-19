@@ -1,0 +1,172 @@
+CompInfoBar As CanvasComponent:
+    AlertDuration: =800000 //Duration how long message stays on the screen.
+    AlertLocation: ="Top"//"Bottom" /* Position of message on Top screen or at Bottom */
+    Fill: =RGBA(230, 230, 230, 1) 
+    FillColor: |-
+        =/*Switch(
+            CompInfoBar.Type,
+            "Confirmation",
+            "#34c768",
+            "Error",
+            "#e0362c",
+            "Notification",
+            "#1976D2",
+            "Announcement",
+            "#512DA8"
+        )
+        */
+        "#F2F2F2"
+    Height: =App.ActiveScreen.Height
+    Message: ="I am an alert message!"
+    ShowAlert: |-
+        =blnShow
+         
+    TextColor: =Black
+    Type: ="Notification"//"Error"||"Notification"||"Announcement"
+    Width: =App.ActiveScreen.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    timerShowAlert As timer:
+        Duration: |-
+            =//1200
+            varTimerDuration
+             
+        Fill: =RGBA(179, 179, 179, 1)
+        Height: =41
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+        OnTimerEnd: =
+        OnTimerStart: |-
+            = 
+            //KIM JIHUN, 29220919
+            //DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//
+            Set(varTimerDuration, 1200)
+        Reset: =true//varresetalert
+        Start: =CompInfoBar.ShowAlert
+        Text: |-
+            =Text(Time(0, 0, Self.Value/1000), "[$-en-US]hh:mm:ss")
+        Visible: |-
+            =false
+             
+        Width: =98
+        X: =1230
+        Y: =244
+        ZIndex: =2
+
+    lblAlertMsgBar As label:
+        BorderColor: =RGBA(202, 202, 202, 1)
+        BorderThickness: =1
+        Color: =CompInfoBar.TextColor
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =ColorFade(ColorValue(CompInfoBar.FillColor),80%)
+        Height: =80
+        PaddingLeft: =imgAlertIcon.Width+10
+        PaddingRight: =25
+        Size: =13
+        Text: =CompInfoBar.Message
+        Visible: |-
+            =
+            /*(If(closeRequest, App.ActiveScreen.Width,   //if close request is true, push the bar to the right(which means hide the bar...(
+            App.ActiveScreen.Width-timerShowAlert.Value)   //Side effec : Flash once before the bar slide from right to the left
+            */
+            //If(CompInfoBar.ShowAlert = true And  closeRequest = false And App., , )
+            
+            
+            CompInfoBar.ShowAlert
+            
+             
+        Width: =CompInfoBar.Width
+        X: |-
+            = 
+            
+            
+            If(closeRequest, App.ActiveScreen.Width ,   //if close request is true, push the bar to the right(which means hide the bar...(
+            App.ActiveScreen.Width-timerShowAlert.Value)   //Side effect : Flash once before the bar slide from right to the left
+             // If(App.ActiveScreen.Width-timerShowAlert.Value =166, App.ActiveScreen.Width, App.ActiveScreen.Width-timerShowAlert.Value))
+            //Switch(App.ActiveScreen.Width-timerShowAlert.Value, 166, App.ActiveScreen.Width, App.ActiveScreen.Width-timerShowAlert.Value))
+            
+            
+            //When timer
+            /*
+            If(closeRequest = true, App.ActiveScreen.Width, 
+               closeRequest = false, If(App.ActiveScreen.Width-timerShowAlert.Value = 166,App.ActiveScreen.Width, App.ActiveScreen.Width-timerShowAlert.Value))
+             */
+             
+        Y: |-
+            = 
+            If(CompInfoBar.AlertLocation="Top", 0,App.ActiveScreen.Height-Self.Height )
+            
+            //If(CompInfoBar.AlertLocation="Top",App.ActiveScreen.Height )
+        ZIndex: =3
+
+    imgAlertIcon As image:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: |-
+            =//ColorValue(CompInfoBar.FillColor) //RGBA(0, 0, 0, 0)
+            RGBA(242, 242, 242, 0)
+        Height: =lblAlertMsgBar.Height
+        Image: |-
+            =Switch(CompInfoBar.Type,
+            //"Notification",imgBell ,
+            "Notification",confidential_bell_visible ,
+            "Announcement",confidential_important_info_visible,
+            "Error",confidential_error_visible,
+            "Confirmation",confidential_success_visible)
+            
+             
+        PaddingBottom: =4
+        PaddingLeft: =4
+        PaddingRight: =4
+        PaddingTop: =4
+        Width: =80
+        X: =lblAlertMsgBar.X
+        Y: =lblAlertMsgBar.Y
+        ZIndex: =4
+
+    imgCloseBar As image:
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Image: ='confidential_close-window'
+        OnSelect: |+
+            =
+            Set(closeRequest,true);
+            
+            //KIM JIHUN, 29220919
+            //DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//
+            Set(varTimerDuration, 0);
+            
+        PaddingLeft: =4
+        PaddingRight: =4
+        PaddingTop: =4
+        Width: =50
+        X: |-
+            =//App.ActiveScreen.Width-30
+            lblAlertMsgBar.X + 1100
+        Y: =lblAlertMsgBar.Y+10
+        ZIndex: =14
+
+    varWidthSizeForDbg As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(175, 191, 224, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =56
+        Size: =20
+        Text: |
+            ="X value : "&varWidthSizeForDbg.X +174 & "-->"
+        Visible: =false
+        Width: =174
+        X: =1192
+        Y: =40
+        ZIndex: =23
+

@@ -248,14 +248,14 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
-                Items: =Choices([@협력사현황].Status)
+                Items: =Choices([@협력사현황].NDA_Status)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =7.25
                 PaddingTop: =7.25
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사현황.Status,DataCardValue3.SearchText)
+                SearchItems: =Choices(협력사현황.NDA_Status,DataCardValue3.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =18.85
@@ -438,14 +438,14 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
-                Items: =Choices([@협력사현황].OData__xd4e8__xc5bc__xc140__xb2f4__xb2)
+                Items: =Choices([@협력사현황].'퓨얼셀 담당자')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =7.25
                 PaddingTop: =7.25
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(협력사현황.OData__xd4e8__xc5bc__xc140__xb2f4__xb2,DataCardValue5.SearchText)
+                SearchItems: =Choices(협력사현황.'퓨얼셀 담당자',DataCardValue5.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =18.85
@@ -537,14 +537,14 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
-                Items: =Choices([@협력사현황].OData__xc9c0__xc5ed__xad6c__xbd84_)
+                Items: =Choices([@협력사현황].지역구분)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =7.25
                 PaddingTop: =7.25
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사현황.OData__xc9c0__xc5ed__xad6c__xbd84_,DataCardValue6.SearchText)
+                SearchItems: =Choices(협력사현황.지역구분,DataCardValue6.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =18.85
@@ -635,14 +635,14 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
-                Items: =Choices([@협력사현황].OData__xc7a5__xbe44__xad6c__xbd84_)
+                Items: =Choices([@협력사현황].장비구분)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =7.25
                 PaddingTop: =7.25
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사현황.OData__xc7a5__xbe44__xad6c__xbd84_,DataCardValue7.SearchText)
+                SearchItems: =Choices(협력사현황.장비구분,DataCardValue7.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =18.85

@@ -182,7 +182,7 @@ SC_SPLR_MAIN As screen:
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(153, 205, 255, 1)
             InputTextPlaceholder: ="퓨얼셀 담당자명"
-            Items: =Choices([@협력사현황].OData__xd4e8__xc5bc__xc140__xb2f4__xb2)
+            Items: =Choices([@협력사현황].'퓨얼셀 담당자')
             OnChange: =Select(btnLoadData);
             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
             PaddingRight: =7.25
@@ -190,7 +190,7 @@ SC_SPLR_MAIN As screen:
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 89, 178, 1)
             SearchFields: =["DisplayName"]
-            SearchItems: =Choices(협력사현황.OData__xd4e8__xc5bc__xc140__xb2f4__xb2,crdFilterFuelcellPerson.SearchText)
+            SearchItems: =Choices(협력사현황.'퓨얼셀 담당자',crdFilterFuelcellPerson.SearchText)
             SelectionFill: =RGBA(0, 51, 102, 1)
             SelectMultiple: =false
             Size: =18
@@ -443,7 +443,7 @@ SC_SPLR_MAIN As screen:
                 DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
-                Items: =Choices([@협력사현황].OData__xd4e8__xc5bc__xc140__xb2f4__xb2)
+                Items: =Choices([@협력사현황].'퓨얼셀 담당자')
                 OnChange: =Select(Parent)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =7.25
@@ -451,7 +451,7 @@ SC_SPLR_MAIN As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(협력사현황.OData__xd4e8__xc5bc__xc140__xb2f4__xb2,lstCardFuelcellPerson.SearchText)
+                SearchItems: =Choices(협력사현황.'퓨얼셀 담당자',lstCardFuelcellPerson.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -478,7 +478,7 @@ SC_SPLR_MAIN As screen:
                 DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
-                Items: =Choices([@협력사현황].Status)
+                Items: =Choices([@협력사현황].NDA_Status)
                 OnChange: =Select(Parent)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =7.25
@@ -486,7 +486,7 @@ SC_SPLR_MAIN As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사현황.Status,lstCardNDAStatus.SearchText)
+                SearchItems: =Choices(협력사현황.NDA_Status,lstCardNDAStatus.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -552,7 +552,7 @@ SC_SPLR_MAIN As screen:
                 DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
-                Items: =Choices([@협력사현황].OData__xc9c0__xc5ed__xad6c__xbd84_)
+                Items: =Choices([@협력사현황].지역구분)
                 OnChange: =Select(Parent)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =7.25
@@ -560,7 +560,7 @@ SC_SPLR_MAIN As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사현황.OData__xc9c0__xc5ed__xad6c__xbd84_,lstCardRegion.SearchText)
+                SearchItems: =Choices(협력사현황.지역구분,lstCardRegion.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -586,7 +586,7 @@ SC_SPLR_MAIN As screen:
                 DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
-                Items: =Choices([@협력사현황].OData__xc7a5__xbe44__xad6c__xbd84_)
+                Items: =Choices([@협력사현황].장비구분)
                 OnChange: =Select(Parent)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =7.25
@@ -594,7 +594,7 @@ SC_SPLR_MAIN As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사현황.OData__xc7a5__xbe44__xad6c__xbd84_,lstCardDeviceType.SearchText)
+                SearchItems: =Choices(협력사현황.장비구분,lstCardDeviceType.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
