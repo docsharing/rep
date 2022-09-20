@@ -1080,7 +1080,9 @@ SC_SPLR_INFO As screen:
             HoverBorderColor: =ColorFade(Self.Fill, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
-            OnSelect: =NewForm(FormPartnerInfo)
+            OnSelect: |-
+                =Clear(colSelected);
+                Back();
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
