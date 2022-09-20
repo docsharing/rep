@@ -58,7 +58,7 @@ SC_SPLR_MAIN As screen:
             Size: =18
             Text: ="New"
             Width: =180
-            X: =ConFilter.Width / 2 - (btnModify.Width + btnNew.Width + btnDelete.Width + 100) / 2
+            X: =ConFilter.Width / 2 - (btnModify.Width + btnNew.Width + btnDelete.Width + btnReset.Width + 150) / 2
             ZIndex: =1
 
         btnModify As button:
