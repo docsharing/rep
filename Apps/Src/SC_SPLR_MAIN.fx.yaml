@@ -690,16 +690,3 @@ SC_SPLR_MAIN As screen:
         Y: =18
         ZIndex: =9
 
-    Label3 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 0, 1)
-        Height: =61
-        Size: =13
-        Text: ="Text"
-        Width: =240
-        X: =306
-        Y: =121
-        ZIndex: =10
-
