@@ -2884,49 +2884,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_NDA_MAIN.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_NDA_MAIN.Gallery1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_NDA_MAIN",
-                "type": "SC_NDA_MAIN.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_NDA_MAIN.Gallery1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_NDA_MAIN.Gallery1.TabIndex",
+                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "SC_NDA_MAIN",
-                "type": "SC_NDA_MAIN.Gallery1"
+                "type": "SC_NDA_MAIN.Container1.Gallery1_1"
               }
             }
           ],
@@ -2938,6 +2908,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_NDA_MAIN",
+                "type": "SC_NDA_MAIN.Container1.Gallery1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
