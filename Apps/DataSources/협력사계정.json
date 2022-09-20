@@ -1,0 +1,53 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-08-09T16:46:07.4860000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{HasAttachments}": "Has attachments",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "ID": "ID",
+      "Modified": "Modified",
+      "OData__xb300__xd45c__xc5ec__xbd80_": "대표여부",
+      "OData__xb77c__xc774__xc120__xc2a4__xbc": "라이선스발급상태",
+      "OData__xbc1c__xae09__xacc4__xc815_": "계정",
+      "OData__xc0dd__xb144__xc6d4__xc77c_": "생년월일",
+      "OData__xc131__xba85_": "성명",
+      "OData__xc5c5__xbb34__xad6c__xbd84_": "업무구분",
+      "OData__xc5c5__xbb34__xad6c__xbd84_#Id": "업무구분 Id",
+      "OData__xc5f0__xb77d__xcc98_": "연락처",
+      "OData__xd611__xb825__xc0ac__xba85_": "eMail",
+      "PID": "PID",
+      "Title": "Title"
+    },
+    "DatasetName": "https://doosan.sharepoint.com/sites/DocumentSharing",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "협력사계정",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]
