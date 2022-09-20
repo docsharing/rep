@@ -53,7 +53,7 @@ Comp2ndMenubar As CanvasComponent:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Size: =13
-        Text: ="Text"
+        Text: ="Sub 메뉴입니다 "
         X: =1552
         Y: =9
         ZIndex: =4

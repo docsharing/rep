@@ -10,7 +10,14 @@
         "ControlPropertyState": [
           "Live",
           "Overflow",
-          "Text",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Text",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Role",
           "Color",
           "DisabledColor",
@@ -71,7 +78,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "\"Text\"",
+            "InvariantScript": "\"Sub 메뉴입니다 \"",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -1180,7 +1187,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637992306712265384",
+    "LastModifiedTimestamp": "637992306997053888",
     "Name": "Comp2ndMenubar",
     "Rules": [
       {
@@ -1255,7 +1262,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637992306712265384",
+  "LastModifiedTimestamp": "637992306997053888",
   "Name": "5531d5d618db403dac7652145e7ddf8b",
   "OverridableProperties": {},
   "Version": "637987344695513501"
