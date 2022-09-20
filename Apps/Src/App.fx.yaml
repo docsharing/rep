@@ -62,7 +62,7 @@ App As appinfo:
                 {
                     Value: "History",
                     MenuIMG: confidential_logs2,
-                    Screen: SC_SPLR_HISTORY,
+                    Screen: SC_CONFIG_MAIN,
                     IDX: "4"
                 },
                 {
