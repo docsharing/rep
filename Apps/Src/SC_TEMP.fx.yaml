@@ -655,12 +655,12 @@ SC_TEMP As screen:
                 DisplayMode: =Parent.DisplayMode
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
-                Items: =Choices([@협력사계정].OData__xc5c5__xbb34__xad6c__xbd84_)
+                Items: =Choices([@협력사계정].업무구분)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사계정.OData__xc5c5__xbb34__xad6c__xbd84_,DataCardValue8.SearchText)
+                SearchItems: =Choices(협력사계정.업무구분,DataCardValue8.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
