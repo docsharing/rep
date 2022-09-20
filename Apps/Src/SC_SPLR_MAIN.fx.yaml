@@ -77,8 +77,8 @@ SC_SPLR_MAIN As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =EditForm(FormNewPartner_1);
-                Navigate(SC_SPLR_MODIFY);
+                =EditForm(FormNewPartner);
+                Navigate(SC_SPLR_NEW);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
@@ -173,7 +173,6 @@ SC_SPLR_MAIN As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(255, 0, 0, 1)
-            Fill: =RGBA(255, 191, 0, 1)
             FocusedBorderThickness: =4
             Height: =50
             HintText: ="협력사명"
@@ -690,15 +689,4 @@ SC_SPLR_MAIN As screen:
         X: =213
         Y: =18
         ZIndex: =9
-
-    Label3 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(55, 5, 0, 0)
-        Size: =13
-        Text: ="텍스트"
-        X: =254
-        Y: =121
-        ZIndex: =10
 

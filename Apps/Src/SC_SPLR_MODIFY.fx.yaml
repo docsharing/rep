@@ -23,6 +23,7 @@ SC_SPLR_MODIFY As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =협력사현황
         Height: =514
+        Item: =First(colSelected)
         OnFailure: =Notify("New partner item insert error", NotificationType.Error)
         OnSuccess: |-
             =Notify(DataCardValue21_1.Text&" was created successfully!", NotificationType.Success, 2000);
