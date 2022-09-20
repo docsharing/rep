@@ -6,7 +6,7 @@ SC_SPLR_MODIFY As screen:
             "1"
         );
         
-        NewForm(FormNewPartner_1);
+        EditForm(FormNewPartner_1);
 
     Comp2ndMenubar_2 As Comp2ndMenubar:
         Items: |
