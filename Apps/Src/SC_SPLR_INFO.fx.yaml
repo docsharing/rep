@@ -1,4 +1,4 @@
-SC_SPLR_NEW As screen:
+SC_SPLR_INFO As screen:
     Fill: =Color.White
     OnVisible: |-
         =Set(
@@ -151,7 +151,7 @@ SC_SPLR_NEW As screen:
             DataCardValue21 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Color: =RGBA(0, 0, 0, 1)
-                Default: =""
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
