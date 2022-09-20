@@ -2864,6 +2864,426 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpPartner_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpPartner_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpPartner_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardRegion_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardRegion_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardRegion_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardDeviceType_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardDeviceType_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardDeviceType_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpCardPerson_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpCardPerson_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpCardPerson_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardFuelcellPerson_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardFuelcellPerson_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardFuelcellPerson_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardNDAStatus_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardNDAStatus_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardNDAStatus_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.icoNDAListView_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.icoNDAListView_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.icoNDAListView_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.icoNDAListView_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.icoNDAListView_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.icoNDAListView_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.IcoDocsFolder_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.IcoDocsFolder_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.IcoDocsFolder_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.IcoDocsFolder_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.IcoDocsFolder_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.IcoDocsFolder_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varMenuSecondaryColor"
                 }
               ],
@@ -3687,6 +4107,456 @@
                 "member": "X",
                 "module": "SC_SPLR_INFO",
                 "type": "SC_SPLR_INFO.ConButton_2.btnSave"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.Checkbox1_1.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.Checkbox1_1.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.Checkbox1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpPartner_1.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpPartner_1.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpPartner_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardRegion_1.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardRegion_1.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardRegion_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardRegion_1.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardRegion_1.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardRegion_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardDeviceType_1.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardDeviceType_1.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardDeviceType_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardDeviceType_1.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardDeviceType_1.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardDeviceType_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpCardPerson_1.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpCardPerson_1.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpCardPerson_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpCardPerson_1.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpCardPerson_1.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.inpCardPerson_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardFuelcellPerson_1.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardFuelcellPerson_1.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardFuelcellPerson_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardFuelcellPerson_1.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardFuelcellPerson_1.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardFuelcellPerson_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardNDAStatus_1.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardNDAStatus_1.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardNDAStatus_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardNDAStatus_1.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardNDAStatus_1.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lstCardNDAStatus_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.lblDocsHistory_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.IcoDocsFolder_1.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.IcoDocsFolder_1.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConPartnerListContent_1.GalAccountList.IcoDocsFolder_1"
               }
             }
           ],

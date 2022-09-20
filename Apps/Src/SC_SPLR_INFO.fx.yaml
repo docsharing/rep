@@ -20,7 +20,7 @@ SC_SPLR_INFO As screen:
     FormPartnerInfo As form:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =협력사현황
-        Height: =514
+        Height: =403
         Item: =First(colSelected)
         OnFailure: |-
             =Notify("New partner item insert error Error="&FormPartnerInfo.Error, NotificationType.Error);
@@ -28,9 +28,9 @@ SC_SPLR_INFO As screen:
         OnSuccess: |-
             =Notify(DataCardValue21_1.Text&" was created successfully!", NotificationType.Success, 2000);
             Back();
-        Width: =1572
-        X: =270
-        Y: =270
+        Width: =1654
+        X: =232
+        Y: =247
         ZIndex: =3
 
         Address_DataCard1_1 As typedDataCard.textualEditCard:
@@ -45,7 +45,7 @@ SC_SPLR_INFO As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "Address")
             Required: =false
             Update: =DataCardValue23_1.Text
-            Width: =524
+            Width: =551
             X: =0
             Y: =2
             ZIndex: =1
@@ -132,7 +132,7 @@ SC_SPLR_INFO As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "Title")
             Required: =true
             Update: =DataCardValue21_1.Text
-            Width: =524
+            Width: =551
             X: =0
             Y: =0
             ZIndex: =4
@@ -221,7 +221,7 @@ SC_SPLR_INFO As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc0ac__xc5c5__xc790__xbc88__xd6")
             Required: =true
             Update: =DataCardValue30_1.Text
-            Width: =524
+            Width: =551
             X: =1
             Y: =0
             ZIndex: =4
@@ -307,7 +307,7 @@ SC_SPLR_INFO As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue26_1.Selected
-            Width: =524
+            Width: =551
             X: =2
             Y: =0
             ZIndex: =4
@@ -399,7 +399,7 @@ SC_SPLR_INFO As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue27_1.Selected
-            Width: =524
+            Width: =551
             X: =0
             Y: =1
             ZIndex: =4
@@ -492,7 +492,7 @@ SC_SPLR_INFO As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xb300__xd45c__xc790__xba85_")
             Required: =false
             Update: =DataCardValue29_1.Text
-            Width: =524
+            Width: =551
             X: =1
             Y: =1
             ZIndex: =4
@@ -579,7 +579,7 @@ SC_SPLR_INFO As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc804__xd654__xbc88__xd638_")
             Required: =false
             Update: =DataCardValue31_1.Text
-            Width: =524
+            Width: =551
             X: =2
             Y: =1
             ZIndex: =4
@@ -666,7 +666,7 @@ SC_SPLR_INFO As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc6b0__xd3b8__xbc88__xd638_")
             Required: =false
             Update: =DataCardValue39_1.Text
-            Width: =524
+            Width: =551
             X: =1
             Y: =2
             ZIndex: =4
@@ -753,7 +753,7 @@ SC_SPLR_INFO As screen:
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "Email")
             Required: =false
             Update: =DataCardValue22_1.Text
-            Width: =524
+            Width: =551
             X: =2
             Y: =2
             ZIndex: =4
@@ -839,7 +839,7 @@ SC_SPLR_INFO As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue25_1.Selected
-            Width: =524
+            Width: =551
             X: =0
             Y: =3
             ZIndex: =4
@@ -932,7 +932,7 @@ SC_SPLR_INFO As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue24_1.SelectedDate
-            Width: =524
+            Width: =551
             X: =1
             Y: =3
             ZIndex: =4
@@ -1098,4 +1098,421 @@ SC_SPLR_INFO As screen:
             Width: =180
             X: =btnNew_1.X + btnNew_1.Width + 50
             ZIndex: =3
+
+    Label3 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =20
+        Text: ="협력사 기본정보"
+        Width: =280
+        X: =270
+        Y: =207
+        ZIndex: =5
+
+    Label3_1 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =20
+        Text: ="협력사 계정목록"
+        Width: =280
+        X: =270
+        Y: =678
+        ZIndex: =6
+
+    ConPartnerListHeader_1 As groupContainer.manualLayoutContainer:
+        BorderColor: =ColorFade(varBorderColor, 80%)
+        BorderThickness: =0.5
+        Fill: =ColorFade(varMenuPrimaryColor, 3%)
+        Height: =50
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =1654
+        X: =232
+        Y: =735
+        ZIndex: =7
+
+        lblPartnerName_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =16
+            Text: ="협력사명"
+            Width: =260
+            X: =0.00
+            ZIndex: =1
+
+        lblRegion_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =16
+            Text: ="성명"
+            Width: =164
+            X: =lblPartnerName_1.X + lblPartnerName_1.Width
+            ZIndex: =2
+
+        lblDeviceType_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =16
+            Text: ="대표담당자"
+            Width: =209
+            X: =lblRegion_1.X + lblRegion_1.Width
+            ZIndex: =3
+
+        lblPerson_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =16
+            Text: ="라이선스 발급여부"
+            Width: =194
+            X: =lblDeviceType_1.X + lblDeviceType_1.Width
+            ZIndex: =4
+
+        lblFuelcellPerson_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =16
+            Text: ="구분"
+            Width: =237
+            X: =lblPerson_1.X + lblPerson_1.Width
+            ZIndex: =5
+
+        lblNDAStatus_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =16
+            Text: ="이메일"
+            Width: =270
+            X: =1063
+            ZIndex: =6
+
+        lblNDADocs_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            Size: =16
+            Text: ="연락처"
+            Width: =225
+            X: =lblNDAStatus_1.X + lblNDAStatus_1.Width
+            ZIndex: =7
+
+    ConPartnerListContent_1 As groupContainer.manualLayoutContainer:
+        BorderColor: =ColorFade(varBorderColor, 80%)
+        BorderThickness: =0.5
+        Height: =216
+        Width: =1654
+        X: =232
+        Y: =785
+        ZIndex: =8
+
+        GalAccountList As gallery.galleryVertical:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Height: =620
+            Items: =Sort(colPartnerList, ID, Descending)
+            Layout: =Layout.Vertical
+            OnSelect: |-
+                =Patch(
+                    colPartnerList,
+                    ThisItem,
+                    {
+                        Title: inpPartner_1.Text,
+                        지역구분: lstCardRegion_1.Selected,
+                        장비구분: lstCardDeviceType_1.Selected,
+                        담당자: inpCardPerson_1.Text,
+                        '퓨얼셀 담당자': lstCardFuelcellPerson_1.Selected,
+                        NDA_Status: lstCardNDAStatus_1.Selected
+                    }
+                );
+            TemplatePadding: =0
+            TemplateSize: =50
+            Width: =1650
+            X: =3
+            ZIndex: =2
+
+            Checkbox1_1 As checkbox:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                CheckboxBorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(0, 89, 178, 1)
+                OnCheck: =Collect(colSelected, ThisItem);
+                OnUncheck: =Remove(colSelected, ThisItem);
+                Size: =13
+                Text: =""
+                Width: =40
+                X: =lblPartnerName.X
+                ZIndex: =1
+
+            inpPartner_1 As text:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =ThisItem.Title
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                OnChange: =Select(Parent)
+                OnSelect: |-
+                    =Collect(colSelected, ThisItem);
+                    ViewForm(FormPartnerInfo);
+                    Navigate(SC_SPLR_INFO);
+                Size: =13
+                Width: =lblPartnerName.Width - Checkbox1_1.Width
+                X: =Checkbox1_1.X + Checkbox1_1.Width
+                Y: =4
+                ZIndex: =3
+
+            inpCardPerson_1 As text:
+                Align: =Align.Center
+                BorderColor: =
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =ThisItem.담당자
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                OnChange: =Select(Parent)
+                PaddingLeft: =5
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =
+                Width: =lblPerson.Width
+                X: =lblPerson.X
+                Y: =4
+                ZIndex: =4
+
+            lstCardFuelcellPerson_1 As combobox:
+                BorderColor: =
+                BorderStyle: =BorderStyle.None
+                ChevronBackground: =varButtonColor
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(Self.ChevronBackground, 10%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =ThisItem.'퓨얼셀 담당자'
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Items: =Choices([@협력사현황].'퓨얼셀 담당자')
+                OnChange: =Select(Parent)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["DisplayName"]
+                SearchItems: =Choices(협력사현황.'퓨얼셀 담당자',lstCardFuelcellPerson_1.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionTagFill: =RGBA(255, 255, 255, 1)
+                SelectMultiple: =false
+                Size: =13
+                Template: =ListItemTemplate.Person
+                Tooltip: =
+                Width: =lblFuelcellPerson.Width
+                X: =lblFuelcellPerson.X
+                Y: =4
+                ZIndex: =5
+
+            lstCardNDAStatus_1 As combobox:
+                BorderColor: =
+                BorderStyle: =BorderStyle.None
+                ChevronBackground: =varButtonColor
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(Self.ChevronBackground, 10%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =ThisItem.NDA_Status
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Items: =Choices([@협력사현황].NDA_Status)
+                OnChange: =Select(Parent)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(협력사현황.NDA_Status,lstCardNDAStatus_1.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionTagFill: =RGBA(255, 255, 255, 1)
+                SelectMultiple: =false
+                Size: =13
+                Tooltip: =
+                Width: =lblNDAStatus.Width - icoNDAListView_1.Width
+                X: =lblNDAStatus.X
+                Y: =4
+                ZIndex: =6
+
+            icoNDAListView_1 As icon.ListScrollWatchlist:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =varButtonColor
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =30
+                Icon: =Icon.ListScrollWatchlist
+                OnSelect: =Navigate(SC_NDA_MAIN);
+                Width: =30
+                X: =lstCardNDAStatus_1.X + lstCardNDAStatus_1.Width
+                Y: =9
+                ZIndex: =7
+
+            lblDocsHistory_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                OnSelect: =Navigate(SC_DOC_MAIN)
+                Size: =13
+                Text: ="공유 이력 보기"
+                Underline: =true
+                Width: =lblNDADocs.Width
+                X: =lblNDADocs.X
+                Y: =4
+                ZIndex: =8
+
+            IcoDocsFolder_1 As icon.Folder:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =varButtonColor
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =30
+                Icon: =Icon.Folder
+                OnSelect: =Launch(ThisItem.문서공유폴더);
+                Width: =30
+                X: =lblHistory.X + (lblHistory.Width)/2
+                Y: =9
+                ZIndex: =9
+
+            lstCardRegion_1 As combobox:
+                BorderColor: =
+                BorderStyle: =BorderStyle.None
+                ChevronBackground: =varButtonColor
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(Self.ChevronBackground, 10%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =ThisItem.지역구분
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Items: =Choices([@협력사현황].지역구분)
+                OnChange: =Select(Parent)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(협력사현황.지역구분,lstCardRegion_1.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionTagFill: =RGBA(255, 255, 255, 1)
+                SelectMultiple: =false
+                Size: =13
+                Tooltip: =
+                Width: =lblRegion.Width
+                X: =lblRegion.X
+                Y: =4
+                ZIndex: =10
+
+            lstCardDeviceType_1 As combobox:
+                BorderColor: =
+                BorderStyle: =BorderStyle.None
+                ChevronBackground: =varButtonColor
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(Self.ChevronBackground, 10%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =ThisItem.장비구분
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                DisplayMode: =If(varPartnerListEditFlag, DisplayMode.Edit, DisplayMode.View)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Items: =Choices([@협력사현황].장비구분)
+                OnChange: =Select(Parent)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =7.25
+                PaddingTop: =7.25
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 89, 178, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(협력사현황.장비구분,lstCardDeviceType_1.SearchText)
+                SelectionFill: =RGBA(0, 51, 102, 1)
+                SelectionTagFill: =RGBA(255, 255, 255, 1)
+                SelectMultiple: =false
+                Size: =13
+                Tooltip: =
+                Width: =lblDeviceType.Width
+                X: =lblDeviceType.X
+                Y: =4
+                ZIndex: =11
 
