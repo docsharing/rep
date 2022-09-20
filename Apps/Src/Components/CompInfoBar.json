@@ -168,7 +168,7 @@
         "Name": "lblAlertMsgBar",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 337,
+        "PublishOrderIndex": 336,
         "Rules": [
           {
             "Category": "Data",
@@ -559,7 +559,7 @@
         "Name": "imgAlertIcon",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 338,
+        "PublishOrderIndex": 337,
         "Rules": [
           {
             "Category": "Data",
@@ -899,7 +899,7 @@
         "Name": "imgCloseBar",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 339,
+        "PublishOrderIndex": 338,
         "Rules": [
           {
             "Category": "Data",
@@ -1216,7 +1216,7 @@
         "Name": "varWidthSizeForDbg",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 340,
+        "PublishOrderIndex": 339,
         "Rules": [
           {
             "Category": "Data",
@@ -1591,7 +1591,7 @@
         "Name": "timerShowAlert",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 341,
+        "PublishOrderIndex": 340,
         "Rules": [
           {
             "Category": "Data",
