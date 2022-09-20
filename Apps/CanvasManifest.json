@@ -110,7 +110,6 @@
   "ScreenOrder": [
     "SC_SPLR_MAIN",
     "SC_SPLR_INFO",
-    "SC_SPLR_INFO_1",
     "SC_SPLR_ACCOUNT",
     "SC_SPLR_HISTORY",
     "SC_SPLR_CONFIG",
