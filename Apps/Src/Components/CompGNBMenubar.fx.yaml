@@ -132,3 +132,14 @@ CompGNBMenubar As CanvasComponent:
         Y: =20
         ZIndex: =2
 
+    Label1 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(255, 191, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =11
+        Text: ="이메뉴가 Global 메뉴"
+        Width: =93
+        X: =15
+        Y: =697
+        ZIndex: =3
+
