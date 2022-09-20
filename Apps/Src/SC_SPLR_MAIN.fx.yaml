@@ -124,6 +124,36 @@ SC_SPLR_MAIN As screen:
             X: =btnModify.X + btnModify.Width + 50
             ZIndex: =3
 
+        btnReset As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =varButtonColor
+            FontWeight: =FontWeight.Semibold
+            Height: =60
+            HoverBorderColor: =ColorFade(Self.Fill, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, 10%)
+            OnSelect: |
+                =Clear(colSelected);
+                Clear(colPartnerList);
+                Select(btnLoadData);
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            PressedFill: =ColorFade(Self.Fill, 10%)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =18
+            Text: ="Reset"
+            Width: =If(varPartnerListEditFlag, 280, 180)
+            X: =btnDelete.X + btnDelete.Width + 50
+            ZIndex: =4
+
     ConFilter As groupContainer.manualLayoutContainer:
         Height: =66
         PaddingRight: =0.00
