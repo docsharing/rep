@@ -2864,17 +2864,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varIconBackgroudColor"
+                  "fullyQualifiedName": "App.varMenuSecondaryColor"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varIconBackgroudColor",
+                  "fullyQualifiedName": "App.varMenuSecondaryColor",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varIconBackgroudColor",
+                "member": "varMenuSecondaryColor",
                 "module": "App",
                 "type": "App"
               }
@@ -2894,17 +2894,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.varMenuSecondaryColor"
+                  "fullyQualifiedName": "App.varIconBackgroudColor"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.varMenuSecondaryColor",
+                  "fullyQualifiedName": "App.varIconBackgroudColor",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "varMenuSecondaryColor",
+                "member": "varIconBackgroudColor",
                 "module": "App",
                 "type": "App"
               }

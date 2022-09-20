@@ -24,7 +24,7 @@ App As appinfo:
                     IDX: "3"
                 },
                 {
-                    Value: "ActivityLog",
+                    Value: "Activity Log",
                     MenuIMG: confidential_logs2,
                     Screen: SC_LOG_MAIN,
                     IDX: "4"
