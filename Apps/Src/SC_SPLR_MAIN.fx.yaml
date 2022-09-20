@@ -58,7 +58,7 @@ SC_SPLR_MAIN As screen:
             Size: =18
             Text: ="New"
             Width: =180
-            X: =btnModify.X + btnModify.Width + 50
+            X: =ConFilter.Width / 2 - (btnModify.Width + btnNew.Width + btnDelete.Width + 100) / 2
             ZIndex: =1
 
         btnModify As button:
@@ -75,20 +75,46 @@ SC_SPLR_MAIN As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =If (
-                    varPartnerListEditFlag,
-                    Patch(
-                        협력사현황,
-                        colPartnerList
-                    );
-                    Remove(협력사현황, colSelected);
-                    Clear(colSelected);
-                    Clear(colPartnerList);   
+                =Navigate(SC_SPLR_MODIFY);
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            PressedFill: =ColorFade(Self.Fill, 10%)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =18
+            Text: ="Modify"
+            Width: =If(varPartnerListEditFlag, 280, 180)
+            X: =btnNew.X + btnNew.Width + 50
+            ZIndex: =2
+
+        btnDelete As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =varButtonColor
+            FontWeight: =FontWeight.Semibold
+            Height: =60
+            HoverBorderColor: =ColorFade(Self.Fill, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, 10%)
+            OnSelect: |
+                =Remove(
+                    colPartnerList,
+                    colSelected
                 );
-                Set(
-                    varPartnerListEditFlag,
-                    !varPartnerListEditFlag
+                
+                Patch(
+                    협력사현황,
+                    colPartnerList
                 );
+                
+                Clear(colSelected);
+                Clear(colPartnerList);
                 Select(btnLoadData);
             PaddingRight: =7.25
             PaddingTop: =7.25
@@ -98,10 +124,10 @@ SC_SPLR_MAIN As screen:
             RadiusTopLeft: =30
             RadiusTopRight: =30
             Size: =18
-            Text: =If(varPartnerListEditFlag, "Save and Leave", "Modify")
+            Text: ="Delete"
             Width: =If(varPartnerListEditFlag, 280, 180)
-            X: =ConFilter.Width / 2 - (btnModify.Width + btnNew.Width + 50) / 2
-            ZIndex: =2
+            X: =btnModify.X + btnModify.Width + 50
+            ZIndex: =3
 
     ConFilter As groupContainer.manualLayoutContainer:
         Height: =66

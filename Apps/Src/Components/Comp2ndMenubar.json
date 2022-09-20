@@ -26,7 +26,7 @@
             "Name": "galleryTemplate2",
             "Parent": "galTopMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 204,
+            "PublishOrderIndex": 266,
             "Rules": [
               {
                 "Category": "Design",
@@ -144,7 +144,7 @@
             "Name": "lblMenuName",
             "Parent": "galTopMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 205,
+            "PublishOrderIndex": 267,
             "Rules": [
               {
                 "Category": "Data",
@@ -485,7 +485,7 @@
         "Name": "galTopMenu",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 203,
+        "PublishOrderIndex": 265,
         "Rules": [
           {
             "Category": "Data",
@@ -712,7 +712,7 @@
         "Name": "Label2",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 206,
+        "PublishOrderIndex": 268,
         "Rules": [
           {
             "Category": "Data",
@@ -1047,7 +1047,7 @@
         "Name": "shpHrztlLine",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 207,
+        "PublishOrderIndex": 269,
         "Rules": [
           {
             "Category": "Design",
