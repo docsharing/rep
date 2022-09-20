@@ -1064,6 +1064,33 @@ SC_SPLR_INFO As screen:
             Size: =18
             Text: ="Save"
             Width: =If(varPartnerListEditFlag, 280, 180)
-            X: =ConFilter.Width / 2 - (btnSave.Width + btnNew_1.Width + 50) / 2
+            X: =ConFilter.Width / 2 - (btnSave.Width + btnNew_1.Width + btnCancel.Width + 100) / 2
             ZIndex: =2
+
+        btnCancel As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =varButtonColor
+            FontWeight: =FontWeight.Semibold
+            Height: =60
+            HoverBorderColor: =ColorFade(Self.Fill, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(Self.Fill, 10%)
+            OnSelect: =NewForm(FormPartnerInfo)
+            PaddingRight: =7.25
+            PaddingTop: =7.25
+            PressedFill: =ColorFade(Self.Fill, 10%)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =18
+            Text: ="Cancel"
+            Width: =180
+            X: =btnNew_1.X + btnNew_1.Width + 50
+            ZIndex: =3
 
