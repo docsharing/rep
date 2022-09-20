@@ -1,4 +1,4 @@
-SC_SPLR_MODIFY As screen:
+SC_SPLR_INFO_1 As screen:
     Fill: =Color.White
     OnVisible: |-
         =Set(
@@ -6,34 +6,34 @@ SC_SPLR_MODIFY As screen:
             "1"
         );
         
-        EditForm(FormNewPartner_1);
+        EditForm(FormNewPartner_2);
 
-    Comp2ndMenubar_2 As Comp2ndMenubar:
+    Comp2ndMenubar_3 As Comp2ndMenubar:
         Items: |
             =Filter(colTopMenu, IDX = varSelectedMenuIDX) 
         X: =200
 
-    CompGNBMenubar_2 As CompGNBMenubar:
+    CompGNBMenubar_3 As CompGNBMenubar:
         Height: =1040
         items: =colSplrLNBMenu
         Width: =200
         ZIndex: =2
 
-    FormNewPartner_1 As form:
+    FormNewPartner_2 As form:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =협력사현황
         Height: =514
         Item: =First(colSelected)
         OnFailure: =Notify("New partner item insert error", NotificationType.Error)
         OnSuccess: |-
-            =Notify(DataCardValue21_1.Text&" was created successfully!", NotificationType.Success, 2000);
+            =Notify(DataCardValue21_2.Text&" was created successfully!", NotificationType.Success, 2000);
             Navigate(SC_SPLR_MAIN);
         Width: =1572
         X: =270
         Y: =270
         ZIndex: =3
 
-        Address_DataCard1_1 As typedDataCard.textualEditCard:
+        Address_DataCard1_2 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Address"
@@ -44,13 +44,13 @@ SC_SPLR_MODIFY As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "Address")
             Required: =false
-            Update: =DataCardValue23_1.Text
+            Update: =DataCardValue23_2.Text
             Width: =524
             X: =0
             Y: =2
             ZIndex: =1
 
-            DataCardKey23_1 As label:
+            DataCardKey23_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -63,7 +63,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue23_1 As text:
+            DataCardValue23_2 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
@@ -86,10 +86,10 @@ SC_SPLR_MODIFY As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey23_1.Y + DataCardKey23_1.Height + 5
+                Y: =DataCardKey23_2.Y + DataCardKey23_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage17_1 As label:
+            ErrorMessage17_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -104,23 +104,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue23_1.Y + DataCardValue23_1.Height
+                Y: =DataCardValue23_2.Y + DataCardValue23_2.Height
                 ZIndex: =3
 
-            StarVisible17_1 As label:
+            StarVisible17_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey23_1.Height
+                Height: =DataCardKey23_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey23_1.Y
+                Y: =DataCardKey23_2.Y
                 ZIndex: =4
 
-        Title_DataCard2_1 As typedDataCard.textualEditCard:
+        Title_DataCard2_2 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
@@ -131,13 +131,13 @@ SC_SPLR_MODIFY As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "Title")
             Required: =true
-            Update: =DataCardValue21_1.Text
+            Update: =DataCardValue21_2.Text
             Width: =524
             X: =0
             Y: =0
             ZIndex: =4
 
-            DataCardKey21_1 As label:
+            DataCardKey21_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -150,7 +150,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue21_1 As text:
+            DataCardValue21_2 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =First(colSelected).Title
@@ -175,10 +175,10 @@ SC_SPLR_MODIFY As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey21_1.Y + DataCardKey21_1.Height + 5
+                Y: =DataCardKey21_2.Y + DataCardKey21_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage15_1 As label:
+            ErrorMessage15_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -193,23 +193,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue21_1.Y + DataCardValue21_1.Height
+                Y: =DataCardValue21_2.Y + DataCardValue21_2.Height
                 ZIndex: =3
 
-            StarVisible15_1 As label:
+            StarVisible15_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey21_1.Height
+                Height: =DataCardKey21_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey21_1.Y
+                Y: =DataCardKey21_2.Y
                 ZIndex: =4
 
-        사업자번호_DataCard2_1 As typedDataCard.textualEditCard:
+        사업자번호_DataCard2_2 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__xc0ac__xc5c5__xc790__xbc88__xd6"
@@ -220,13 +220,13 @@ SC_SPLR_MODIFY As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc0ac__xc5c5__xc790__xbc88__xd6")
             Required: =true
-            Update: =DataCardValue30_1.Text
+            Update: =DataCardValue30_2.Text
             Width: =524
             X: =1
             Y: =0
             ZIndex: =4
 
-            DataCardKey30_1 As label:
+            DataCardKey30_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -239,7 +239,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue30_1 As text:
+            DataCardValue30_2 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =First(colSelected).사업자번호
@@ -262,10 +262,10 @@ SC_SPLR_MODIFY As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey30_1.Y + DataCardKey30_1.Height + 5
+                Y: =DataCardKey30_2.Y + DataCardKey30_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage24_1 As label:
+            ErrorMessage24_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -280,23 +280,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue30_1.Y + DataCardValue30_1.Height
+                Y: =DataCardValue30_2.Y + DataCardValue30_2.Height
                 ZIndex: =3
 
-            StarVisible24_1 As label:
+            StarVisible24_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey30_1.Height
+                Height: =DataCardKey30_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey30_1.Y
+                Y: =DataCardKey30_2.Y
                 ZIndex: =4
 
-        지역구분_DataCard2_1 As typedDataCard.comboBoxEditCard:
+        지역구분_DataCard2_2 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__xc9c0__xc5ed__xad6c__xbd84_"
@@ -306,13 +306,13 @@ SC_SPLR_MODIFY As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue26_1.Selected
+            Update: =DataCardValue26_2.Selected
             Width: =524
             X: =2
             Y: =0
             ZIndex: =4
 
-            DataCardKey26_1 As label:
+            DataCardKey26_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -325,7 +325,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue26_1 As combobox:
+            DataCardValue26_2 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =1
                 ChevronBackground: =RGBA(0, 51, 102, 1)
@@ -347,17 +347,17 @@ SC_SPLR_MODIFY As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사현황.지역구분,DataCardValue26_1.SearchText)
+                SearchItems: =Choices(협력사현황.지역구분,DataCardValue26_2.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey26_1.Y + DataCardKey26_1.Height + 5
+                Y: =DataCardKey26_2.Y + DataCardKey26_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage20_1 As label:
+            ErrorMessage20_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -372,23 +372,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue26_1.Y + DataCardValue26_1.Height
+                Y: =DataCardValue26_2.Y + DataCardValue26_2.Height
                 ZIndex: =3
 
-            StarVisible20_1 As label:
+            StarVisible20_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey26_1.Height
+                Height: =DataCardKey26_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey26_1.Y
+                Y: =DataCardKey26_2.Y
                 ZIndex: =4
 
-        장비구분_DataCard2_1 As typedDataCard.comboBoxEditCard:
+        장비구분_DataCard2_2 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__xc7a5__xbe44__xad6c__xbd84_"
@@ -398,13 +398,13 @@ SC_SPLR_MODIFY As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue27_1.Selected
+            Update: =DataCardValue27_2.Selected
             Width: =524
             X: =0
             Y: =1
             ZIndex: =4
 
-            DataCardKey27_1 As label:
+            DataCardKey27_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -417,7 +417,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue27_1 As combobox:
+            DataCardValue27_2 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =1
                 ChevronBackground: =RGBA(0, 51, 102, 1)
@@ -439,17 +439,17 @@ SC_SPLR_MODIFY As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(협력사현황.장비구분,DataCardValue27_1.SearchText)
+                SearchItems: =Choices(협력사현황.장비구분,DataCardValue27_2.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey27_1.Y + DataCardKey27_1.Height + 5
+                Y: =DataCardKey27_2.Y + DataCardKey27_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage21_1 As label:
+            ErrorMessage21_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -464,23 +464,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue27_1.Y + DataCardValue27_1.Height
+                Y: =DataCardValue27_2.Y + DataCardValue27_2.Height
                 ZIndex: =3
 
-            StarVisible21_1 As label:
+            StarVisible21_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey27_1.Height
+                Height: =DataCardKey27_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey27_1.Y
+                Y: =DataCardKey27_2.Y
                 ZIndex: =4
 
-        대표자명_DataCard2_1 As typedDataCard.textualEditCard:
+        대표자명_DataCard2_2 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__xb300__xd45c__xc790__xba85_"
@@ -491,13 +491,13 @@ SC_SPLR_MODIFY As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xb300__xd45c__xc790__xba85_")
             Required: =false
-            Update: =DataCardValue29_1.Text
+            Update: =DataCardValue29_2.Text
             Width: =524
             X: =1
             Y: =1
             ZIndex: =4
 
-            DataCardKey29_1 As label:
+            DataCardKey29_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -510,7 +510,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue29_1 As text:
+            DataCardValue29_2 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
@@ -533,10 +533,10 @@ SC_SPLR_MODIFY As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey29_1.Y + DataCardKey29_1.Height + 5
+                Y: =DataCardKey29_2.Y + DataCardKey29_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage23_1 As label:
+            ErrorMessage23_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -551,23 +551,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue29_1.Y + DataCardValue29_1.Height
+                Y: =DataCardValue29_2.Y + DataCardValue29_2.Height
                 ZIndex: =3
 
-            StarVisible23_1 As label:
+            StarVisible23_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey29_1.Height
+                Height: =DataCardKey29_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey29_1.Y
+                Y: =DataCardKey29_2.Y
                 ZIndex: =4
 
-        전화번호_DataCard2_1 As typedDataCard.textualEditCard:
+        전화번호_DataCard2_2 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__xc804__xd654__xbc88__xd638_"
@@ -578,13 +578,13 @@ SC_SPLR_MODIFY As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc804__xd654__xbc88__xd638_")
             Required: =false
-            Update: =DataCardValue31_1.Text
+            Update: =DataCardValue31_2.Text
             Width: =524
             X: =2
             Y: =1
             ZIndex: =4
 
-            DataCardKey31_1 As label:
+            DataCardKey31_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -597,7 +597,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue31_1 As text:
+            DataCardValue31_2 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
@@ -620,10 +620,10 @@ SC_SPLR_MODIFY As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey31_1.Y + DataCardKey31_1.Height + 5
+                Y: =DataCardKey31_2.Y + DataCardKey31_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage25_1 As label:
+            ErrorMessage25_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -638,23 +638,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue31_1.Y + DataCardValue31_1.Height
+                Y: =DataCardValue31_2.Y + DataCardValue31_2.Height
                 ZIndex: =3
 
-            StarVisible25_1 As label:
+            StarVisible25_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey31_1.Height
+                Height: =DataCardKey31_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey31_1.Y
+                Y: =DataCardKey31_2.Y
                 ZIndex: =4
 
-        우편번호_DataCard2_1 As typedDataCard.textualEditCard:
+        우편번호_DataCard2_2 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__xc6b0__xd3b8__xbc88__xd638_"
@@ -665,13 +665,13 @@ SC_SPLR_MODIFY As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "OData__xc6b0__xd3b8__xbc88__xd638_")
             Required: =false
-            Update: =DataCardValue39_1.Text
+            Update: =DataCardValue39_2.Text
             Width: =524
             X: =1
             Y: =2
             ZIndex: =4
 
-            DataCardKey39_1 As label:
+            DataCardKey39_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -684,7 +684,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue39_1 As text:
+            DataCardValue39_2 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
@@ -707,10 +707,10 @@ SC_SPLR_MODIFY As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey39_1.Y + DataCardKey39_1.Height + 5
+                Y: =DataCardKey39_2.Y + DataCardKey39_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage27_1 As label:
+            ErrorMessage27_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -725,23 +725,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue39_1.Y + DataCardValue39_1.Height
+                Y: =DataCardValue39_2.Y + DataCardValue39_2.Height
                 ZIndex: =3
 
-            StarVisible27_1 As label:
+            StarVisible27_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey39_1.Height
+                Height: =DataCardKey39_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey39_1.Y
+                Y: =DataCardKey39_2.Y
                 ZIndex: =4
 
-        담당자_DataCard2_1 As typedDataCard.textualEditCard:
+        담당자_DataCard2_2 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Email"
@@ -752,13 +752,13 @@ SC_SPLR_MODIFY As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@협력사현황], DataSourceInfo.MaxLength, "Email")
             Required: =false
-            Update: =DataCardValue22_1.Text
+            Update: =DataCardValue22_2.Text
             Width: =524
             X: =2
             Y: =2
             ZIndex: =4
 
-            DataCardKey22_1 As label:
+            DataCardKey22_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -771,7 +771,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue22_1 As text:
+            DataCardValue22_2 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Color: =RGBA(0, 0, 0, 1)
                 Default: =Parent.Default
@@ -794,10 +794,10 @@ SC_SPLR_MODIFY As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey22_1.Y + DataCardKey22_1.Height + 5
+                Y: =DataCardKey22_2.Y + DataCardKey22_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage16_1 As label:
+            ErrorMessage16_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -812,23 +812,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue22_1.Y + DataCardValue22_1.Height
+                Y: =DataCardValue22_2.Y + DataCardValue22_2.Height
                 ZIndex: =3
 
-            StarVisible16_1 As label:
+            StarVisible16_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey22_1.Height
+                Height: =DataCardKey22_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey22_1.Y
+                Y: =DataCardKey22_2.Y
                 ZIndex: =4
 
-        "'퓨얼셀 담당자_DataCard2_1' As typedDataCard.comboBoxEditCard":
+        "'퓨얼셀 담당자_DataCard2_2' As typedDataCard.comboBoxEditCard":
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__xd4e8__xc5bc__xc140__xb2f4__xb2"
@@ -838,13 +838,13 @@ SC_SPLR_MODIFY As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue25_1.Selected
+            Update: =DataCardValue25_2.Selected
             Width: =524
             X: =0
             Y: =3
             ZIndex: =4
 
-            DataCardKey25_1 As label:
+            DataCardKey25_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -857,7 +857,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue25_1 As combobox:
+            DataCardValue25_2 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =1
                 ChevronBackground: =RGBA(0, 51, 102, 1)
@@ -879,7 +879,7 @@ SC_SPLR_MODIFY As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 89, 178, 1)
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(협력사현황.'퓨얼셀 담당자',DataCardValue25_1.SearchText)
+                SearchItems: =Choices(협력사현황.'퓨얼셀 담당자',DataCardValue25_2.SearchText)
                 SelectionFill: =RGBA(0, 51, 102, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -887,10 +887,10 @@ SC_SPLR_MODIFY As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey25_1.Y + DataCardKey25_1.Height + 5
+                Y: =DataCardKey25_2.Y + DataCardKey25_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage19_1 As label:
+            ErrorMessage19_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -905,23 +905,23 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue25_1.Y + DataCardValue25_1.Height
+                Y: =DataCardValue25_2.Y + DataCardValue25_2.Height
                 ZIndex: =3
 
-            StarVisible19_1 As label:
+            StarVisible19_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey25_1.Height
+                Height: =DataCardKey25_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey25_1.Y
+                Y: =DataCardKey25_2.Y
                 ZIndex: =4
 
-        등록일자_DataCard2_1 As typedDataCard.dateEditCard:
+        등록일자_DataCard2_2 As typedDataCard.dateEditCard:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__xb4f1__xb85d__xc77c__xc790_"
@@ -931,13 +931,13 @@ SC_SPLR_MODIFY As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue24_1.SelectedDate
+            Update: =DataCardValue24_2.SelectedDate
             Width: =524
             X: =1
             Y: =3
             ZIndex: =4
 
-            DataCardKey24_1 As label:
+            DataCardKey24_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -950,7 +950,7 @@ SC_SPLR_MODIFY As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue24_1 As datepicker:
+            DataCardValue24_2 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =1
                 CalendarHeaderFill: =RGBA(0, 51, 102, 1)
@@ -971,10 +971,10 @@ SC_SPLR_MODIFY As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey24_1.Y + DataCardKey24_1.Height + 5
+                Y: =DataCardKey24_2.Y + DataCardKey24_2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage18_1 As label:
+            ErrorMessage18_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(168, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -989,30 +989,30 @@ SC_SPLR_MODIFY As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue24_1.Y + DataCardValue24_1.Height
+                Y: =DataCardValue24_2.Y + DataCardValue24_2.Height
                 ZIndex: =3
 
-            StarVisible18_1 As label:
+            StarVisible18_2 As label:
                 Align: =Align.Center
                 Color: =RGBA(0, 89, 178, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Height: =DataCardKey24_1.Height
+                Height: =DataCardKey24_2.Height
                 Size: =13
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey24_1.Y
+                Y: =DataCardKey24_2.Y
                 ZIndex: =4
 
-    ConButton_2 As groupContainer.manualLayoutContainer:
+    ConButton_3 As groupContainer.manualLayoutContainer:
         Height: =60
         Width: =1655
         X: =231
         Y: =139
         ZIndex: =4
 
-        btnTemp_1 As button:
+        btnTemp_2 As button:
             BorderColor: =ColorFade(Self.Fill, -10%)
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
@@ -1025,7 +1025,7 @@ SC_SPLR_MODIFY As screen:
             HoverBorderColor: =ColorFade(Self.Fill, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
-            OnSelect: =NewForm(FormNewPartner_1)
+            OnSelect: =NewForm(FormNewPartner_2)
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
@@ -1036,10 +1036,10 @@ SC_SPLR_MODIFY As screen:
             Size: =18
             Text: ="New"
             Width: =180
-            X: =btnSave_1.X + btnSave_1.Width + 50
+            X: =btnSave_2.X + btnSave_2.Width + 50
             ZIndex: =1
 
-        btnSave_1 As button:
+        btnSave_2 As button:
             BorderColor: =ColorFade(Self.Fill, -10%)
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
@@ -1053,7 +1053,7 @@ SC_SPLR_MODIFY As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =SubmitForm(FormNewPartner_1);
+                =SubmitForm(FormNewPartner_2);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
@@ -1064,10 +1064,10 @@ SC_SPLR_MODIFY As screen:
             Size: =18
             Text: ="Save"
             Width: =If(varPartnerListEditFlag, 280, 180)
-            X: =ConFilter.Width / 2 - (btnSave_1.Width + btnTemp_1.Width + 50) / 2
+            X: =ConFilter.Width / 2 - (btnSave_2.Width + btnTemp_2.Width + 50) / 2
             ZIndex: =2
 
-    Label6 As label:
+    Label6_1 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)

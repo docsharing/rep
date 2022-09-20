@@ -214,6 +214,186 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CompGNBMenubar",
+                "type": "CompGNBMenubar.galGNB"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "CompGNBMenubar",
+                "type": "CompGNBMenubar.galGNB"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "CompGNBMenubar",
+                "type": "CompGNBMenubar.galGNB.lblHoverEffect"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "CompGNBMenubar",
+                "type": "CompGNBMenubar.galGNB.lblHoverEffect"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CompInfoBar.imgCloseBar.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CompInfoBar.imgCloseBar.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CompInfoBar",
+                "type": "CompInfoBar.imgCloseBar"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CompInfoBar.imgCloseBar.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CompInfoBar.imgCloseBar.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "CompInfoBar",
+                "type": "CompInfoBar.imgCloseBar"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "CompColorPicker.galPaletteCP.AccessibleLabel"
                 }
               ],
@@ -1384,19 +1564,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompGNBMenubar.galGNB.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.Title_DataCard2_1.DataCardValue21_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompGNBMenubar.galGNB.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.Title_DataCard2_1.DataCardValue21_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CompGNBMenubar",
-                "type": "CompGNBMenubar.galGNB"
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.Title_DataCard2_1.DataCardValue21_1"
               }
             }
           ],
@@ -1414,19 +1594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompGNBMenubar.galGNB.TabIndex"
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.사업자번호_DataCard2_1.DataCardValue30_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompGNBMenubar.galGNB.TabIndex",
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.사업자번호_DataCard2_1.DataCardValue30_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "CompGNBMenubar",
-                "type": "CompGNBMenubar.galGNB"
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.사업자번호_DataCard2_1.DataCardValue30_1"
               }
             }
           ],
@@ -1436,27 +1616,717 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.FocusedBorderThickness"
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.지역구분_DataCard2_1.DataCardValue26_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.FocusedBorderThickness",
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.지역구분_DataCard2_1.DataCardValue26_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.지역구분_DataCard2_1.DataCardValue26_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.장비구분_DataCard2_1.DataCardValue27_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.장비구분_DataCard2_1.DataCardValue27_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.장비구분_DataCard2_1.DataCardValue27_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.대표자명_DataCard2_1.DataCardValue29_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.대표자명_DataCard2_1.DataCardValue29_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.대표자명_DataCard2_1.DataCardValue29_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.전화번호_DataCard2_1.DataCardValue31_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.전화번호_DataCard2_1.DataCardValue31_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.전화번호_DataCard2_1.DataCardValue31_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.Address_DataCard1_1.DataCardValue23_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.Address_DataCard1_1.DataCardValue23_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.Address_DataCard1_1.DataCardValue23_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.우편번호_DataCard2_1.DataCardValue39_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.우편번호_DataCard2_1.DataCardValue39_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.우편번호_DataCard2_1.DataCardValue39_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.담당자_DataCard2_1.DataCardValue22_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.담당자_DataCard2_1.DataCardValue22_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.담당자_DataCard2_1.DataCardValue22_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.'퓨얼셀 담당자_DataCard2_1'.DataCardValue25_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.'퓨얼셀 담당자_DataCard2_1'.DataCardValue25_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.'퓨얼셀 담당자_DataCard2_1'.DataCardValue25_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.등록일자_DataCard2_1.DataCardValue24_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO.FormNewPartner_1.등록일자_DataCard2_1.DataCardValue24_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.FormNewPartner_1.등록일자_DataCard2_1.DataCardValue24_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.Title_DataCard1.DataCardValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.담당자_DataCard1.DataCardValue2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.담당자_DataCard1.DataCardValue2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.담당자_DataCard1.DataCardValue2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.NDA_Status_DataCard1.DataCardValue3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.NDA_Status_DataCard1.DataCardValue3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.NDA_Status_DataCard1.DataCardValue3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.등록일자_DataCard1.DataCardValue4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.등록일자_DataCard1.DataCardValue4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.등록일자_DataCard1.DataCardValue4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.'퓨얼셀 담당자_DataCard1'.DataCardValue5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.'퓨얼셀 담당자_DataCard1'.DataCardValue5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.'퓨얼셀 담당자_DataCard1'.DataCardValue5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.지역구분_DataCard1.DataCardValue6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.지역구분_DataCard1.DataCardValue6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.지역구분_DataCard1.DataCardValue6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.장비구분_DataCard1.DataCardValue7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.장비구분_DataCard1.DataCardValue7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.장비구분_DataCard1.DataCardValue7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.문서공유폴더_DataCard1.DataCardValue8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.문서공유폴더_DataCard1.DataCardValue8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.문서공유폴더_DataCard1.DataCardValue8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.대표자명_DataCard1.DataCardValue9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.대표자명_DataCard1.DataCardValue9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.대표자명_DataCard1.DataCardValue9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.사업자번호_DataCard1.DataCardValue10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.사업자번호_DataCard1.DataCardValue10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.사업자번호_DataCard1.DataCardValue10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.전화번호_DataCard1.DataCardValue11.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.전화번호_DataCard1.DataCardValue11.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.전화번호_DataCard1.DataCardValue11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.PID_DataCard1.DataCardValue12.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.PID_DataCard1.DataCardValue12.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.PID_DataCard1.DataCardValue12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.우편번호_DataCard1.DataCardValue19.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.우편번호_DataCard1.DataCardValue19.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.우편번호_DataCard1.DataCardValue19"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_TEMP.Form1.Attachments_DataCard1.DataCardValue20.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_TEMP.Form1.Attachments_DataCard1.DataCardValue20.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SC_TEMP",
+                "type": "SC_TEMP.Form1.Attachments_DataCard1.DataCardValue20"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
-                "module": "CompGNBMenubar",
-                "type": "CompGNBMenubar.galGNB.lblHoverEffect"
+                "module": "SC_CONFIG_MAIN",
+                "type": "SC_CONFIG_MAIN.btnChangeColor"
               }
             }
           ],
@@ -1474,19 +2344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.TabIndex"
+                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompGNBMenubar.galGNB.lblHoverEffect.TabIndex",
+                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CompGNBMenubar",
-                "type": "CompGNBMenubar.galGNB.lblHoverEffect"
+                "module": "SC_CONFIG_MAIN",
+                "type": "SC_CONFIG_MAIN.btnChangeColor"
               }
             }
           ],
@@ -1504,19 +2374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompInfoBar.imgCloseBar.AccessibleLabel"
+                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompInfoBar.imgCloseBar.AccessibleLabel",
+                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CompInfoBar",
-                "type": "CompInfoBar.imgCloseBar"
+                "module": "SC_NDA_MAIN",
+                "type": "SC_NDA_MAIN.Container1.Gallery1_1"
               }
             }
           ],
@@ -1534,19 +2404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompInfoBar.imgCloseBar.TabIndex"
+                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompInfoBar.imgCloseBar.TabIndex",
+                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CompInfoBar",
-                "type": "CompInfoBar.imgCloseBar"
+                "module": "SC_NDA_MAIN",
+                "type": "SC_NDA_MAIN.Container1.Gallery1_1"
               }
             }
           ],
@@ -2074,19 +2944,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.Title_DataCard2_1.DataCardValue21_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.Title_DataCard2_2.DataCardValue21_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.Title_DataCard2_1.DataCardValue21_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.Title_DataCard2_2.DataCardValue21_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.Title_DataCard2_1.DataCardValue21_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.Title_DataCard2_2.DataCardValue21_2"
               }
             }
           ],
@@ -2104,19 +2974,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.사업자번호_DataCard2_1.DataCardValue30_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.사업자번호_DataCard2_2.DataCardValue30_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.사업자번호_DataCard2_1.DataCardValue30_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.사업자번호_DataCard2_2.DataCardValue30_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.사업자번호_DataCard2_1.DataCardValue30_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.사업자번호_DataCard2_2.DataCardValue30_2"
               }
             }
           ],
@@ -2134,19 +3004,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.지역구분_DataCard2_1.DataCardValue26_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.지역구분_DataCard2_2.DataCardValue26_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.지역구분_DataCard2_1.DataCardValue26_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.지역구분_DataCard2_2.DataCardValue26_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.지역구분_DataCard2_1.DataCardValue26_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.지역구분_DataCard2_2.DataCardValue26_2"
               }
             }
           ],
@@ -2164,19 +3034,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.장비구분_DataCard2_1.DataCardValue27_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.장비구분_DataCard2_2.DataCardValue27_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.장비구분_DataCard2_1.DataCardValue27_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.장비구분_DataCard2_2.DataCardValue27_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.장비구분_DataCard2_1.DataCardValue27_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.장비구분_DataCard2_2.DataCardValue27_2"
               }
             }
           ],
@@ -2194,19 +3064,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.대표자명_DataCard2_1.DataCardValue29_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.대표자명_DataCard2_2.DataCardValue29_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.대표자명_DataCard2_1.DataCardValue29_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.대표자명_DataCard2_2.DataCardValue29_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.대표자명_DataCard2_1.DataCardValue29_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.대표자명_DataCard2_2.DataCardValue29_2"
               }
             }
           ],
@@ -2224,19 +3094,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.전화번호_DataCard2_1.DataCardValue31_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.전화번호_DataCard2_2.DataCardValue31_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.전화번호_DataCard2_1.DataCardValue31_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.전화번호_DataCard2_2.DataCardValue31_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.전화번호_DataCard2_1.DataCardValue31_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.전화번호_DataCard2_2.DataCardValue31_2"
               }
             }
           ],
@@ -2254,19 +3124,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.Address_DataCard1_1.DataCardValue23_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.Address_DataCard1_2.DataCardValue23_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.Address_DataCard1_1.DataCardValue23_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.Address_DataCard1_2.DataCardValue23_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.Address_DataCard1_1.DataCardValue23_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.Address_DataCard1_2.DataCardValue23_2"
               }
             }
           ],
@@ -2284,19 +3154,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.우편번호_DataCard2_1.DataCardValue39_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.우편번호_DataCard2_2.DataCardValue39_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.우편번호_DataCard2_1.DataCardValue39_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.우편번호_DataCard2_2.DataCardValue39_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.우편번호_DataCard2_1.DataCardValue39_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.우편번호_DataCard2_2.DataCardValue39_2"
               }
             }
           ],
@@ -2314,19 +3184,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.담당자_DataCard2_1.DataCardValue22_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.담당자_DataCard2_2.DataCardValue22_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.담당자_DataCard2_1.DataCardValue22_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.담당자_DataCard2_2.DataCardValue22_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.담당자_DataCard2_1.DataCardValue22_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.담당자_DataCard2_2.DataCardValue22_2"
               }
             }
           ],
@@ -2344,19 +3214,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.'퓨얼셀 담당자_DataCard2_1'.DataCardValue25_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.'퓨얼셀 담당자_DataCard2_2'.DataCardValue25_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.'퓨얼셀 담당자_DataCard2_1'.DataCardValue25_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.'퓨얼셀 담당자_DataCard2_2'.DataCardValue25_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.'퓨얼셀 담당자_DataCard2_1'.DataCardValue25_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.'퓨얼셀 담당자_DataCard2_2'.DataCardValue25_2"
               }
             }
           ],
@@ -2374,559 +3244,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.등록일자_DataCard2_1.DataCardValue24_1.AccessibleLabel"
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.등록일자_DataCard2_2.DataCardValue24_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.FormNewPartner_1.등록일자_DataCard2_1.DataCardValue24_1.AccessibleLabel",
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.FormNewPartner_2.등록일자_DataCard2_2.DataCardValue24_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.FormNewPartner_1.등록일자_DataCard2_1.DataCardValue24_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.Title_DataCard1.DataCardValue1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.담당자_DataCard1.DataCardValue2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.담당자_DataCard1.DataCardValue2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.담당자_DataCard1.DataCardValue2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.NDA_Status_DataCard1.DataCardValue3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.NDA_Status_DataCard1.DataCardValue3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.NDA_Status_DataCard1.DataCardValue3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.등록일자_DataCard1.DataCardValue4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.등록일자_DataCard1.DataCardValue4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.등록일자_DataCard1.DataCardValue4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.'퓨얼셀 담당자_DataCard1'.DataCardValue5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.'퓨얼셀 담당자_DataCard1'.DataCardValue5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.'퓨얼셀 담당자_DataCard1'.DataCardValue5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.지역구분_DataCard1.DataCardValue6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.지역구분_DataCard1.DataCardValue6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.지역구분_DataCard1.DataCardValue6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.장비구분_DataCard1.DataCardValue7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.장비구분_DataCard1.DataCardValue7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.장비구분_DataCard1.DataCardValue7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.문서공유폴더_DataCard1.DataCardValue8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.문서공유폴더_DataCard1.DataCardValue8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.문서공유폴더_DataCard1.DataCardValue8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.대표자명_DataCard1.DataCardValue9.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.대표자명_DataCard1.DataCardValue9.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.대표자명_DataCard1.DataCardValue9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.사업자번호_DataCard1.DataCardValue10.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.사업자번호_DataCard1.DataCardValue10.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.사업자번호_DataCard1.DataCardValue10"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.전화번호_DataCard1.DataCardValue11.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.전화번호_DataCard1.DataCardValue11.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.전화번호_DataCard1.DataCardValue11"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.PID_DataCard1.DataCardValue12.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.PID_DataCard1.DataCardValue12.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.PID_DataCard1.DataCardValue12"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.우편번호_DataCard1.DataCardValue19.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.우편번호_DataCard1.DataCardValue19.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.우편번호_DataCard1.DataCardValue19"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_TEMP.Form1.Attachments_DataCard1.DataCardValue20.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_TEMP.Form1.Attachments_DataCard1.DataCardValue20.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_TEMP",
-                "type": "SC_TEMP.Form1.Attachments_DataCard1.DataCardValue20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "SC_CONFIG_MAIN",
-                "type": "SC_CONFIG_MAIN.btnChangeColor"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_CONFIG_MAIN.btnChangeColor.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "SC_CONFIG_MAIN",
-                "type": "SC_CONFIG_MAIN.btnChangeColor"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "SC_NDA_MAIN",
-                "type": "SC_NDA_MAIN.Container1.Gallery1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SC_NDA_MAIN.Container1.Gallery1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SC_NDA_MAIN",
-                "type": "SC_NDA_MAIN.Container1.Gallery1_1"
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.FormNewPartner_2.등록일자_DataCard2_2.DataCardValue24_2"
               }
             }
           ],
@@ -3754,19 +4084,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.ConButton_2.btnSave_1.X"
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConButton_2.btnSave_1.X"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SC_SPLR_MODIFY.ConButton_2.btnSave_1.X",
+                  "fullyQualifiedName": "SC_SPLR_INFO.ConButton_2.btnSave_1.X",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "X",
-                "module": "SC_SPLR_MODIFY",
-                "type": "SC_SPLR_MODIFY.ConButton_2.btnSave_1"
+                "module": "SC_SPLR_INFO",
+                "type": "SC_SPLR_INFO.ConButton_2.btnSave_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.ConButton_3.btnSave_2.X"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SC_SPLR_INFO_1.ConButton_3.btnSave_2.X",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "X",
+                "module": "SC_SPLR_INFO_1",
+                "type": "SC_SPLR_INFO_1.ConButton_3.btnSave_2"
               }
             }
           ],
@@ -3874,51 +4234,51 @@
               "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
-                  "text": "Unused variable"
+                  "text": "사용되지 않은 변수"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove the unused variable."
+                  "사용하지 않는 변수를 제거합니다."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+                "whyFix": "이 변수는 선언되었지만 컨트롤에서 참조되지 않으므로, 필요하지 않습니다."
               }
             },
             {
               "id": "app-UnusedMediaResources",
               "messageStrings": {
                 "issue": {
-                  "text": "Unused media files"
+                  "text": "사용하지 않는 미디어 파일"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove the unused media file in the Media pane."
+                  "[미디어] 창에서 사용되지 않는 미디어 파일을 제거합니다."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
+                "whyFix": "이 미디어 파일은 어떤 컨트롤 수식에서도 참조되지 않으므로 필요하지 않습니다. 이 파일을 제거하면 성능이 개선됩니다."
               }
             },
             {
               "id": "app-InefficientDelayLoading",
               "messageStrings": {
                 "issue": {
-                  "text": "Inefficient delay loading"
+                  "text": "비효율적인 지연 로드"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Use variables, collections, and navigation context to share state across screens instead."
+                  "대신 변수, 컬렉션 및 탐색 컨텍스트를 사용하여 화면 전체에서 상태를 공유합니다."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Controls that reference controls on other screens can slow down app loading and navigation. Doing this may force the app to load the other screens immediately, rather than waiting until the user navigates to that screen."
+                "whyFix": "다른 화면의 컨트롤을 참조하는 컨트롤은 앱 로딩 및 탐색 속도를 느리게 만들 수 있습니다. 그러면 사용자가 해당 화면으로 이동할 때까지 기다리지 않고 앱이 즉시 다른 화면을 로드할 수 있습니다."
               }
             }
           ],
