@@ -1285,20 +1285,48 @@ SC_SPLR_INFO As screen:
                 OnSelect: =
                 Size: =13
                 Width: =lblPartnerName_1.Width
-                X: =lblPartnerName_1
+                X: =lblPartnerName_1.X
                 Y: =4
                 ZIndex: =3
 
             lblGalName As label:
+                Align: =Align.Center
                 BorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 OnSelect: =Select(Parent)
                 Size: =13
                 Text: =ThisItem.성명
+                Width: =lblName.Width
                 X: =lblName.X
                 Y: =4
                 ZIndex: =4
+
+            lblGalChief As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =If(ThisItem.대표여부 = true, "Yes", "No")
+                Width: =lblIsChief.Width
+                X: =lblIsChief.X
+                Y: =4
+                ZIndex: =5
+
+            lblGalChief_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =If(ThisItem.라이선스발급상태 = true, "Yes", "No")
+                Width: =lblIsLicensed.Width
+                X: =lblIsLicensed.X
+                Y: =4
+                ZIndex: =6
 
     btnAccountDataLoad As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
