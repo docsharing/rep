@@ -439,7 +439,10 @@ SC_SPLR_MAIN As screen:
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 OnChange: =Select(Parent)
-                OnSelect: =Select(Parent)
+                OnSelect: |-
+                    =Collect(colSelected, ThisItem);
+                    ViewForm(FormPartnerInfo);
+                    Navigate(SC_SPLR_INFO);
                 Size: =13
                 Width: =lblPartnerName.Width - Checkbox1.Width
                 X: =Checkbox1.X + Checkbox1.Width
