@@ -48,3 +48,13 @@ Comp2ndMenubar As CanvasComponent:
         Y: =74
         ZIndex: =3
 
+    Label2 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Text"
+        X: =1552
+        Y: =9
+        ZIndex: =4
+
