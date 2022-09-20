@@ -18,8 +18,8 @@ Comp2ndMenubar As CanvasComponent:
         ShowScrollbar: =false
         TemplatePadding: =7.25
         TemplateSize: =290.02
-        Width: =1242.76
-        X: =362.54
+        Width: =1365
+        X: =238
         Y: =9
         ZIndex: =1
 
