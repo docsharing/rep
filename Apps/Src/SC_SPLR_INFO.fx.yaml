@@ -22,10 +22,10 @@ SC_SPLR_INFO As screen:
         DataSource: =협력사현황
         Height: =514
         Item: =First(colSelected)
-        OnFailure: =Notify("New partner item insert error", NotificationType.Error)
+        OnFailure: =Notify("New partner item insert error Error="&FormPartnerInfo.Error, NotificationType.Error)
         OnSuccess: |-
             =Notify(DataCardValue21_1.Text&" was created successfully!", NotificationType.Success, 2000);
-            Navigate(SC_SPLR_MAIN);
+            Back();
         Width: =1572
         X: =270
         Y: =270
