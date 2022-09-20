@@ -6,7 +6,7 @@ SC_SPLR_INFO As screen:
             "1"
         );
         
-        EditForm(FormNewPartner);
+        EditForm(FormPartnerInfo);
 
     Comp2ndMenubar_2 As Comp2ndMenubar:
         Items: |
@@ -19,7 +19,7 @@ SC_SPLR_INFO As screen:
         Width: =200
         ZIndex: =2
 
-    FormNewPartner As form:
+    FormPartnerInfo As form:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =협력사현황
         Height: =514
@@ -1025,7 +1025,7 @@ SC_SPLR_INFO As screen:
             HoverBorderColor: =ColorFade(Self.Fill, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
-            OnSelect: =NewForm(FormNewPartner)
+            OnSelect: =NewForm(FormPartnerInfo)
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
@@ -1053,7 +1053,7 @@ SC_SPLR_INFO As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =SubmitForm(FormNewPartner);
+                =SubmitForm(FormPartnerInfo);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
