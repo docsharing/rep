@@ -1289,6 +1289,17 @@ SC_SPLR_INFO As screen:
                 Y: =4
                 ZIndex: =3
 
+            lblGalName As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.성명
+                X: =lblName.X
+                Y: =4
+                ZIndex: =4
+
     btnAccountDataLoad As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)

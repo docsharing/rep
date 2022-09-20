@@ -58,7 +58,7 @@
         "Name": "imgCompanyLogo",
         "Parent": "CompGNBMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 289,
+        "PublishOrderIndex": 290,
         "Rules": [
           {
             "Category": "Data",
@@ -281,7 +281,7 @@
             "Name": "galleryTemplate1",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 291,
+            "PublishOrderIndex": 292,
             "Rules": [
               {
                 "Category": "Design",
@@ -406,7 +406,7 @@
             "Name": "lblShowSelected",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 292,
+            "PublishOrderIndex": 293,
             "Rules": [
               {
                 "Category": "Data",
@@ -785,7 +785,7 @@
             "Name": "lblHoverEffect",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 293,
+            "PublishOrderIndex": 294,
             "Rules": [
               {
                 "Category": "Data",
@@ -1113,7 +1113,7 @@
             "Name": "imgMenu",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 294,
+            "PublishOrderIndex": 295,
             "Rules": [
               {
                 "Category": "Data",
@@ -1412,7 +1412,7 @@
             "Name": "lblMenuTitle",
             "Parent": "galGNB",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 295,
+            "PublishOrderIndex": 296,
             "Rules": [
               {
                 "Category": "Data",
@@ -1762,7 +1762,7 @@
         "Name": "galGNB",
         "Parent": "CompGNBMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 290,
+        "PublishOrderIndex": 291,
         "Rules": [
           {
             "Category": "Data",
@@ -2015,7 +2015,7 @@
         "Name": "Label1",
         "Parent": "CompGNBMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 296,
+        "PublishOrderIndex": 297,
         "Rules": [
           {
             "Category": "Data",
