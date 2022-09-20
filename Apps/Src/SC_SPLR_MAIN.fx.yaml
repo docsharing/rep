@@ -49,7 +49,7 @@ SC_SPLR_MAIN As screen:
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |-
                 =NewForm(FormNewPartner);
-                Navigate(SC_SPLR_NEW);
+                Navigate(SC_SPLR_INFO);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
@@ -78,7 +78,7 @@ SC_SPLR_MAIN As screen:
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
                 =EditForm(FormNewPartner);
-                Navigate(SC_SPLR_NEW);
+                Navigate(SC_SPLR_INFO);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)

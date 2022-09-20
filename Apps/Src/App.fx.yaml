@@ -50,7 +50,7 @@ App As appinfo:
                 {
                     Value: "New",
                     MenuIMG: confidential_NDA2,
-                    Screen: SC_SPLR_NEW,
+                    Screen: SC_SPLR_INFO,
                     IDX: "2"
                 },
                 {

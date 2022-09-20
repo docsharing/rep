@@ -30,9 +30,6 @@
     "datasets": {
       "https://doosan.sharepoint.com/sites/DocumentSharing": {
         "dataSources": {
-          "NDA 진행현황": {
-            "tableName": "91881009-9de3-4266-a77f-6a61e9661c8f"
-          },
           "협력사현황": {
             "tableName": "1acf502c-496e-47d0-b484-53e6a6bc765c"
           }
@@ -40,8 +37,7 @@
       }
     },
     "dataSources": [
-      "협력사현황",
-      "NDA 진행현황"
+      "협력사현황"
     ],
     "dependencies": {},
     "dependents": [],

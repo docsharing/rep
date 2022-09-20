@@ -109,7 +109,7 @@
   },
   "ScreenOrder": [
     "SC_SPLR_MAIN",
-    "SC_SPLR_NEW",
+    "SC_SPLR_INFO",
     "SC_SPLR_MODIFY",
     "SC_SPLR_ACCOUNT",
     "SC_SPLR_HISTORY",

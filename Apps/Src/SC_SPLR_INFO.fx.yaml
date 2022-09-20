@@ -1,0 +1,8 @@
+SC_SPLR_INFO As screen:
+    Fill: =Color.White
+    OnVisible: |-
+        =Set(
+            varSelectedMenuIDX,
+            "1"
+        );
+
