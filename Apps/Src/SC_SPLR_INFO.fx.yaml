@@ -6,7 +6,7 @@ SC_SPLR_INFO As screen:
             "1"
         );
         
-        EditForm(FormNewPartner_1);
+        EditForm(FormNewPartner);
 
     Comp2ndMenubar_2 As Comp2ndMenubar:
         Items: |
@@ -19,7 +19,7 @@ SC_SPLR_INFO As screen:
         Width: =200
         ZIndex: =2
 
-    FormNewPartner_1 As form:
+    FormNewPartner As form:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =협력사현황
         Height: =514
@@ -1012,7 +1012,7 @@ SC_SPLR_INFO As screen:
         Y: =139
         ZIndex: =4
 
-        btnTemp_1 As button:
+        btnNew_1 As button:
             BorderColor: =ColorFade(Self.Fill, -10%)
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
@@ -1025,7 +1025,7 @@ SC_SPLR_INFO As screen:
             HoverBorderColor: =ColorFade(Self.Fill, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
-            OnSelect: =NewForm(FormNewPartner_1)
+            OnSelect: =NewForm(FormNewPartner)
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
@@ -1036,10 +1036,10 @@ SC_SPLR_INFO As screen:
             Size: =18
             Text: ="New"
             Width: =180
-            X: =btnSave_1.X + btnSave_1.Width + 50
+            X: =btnSave.X + btnSave.Width + 50
             ZIndex: =1
 
-        btnSave_1 As button:
+        btnSave As button:
             BorderColor: =ColorFade(Self.Fill, -10%)
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
@@ -1053,7 +1053,7 @@ SC_SPLR_INFO As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =SubmitForm(FormNewPartner_1);
+                =SubmitForm(FormNewPartner);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
@@ -1064,16 +1064,6 @@ SC_SPLR_INFO As screen:
             Size: =18
             Text: ="Save"
             Width: =If(varPartnerListEditFlag, 280, 180)
-            X: =ConFilter.Width / 2 - (btnSave_1.Width + btnTemp_1.Width + 50) / 2
+            X: =ConFilter.Width / 2 - (btnSave.Width + btnNew_1.Width + 50) / 2
             ZIndex: =2
-
-    Label6 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: ="Modify"
-        X: =258
-        Y: =100
-        ZIndex: =5
 
