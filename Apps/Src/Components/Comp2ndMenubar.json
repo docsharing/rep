@@ -26,7 +26,7 @@
             "Name": "galleryTemplate2",
             "Parent": "galTopMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 266,
+            "PublishOrderIndex": 270,
             "Rules": [
               {
                 "Category": "Design",
@@ -144,7 +144,7 @@
             "Name": "lblMenuName",
             "Parent": "galTopMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 267,
+            "PublishOrderIndex": 271,
             "Rules": [
               {
                 "Category": "Data",
@@ -485,7 +485,7 @@
         "Name": "galTopMenu",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 265,
+        "PublishOrderIndex": 269,
         "Rules": [
           {
             "Category": "Data",
@@ -712,7 +712,7 @@
         "Name": "Label2",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 268,
+        "PublishOrderIndex": 272,
         "Rules": [
           {
             "Category": "Data",
@@ -1047,7 +1047,7 @@
         "Name": "shpHrztlLine",
         "Parent": "Comp2ndMenubar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 269,
+        "PublishOrderIndex": 273,
         "Rules": [
           {
             "Category": "Design",
@@ -1187,7 +1187,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637992387576301403",
+    "LastModifiedTimestamp": "637992439970126294",
     "Name": "Comp2ndMenubar",
     "Rules": [
       {
@@ -1262,7 +1262,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637992387576301403",
+  "LastModifiedTimestamp": "637992439970126294",
   "Name": "5531d5d618db403dac7652145e7ddf8b",
   "OverridableProperties": {},
   "Version": "637987344695513501"
