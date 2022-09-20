@@ -1282,10 +1282,7 @@ SC_SPLR_INFO As screen:
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(153, 205, 255, 1)
                 OnChange: =Select(Parent)
-                OnSelect: |-
-                    =Collect(colSelected, ThisItem);
-                    ViewForm(FormPartnerInfo);
-                    Navigate(SC_SPLR_INFO);
+                OnSelect: =
                 Size: =13
                 Width: =lblPartnerName_1.Width
                 X: =lblPartnerName_1
@@ -1300,7 +1297,7 @@ SC_SPLR_INFO As screen:
         FontWeight: =FontWeight.Semibold
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: |
+        OnSelect: |-
             =ClearCollect(
                 colAccountList,
                 Filter(
