@@ -93,7 +93,7 @@ SC_CONFIG_MAIN As screen:
             Set(closeRequest, false );
             Set(blnShowMsgBarArea, true);
             UpdateContext({messageToShow:"This is a notification message.....
-            Component에 공용사용가능하 Message bar를 추가했습니다.. 사용방법은 버튼위 코드를 참고하세요.
+            Component에 공용사용가능하 Message bar를 추가했습니다.. 사용방법은 버튼속 코드를 참고하세요.
             필요한 부분은 추가하시거나 수정하세요."});
             UpdateContext({typeToShow:"Notification"}); //Types : Notification|Error|Announcement|Confirmation
             UpdateContext({blnShow: false });
