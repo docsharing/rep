@@ -47,7 +47,9 @@ SC_SPLR_MAIN As screen:
             HoverBorderColor: =ColorFade(Self.Fill, 20%)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
-            OnSelect: =Navigate(SC_SPLR_NEW);
+            OnSelect: |-
+                =NewForm(FormNewPartner);
+                Navigate(SC_SPLR_NEW);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
@@ -75,7 +77,8 @@ SC_SPLR_MAIN As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =Navigate(SC_SPLR_MODIFY);
+                =EditForm(FormNewPartner_1);
+                Navigate(SC_SPLR_MODIFY);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)

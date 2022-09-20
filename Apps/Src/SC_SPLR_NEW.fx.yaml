@@ -5,8 +5,6 @@ SC_SPLR_NEW As screen:
             varSelectedMenuIDX,
             "1"
         );
-        
-        NewForm(FormNewPartner);
 
     Comp2ndMenubar_1 As Comp2ndMenubar:
         Items: |
