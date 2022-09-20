@@ -5,6 +5,7 @@ SC_SPLR_INFO As screen:
             varSelectedMenuIDX,
             "1"
         );
+        Select(btnAccountDataLoad);
 
     Comp2ndMenubar_2 As Comp2ndMenubar:
         Items: |
@@ -1107,7 +1108,7 @@ SC_SPLR_INFO As screen:
         Size: =20
         Text: ="협력사 기본정보"
         Width: =280
-        X: =270
+        X: =232
         Y: =207
         ZIndex: =5
 
@@ -1119,8 +1120,8 @@ SC_SPLR_INFO As screen:
         Size: =20
         Text: ="협력사 계정목록"
         Width: =280
-        X: =270
-        Y: =678
+        X: =232
+        Y: =695
         ZIndex: =6
 
     ConAccountList As groupContainer.manualLayoutContainer:
