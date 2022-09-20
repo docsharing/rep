@@ -1026,7 +1026,7 @@ SC_SPLR_INFO As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |-
-                =NewForm(FormPartnerInfo)
+                =NewForm(FormPartnerInfo);
                 Clear(colSelected);
             PaddingRight: =7.25
             PaddingTop: =7.25
