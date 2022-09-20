@@ -1310,6 +1310,7 @@ SC_SPLR_INFO As screen:
             );
         Size: =15
         Text: ="단추"
+        Visible: =false
         X: =216
         Y: =84
         ZIndex: =9

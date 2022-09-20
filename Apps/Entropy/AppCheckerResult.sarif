@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 39,
+                  "charLength": 26,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Remove(\r\n    협력사현황,\r\n    colSelected\r\n)"
+                    "text": "Remove(협력사현황, colSelected)"
                   }
                 }
               },
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 11,
-                  "charOffset": 25,
+                  "charOffset": 14,
                   "snippet": {
                     "text": "colSelected"
                   }
