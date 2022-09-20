@@ -39,8 +39,7 @@ CompInfoBar As CanvasComponent:
         HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
         OnTimerEnd: =
         OnTimerStart: |+
-            = 
-            //KIM JIHUN, 29220919
+            =//KIM JIHUN, 29220919
             //DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//
             Set(varTimerDuration, 1900)
             
@@ -66,7 +65,7 @@ CompInfoBar As CanvasComponent:
         Height: =80
         PaddingLeft: =imgAlertIcon.Width+10
         PaddingRight: =25
-        Size: =13
+        Size: =15
         Text: =CompInfoBar.Message
         Visible: |-
             =
@@ -146,6 +145,7 @@ CompInfoBar As CanvasComponent:
         PaddingLeft: =4
         PaddingRight: =4
         PaddingTop: =4
+        Tooltip: ="Click to close"
         Width: =50
         X: |-
             =//App.ActiveScreen.Width-30

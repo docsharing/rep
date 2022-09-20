@@ -168,7 +168,7 @@
         "Name": "lblAlertMsgBar",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 271,
+        "PublishOrderIndex": 270,
         "Rules": [
           {
             "Category": "Data",
@@ -208,7 +208,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "13",
+            "InvariantScript": "15",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -559,7 +559,7 @@
         "Name": "imgAlertIcon",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 272,
+        "PublishOrderIndex": 271,
         "Rules": [
           {
             "Category": "Data",
@@ -876,6 +876,14 @@
             "InvariantPropertyName": "Visible",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Tooltip",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
           }
         ],
         "ControlUniqueId": "84",
@@ -891,12 +899,18 @@
         "Name": "imgCloseBar",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 273,
+        "PublishOrderIndex": 272,
         "Rules": [
           {
             "Category": "Data",
             "InvariantScript": "'confidential_close-window'",
             "Property": "Image",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Data",
+            "InvariantScript": "\"Click to close\"",
+            "Property": "Tooltip",
             "RuleProviderType": "Unknown"
           },
           {
@@ -1202,7 +1216,7 @@
         "Name": "varWidthSizeForDbg",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 274,
+        "PublishOrderIndex": 273,
         "Rules": [
           {
             "Category": "Data",
@@ -1577,7 +1591,7 @@
         "Name": "timerShowAlert",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 275,
+        "PublishOrderIndex": 274,
         "Rules": [
           {
             "Category": "Data",
@@ -1785,7 +1799,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": " \r\n//KIM JIHUN, 29220919\r\n//DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//\r\nSet(varTimerDuration, 1900)\r\n\r\n",
+            "InvariantScript": "//KIM JIHUN, 29220919\r\n//DO NOT MODIFY THE CODE BELOW. THE CODE IS FOR AVOIDING FLASHING BAR//\r\nSet(varTimerDuration, 1900)\r\n\r\n",
             "Property": "OnTimerStart",
             "RuleProviderType": "Unknown"
           }
@@ -1892,7 +1906,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637992279423222501",
+    "LastModifiedTimestamp": "637992281726779103",
     "Name": "CompInfoBar",
     "Rules": [
       {
@@ -2057,7 +2071,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637992279423222501",
+  "LastModifiedTimestamp": "637992281726779103",
   "Name": "c92276ddd3dd4dd28b0150ab9bcdbf2c",
   "OverridableProperties": {},
   "TemplateOriginalName": "a2bdbf11048248e0ac466ae822ebf460",
