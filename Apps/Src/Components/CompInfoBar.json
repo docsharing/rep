@@ -168,7 +168,7 @@
         "Name": "lblAlertMsgBar",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 273,
+        "PublishOrderIndex": 272,
         "Rules": [
           {
             "Category": "Data",
@@ -559,7 +559,7 @@
         "Name": "imgAlertIcon",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 274,
+        "PublishOrderIndex": 273,
         "Rules": [
           {
             "Category": "Data",
@@ -899,7 +899,7 @@
         "Name": "imgCloseBar",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 275,
+        "PublishOrderIndex": 274,
         "Rules": [
           {
             "Category": "Data",
@@ -1216,7 +1216,7 @@
         "Name": "varWidthSizeForDbg",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 276,
+        "PublishOrderIndex": 275,
         "Rules": [
           {
             "Category": "Data",
@@ -1591,7 +1591,7 @@
         "Name": "timerShowAlert",
         "Parent": "CompInfoBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 277,
+        "PublishOrderIndex": 276,
         "Rules": [
           {
             "Category": "Data",
@@ -1906,7 +1906,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637992375856156039",
+    "LastModifiedTimestamp": "637992387576475239",
     "Name": "CompInfoBar",
     "Rules": [
       {
@@ -2071,7 +2071,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637992375856156039",
+  "LastModifiedTimestamp": "637992387576475239",
   "Name": "c92276ddd3dd4dd28b0150ab9bcdbf2c",
   "OverridableProperties": {},
   "TemplateOriginalName": "a2bdbf11048248e0ac466ae822ebf460",
