@@ -104,13 +104,8 @@ SC_SPLR_MAIN As screen:
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
                 =Remove(
-                    colPartnerList,
-                    colSelected
-                );
-                
-                Patch(
                     협력사현황,
-                    colPartnerList
+                    colSelected
                 );
                 
                 Clear(colSelected);
