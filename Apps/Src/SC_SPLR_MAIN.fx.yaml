@@ -439,7 +439,8 @@ SC_SPLR_MAIN As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 OnChange: =Select(Parent)
                 OnSelect: |-
-                    =Collect(colSelectedPartner, ThisItem);
+                    =Clear(colSelectedPartner);
+                    Collect(colSelectedPartner, ThisItem);
                     ViewForm(FormPartnerInfo);
                     Navigate(SC_SPLR_INFO);
                 Size: =13
