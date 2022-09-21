@@ -1906,7 +1906,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637993147997485297",
+    "LastModifiedTimestamp": "637993168114658500",
     "Name": "CompInfoBar",
     "Rules": [
       {
@@ -2071,7 +2071,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637993147997485297",
+  "LastModifiedTimestamp": "637993168114658500",
   "Name": "c92276ddd3dd4dd28b0150ab9bcdbf2c",
   "OverridableProperties": {},
   "TemplateOriginalName": "a2bdbf11048248e0ac466ae822ebf460",

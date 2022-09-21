@@ -22,7 +22,7 @@ SC_SPLR_INFO As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DataSource: =협력사현황
         Height: =403
-        Item: =First(colSelected)
+        Item: =First(colSelectedPartner)
         OnFailure: |-
             =Notify("New partner item insert error Error="&FormPartnerInfo.Error, NotificationType.Error);
             Back();
@@ -1027,7 +1027,7 @@ SC_SPLR_INFO As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =Clear(colSelected);
+                =Clear(colSelectedPartner);
                 NewForm(FormPartnerInfo);
             PaddingRight: =7.25
             PaddingTop: =7.25
@@ -1057,7 +1057,7 @@ SC_SPLR_INFO As screen:
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
                 =SubmitForm(FormPartnerInfo);
-                Clear(colSelected);
+                Clear(colSelectedPartner);
             PaddingRight: =7.25
             PaddingTop: =7.25
             PressedFill: =ColorFade(Self.Fill, 10%)
@@ -1085,7 +1085,7 @@ SC_SPLR_INFO As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |-
-                =Clear(colSelected);
+                =Clear(colSelectedPartner);
                 Back();
             PaddingRight: =7.25
             PaddingTop: =7.25
@@ -1380,7 +1380,7 @@ SC_SPLR_INFO As screen:
                 colAccountList,
                 Filter(
                     협력사계정,
-                    PID = First(colSelected).PID
+                    PID = First(colSelectedPartner).PID
                 )
             );
         Size: =15

@@ -48,7 +48,7 @@ SC_SPLR_MAIN As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |-
-                =Clear(colSelected);
+                =Clear(colSelectedPartner);
                 NewForm(FormPartnerInfo);
                 Navigate(SC_SPLR_INFO);
             PaddingRight: =7.25
@@ -107,9 +107,9 @@ SC_SPLR_MAIN As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =Remove(협력사현황, colSelected);
+                =Remove(협력사현황, colSelectedPartner);
                 
-                Clear(colSelected);
+                Clear(colSelectedPartner);
                 Clear(colPartnerList);
                 Select(btnLoadData);
             PaddingRight: =7.25
@@ -139,7 +139,7 @@ SC_SPLR_MAIN As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(Self.Fill, 10%)
             OnSelect: |
-                =Clear(colSelected);
+                =Clear(colSelectedPartner);
                 Clear(colPartnerList);
                 Select(btnLoadData);
             PaddingRight: =7.25
@@ -413,8 +413,8 @@ SC_SPLR_MAIN As screen:
                 CheckboxBorderColor: =RGBA(0, 89, 178, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(0, 89, 178, 1)
-                OnCheck: =Collect(colSelected, ThisItem);
-                OnUncheck: =Remove(colSelected, ThisItem);
+                OnCheck: =Collect(colSelectedPartner, ThisItem);
+                OnUncheck: =Remove(colSelectedPartner, ThisItem);
                 Size: =13
                 Text: =""
                 Width: =40
@@ -437,7 +437,7 @@ SC_SPLR_MAIN As screen:
                 HoverFill: =RGBA(153, 205, 255, 1)
                 OnChange: =Select(Parent)
                 OnSelect: |-
-                    =Collect(colSelected, ThisItem);
+                    =Collect(colSelectedPartner, ThisItem);
                     ViewForm(FormPartnerInfo);
                     Navigate(SC_SPLR_INFO);
                 Size: =13
